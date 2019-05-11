@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Shijun Zhang"> 
+  <meta name="description" content="Shijun Zhang (ShijunZhang, ZhangShijun, 张仕俊) is a Ph.D. (PhD) student of National university of Singapore (NUS)"> 
+  <meta name="keywords" content="Shijun Zhang, ShijunZhang, ZhangShijun, 张仕俊" />
+  <link rel="alternate" hreflang="en-us" href="/">
+  <meta name="theme-color" content="#EF525B">
+<!--   <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png"> -->
+  <link rel="canonical" href="/">   
+  <meta property="og:site_name" content="Shijun Zhang">
+  <meta property="og:url" content="/">
+  <meta property="og:title" content="Shijun Zhang">
+  <meta property="og:description" content="Shijun Zhang (ShijunZhang, ZhangShijun, 张仕俊) is a Ph.D. (PhD) student of National university of Singapore (NUS)"> 
+  <meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+ <title>Shijun Zhang</title>
+
+
+ <title>Shijun Zhang</title>
+
+<link rel="stylesheet" href="./file/cssAndJs/style.css"> 
+<style id="styleInJs"></style>
+</head>
+
+
+
+<body>
+
+<nav>
+  <ul class="navBarContainer navBarLinkColor" id="navBar">
+    <li id="leftMostNavBarItem" class="navBarItem"></li>
+    <li class="navBarItem" >
+      <a href="./" > Home </a>
+    </li>
+    <li class="navBarItem">
+      <a href="./publication/"> Publication </a>
+    </li>
+        <li class="navBarItem">
+      <a href="./interest/"> Interest </a>
+    </li>
+    <li class="navBarItem">
+      <a href="./cv/">  Curriculum Vitae </a>
+    </li>
+    <li class="navBarItem">
+      <a href="./showcase/"> Showcase </a>
+    </li>
+  </ul>
+<div id="whitSpaceForNavBar"></div>
+</nav>
+
+
+<section class="pageContainer">
+
+
+<div class="addWhiteSpaceOne"></div>
+
+
+<h1> Welcome to Shijun Zhang's Homepage</h1>
+
+
+<div class="addWhiteSpaceOne"></div>
+
+
+<div class="introContainer">
+  <div>
+  <img src="./file/img/ShijunZhang.jpg" alt='A Photo Of Shijun Zhang' id="zsjPhoto" style="width:30%;"></div>
+  
+<div class="introItem" id="introduction">
+
+      <div> Shijun Zhang 张仕俊 </div>
+
+
+         <div> Ph.D. Student of  
+         <a href="http://ww1.math.nus.edu.sg/">  
+         Department of Mathematics </a> </div>
+
+         <div> <a href="http://www.nus.edu.sg/" > National University of Singapore</a>  </div>
+
+        <div> Supervisors: 
+        <a href="http://www.math.nus.edu.sg/~matzuows/"> 
+        Zuowei Shen</a>
+        and 
+        <a href="https://sites.google.com/prod/view/haizhaoyang/home"> Haizhao Yang</a>  
+         </div> 
+<div>
+
+</section>
+</body>
+
+
+<div class="addWhiteSpaceOne"></div>
+
+<footer id="footer"></footer>
+<script type="text/javascript" src="./file/cssAndJs/script.js"></script>
+<!-- <script type="text/javascript" src="./home.js"></script> -->
+
+<script type="text/javascript">
+  var zsjPhoto=document.getElementById("zsjPhoto")
+if (phoneOrPc==1) {zsjPhoto.style.width=w*0.75 +"px"} else { zsjPhoto.style.width=w*0.35 +"px"}
+
+if (phoneOrPc==0){
+  document.getElementById("introduction").style.lineHeight=w*0.055421+"px";
+document.getElementById("introduction").style.fontSize=w*0.0195421+"px";
+document.getElementById("introduction").style.fontWeight=520;
+}
+else {  document.getElementById("introduction").style.lineHeight=w*0.055421+"px";
+document.getElementById("introduction").style.fontSize=w*0.02365421+"px";
+document.getElementById("introduction").style.fontWeight=520;}
+
+
+/*insert Css*/ 
+var pageWidth=0
+if (phoneOrPc==0) {pageWidth=0.85*w} else { pageWidth=0.9*w }
+var insertHomeCss=".pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}"
+var styleInJsNew=document.getElementById("styleInJs");
+styleInJs.innerHTML=insertStyle.join('')+insertHomeCss
+
+</script>
+
+
+<div class="addWhiteSpaceOne"></div>
+</html>
+
+

@@ -1,0 +1,141 @@
+
+body, footer{ margin: 0px;
+    padding: 0px;
+    background-color: #FFFAF0;}
+
+/*navbar*/
+.navBarLinkColor a:link {color:#FFFFFF;
+text-decoration:none;
+}
+.navBarLinkColor a:visited  {
+color:#EEEEEE;
+/*text-decoration:underline;*/
+}
+.navBarLinkColor a:hover {
+color:#666666;
+text-decoration:none;
+/*text-decoration:underline;*/
+/*background-color: blue;*/
+}
+.navBarLinkColor a:active  {
+color:black;
+/*text-decoration:underline;*/
+}
+
+.navBarContainer {
+  display: flex;
+  height: auto;
+  width:100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row nowrap;
+  background-color:#20B2AA;
+      margin: 0px auto;
+    padding: 0px;
+    border: 0px dashed red;
+    cursor: pointer;
+    list-style-type: none;
+    position:fixed;
+    overflow: auto;
+}
+
+.navBarItem {
+width:auto;
+height:auto;
+padding: 20px;
+white-space:nowrap;
+}
+
+/*
+link color*/
+ a:link {color:#0000EE;
+text-decoration:none;
+}
+ a:visited  {
+color:#000088;
+/*text-decoration:underline;*/
+}
+ a:hover {
+color:  #00CED1;
+text-decoration:underline;
+/*background-color: blue;*/
+}
+ a:active  {
+color:black;
+/*text-decoration:underline;*/
+}
+
+
+/*homepage*/
+.introContainer {
+  display: flex;
+  height: auto;
+  width:auto;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+      margin: 0px;
+    padding: 0px;
+    border: 0px dashed red;
+}
+.introItem {
+width:auto;
+height:auto;
+padding: 10px;
+text-align: center;
+margin:10px;
+}
+
+/*showcase*/
+
+/*homepage*/
+.showcaseContainer {
+  display: flex;
+  height: auto;
+  width:auto;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+      margin: 0px;
+    padding: 0px;
+    border: 0px dashed red;
+}
+.showcaseItem {
+width:auto;
+height:auto;
+padding: 10px;
+text-align: center;
+margin:10px;
+}
+
+/*cv*/
+/*homepage*/
+.cvContainer {
+  display: flex;
+  height: auto;
+  width:auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+      margin: 0px;
+    padding: 0px;
+    border: 0px dashed red;
+}
+.cvItemOne {
+width:auto;
+height:auto;
+padding: 0px;
+text-align: left;
+margin:0px;
+}
+.cvItemTwo {
+width:auto;
+height:auto;
+padding: 0px;
+text-align: center;
+margin:0px;
+}
+
+
+
+
