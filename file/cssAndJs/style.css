@@ -48,11 +48,11 @@ white-space:nowrap;
 
 /*
 link color*/
- a:link {color:#0000EE;
+ a:link {color:#0000F0;
 text-decoration:none;
 }
  a:visited  {
-color:#000088;
+color:#0000CC;
 /*text-decoration:underline;*/
 }
  a:hover {
