@@ -22,6 +22,26 @@
 
 <link rel="stylesheet" href="../file/cssAndJs/style.css"> 
 <style id="styleInJs"></style>
+
+
+<!--math formula below  from web: http://docs.mathjax.org/en/latest/configuration.html-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js">
+</script>
+
+
+
 </head>
 
 
@@ -59,15 +79,21 @@
 <div class="addWhiteSpaceOne"></div>
 
 <h2> Research Interests:</h2>
-<ol>
+Curious about the power of deep neural networks, I focus on the approximation theory of neural networks. Unlike traditional tools to approximate functions, neural networks has two key benefits.
+<ul>
+  <li>The architecture of neural networks is easy but powerful because of compositions. For example, if we use $f_2\circ f_1$ to approximate $f$, we only need to care the values of $f_2$ on $\text{Im}f_1$, which is extremely efficient when $\text{Im}f_1$ only contains finite points. </li>
+  <li>Neural networks is flexible. That is, neural networks can perform well even without the latent structures of the target functions.</li>
+</ul>
+<!-- <ol>
     <li> <b> Approximation Theory.</b> I am pretty interested in technical constructive approxiamtion problems, such as Wavelet, Neural Network.</li>
     <li> <b>Neural Network.</b> I am quite curious about the expresssive power of neural networks to approximate other functions, like continuous functions.
     And I wonder why neural networks work so well in several tasks, such as classification problems. </li>
 </ol>
 
-<div class="addWhiteSpaceOne"></div>
+<div class="addWhiteSpaceOne"></div> -->
 
-<h2> Other Interests:</h2>
+
+<!-- <h2> Other Interests:</h2>
 <ol>
     <li> <b>Code.</b> I like several code languages, like Latex, Python.
             <ul>
@@ -81,9 +107,9 @@
     </li><br />
     <li> <b>Dynamic Images.</b> </li>  Dynamic images is interesting and I prefer to make mathematical dynamic images by myself.
     See <a href="../showcase/"> <b> showcase</b></a> for examples.
-</ol>
+</ol> -->
 
-    </div>
+
 
 </section>
 </body>
