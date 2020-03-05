@@ -3,6 +3,10 @@ body, footer{ margin: 0px;
     padding: 0px;
     background-color: #FFFAF0;}
 
+
+.activeLinkColor {
+  color: #555555 !important;
+}
 /*navbar*/
 .navBarLinkColor a:link {color:#FFFFFF;
 text-decoration:none;
@@ -21,6 +25,8 @@ text-decoration:none;
 color:black;
 /*text-decoration:underline;*/
 }
+
+
 
 .navBarContainer {
   display: flex;
