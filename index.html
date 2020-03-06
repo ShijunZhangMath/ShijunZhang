@@ -46,7 +46,7 @@
       <a href="./cv/">  Curriculum Vitae </a>
     </li>
     <li class="navBarItem">
-      <a href="./showcase/"> Showcase </a>
+      <a href="./more/"> More </a>
     </li>
   </ul>
 <div id="whitSpaceForNavBar"></div>
@@ -91,7 +91,7 @@
          <div class="introContainer"><a href="./publication/"> Publication </a>
 	<a href="./interest/"> Interest </a> </div>
 	<div class="introContainer"><a href="./cv/">  Curriculum Vitae </a>
-	 <a href="./showcase/"> Showcase </a> </div>
+	 <a href="./more/"> More </a> </div>
 <div>
 
 </section>
@@ -124,8 +124,7 @@ document.getElementById("introduction").style.fontWeight=520;}
 var pageWidth=0
 if (phoneOrPc==0) {pageWidth=0.85*w} else { pageWidth=0.9*w }
 var insertHomeCss=".pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}"
-var styleInJsNew=document.getElementById("styleInJs");
-styleInJs.innerHTML=insertStyle.join('')+insertHomeCss
+document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertHomeCss
 
 </script>
 

@@ -45,7 +45,7 @@
       <a href="../cv/">  Curriculum Vitae </a>
     </li>
     <li class="navBarItem">
-      <a href="../showcase/"  class="activeLinkColor"> Showcase </a>
+      <a href="../more/"  class="activeLinkColor"> More </a>
     </li>
   </ul>
 </nav>
@@ -59,23 +59,27 @@
 <section class="pageContainer normalFont">
 
 <div class="addWhiteSpaceOne"></div>
-<h1> Showcase </h1>
+<h1> More Information </h1>
 <div class="addWhiteSpaceOne"></div>
 
-<h2 > Dynadic Images:</h2>
-All the following dynadic images are made by myself using Matplotlib or Matlab.
-<br><br><br>
 
-<div class="showcaseContainer">
-    <div class="showcaseItem"> <img src="../file/img/clover.gif" class="showcaseImg"> </div>
-    <div class="showcaseItem"><img src="../file/img/cardioid.gif"  class="showcaseImg"></div>
-    <div class="showcaseItem"><img src="../file/img/rotateEarth.gif" class="showcaseImg"></div>
-    <div class="showcaseItem"><img src="../file/img/asteroid.gif" class="showcaseImg"></div>
-</div>
-<br><br><br>
-Some others may be added in the future.
-
-    </div>
+<h3> I am deeply interested in so many things. Some of them are listed below.     </h3> 
+<div class='listStyle'>  
+   <ul>  
+     <li>  
+       <img src="../file/img/cardioid.gif" />  
+       <h2>Dynadic Images</h2>  
+       <p>There are a large number of beautiful mathematical curves, such as cardioid, three-leaf clover, asteroid, etc. It is of gread interest to make  dynamic graphs for these curves. To understand them intutively, I make some examples by Matlab and Python (Matplotlib). 
+        <a href="./dynamicImage.html">Click here for examples.</a></p>         
+     </li>  
+           
+    <li>  
+       <img src="../file/img/butterfly.png" />  
+       <h2>Swimming</h2>  
+       <p>As a whole-body sport, swimming has a world of benefits. I started to learn swimming in September 2018. From then on, I insisted on swimming weekly. Freestyle stroke and butterfly stroke are my favorite swimming styles (strokes). <a href='https://www.youtube.com/watch?v=B5cJhXIqLs0&list=PLajuSPBV210sflH9xEYYqbmKvR6jOCV7O&index=2&t=0s/'>Read more.</a> </p>  
+     </li>            
+   </ul>  
+ </div> 
 
 </section>
 </body>
@@ -92,15 +96,13 @@ Some others may be added in the future.
 
 
 <script type="text/javascript" src="../file/cssAndJs/script.js"></script>
-<!-- <script type="text/javascript" src="./showcase.js"></script> -->
+<!-- <script type="text/javascript" src="./more.js"></script> -->
 
 
 <script type="text/javascript">
-  if (phoneOrPc==0) {var pageWidth=0.75*w;var showcaseImgWidth=w*0.30} else {var pageWidth=0.86*w;var showcaseImgWidth=w*0.60;}
-var styleInJsNew=document.getElementById("styleInJs");
-var insertShowcaseJs=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
-insertShowcaseJs+=" .showcaseImg { width:"+showcaseImgWidth+"px;}"
-styleInJs.innerHTML=insertStyle.join('')+insertShowcaseJs
+  if (phoneOrPc==0) {var pageWidth=0.68*w;} else {var pageWidth=0.86*w;}
+var insertMoreJs=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
+document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertMoreJs
 </script>
 
 </html>

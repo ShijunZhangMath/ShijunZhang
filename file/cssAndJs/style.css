@@ -92,10 +92,10 @@ text-align: center;
 margin:10px;
 }
 
-/*showcase*/
+/*dynamicImage*/
 
 /*homepage*/
-.showcaseContainer {
+.dynamicImageContainer {
   display: flex;
   height: auto;
   width:auto;
@@ -106,7 +106,7 @@ margin:10px;
     padding: 0px;
     border: 0px dashed red;
 }
-.showcaseItem {
+.dynamicImageItem {
 width:auto;
 height:auto;
 padding: 10px;
@@ -144,4 +144,39 @@ margin:0px;
 
 
 
+  
+        
+.listStyle * {margin: 0; padding: 0;}  
+           
+.listStyle div {  
+   margin: 20px;  
+ }  
+           
+.listStyle ul {  
+   list-style-type: none;  
+   width: auto;  
+ }  
+           
+           
+.listStyle li img {  
+   float: left;  
+   margin: 0 15px 0 0;  
+   width: 18.8%;
+ }  
+           
 
+           
+.listStyle li {  
+   padding: 10px;  
+   overflow: auto;  
+   border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+   border-color: #ccc;
+ }  
+           
+.listStyle li:hover {  
+   background: #eee;  
+   cursor: pointer;  
+ } 

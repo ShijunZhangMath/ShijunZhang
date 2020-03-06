@@ -47,7 +47,7 @@ if (currentPN.match(pn)==null){return 0;}
 else {return 1;}
 }
 //check whether this page is homepage
-var homeOrNot=testPN("/cv")+testPN("/publication")+testPN("/showcase")+testPN("/interest");
+var homeOrNot=testPN("/cv")+testPN("/publication")+testPN("/more")+testPN("/interest");
 if (homeOrNot>0.5) {footerImgPN="../file/img/zsjBlue.gif"} else {footerImgPN="./file/img/zsjBlue.gif"}
 footer=document.getElementById("footer");
 var myFooter = new Array();
@@ -77,12 +77,13 @@ var insertStyle=new Array()
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
 insertStyle[1]=" h2 { font-size:"+h1Size*0.912+"px;color:black;text-align:left;font-weight:545;}";
 insertStyle[2]=" h3 { font-size:"+h1Size*0.812+"px;color:black;text-align:left;font-weight:450;}";
-insertStyle[3]=" .normalFont { font-size:"+h1Size*0.712+"px;color:black;text-align:left;line-height:"+h1Size*0.999  +"px;}";
+insertStyle[3]=" .normalFont {font-size:"+h1Size*0.712+"px;color:#555555;text-align:left;line-height:"+h1Size*0.999  +"px;}";
 insertStyle[4]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
-insertStyle[8]=" .addWhiteSpaceOne { height:"+h1Size+"px;}";
-insertStyle[9]=" .addWhiteSpaceTwo { height:"+h1Size*0.8 +"px;}";
-insertStyle[10]=" .addWhiteSpaceThree { height:"+h1Size*0.6+"px;}";
-/*styleInJs.innerHTML=insertStyle.join('')*/
+insertStyle[5]=" .addWhiteSpaceOne { height:"+h1Size+"px;}";
+insertStyle[6]=" .addWhiteSpaceTwo { height:"+h1Size*0.8 +"px;}";
+insertStyle[7]=" .addWhiteSpaceThree { height:"+h1Size*0.6+"px;}";
+// styleInJs.innerHTML=insertStyle.join('') 
+//InsertStyle will be added in corresponding HTML file, variables are valid in whole HTML file
 
 /*alert('w'+window.innerWidth+'wc'+screen.width)*/
 
