@@ -76,7 +76,7 @@ color:black;
 
 
 /*homepage*/
-.introContainer {
+.introRowContainer {
   display: flex;
   height: auto;
   width:auto;
@@ -87,12 +87,46 @@ color:black;
     padding: 0px;
     border: 0px dashed red;
 }
+
+.introRowContainerN {
+  display: flex;
+  height: auto;
+  width:auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+      margin: 0px;
+    padding: 0px;
+    border: 0px dashed red;
+}
+
+.introColumnContainer {
+  display: flex;
+  height: auto;
+  width:auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column nowrap;
+      margin: 0px;
+    padding: 0px;
+    border: 0px dashed red;
+}
+
 .introItem {
-width:auto;
+width:100%;
 height:auto;
-padding: 10px;
+padding: 0px;
 text-align: center;
-margin:10px;
+margin:0px;
+}
+
+.introItemN {
+width:50%;
+height:auto;
+padding-right: 0px;
+padding-left: 9.5%;
+text-align: center;
+margin:0px;
 }
 
 /*dynamicImage*/

@@ -65,34 +65,38 @@
 <div class="addWhiteSpaceOne"></div>
 
 
-<div class="introContainer">
-  <div>
-  <img src="./file/img/ShijunZhang.jpg" alt='A Photo Of Shijun Zhang' id="zsjPhoto" style="width:35%;"></div>
+<div class="introRowContainer">
+    <div> <img src="./file/img/ShijunZhang.jpg" alt='A Photo Of Shijun Zhang' id="zsjPhoto" style="width:35%;"></div>
   
-<div class="introItem" id="introduction">
+    <div class="introColumnContainer" id="introduction">
 
-      <div> Shijun Zhang 张仕俊 </div>
+          <div> Shijun Zhang 张仕俊 </div>
 
 
-         <div> Ph.D. Student of  
-         <a href="http://ww1.math.nus.edu.sg/">  
-         Department of Mathematics </a> </div>
+           <div> Ph.D. Student of  
+           <a href="http://ww1.math.nus.edu.sg/">  
+           Department of Mathematics </a> 
+          </div>
 
-         <div> <a href="http://www.nus.edu.sg/" > National University of Singapore</a>  </div>
+          <div> <a href="http://www.nus.edu.sg/" > National University of Singapore</a>  </div>
 
-        <div> Supervisors: 
-        <a href="http://www.math.nus.edu.sg/~matzuows/"> 
-        Zuowei Shen</a>
-        and 
-        <a href="https://sites.google.com/prod/view/haizhaoyang/home"> Haizhao Yang</a>  
-         </div> 
+          <div> Supervisors: 
+            <a href="http://www.math.nus.edu.sg/~matzuows/"> 
+            Zuowei Shen</a>
+            and 
+            <a href="https://sites.google.com/prod/view/haizhaoyang/home"> Haizhao Yang</a>  
+          </div> 
 
-         <br>
-         <div class="introContainer"><a href="./publication/"> Publication </a>
-	<a href="./interest/"> Interest </a> </div>
-	<div class="introContainer"><a href="./cv/">  Curriculum Vitae </a>
-	 <a href="./more/"> More </a> </div>
-<div>
+
+          <div class="introRowContainerN introItem"><a href="./publication/" class='introItemN'> Publication </a>
+    	       <a href="./interest/" class='introItemN'> Interest </a> 
+           </div>
+
+    	     <div class="introRowContainerN introItem"><a href="./cv/" class='introItemN'>  Curriculum Vitae </a>
+    	       <a href="./more/" class='introItemN'> More </a> 
+           </div>
+    </div>
+</div>
 
 </section>
 
@@ -112,7 +116,7 @@ if (phoneOrPc==1) {zsjPhoto.style.width=w*0.6026 +"px"} else { zsjPhoto.style.wi
 
 if (phoneOrPc==0){
   document.getElementById("introduction").style.lineHeight=w*0.055421+"px";
-document.getElementById("introduction").style.fontSize=w*0.0195421+"px";
+document.getElementById("introduction").style.fontSize=w*0.01795421+"px";
 document.getElementById("introduction").style.fontWeight=520;
 }
 else {  document.getElementById("introduction").style.lineHeight=w*0.055421+"px";
@@ -122,7 +126,7 @@ document.getElementById("introduction").style.fontWeight=520;}
 
 /*insert Css*/ 
 var pageWidth=0
-if (phoneOrPc==0) {pageWidth=0.8*w} else { pageWidth=0.9*w }
+if (phoneOrPc==0) {pageWidth=0.758*w} else { pageWidth=0.9*w }
 var insertHomeCss=".pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}"
 document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertHomeCss
 
