@@ -11,8 +11,8 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var	w0=screen.width;
-var	h0=screen.height;
+var	w0=window.screen.width;
+var	h0=window.screen.height;
 w=Math.max(w0,h0);
 h=w0+h0-w;
 var navBarFontSize=20;
@@ -22,7 +22,7 @@ var phoneOrPc=0;
 // window.orientation is undefined in pc, use window.screen.orientation.angle instead
 // window.screen.orientation.angle=0 usually for pc
 
-
+alert('test')
 alert(window.screen.orientation.angle)
 // verical phone
 if (window.innerHeight>=window.innerWidth && Math.abs(window.screen.orientation.angle-90)==90) {
