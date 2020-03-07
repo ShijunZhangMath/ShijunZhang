@@ -11,8 +11,8 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var	w0=window.screen.width;
-var	h0=window.screen.height;
+var	w0=screen.width;
+var	h0=screen.height;
 w=Math.max(w0,h0);
 h=w0+h0-w;
 var navBarFontSize=20;
