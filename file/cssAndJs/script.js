@@ -21,11 +21,14 @@ var phoneOrPc=0;
 //window.innerWidth //width of browser
 // window.orientation is undefined in pc, use window.screen.orientation.angle instead
 // window.screen.orientation.angle=0 usually for pc
-
-alert('test')
-alert(window.screen.orientation.angle)
+// window.screen.orientation.angle is not valid for ios devices
+var myorientation=0
+if (typeof(window.orientation)=="undefined") { myorientation=window.screen.orientation.angle;
+} else {
+	myorientation=window.orientation;
+}
 // verical phone
-if (window.innerHeight>=window.innerWidth && Math.abs(window.screen.orientation.angle-90)==90) {
+if (window.innerHeight>=window.innerWidth && Math.abs(myorientation-90)==90) {
 	h=Math.max(window.innerWidth,window.innerHeight);
 	w=window.innerWidth+window.innerHeight-h;
 	phoneOrPc=1;	
@@ -33,7 +36,7 @@ if (window.innerHeight>=window.innerWidth && Math.abs(window.screen.orientation.
 //alert(window.innerWidth+'s'+window.innerHeight+'s'+window.screen.orientation.angle+'s'+phoneOrPc)
 
 // horizontal phone, it is regarded as a PC
-if (window.innerHeight<=window.innerWidth && Math.abs(window.screen.orientation.angle)==90) {
+if (window.innerHeight<=window.innerWidth && Math.abs(myorientation)==90) {
 	h=Math.min(window.innerWidth,window.innerHeight);
 	w=window.innerWidth+window.innerHeight-h;
 	phoneOrPc=0;	
