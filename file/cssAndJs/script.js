@@ -22,8 +22,11 @@ var phoneOrPc=0;
 // window.orientation is undefined in pc, use window.screen.orientation.angle instead
 // window.screen.orientation.angle=0 usually for pc
 // window.screen.orientation.angle is not valid for ios devices
-var myorientation=0
-if (typeof(window.orientation)=="undefined") { myorientation=window.screen.orientation.angle;
+var myorientation=0;
+if (typeof(window.orientation)=="undefined") { 
+	if (typeof(window.screen.orientation.angle)!="undefined"){
+		myorientation=window.screen.orientation.angle;
+	}
 } else {
 	myorientation=window.orientation;
 }
