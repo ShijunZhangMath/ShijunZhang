@@ -48,7 +48,10 @@ color:black;
 .navBarItem {
 width:auto;
 height:auto;
-padding: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 0px;
+padding-right: 3%;
 white-space:nowrap;
 }
 
@@ -145,7 +148,8 @@ margin:0px;
 
 
   
-        
+
+/*list style for `more' page */       
 .listStyle * {margin: 0; padding: 0;}  
            
 .listStyle div {  
