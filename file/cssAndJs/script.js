@@ -22,6 +22,8 @@ var phoneOrPc=0;
 // window.orientation is undefined in pc, use window.screen.orientation.angle instead
 // window.screen.orientation.angle=0 usually for pc
 
+
+alert(window.screen.orientation.angle)
 // verical phone
 if (window.innerHeight>=window.innerWidth && Math.abs(window.screen.orientation.angle-90)==90) {
 	h=Math.max(window.innerWidth,window.innerHeight);
