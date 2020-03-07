@@ -14,7 +14,7 @@ h=w0+h0-w;
 var navBarFontSize=20;
 var footerFontSize=20;
 var phoneOrPc=0;
-if (w<=h && window.innerWidth<=window.innerHeight && Math.abs(window.orientation-90)==90) {
+if (window.innerWidth<=window.innerHeight && Math.abs(window.orientation-90)==90) {
 	w=window.innerWidth;
 	h=window.innerHeight;
 	phoneOrPc=1;
@@ -77,12 +77,12 @@ document.getElementsByTagName("head")[0].appendChild(linkNew);
 
 
 /*add style in js*/
-if (phoneOrPc==0) {var h1Size=w*0.02318; pageWidth=0.8*w;} else {  var h1Size=w*0.0360318; pageWidth=0.9*w;}
+if (phoneOrPc==0) {var h1Size=w*0.024; pageWidth=0.8*w;} else {  var h1Size=w*0.0360318; pageWidth=0.9*w;}
 var insertStyle=new Array()
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
-insertStyle[1]=" h2 { font-size:"+h1Size*0.912+"px;color:black;text-align:left;font-weight:545;}";
-insertStyle[2]=" h3 { font-size:"+h1Size*0.812+"px;color:black;text-align:left;font-weight:450;}";
-insertStyle[3]=" .normalFont {font-size:"+h1Size*0.712+"px;color:#555555;text-align:left;line-height:"+h1Size*0.999  +"px;}";
+insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";
+insertStyle[2]=" h3 { font-size:"+h1Size*0.81+"px;color:black;text-align:left;font-weight:450;}";
+insertStyle[3]=" .normalFont {font-size:"+h1Size*0.729+"px;color:#555555;text-align:left;line-height:"+h1Size*0.999  +"px;}";
 insertStyle[4]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
 insertStyle[5]=" .addWhiteSpaceOne { height:"+h1Size+"px;}";
 insertStyle[6]=" .addWhiteSpaceTwo { height:"+h1Size*0.8 +"px;}";
