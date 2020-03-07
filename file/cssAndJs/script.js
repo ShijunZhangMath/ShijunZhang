@@ -22,9 +22,15 @@ var phoneOrPc=0;
 // window.orientation is undefined in pc, use window.screen.orientation.angle instead
 // window.screen.orientation.angle=0 usually for pc
 // window.screen.orientation.angle is not valid for ios devices
+
+// use typeof to test whether a variable is defined
+// typeof(aa)="undefined" if aa is not defined
+// typeof(aa.name)="undefined" if aa is defined and aa does not have an attribute `name`
+// typeof(aa.name) return error (js stopes) if aa is not defined
 var myorientation=0;
+
 if (typeof(window.orientation)=="undefined") { 
-	if (typeof(window.screen.orientation.angle)!="undefined"){
+	if (typeof(window.screen.orientation)!="undefined"){
 		myorientation=window.screen.orientation.angle;
 	}
 } else {
