@@ -6,18 +6,21 @@ dddd<span id="zsj"></span>dddd
     document.write(navBarItem)
     navBarItem.innerHTML="zsjzsj"	
 </script>*/
-
+// alert(screen.width)
 var	w=screen.width;
 var	h=screen.height;
 var navBarFontSize=20;
 var footerFontSize=20;
 var phoneOrPc=0;
-if (w<=h && window.innerWidth<=window.innerHeight) {
+if (w<=h && window.innerWidth<=window.innerHeight && Math.abs(window.orientation-90)==90) {
 	w=window.innerWidth;
 	h=window.innerHeight;
 	phoneOrPc=1;
 }
 
+// if (window.orientation == 180 || window.orientation == 0) {
+//       alert('竖屏')
+//       }
 
 
 
