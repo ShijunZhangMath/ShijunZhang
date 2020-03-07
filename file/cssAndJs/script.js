@@ -7,8 +7,10 @@ dddd<span id="zsj"></span>dddd
     navBarItem.innerHTML="zsjzsj"	
 </script>*/
 // alert(screen.width)
-var	w=screen.width;
-var	h=screen.height;
+var	w0=screen.width;
+var	h0=screen.height;
+w=Math.max(w0,h0);
+h=w0+h0-w;
 var navBarFontSize=20;
 var footerFontSize=20;
 var phoneOrPc=0;
