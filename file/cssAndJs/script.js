@@ -68,7 +68,7 @@ var narVavBarFontSize=0.02*w;
 if (phoneOrPc==1) {narVavBarFontSize=0.0342*w;}
 
 navBar.style.setProperty("font-size",narVavBarFontSize+"px");
-navBar.style.setProperty("font-weight",540);
+navBar.style.setProperty("font-weight",440);
 var leftMostNavBarItemWidth=w*0.0655421;
 if (phoneOrPc==1){leftMostNavBarItemWidth=w*0.032}
 document.getElementById("leftMostNavBarItem").style.width=leftMostNavBarItemWidth+"px";
