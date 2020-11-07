@@ -141,8 +141,8 @@ In supervised learning, an unknown target function $f(\boldsymbol{x})$ defined o
   $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})$. In real applications, $U(\Omega)$ is unknown and only finitely many samples from this distribution are available. Hence, the empirical loss $R_{\mathcal{S}}(\bm{\theta})$ is minimized hoping to obtain $\phi(\bm{x};\bm{\theta}_{\mathcal{S}})$, instead of minimizing the population loss $R_{\mathcal{D}}(\bm{\theta})$ to obtain $\phi(\bm{x};\bm{\theta}_{\mathcal{D}})$. In practice, a numerical optimization method to solve Equation \eqref{eqn:emloss} may result in a numerical solution (denoted as $\bm{\theta}_{\mathcal{N}}$) that may not be a global minimizer $\bm{\theta}_{\mathcal{S}}$. Therefore, the actually learned neural network to infer $f(\bm{x})$ is $\phi(\bm{x};\bm{\theta}_{\mathcal{N}})$ and the corresponding inference error is measured by $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$. <br><br>
   
   By the discussion just above, it is crucial to quantify $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$ to see how good the learned neural network $\phi(\bm{x};\bm{\theta}_{\mathcal{N}})$ is, since $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$ is the expected inference error over all possible data samples. Note that
-  <div style='font-size: 65%;'>
-  \begin{equation}\label{eqn:gen}
+  <div style='font-size: 63%;'>
+  \begin{equation}\label{eqn:gen} 
   \begin{aligned}
     {R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})}
     &={\underbrace{[R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})-R_{\mathcal{S}}(\bm{\theta}_{\mathcal{N}})]}_{\tn{GE}}
