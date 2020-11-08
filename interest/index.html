@@ -62,13 +62,6 @@
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
-<span style="color:#FFFAF0;">\( \require{color}
- \def\R{{\mathbb{R}}}
-    \def\bm#1{{\boldsymbol{#1}}}
-   \def\tn#1{{\text{#1}}}
-   \def\argmin{\mathop{\tn{arg\(\,\)min}}}
-\)</span>
-
 
 
 </head>
@@ -116,6 +109,12 @@ Currently, I am quite interested in studying the <b>approximation error</b>.
 Designing efficient <b>optimization algorithms</b> and analyzing the <b>generalization bounds</b> two other separate future directions. 
 See the discussion of the <b>approximation error</b>, the <b>optimization error</b>, and the <b>generalization error</b> below.<br><br>
 
+<span style="color:#FFFAF0;">\( \require{color}
+ \def\R{{\mathbb{R}}}
+    \def\bm#1{{\boldsymbol{#1}}}
+   \def\tn#1{{\text{#1}}}
+   \def\argmin{\mathop{\tn{arg\(\,\)min}}}
+\)</span>
 
 In supervised learning, an unknown target function $f(\boldsymbol{x})$ defined on a domain $\Omega$ is learned through its finitely many samples $\{( \boldsymbol{x}_i,f(\boldsymbol{x}_i){ )}\}_{i=1}^n$. If neural networks are applied in supervised learning, the following optimization problem is solved to identify a neural network $\phi(\boldsymbol{x};\boldsymbol{\theta}_{\mathcal{S}})$ with $\boldsymbol{\theta}_{\mathcal{S}}$ as the set of parameters to infer $f(\boldsymbol{x})$ for unseen data samples $\boldsymbol{x}$:
   \begin{equation}\label{eqn:emloss}
