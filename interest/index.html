@@ -137,7 +137,7 @@ In supervised learning, an unknown target function $f(\boldsymbol{x})$ defined o
   The best possible inference error is
   $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})$. In real applications, $U(\Omega)$ is unknown and only finitely many samples from this distribution are available. Hence, the empirical loss $R_{\mathcal{S}}(\bm{\theta})$ is minimized hoping to obtain $\phi(\bm{x};\bm{\theta}_{\mathcal{S}})$, instead of minimizing the population loss $R_{\mathcal{D}}(\bm{\theta})$ to obtain $\phi(\bm{x};\bm{\theta}_{\mathcal{D}})$. In practice, a numerical optimization method to solve Equation \eqref{eqn:emloss} may result in a numerical solution (denoted as $\bm{\theta}_{\mathcal{N}}$) that may not be a global minimizer $\bm{\theta}_{\mathcal{S}}$. Therefore, the actually learned neural network to infer $f(\bm{x})$ is $\phi(\bm{x};\bm{\theta}_{\mathcal{N}})$ and the corresponding inference error is measured by $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$. <br><br>
   
-  By the discussion just above, it is crucial to quantify $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$ to see how good the learned neural network $\phi(\bm{x};\bm{\theta}_{\mathcal{N}})$ is, since $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$ is the expected inference error over all possible data samples. Note that
+  By the discussion just above, it is crucial to quantify $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$ to see how good the learned neural network $\phi(\bm{x};\bm{\theta}_{\mathcal{N}})$ is, since $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$ is the expected inference error over all possible data samples. Note that 
   <div style='font-size: 63%;'>
   \begin{equation}\label{eqn:gen} 
   \begin{aligned}
@@ -155,7 +155,7 @@ where the inequality comes from the fact that $[R_{\mathcal{S}}(\bm{\theta}_{\ma
 
 
 <a href="../file/img/ReLUeg.pdf"> <img src="../file/img/ReLUeg.png" style="width:100%"/>  </a>
-<div style="text-align: center;"> An example of a ReLU network with width 5 and depth 2.</div>
+<div style="text-align: center;"  id="zsjj"> An example of a ReLU network with width 5 and depth 2.</div>
 
 
 <!-- The approximation theory of neural networks is interesting and technical. Unlike traditional tools to approximate functions, neural networks has two key benefits.
