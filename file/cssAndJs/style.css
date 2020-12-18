@@ -1,7 +1,9 @@
 
 body, footer{ margin: 0px;
     padding: 0px;
-    background-color: #FFFAF0;}
+    background-color: #FFFAF0;
+    word-break: keep-all;
+    word-wrap: break-word;}
 
 
 .activeLinkColor {
@@ -219,3 +221,10 @@ margin:0px;
    background: #eee;  
    cursor: pointer;  
  } 
+
+ .imgCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
