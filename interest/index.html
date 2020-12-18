@@ -136,10 +136,10 @@ If neural networks are applied in supervised learning, the following optimizatio
   \end{equation*}
    We use the empirical risk $R_{\mathcal{S}}(\boldsymbol{\theta})$ instead of $R_{\mathcal{D}}(\boldsymbol{\theta})$ in real applications beacuse $f$ and $U(\mathcal{X})$ are not available.
   In the case that $U(\mathcal{X})$ is a uniform distribution on $\mathcal{X}=[0,1]^d$ and that $\ell(y,y')=\frac{1}{2}|y-y'|^2$, 
-	\begin{equation*}
+	<div class='eqFont'>\begin{equation*}
 		R_{\mathcal{D}}(\bm{\theta})=
 		\mathbb{E}_{\bm{x}\sim U(\mathcal{X})} \left[\ell( \phi(\bm{x};\bm{\theta}),f(\bm{x}))\right]=\int_{[0,1]^d}\tfrac12|\phi(\bm{x}; \bm{\theta})-f(\bm{x})|^2 d\bm{x}.
-	\end{equation*} 
+	\end{equation*} </div>
 <!-- 
 
     Note that the best solution to infer $f(\bm{x})$ is $\phi(\bm{x};\bm{\theta}_{\mathcal{D}})$ with the expected risk minimizer $\bm{\theta}_{\mathcal{D}}$ given by
@@ -151,7 +151,8 @@ If neural networks are applied in supervised learning, the following optimizatio
   In practice, a numerical optimization method to solve Equation \eqref{eqn:emloss} may result in a numerical solution (denoted as $\bm{\theta}_{\mathcal{N}}$) that may not be a global minimizer $\bm{\theta}_{\mathcal{S}}$. Therefore, the actually learned neural network to infer $f(\bm{x})$ is $\phi(\bm{x};\bm{\theta}_{\mathcal{N}})$ and the corresponding inference error is measured by $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$. <br><br>
   
   By the discussion just above, it is crucial to quantify $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$ to see how good the learned neural network $\phi(\bm{x};\bm{\theta}_{\mathcal{N}})$ is, since $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$ is the expected inference error over all possible data samples. Note that 
-  <div style='font-size: 58%;'> 
+  <div class='eqFont'> 
+  <div style='font-size: 64%;'> 
   \begin{align}
     R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})
     &=\underbrace{[R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})-R_{\mathcal{S}}(\bm{\theta}_{\mathcal{N}})]}_{\tn{GE}}
@@ -161,7 +162,7 @@ If neural networks are applied in supervised learning, the following optimizatio
       \label{eqn:gen} &\le{ \underbrace{R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})}_{\color{blue}\tn{Approximation error (AE)}} \ +\  \underbrace{[R_{\mathcal{S}}(\bm{\theta}_{\mathcal{N}})-R_{\mathcal{S}}(\bm{\theta}_{\mathcal{S}})]}_{\color{blue}\tn{Optimization error (OE)}}\  + \  \underbrace{[R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})-R_{\mathcal{S}}(\bm{\theta}_{\mathcal{N}})]
       +[R_{\mathcal{S}}(\bm{\theta}_{\mathcal{D}})-R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})]}_{\color{blue}\tn{Generalization error (GE)}}},
   \end{align}
-</div>
+</div></div>
 where the inequality comes from the fact that $[R_{\mathcal{S}}(\bm{\theta}_{\mathcal{S}})-R_{\mathcal{S}}(\bm{\theta}_{\mathcal{D}})]\leq 0$ since $\bm{\theta}_{\mathcal{S}}$ is a global minimizer of $R_{\mathcal{S}}(\bm{\theta})$. <br><br>
 Constructive approximation provides an upper bound of $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})$ in terms of the network size, e.g., in terms of the network width and depth, or in terms of the number of parameters.  The second term of Equation \eqref{eqn:gen} is bounded by the optimization error of the numerical algorithm applied to solve the empirical loss minimization problem in Equation \eqref{eqn:emloss}. The study of the bounds for the third and fourth terms is referred to as the generalization error analysis of neural networks. 
 It is an interesting topic to develop deep learning models and algorithms to minimize optimization and generalization errors.
