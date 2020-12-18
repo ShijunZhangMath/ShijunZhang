@@ -118,7 +118,7 @@ insertStyle[4]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+
 insertStyle[5]=" .addWhiteSpaceOne { height:"+h1Size+"px;}";
 insertStyle[6]=" .addWhiteSpaceTwo { height:"+h1Size*0.7 +"px;}";
 insertStyle[7]=" .addWhiteSpaceThree { height:"+h1Size*0.4+"px;}";
-insertStyle[8]=" .eqFont {font-size:"+w*0.024*0.7+"px;color:#555555;text-align:left;line-height:"+h1Size*0.999  +"px;}";
+insertStyle[8]=" .eqFont {font-size:"+pageWidth*0.024*0.85+"px;color:#555555;text-align:left;line-height:"+h1Size*0.999  +"px;}";
 
 
 // styleInJs.innerHTML=insertStyle.join('') 
