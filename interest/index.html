@@ -151,14 +151,14 @@ If neural networks are applied in supervised learning, the following optimizatio
   In practice, a numerical optimization method to solve Equation \eqref{eqn:emloss} may result in a numerical solution (denoted as $\bm{\theta}_{\mathcal{N}}$) that may not be a global minimizer $\bm{\theta}_{\mathcal{S}}$. Therefore, the actually learned neural network to infer $f(\bm{x})$ is $\phi(\bm{x};\bm{\theta}_{\mathcal{N}})$ and the corresponding inference error is measured by $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$. <br><br>
   
   By the discussion just above, it is crucial to quantify $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$ to see how good the learned neural network $\phi(\bm{x};\bm{\theta}_{\mathcal{N}})$ is, since $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$ is the expected inference error over all possible data samples. Note that 
-  <div style='font-size: 62%;'> 
-  \begin{align}\label{eqn:gen}
+  <div style='font-size: 58%;'> 
+  \begin{align}
     R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})
     &=\underbrace{[R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})-R_{\mathcal{S}}(\bm{\theta}_{\mathcal{N}})]}_{\tn{GE}}
     +\underbrace{[R_{\mathcal{S}}(\bm{\theta}_{\mathcal{N}})-R_{\mathcal{S}}(\bm{\theta}_{\mathcal{S}})]}_{\tn{OE}}   +\underbrace{[R_{\mathcal{S}}(\bm{\theta}_{\mathcal{S}})-R_{\mathcal{S}}(\bm{\theta}_{\mathcal{D}})]}_{\tn{$\le 0$ by Equation \eqref{eqn:emloss}}} +\underbrace{[R_{\mathcal{S}}(\bm{\theta}_{\mathcal{D}})-R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})]}_{\tn{GE}}
     +\underbrace{R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})}_{\tn{AE}}
     \nonumber \\
-      &\le{ \underbrace{R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})}_{\color{blue}\tn{Approximation error (AE)}} \ +\  \underbrace{[R_{\mathcal{S}}(\bm{\theta}_{\mathcal{N}})-R_{\mathcal{S}}(\bm{\theta}_{\mathcal{S}})]}_{\color{blue}\tn{Optimization error (OE)}}\  + \  \underbrace{[R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})-R_{\mathcal{S}}(\bm{\theta}_{\mathcal{N}})]
+      \label{eqn:gen} &\le{ \underbrace{R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})}_{\color{blue}\tn{Approximation error (AE)}} \ +\  \underbrace{[R_{\mathcal{S}}(\bm{\theta}_{\mathcal{N}})-R_{\mathcal{S}}(\bm{\theta}_{\mathcal{S}})]}_{\color{blue}\tn{Optimization error (OE)}}\  + \  \underbrace{[R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})-R_{\mathcal{S}}(\bm{\theta}_{\mathcal{N}})]
       +[R_{\mathcal{S}}(\bm{\theta}_{\mathcal{D}})-R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})]}_{\color{blue}\tn{Generalization error (GE)}}},
   \end{align}
 </div>
