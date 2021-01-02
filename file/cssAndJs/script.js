@@ -108,7 +108,7 @@ document.getElementsByTagName("head")[0].appendChild(linkNew);
 
 
 /*add style in js*/
-if (phoneOrPc==0) {var h1Size=w*0.024; pageWidth=0.8*w;} else {  var h1Size=w*0.034; pageWidth=0.98*w;}
+if (phoneOrPc==0) {var h1Size=w*0.024; pageWidth=0.8*w;} else {  var h1Size=w*0.034; pageWidth=0.999*w;}
 var insertStyle=new Array()
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
 insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";
@@ -118,7 +118,7 @@ insertStyle[4]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+
 insertStyle[5]=" .addWhiteSpaceOne { height:"+h1Size+"px;}";
 insertStyle[6]=" .addWhiteSpaceTwo { height:"+h1Size*0.7 +"px;}";
 insertStyle[7]=" .addWhiteSpaceThree { height:"+h1Size*0.4+"px;}";
-insertStyle[8]=" .eqFont {font-size:"+pageWidth*0.024*0.9+"px;color:#555555;text-align:left;line-height:"+h1Size*0.999  +"px;}";
+insertStyle[8]=" .eqFont {font-size:"+pageWidth*0.024*0.88+"px;color:#555555;text-align:left;line-height:"+h1Size*0.999  +"px;}";
 
 
 // styleInJs.innerHTML=insertStyle.join('') 
