@@ -108,7 +108,7 @@ document.getElementsByTagName("head")[0].appendChild(linkNew);
 
 
 /*add style in js*/
-if (phoneOrPc==0) {var h1Size=w*0.024; pageWidth=0.8*w;} else {  var h1Size=w*0.0360318; pageWidth=0.9*w;}
+if (phoneOrPc==0) {var h1Size=w*0.024; pageWidth=0.8*w;} else {  var h1Size=w*0.034; pageWidth=0.98*w;}
 var insertStyle=new Array()
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
 insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";
