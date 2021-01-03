@@ -11,8 +11,8 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var	w0=window.screen.width;
-var	h0=window.screen.height;
+var	w0=window.innerWidth;
+var	h0=window.innerHeight;
 w=Math.max(w0,h0);
 h=w0+h0-w;
 var navBarFontSize=20;
@@ -114,7 +114,7 @@ insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-
 insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";
 insertStyle[2]=" h3 { font-size:"+h1Size*0.8+"px;color:black;text-align:left;font-weight:450;}";
 insertStyle[3]=" .normalFont {font-size:"+h1Size*0.7+"px;color:#555555;text-align:left;line-height:"+h1Size*0.999  +"px;}";
-insertStyle[4]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
+insertStyle[4]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}"; /* this is overwrite by Css in each index.html*/
 insertStyle[5]=" .addWhiteSpaceOne { height:"+h1Size+"px;}";
 insertStyle[6]=" .addWhiteSpaceTwo { height:"+h1Size*0.7 +"px;}";
 insertStyle[7]=" .addWhiteSpaceThree { height:"+h1Size*0.4+"px;}";
