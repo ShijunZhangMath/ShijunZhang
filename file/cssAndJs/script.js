@@ -123,7 +123,7 @@ document.getElementsByTagName("head")[0].appendChild(linkNew);
 
 
 /*add style in js*/
-if (phoneOrPc==0) {var h1Size=w*0.024; pageWidth=0.8*w;} else {  var h1Size=w*0.05; pageWidth=0.999*w;}
+if (phoneOrPc==0) {var h1Size=w*0.024; pageWidth=0.8*w;} else {  var h1Size=w*0.049; pageWidth=0.999*w;}
 var insertStyle=new Array();
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
 insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";
@@ -145,10 +145,9 @@ insertStyle[8]=" .eqFont {font-size:"+pageWidth*0.024*0.88+"px;color:#555555;tex
 //refresh if the window size is changed
 // window.onresize =function(){location.reload();} // it can be replaced by 
 //window.addEventListener('resize',function(){location.reload();})
-if (phoneOrPc==0) {
-	window.addEventListener('resize', function () { "use strict"; window.location.reload(); });
-} 
-else {
+
+window.addEventListener('resize', function () { "use strict"; window.location.reload(); });
+if (phoneOrPc==0 && screenRatio<=1.78) {
 	window.addEventListener("orientationchange", function (){ "use strict"; window.location.reload();});
 }
 
