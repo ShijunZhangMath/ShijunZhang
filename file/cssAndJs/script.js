@@ -92,7 +92,9 @@ myFooter[1]="Address:&ensp;Department of Mathematics, 10 Lower Kent Ridge Road, 
 myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+w*0.018*12*1.8+"px'>";
 myFooter[3]="<div style='height:30px'> </div>";
 footer.innerHTML=myFooter.join('') /*.join() has commas*/
-footer.setAttribute("style","text-align:center;font-size:"+w*0.01*1.8*0.6+"px;line-height:"+w*0.01*1.8*0.9588+"px;");
+if (phoneOrPc==0) {footer.setAttribute("style","text-align:center;font-size:"+w*0.01*1.8*0.75+"px;line-height:"+w*0.01*1.8*1.0588+"px;");}
+ else {  
+footer.setAttribute("style","text-align:center;font-size:"+w*0.01*1.8*0.6*2.2+"px;line-height:"+w*0.01*1.8*0.9588*2.2+"px;");}
 
 
 /*add links or metas to head*/
@@ -108,7 +110,7 @@ document.getElementsByTagName("head")[0].appendChild(linkNew);
 
 
 /*add style in js*/
-if (phoneOrPc==0) {var h1Size=w*0.024; pageWidth=0.8*w;} else {  var h1Size=w*0.045; pageWidth=0.999*w;}
+if (phoneOrPc==0) {var h1Size=w*0.024; pageWidth=0.8*w;} else {  var h1Size=w*0.0475; pageWidth=0.999*w;}
 var insertStyle=new Array()
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
 insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";
