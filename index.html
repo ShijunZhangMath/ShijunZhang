@@ -65,12 +65,12 @@
 <div class="addWhiteSpaceOne"></div>
 
 
-<div class="introRowContainer"> <!-- in  a   row -->
+<div class="introRowContainer introItem"> <!-- in  a   row -->
     <div> <a href="./file/img/ShijunZhang.jpg"><img src="./file/img/ShijunZhang.jpg" alt='A Photo Of Shijun Zhang' id="zsjPhoto" style="width:35%;"></a></div>
   
     <div class="introColumnContainer" id="introduction"> <!-- in  a  column-->
 
-          <div> Shijun Zhang 张仕俊 </div>
+          <div style="font-size: 150%;"> Shijun Zhang &nbsp 张仕俊 </div>
 
           <div class="introRowContainerN introItem"> <a href="https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/">
           Google Scholar</a> <a href="https://orcid.org/0000-0003-4115-7891">ORCID</a> <a href="https://www.researchgate.net/profile/Shijun_Zhang12/">ResearchGate</a> </div>
@@ -115,7 +115,7 @@
 
 <script type="text/javascript">
   var zsjPhoto=document.getElementById("zsjPhoto")
-if (phoneOrPc==1) {zsjPhoto.style.width=w*0.9 +"px"} else { zsjPhoto.style.width=w*0.30 +"px"}
+if (phoneOrPc==1) {zsjPhoto.style.width=w*0.82 +"px"} else { zsjPhoto.style.width=w*0.30 +"px"}
 
 if (phoneOrPc==0){
   document.getElementById("introduction").style.lineHeight=w*0.055421+"px";
@@ -123,13 +123,13 @@ document.getElementById("introduction").style.fontSize=w*0.01795421+"px";
 document.getElementById("introduction").style.fontWeight=320;
 }
 else {  document.getElementById("introduction").style.lineHeight=w*0.055421+"px";
-document.getElementById("introduction").style.fontSize=w*0.03165421+"px";
+document.getElementById("introduction").style.fontSize=w*0.0365421+"px";
 document.getElementById("introduction").style.fontWeight=520;}
 
 
 /*insert Css*/ 
 var pageWidth=0
-if (phoneOrPc==0) {pageWidth=0.76*w} else { pageWidth=0.98*w }
+if (phoneOrPc==0) {pageWidth=0.76*w} else { pageWidth=0.95*w }
 var insertHomeCss=".pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}"
 document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertHomeCss
 
