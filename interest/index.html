@@ -93,11 +93,9 @@
 <div class="addWhiteSpaceOne"></div>
 
 <h1> Interests </h1>
-
-<div class="addWhiteSpaceOne"></div>
+<!-- <div class="addWhiteSpaceThree"></div> -->
 
 <h2> Research Interests:</h2>
-
 Deep neural networks  have made significant impacts in many 
 fields of computer science and engineering especially for large-scale and high-dimensional learning problems. Well-designed neural network architectures, efficient training algorithms, and high-performance computing technologies have made neural-network-based methods very successful in tremendous real applications (see examples in the following figure). 
 <div class='addWhiteSpaceOne'></div>
@@ -122,7 +120,7 @@ See the discussion of the <b>approximation error (AE)</b>, the <b>optimization e
 In supervised learning, an unknown target function $f(\boldsymbol{x})$ defined on a domain $\mathcal{X}$ is learned through its finitely many samples $\{( \boldsymbol{x}_i,f(\boldsymbol{x}_i){ )}\}_{i=1}^n$. Let $\phi(\bm{x};\bm{\theta})$ denote a function computed by  a (fully-connected) network with $\bm{\theta}$ as the set of parameters (see a network example below). 
 <div class='addWhiteSpaceOne'></div>
 <a href="../file/img/ReLUeg.pdf"> <img src="../file/img/ReLUeg.png" class="imgCenter" style="width:75%; " />  </a>
-<div style="text-align: center;"> An example of a ReLU network with width 5 and depth 2.</div>
+<div style="text-align: center;font-size: 90%;"> An example of a ReLU network with width 5 and depth 2.</div>
 <div class='addWhiteSpaceOne'></div>
 If neural networks are applied in supervised learning, the following optimization problem is solved to identify $\phi(\boldsymbol{x};\boldsymbol{\theta}_{\mathcal{S}})$ to infer $f(\boldsymbol{x})$ for unseen data samples $\boldsymbol{x}$, where $\boldsymbol{\theta}_{\mathcal{S}}$ is the empirical risk minimizer given by
   \begin{equation}\label{eqn:emloss}
@@ -146,12 +144,13 @@ If neural networks are applied in supervised learning, the following optimizatio
   \end{equation*}
    We use the empirical risk $R_{\mathcal{S}}(\boldsymbol{\theta})$ instead of $R_{\mathcal{D}}(\boldsymbol{\theta})$ in real applications beacuse $f$ and $U(\mathcal{X})$ are not available.
   In the case that $U(\mathcal{X})$ is a uniform distribution on $\mathcal{X}=[0,1]^d$ and that $\ell(y,y')=\frac{1}{2}|y-y'|^2$, 
-<!-- 	<div class='eqFont'>
-     <div style='font-size: 84%;'>  -->
+<!-- 	<div class='eqFont'>-->
+<div style='font-size: 88%;'>  
       \begin{equation*}
 		R_{\mathcal{D}}(\bm{\theta})=
 		\mathbb{E}_{\bm{x}\sim U(\mathcal{X})} \left[\ell( \phi(\bm{x};\bm{\theta}),f(\bm{x}))\right]=\int_{[0,1]^d}\tfrac12|\phi(\bm{x}; \bm{\theta})-f(\bm{x})|^2 d\bm{x}.
 	\end{equation*} 
+</div>
 <!-- </div></div> -->
 <!-- 
 
@@ -164,7 +163,7 @@ If neural networks are applied in supervised learning, the following optimizatio
   In practice, a numerical optimization method to solve Equation \eqref{eqn:emloss} may result in a numerical solution (denoted as $\bm{\theta}_{\mathcal{N}}$) that may not be a global minimizer $\bm{\theta}_{\mathcal{S}}$. Therefore, the actually learned neural network to infer $f(\bm{x})$ is $\phi(\bm{x};\bm{\theta}_{\mathcal{N}})$ and the corresponding inference error is measured by $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$. <br><br>
   
   By the discussion just above, it is crucial to quantify $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$ to see how good the learned neural network $\phi(\bm{x};\bm{\theta}_{\mathcal{N}})$ is, since $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$ is the expected inference error over all possible data samples. Note that 
-  <div class='eqFont'> 
+  <div class='eqFont' style="font-size: 88%;"> 
 <!--   <div style='font-size: 79%;'>  -->
   \begin{align}
     R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})

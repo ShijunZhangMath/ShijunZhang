@@ -133,7 +133,7 @@ insertStyle[4]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+
 insertStyle[5]=" .addWhiteSpaceOne { height:"+h1Size+"px;}";
 insertStyle[6]=" .addWhiteSpaceTwo { height:"+h1Size*0.7 +"px;}";
 insertStyle[7]=" .addWhiteSpaceThree { height:"+h1Size*0.4+"px;}";
-insertStyle[8]=" .eqFont {overflow: scroll;text-align:left;font-size:80%;overflow-y: hidden; overflow-x: scroll;overflow-x: hidden;}";
+insertStyle[8]=" .eqFont {overflow: scroll;text-align:center;font-size:80%;overflow-y: hidden; overflow-x: scroll;}";
 
 
 // styleInJs.innerHTML=insertStyle.join('') 
