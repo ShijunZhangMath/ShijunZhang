@@ -11,13 +11,23 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var	w0=window.innerWidth;
-var	h0=window.innerHeight;
-w=Math.max(w0,h0);
-h=w0+h0-w;
 var navBarFontSize=20;
 var footerFontSize=20;
+
+var	w=window.innerWidth;
+var	h=window.innerHeight;
+var sh=window.screen.height;
+var sw=window.screen.width;
+var screenRatio=Math.max(sh,sw)/Math.min(sh,sw);
+/*w=Math.max(w0,h0);
+h=w0+h0-w;*/
 var phoneOrPc=0;
+if (w<=h && screenRatio>=1.78) {
+/*	h=Math.max(w0,h0);
+	w=w0+h0-h;*/
+	phoneOrPc=1;	
+} 
+
 //window.innerWidth //width of browser
 // window.orientation is undefined in pc, use window.screen.orientation.angle instead
 // window.screen.orientation.angle=0 usually for pc
@@ -27,7 +37,8 @@ var phoneOrPc=0;
 // typeof(aa)="undefined" if aa is not defined
 // typeof(aa.name)="undefined" if aa is defined and aa does not have an attribute `name`
 // typeof(aa.name) return error (js stopes) if aa is not defined
-var myorientation=0;
+
+/*var myorientation=0;
 
 if (typeof(window.orientation)=="undefined") { 
 	if (typeof(window.screen.orientation)!="undefined"){
@@ -49,7 +60,7 @@ if (window.innerHeight<=window.innerWidth && Math.abs(myorientation)==90) {
 	h=Math.min(window.innerWidth,window.innerHeight);
 	w=window.innerWidth+window.innerHeight-h;
 	phoneOrPc=0;	
-} 
+} */
 
 // if (window.orientation == 180 || window.orientation == 0) {
 //       alert('竖屏')
@@ -112,7 +123,7 @@ document.getElementsByTagName("head")[0].appendChild(linkNew);
 
 
 /*add style in js*/
-if (phoneOrPc==0) {var h1Size=w*0.024; pageWidth=0.8*w;} else {  var h1Size=w*0.0475; pageWidth=0.999*w;}
+if (phoneOrPc==0) {var h1Size=w*0.024; pageWidth=0.8*w;} else {  var h1Size=w*0.05; pageWidth=0.999*w;}
 var insertStyle=new Array();
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
 insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";
@@ -134,6 +145,11 @@ insertStyle[8]=" .eqFont {font-size:"+pageWidth*0.024*0.88+"px;color:#555555;tex
 //refresh if the window size is changed
 // window.onresize =function(){location.reload();} // it can be replaced by 
 //window.addEventListener('resize',function(){location.reload();})
-window.addEventListener("orientationchange", function (){ "use strict"; window.location.reload();});
-window.addEventListener('resize', function () { "use strict"; window.location.reload(); });
+if (phoneOrPc==0) {
+	window.addEventListener('resize', function () { "use strict"; window.location.reload(); });
+} 
+else {
+	window.addEventListener("orientationchange", function (){ "use strict"; window.location.reload();});
+}
+
 // reload the page if its orientation is changed
