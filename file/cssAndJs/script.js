@@ -22,7 +22,7 @@ var screenRatio=Math.max(sh,sw)/Math.min(sh,sw);
 /*w=Math.max(w0,h0);
 h=w0+h0-w;*/
 var phoneOrPc=0;
-if (w<=h && screenRatio>=1.78) {
+if (w<=h && screenRatio>=1.432) {
 /*	h=Math.max(w0,h0);
 	w=w0+h0-h;*/
 	phoneOrPc=1;	
@@ -133,7 +133,7 @@ insertStyle[4]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+
 insertStyle[5]=" .addWhiteSpaceOne { height:"+h1Size+"px;}";
 insertStyle[6]=" .addWhiteSpaceTwo { height:"+h1Size*0.7 +"px;}";
 insertStyle[7]=" .addWhiteSpaceThree { height:"+h1Size*0.4+"px;}";
-insertStyle[8]=" .eqFont {font-size:"+pageWidth*0.024*0.88+"px;color:#555555;text-align:left;line-height:"+h1Size*0.999  +"px;}";
+insertStyle[8]=" .eqFont {overflow: scroll;text-align:left;font-size:80%;overflow-y: hidden; overflow-x: scroll;overflow-x: hidden;}";
 
 
 // styleInJs.innerHTML=insertStyle.join('') 
@@ -147,8 +147,8 @@ insertStyle[8]=" .eqFont {font-size:"+pageWidth*0.024*0.88+"px;color:#555555;tex
 //window.addEventListener('resize',function(){location.reload();})
 
 window.addEventListener('resize', function () { "use strict"; window.location.reload(); });
-if (phoneOrPc==0 && screenRatio<=1.78) {
+/*if (w>=h && screenRatio<=1.78 && screenRatio>=1.499) {
 	window.addEventListener("orientationchange", function (){ "use strict"; window.location.reload();});
-}
+}*/
 
 // reload the page if its orientation is changed
