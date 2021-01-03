@@ -89,12 +89,14 @@ footer=document.getElementById("footer");
 var myFooter = new Array();
 myFooter[0]="<div style='height:30px'> </div> Email:&ensp;zhangshijun@u.nus.edu <b>or</b> shijun.math@outlook.com <br>";
 myFooter[1]="Address:&ensp;Department of Mathematics, 10 Lower Kent Ridge Road, Singapore 119076 <br>";
-myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+w*0.018*12*1.8+"px'>";
+var footerPicWidth=w*0.018*12*2.2;
+if (phoneOrPc==1) {footerPicWidth=w*0.018*12*2*2.2;}
+myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'>";
 myFooter[3]="<div style='height:30px'> </div>";
 footer.innerHTML=myFooter.join('') /*.join() has commas*/
-if (phoneOrPc==0) {footer.setAttribute("style","text-align:center;font-size:"+w*0.01*1.8*0.75+"px;line-height:"+w*0.01*1.8*1.0588+"px;");}
+if (phoneOrPc==0) {footer.setAttribute("style","text-align:center;font-size:"+w*0.01*1.8*0.7+"px;line-height:"+w*0.01*1.8*0.980+"px;");}
  else {  
-footer.setAttribute("style","text-align:center;font-size:"+w*0.01*1.8*0.6*2.2+"px;line-height:"+w*0.01*1.8*0.9588*2.2+"px;");}
+footer.setAttribute("style","text-align:center;font-size:"+w*0.01*1.8*0.6*2.2+"px;line-height:"+w*0.01*1.8*0.90*2.2+"px;");}
 
 
 /*add links or metas to head*/
@@ -111,7 +113,7 @@ document.getElementsByTagName("head")[0].appendChild(linkNew);
 
 /*add style in js*/
 if (phoneOrPc==0) {var h1Size=w*0.024; pageWidth=0.8*w;} else {  var h1Size=w*0.0475; pageWidth=0.999*w;}
-var insertStyle=new Array()
+var insertStyle=new Array();
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
 insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";
 insertStyle[2]=" h3 { font-size:"+h1Size*0.8+"px;color:black;text-align:left;font-weight:450;}";
@@ -132,5 +134,6 @@ insertStyle[8]=" .eqFont {font-size:"+pageWidth*0.024*0.88+"px;color:#555555;tex
 //refresh if the window size is changed
 // window.onresize =function(){location.reload();} // it can be replaced by 
 //window.addEventListener('resize',function(){location.reload();})
-window.addEventListener("orientationchange",function (){location.reload();})
+window.addEventListener("orientationchange", function (){ "use strict"; window.location.reload();});
+window.addEventListener('resize', function () { "use strict"; window.location.reload(); });
 // reload the page if its orientation is changed
