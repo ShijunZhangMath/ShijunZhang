@@ -65,8 +65,8 @@
 <div class="addWhiteSpaceOne"></div>
 
 
-<div class="introRowContainer introItem"> <!-- in  a   row -->
-    <div> <a href="./file/img/ShijunZhang.jpg"><img src="./file/img/ShijunZhang.jpg" alt='A Photo Of Shijun Zhang' id="zsjPhoto" style="width:35%;"></a></div>
+<div class="introRowContainer" id="introAndPic"> <!-- in  a   row -->
+    <div class="introItem"> <a href="./file/img/ShijunZhang.jpg"><img src="./file/img/ShijunZhang.jpg" alt='A Photo Of Shijun Zhang' id="zsjPhoto" style="width:35%;"></a></div>
   
     <div class="introColumnContainer" id="introduction"> <!-- in  a  column-->
           <div id='spaceBeforeName'></div>
@@ -124,9 +124,10 @@ document.getElementById("introduction").style.fontSize=w*0.01795421+"px";
 document.getElementById("introduction").style.fontWeight=320;
 /*document.getElementById("spaceBeforeName").className='addWhiteSpaceOne';*/
 }
-else {  document.getElementById("introduction").style.lineHeight=w*0.055421+"px";
+else {  document.getElementById("introduction").style.lineHeight=w*0.995421+"px";
 document.getElementById("introduction").style.fontSize=w*0.0365421+"px";
 document.getElementById("introduction").style.fontWeight=520;
+document.getElementById("introAndPic").style.flexFlow="column nowrap";
 document.getElementById("spaceBeforeName").className='addWhiteSpaceOne';
 }
 
