@@ -99,7 +99,7 @@
 Deep neural networks  have made significant impacts in many 
 fields of computer science and engineering especially for large-scale and high-dimensional learning problems. Well-designed neural network architectures, efficient training algorithms, and high-performance computing technologies have made neural-network-based methods very successful in tremendous real applications (see examples in the following figure). 
 <div class='addWhiteSpaceOne'></div>
-<a href="../file/img/DLapplications.png"> <img src="../file/img/DLapplications.png" class="imgCenter" style="width:75%; " />  </a>
+<a href="../file/img/DLapplications.png"> <img src="../file/img/DLapplications.png" class="imgCenter" style="width:68%; " />  </a>
 <div class='addWhiteSpaceOne'></div>
 Especially in supervised learning, e.g., image classification and objective detection, the great advantages of neural-network-based methods have been demonstrated over traditional learning methods. Understanding the approximation power of deep neural networks has become a key question for revealing the power of deep learning. A large number of experiments in real applications have shown the large capacity of deep network approximation from many empirical points of view, motivating much effort in establishing the theoretical foundation of deep network approximation. One of the fundamental problems is the characterization of the (optimal) <b>approximation error</b> of deep neural networks in terms of the network size measured in the width, the depth, the number of neurons, or the number of parameters.<br><br>
 
@@ -108,7 +108,7 @@ Designing efficient <b>optimization algorithms</b> and analyzing the <b>generali
 See the discussion of the <b>approximation error (AE)</b>, the <b>optimization error (OE)</b>, and the <b>generalization error (GE)</b> below.
 
 <div class='addWhiteSpaceOne'></div>
-<a href="../file/img/AEOEGE.png"> <img src="../file/img/AEOEGE.png" class="imgCenter" style="width:75%; " />  </a>
+<a href="../file/img/AEOEGE.png"> <img src="../file/img/AEOEGE.png" class="imgCenter" style="width:68%; " />  </a>
 <div class='addWhiteSpaceOne'></div>
 <span style="color:#FFFAF0;">\( \require{color}
  \def\R{{\mathbb{R}}}
@@ -119,7 +119,7 @@ See the discussion of the <b>approximation error (AE)</b>, the <b>optimization e
 
 In supervised learning, an unknown target function $f(\boldsymbol{x})$ defined on a domain $\mathcal{X}$ is learned through its finitely many samples $\{( \boldsymbol{x}_i,f(\boldsymbol{x}_i){ )}\}_{i=1}^n$. Let $\phi(\bm{x};\bm{\theta})$ denote a function computed by  a (fully-connected) network with $\bm{\theta}$ as the set of parameters (see a network example below). 
 <div class='addWhiteSpaceOne'></div>
-<a href="../file/img/ReLUeg.pdf"> <img src="../file/img/ReLUeg.png" class="imgCenter" style="width:75%; " />  </a>
+<a href="../file/img/ReLUeg.pdf"> <img src="../file/img/ReLUeg.png" class="imgCenter" style="width:68%; " />  </a>
 <div style="text-align: center;font-size: 90%;"> An example of a ReLU network with width 5 and depth 2.</div>
 <div class='addWhiteSpaceOne'></div>
 If neural networks are applied in supervised learning, the following optimization problem is solved to identify $\phi(\boldsymbol{x};\boldsymbol{\theta}_{\mathcal{S}})$ to infer $f(\boldsymbol{x})$ for unseen data samples $\boldsymbol{x}$, where $\boldsymbol{\theta}_{\mathcal{S}}$ is the empirical risk minimizer given by
@@ -145,7 +145,7 @@ If neural networks are applied in supervised learning, the following optimizatio
    We use the empirical risk $R_{\mathcal{S}}(\boldsymbol{\theta})$ instead of $R_{\mathcal{D}}(\boldsymbol{\theta})$ in real applications beacuse $f$ and $U(\mathcal{X})$ are not available.
   In the case that $U(\mathcal{X})$ is a uniform distribution on $\mathcal{X}=[0,1]^d$ and that $\ell(y,y')=\frac{1}{2}|y-y'|^2$, 
 <!-- 	<div class='eqFont'>-->
-<div style='font-size: 88%;'>  
+<div style='font-size: 81%;'>  
       \begin{equation*}
 		R_{\mathcal{D}}(\bm{\theta})=
 		\mathbb{E}_{\bm{x}\sim U(\mathcal{X})} \left[\ell( \phi(\bm{x};\bm{\theta}),f(\bm{x}))\right]=\int_{[0,1]^d}\tfrac12|\phi(\bm{x}; \bm{\theta})-f(\bm{x})|^2 d\bm{x}.
