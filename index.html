@@ -69,6 +69,7 @@
     <div> <a href="./file/img/ShijunZhang.jpg"><img src="./file/img/ShijunZhang.jpg" alt='A Photo Of Shijun Zhang' id="zsjPhoto" style="width:35%;"></a></div>
   
     <div class="introColumnContainer" id="introduction"> <!-- in  a  column-->
+          <div id='spaceBeforeName'></div>
 
           <div style="font-size: 150%;"> Shijun Zhang &nbsp 张仕俊 </div>
 
@@ -115,16 +116,19 @@
 
 <script type="text/javascript">
   var zsjPhoto=document.getElementById("zsjPhoto")
-if (phoneOrPc==1) {zsjPhoto.style.width=w*0.82 +"px"} else { zsjPhoto.style.width=w*0.30 +"px"}
+if (phoneOrPc==1) {zsjPhoto.style.width=w*0.8 +"px"} else { zsjPhoto.style.width=w*0.30 +"px"}
 
 if (phoneOrPc==0){
   document.getElementById("introduction").style.lineHeight=w*0.055421+"px";
 document.getElementById("introduction").style.fontSize=w*0.01795421+"px";
 document.getElementById("introduction").style.fontWeight=320;
+/*document.getElementById("spaceBeforeName").className='addWhiteSpaceOne';*/
 }
 else {  document.getElementById("introduction").style.lineHeight=w*0.055421+"px";
 document.getElementById("introduction").style.fontSize=w*0.0365421+"px";
-document.getElementById("introduction").style.fontWeight=520;}
+document.getElementById("introduction").style.fontWeight=520;
+document.getElementById("spaceBeforeName").className='addWhiteSpaceOne';
+}
 
 
 /*insert Css*/ 
