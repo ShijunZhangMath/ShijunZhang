@@ -96,7 +96,7 @@ else {return 1;}
 //check whether this page is homepage
 var homeOrNot=testPN("/cv")+testPN("/publication")+testPN("/more")+testPN("/interest");
 if (homeOrNot>0.5) {footerImgPN="../file/img/zsjBlue.gif"} else {footerImgPN="./file/img/zsjBlue.gif"}
-footer=document.getElementById("footer");
+var footer=document.getElementById("footer");
 var myFooter = new Array();
 myFooter[0]="<div style='height:30px'> </div> Email:&ensp;zhangshijun@u.nus.edu <b>or</b> shijun.math@outlook.com <br>";
 myFooter[1]="Address:&ensp;Department of Mathematics, 10 Lower Kent Ridge Road, Singapore 119076 <br>";
@@ -123,7 +123,7 @@ document.getElementsByTagName("head")[0].appendChild(linkNew);
 
 
 /*add style in js*/
-if (phoneOrPc==0) {var h1Size=w*0.024; pageWidth=0.8*w;} else {  var h1Size=w*0.048; pageWidth=0.999*w;}
+if (phoneOrPc==0) {var h1Size=w*0.024; var pageWidth=0.8*w;} else {  var h1Size=w*0.048; var pageWidth=0.999*w;}
 var insertStyle=new Array();
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
 insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";
@@ -146,9 +146,10 @@ insertStyle[8]=" .eqFont {overflow: scroll;text-align:center;font-size:80%;overf
 // window.onresize =function(){location.reload();} // it can be replaced by 
 //window.addEventListener('resize',function(){location.reload();})
 
-window.addEventListener('resize', function () { "use strict"; window.location.reload(); });
-/*if (w>=h && screenRatio<=1.78 && screenRatio>=1.499) {
-	window.addEventListener("orientationchange", function (){ "use strict"; window.location.reload();});
-}*/
+window.addEventListener("orientationchange", function (){ "use strict"; window.location.reload();});
+
+if (w>=h && screenRatio<=1.78 && screenRatio>=1.499) {
+	window.addEventListener('resize', function () { "use strict"; window.location.reload(); });
+}
 
 // reload the page if its orientation is changed
