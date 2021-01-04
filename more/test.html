@@ -1,10 +1,17 @@
 <!DOCTYPE html>
+
 <html>
+
+<style type="text/css">
+	button {
+    max-height:20px;
+}
+</style>
 <body>
 
 <p>Click the button to display an alert box.</p>
 
-<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction()">Try it <br><br> tryTry it <br><br> tryTry it <br><br> try</button>
 
 <script>
 var myorientation=0;
@@ -24,7 +31,7 @@ function myFunction() {
   alert("win.scr.availWH:"+window.screen.availWidth+":"+window.screen.availHeight);
 	alert("win.outerWH"+window.outerWidth+':'+window.outerHeight);
 	alert("win.innerWH"+window.innerWidth+':'+window.innerHeight);	
-	  alert("orin"+myorientation);
+	  alert("orin"+myorientation+"pxRatio"+window.devicePixelRatio);
 }
 </script>
 
