@@ -105,9 +105,10 @@ Especially in supervised learning, e.g., image classification and objective dete
 
 Currently, I am quite interested in studying the <b>approximation error</b>. 
 Designing efficient <b>optimization algorithms</b> and analyzing the <b>generalization bounds</b> two other separate future directions. 
-See the discussion of the <b>approximation error (AE)</b>, the <b>optimization error (OE)</b>, and the <b>generalization error (GE)</b> below.
-
+See <a href="../file/pdf/Intro_of_AE_OE_and_GE.pdf">this note [PDF]</a> for the introductions of the <b>approximation error (AE)</b>, the <b>optimization error (OE)</b>, and the <b>generalization error (GE)</b>. 
 <div class='addWhiteSpaceOne'></div>
+<a href="../file/img/AEOEGE.png"> <img src="../file/img/AEOEGE.png" class="imgCenter" style="width:80%; " />  </a>
+<!-- <div class='addWhiteSpaceOne'></div>
 <a href="../file/img/AEOEGE.png"> <img src="../file/img/AEOEGE.png" class="imgCenter" style="width:68%; " />  </a>
 <div class='addWhiteSpaceOne'></div>
 <span style="color:#FFFAF0;">\( \require{color}
@@ -144,27 +145,29 @@ If neural networks are applied in supervised learning, the following optimizatio
   \end{equation*}
    We use the empirical risk $R_{\mathcal{S}}(\boldsymbol{\theta})$ instead of $R_{\mathcal{D}}(\boldsymbol{\theta})$ in real applications beacuse $f$ and $U(\mathcal{X})$ are not available.
   In the case that $U(\mathcal{X})$ is a uniform distribution on $\mathcal{X}=[0,1]^d$ and that $\ell(y,y')=\frac{1}{2}|y-y'|^2$, 
-<!-- 	<div class='eqFont'>-->
-<div class='eqFont' style="font-size: 88%;">  
+	<div class='eqFont'>-->
+
+<!-- <div class='eqFont' style="font-size: 88%;">  
       \begin{equation*}
 		R_{\mathcal{D}}(\bm{\theta})=
 		\mathbb{E}_{\bm{x}\sim U(\mathcal{X})} \left[\ell( \phi(\bm{x};\bm{\theta}),f(\bm{x}))\right]=\int_{[0,1]^d}\tfrac12|\phi(\bm{x}; \bm{\theta})-f(\bm{x})|^2 d\bm{x}.
 	\end{equation*} 
-</div>
-<!-- </div></div> -->
-<!-- 
+</div> -->
 
-    Note that the best solution to infer $f(\bm{x})$ is $\phi(\bm{x};\bm{\theta}_{\mathcal{D}})$ with the expected risk minimizer $\bm{\theta}_{\mathcal{D}}$ given by
+<!-- </div></div> -->
+
+
+ <!--    Note that the best solution to infer $f(\bm{x})$ is $\phi(\bm{x};\bm{\theta}_{\mathcal{D}})$ with the expected risk minimizer $\bm{\theta}_{\mathcal{D}}$ given by
   \begin{equation*}%\label{eqn:poloss}
     \bm{\theta}_{\mathcal{D}}=\argmin_{\bm{\theta}} R_{\mathcal{D}}(\bm{\theta}).
   \end{equation*}
   The best possible inference error is
-  $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})$. In real applications, $U(\mathcal{X})$ is unknown and only finitely many samples from this distribution are available. Hence, the empirical loss $R_{\mathcal{S}}(\bm{\theta})$ is minimized hoping to obtain $\phi(\bm{x};\bm{\theta}_{\mathcal{S}})$, instead of minimizing the population loss $R_{\mathcal{D}}(\bm{\theta})$ to obtain $\phi(\bm{x};\bm{\theta}_{\mathcal{D}})$.  -->
+  $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})$. In real applications, $U(\mathcal{X})$ is unknown and only finitely many samples from this distribution are available. Hence, the empirical loss $R_{\mathcal{S}}(\bm{\theta})$ is minimized hoping to obtain $\phi(\bm{x};\bm{\theta}_{\mathcal{S}})$, instead of minimizing the population loss $R_{\mathcal{D}}(\bm{\theta})$ to obtain $\phi(\bm{x};\bm{\theta}_{\mathcal{D}})$. 
   In practice, a numerical optimization method to solve Equation \eqref{eqn:emloss} may result in a numerical solution (denoted as $\bm{\theta}_{\mathcal{N}}$) that may not be a global minimizer $\bm{\theta}_{\mathcal{S}}$. Therefore, the actually learned neural network to infer $f(\bm{x})$ is $\phi(\bm{x};\bm{\theta}_{\mathcal{N}})$ and the corresponding inference error is measured by $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$. <br><br>
   
   By the discussion just above, it is crucial to quantify $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$ to see how good the learned neural network $\phi(\bm{x};\bm{\theta}_{\mathcal{N}})$ is, since $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})$ is the expected inference error over all possible data samples. Note that 
   <div class='eqFont' style="font-size: 88%;"> 
-<!--   <div style='font-size: 79%;'>  -->
+   <div style='font-size: 79%;'>  
   \begin{align}
     R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})
     &=\underbrace{[R_{\mathcal{D}}(\bm{\theta}_{\mathcal{N}})-R_{\mathcal{S}}(\bm{\theta}_{\mathcal{N}})]}_{\tn{GE}}
@@ -175,11 +178,12 @@ If neural networks are applied in supervised learning, the following optimizatio
       +[R_{\mathcal{S}}(\bm{\theta}_{\mathcal{D}})-R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})]}_{\color{blue}\tn{Generalization error (GE)}}},
   \end{align}
 </div>
-<!-- </div></div> -->
+ </div></div> 
 where the inequality comes from the fact that $[R_{\mathcal{S}}(\bm{\theta}_{\mathcal{S}})-R_{\mathcal{S}}(\bm{\theta}_{\mathcal{D}})]\leq 0$ since $\bm{\theta}_{\mathcal{S}}$ is a global minimizer of $R_{\mathcal{S}}(\bm{\theta})$. <br><br>
 Constructive approximation provides an upper bound of $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})$ in terms of the network size, e.g., in terms of the network width and depth, or in terms of the number of parameters.  The second term of Equation \eqref{eqn:gen} is bounded by the optimization error of the numerical algorithm applied to solve the empirical loss minimization problem in Equation \eqref{eqn:emloss}. The study of the bounds for the third and fourth terms is referred to as the generalization error analysis of neural networks. 
 It is an interesting topic to develop deep learning models and algorithms to minimize optimization and generalization errors.
-<br><br>
+<br><br> -->
+ 
 	
 <!-- 	One of  the key targets in  the area of deep learning is to develop algorithms to reduce  $R_{\mathcal{D}}{({\bm{\theta}}_{\mathcal{N}})}$.
 Currently, we focus on providing an upper bound of the approximation  error $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})$ for smooth functions, which is crucial to estimate an upper bound of $R_{\mathcal{D}}{({\bm{\theta}}_{\mathcal{N}})}$.   Instead of deriving an approximator to attain  the approximation error bound,  deep learning models and algorithms aim at identifying a solution $\phi(\bm{x};\bm{\theta}_{\mathcal{N}})$ reducing the generalization and optimization errors in Equation \eqref{eqn:gen}.  Solutions minimizing both generalization and optimization errors will lead to a good solution only if we also have a good upper bound estimate of $R_{\mathcal{D}}(\bm{\theta}_{\mathcal{D}})$ as shown in Equation \eqref{eqn:gen}.   Independent of whether our analysis here  leads to a good approximator, which is an interesting topic to pursue,  the  theory here does provide a key ingredient in the error analysis of deep learning models and algorithms.

@@ -1,11 +1,11 @@
 
-body, footer{ margin: 0px;
+body, footer { margin: 0px;
     padding: 0px;
     background-color: #FFFAF0;
     word-break: keep-all;
     word-wrap: break-word;}
 
-div {max-height: 100%;}
+div, footer, h1, h2, h3 {max-height: 100%;}
 
 .activeLinkColor {
   color: #555555 !important;
