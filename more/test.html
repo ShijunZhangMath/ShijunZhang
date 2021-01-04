@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display an alert box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+var myorientation=0;
+
+if (typeof(window.orientation)=="undefined") { 
+	if (typeof(window.screen.orientation)!="undefined"){
+		myorientation=window.screen.orientation.angle;
+	}
+} else {
+	myorientation=window.orientation;
+}
+var sh=window.screen.height;
+var sw=window.screen.width;
+var screenRatio=Math.max(sh,sw)/Math.min(sh,sw);
+function myFunction() {
+  alert("win.scr.WH:"+window.screen.width+":"+window.screen.height);
+  alert("win.scr.availWH:"+window.screen.availWidth+":"+window.screen.availHeight);
+	alert("win.outerWH"+window.outerWidth+':'+window.outerHeight);
+	alert("win.innerWH"+window.innerWidth+':'+window.innerHeight);	
+	  alert("orin"+myorientation);
+}
+</script>
+
+</body>
+</html>

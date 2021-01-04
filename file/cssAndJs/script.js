@@ -81,7 +81,7 @@ if (phoneOrPc==1) {narVavBarFontSize=0.0342*w;}
 navBar.style.setProperty("font-size",narVavBarFontSize+"px");
 navBar.style.setProperty("font-weight",440);
 var leftMostNavBarItemWidth=w*0.0655421;
-if (phoneOrPc==1){leftMostNavBarItemWidth=w*0.032}
+if (phoneOrPc==1){leftMostNavBarItemWidth=w*0.032;}
 document.getElementById("leftMostNavBarItem").style.width=leftMostNavBarItemWidth+"px";
 
 
@@ -115,7 +115,7 @@ var linkNew = document.createElement("link");
 linkNew.rel = "icon"; 
 if (homeOrNot>0.5) {linkNew.href = "../file/img/nus.jpg";} else { linkNew.href = "./file/img/nus.jpg";}
 document.getElementsByTagName("head")[0].appendChild(linkNew);
-linkNew = document.createElement("link");
+var linkNew = document.createElement("link");
 linkNew.rel = "apple-touch-icon"; 
 if (homeOrNot>0.5) {linkNew.href = "../file/img/nus.jpg";} else { linkNew.href = "./file/img/nus.jpg";}
 document.getElementsByTagName("head")[0].appendChild(linkNew);
@@ -148,8 +148,8 @@ insertStyle[8]=" .eqFont {overflow: scroll;text-align:center;font-size:80%;overf
 
 window.addEventListener("orientationchange", function (){ "use strict"; window.location.reload();});
 
-if (w>=h && screenRatio<=1.78 && screenRatio>=1.499) {
+/*if (w>=h && screenRatio<=1.78 && screenRatio>=1.499) {
 	window.addEventListener('resize', function () { "use strict"; window.location.reload(); });
-}
+}*/
 
 // reload the page if its orientation is changed
