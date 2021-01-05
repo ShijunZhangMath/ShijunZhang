@@ -116,6 +116,7 @@ if (phoneOrPc==1) {
 footer.setAttribute("style","text-align:center;font-size:"+myfooterFontSize+"px;line-height:"+myfooterLineHeight+"px;");
 footer.style.fontSize=myfooterFontSize+"px";
 footer.style.lineHeight=myfooterLineHeight+"px";
+footer.style.maxHeight= "100%";
 
 
 /*add links or metas to head*/
