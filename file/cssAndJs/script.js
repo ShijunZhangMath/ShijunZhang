@@ -105,9 +105,16 @@ if (phoneOrPc==1) {footerPicWidth=w*0.018*12*2*2.2;}
 myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'>";
 myFooter[3]="<div style='height:30px'> </div>";
 footer.innerHTML=myFooter.join('') /*.join() has commas*/
-if (phoneOrPc==0) {footer.setAttribute("style","text-align:center;font-size:"+w*0.01*1.8*0.7+"px;line-height:"+w*0.01*1.8*0.980+"px;");}
- else {  
-footer.setAttribute("style","text-align:center;font-size:"+w*0.01*1.8*0.6*2.2+"px;line-height:"+w*0.01*1.8*0.90*2.2+"px;");}
+
+var myfooterFontSize=w*0.01*1.8*0.75; 
+var myfooterLineHeight=w*0.01*1.8*0.9980;
+if (phoneOrPc==1) {
+	 myfooterFontSize=w*0.01*1.8*0.7*2.0; 
+	myfooterLineHeight=w*0.01*1.8*0.980*2.0;
+	}
+
+footer.setAttribute("style","text-align:center;font-size:"+myfooterFontSize+"px;line-height:"+myfooterLineHeight+"px;");
+
 
 
 /*add links or metas to head*/
