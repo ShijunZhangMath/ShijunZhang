@@ -109,12 +109,13 @@ footer.innerHTML=myFooter.join('') /*.join() has commas*/
 var myfooterFontSize=w*0.01*1.8*0.75; 
 var myfooterLineHeight=w*0.01*1.8*0.9980;
 if (phoneOrPc==1) {
-	 myfooterFontSize=w*0.01*1.8*0.7*2.0; 
-	myfooterLineHeight=w*0.01*1.8*0.980*2.0;
+	 myfooterFontSize=w*0.01*1.8*0.6*2.05; 
+	myfooterLineHeight=w*0.01*1.8*0.980*2.05;
 	}
 
 footer.setAttribute("style","text-align:center;font-size:"+myfooterFontSize+"px;line-height:"+myfooterLineHeight+"px;");
-
+footer.style.fontSize=myfooterFontSize*0.01795421+"px";
+footer.style.lineHeight=myfooterLineHeight+"px";
 
 
 /*add links or metas to head*/
