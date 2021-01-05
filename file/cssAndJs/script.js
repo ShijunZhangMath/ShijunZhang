@@ -113,7 +113,7 @@ if (phoneOrPc==1) {
 	myfooterLineHeight=w*0.01*1.8*0.980*2.05;
 	}
 
-footer.setAttribute("style","text-align:center;font-size:"+myfooterFontSize+"px;line-height:"+myfooterLineHeight+"px;");
+footer.setAttribute("style","text-align:center;font-size:"+myfooterFontSize+"px;line-height:"+myfooterLineHeight+"px;text-size-adjust: none;-webkit-text-size-adjust:none; ");
 footer.style.fontSize=myfooterFontSize+"px";
 footer.style.lineHeight=myfooterLineHeight+"px";
 footer.style.maxHeight= "100%";
