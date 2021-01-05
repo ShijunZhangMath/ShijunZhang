@@ -114,7 +114,7 @@ if (phoneOrPc==1) {
 	}
 
 footer.setAttribute("style","text-align:center;font-size:"+myfooterFontSize+"px;line-height:"+myfooterLineHeight+"px;");
-footer.style.fontSize=myfooterFontSize*0.01795421+"px";
+footer.style.fontSize=myfooterFontSize+"px";
 footer.style.lineHeight=myfooterLineHeight+"px";
 
 
