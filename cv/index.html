@@ -139,10 +139,12 @@
 
 <div class="cvContainer">
       <span class="cvItemOne"> Ph.D. Thesis:  </span>
-    <span class="cvItemTwo" > Deep neural network approximation via function compositions<br>
-      <a href="../file/pdf/ZhangShijun_Thesis_2020.pdf">PDF</a>, 
-      &nbsp <a href="https://scholarbank.nus.edu.sg/handle/10635/186064">URL</a>,
-       &nbsp <a href="../file/pdf/OnePageSummary.pdf">One-Page Summary</a></span>
+      <span class="cvItemTwo"  > 
+            <span id="PhD-thesis"> Deep neural network approximation via function compositions </span><br>
+            <a href="../file/pdf/ZhangShijun_Thesis_2020.pdf">PDF</a>, 
+            &nbsp <a href="https://scholarbank.nus.edu.sg/handle/10635/186064">URL</a>,
+             &nbsp <a href="../file/pdf/OnePageSummary.pdf">One-Page Summary</a>
+       </span>
 </div>
 
 <!-- <div class="cvContainer">
@@ -178,6 +180,7 @@
 <script type="text/javascript">
   if (phoneOrPc==0) {var pageWidth=0.55*w;} else {var pageWidth=0.95*w;}
 document.getElementById("styleInJs").innerHTML=insertStyle.join('')+" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
+if (phoneOrPc==1) {document.getElementById("PhD-thesis").style.fontSize='80%'; }
 </script>
 </html>
 
