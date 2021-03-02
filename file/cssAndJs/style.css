@@ -5,7 +5,10 @@ body, footer { margin: 0px;
     word-break: keep-all;
     word-wrap: break-word;}
 
-div, footer, h1, h2, h3, p, img, span{max-height: 100%;text-size-adjust:none;-webkit-text-size-adjust:none;}
+/*div, footer, h1, h2, h3, p, img, span{max-height: 100%;text-size-adjust:none;-webkit-text-size-adjust:none;}*/
+* {max-height: 100%;text-size-adjust:none;-webkit-text-size-adjust:none;}
+
+
 
 .activeLinkColor {
   color: #555555 !important;
