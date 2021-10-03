@@ -1,5 +1,5 @@
 
-/*input html tring in js
+/*input html string in js
 dddd<span id="zsj"></span>dddd
 <script type="text/javascript">
 	    var navBarItem=document.getElementById("zsj")
@@ -27,6 +27,7 @@ if (w<=h && screenRatio>=1.432) {
 	w=w0+h0-h;*/
 	phoneOrPc=1;	
 } 
+// return 1 if phone; return 0 if pc
 
 //window.innerWidth //width of browser
 // window.orientation is undefined in pc, use window.screen.orientation.angle instead
@@ -68,10 +69,81 @@ if (window.innerHeight<=window.innerWidth && Math.abs(myorientation)==90) {
 
 
 
+
+// Add HTML to nav bar
+// define a function to test pathname
+function testPN(pn) {
+var currentPN=document.location.pathname;
+if (currentPN.match(pn)==null){return 0;}
+else {return 1;}
+}
+
+//check whether this page is homepage
+var homeOrNot=1-testPN("/cv")-testPN("/publication")-testPN("/more")-testPN("/interest");
+// return 1 if home; return 0 if not
+
+
+var navBarHTML=document.getElementById("navBarHTML");
+var myNavBarHTML = new Array();
+myNavBarHTML[0]='<ul class="navBarContainer navBarLinkColor" id="navBar">  <li id="leftMostNavBarItem" class="navBarItem"></li>';
+if (homeOrNot>0.5){
+	myNavBarHTML[1]='<li class="navBarItem">	  <a href="./" class="activeLinkColor"> Home </a>    </li>';
+	myNavBarHTML[2]='<li class="navBarItem">	  <a href="./publication/"> Publication </a>  		 </li>';
+	myNavBarHTML[3]='<li class="navBarItem">      <a href="./interest/"> Interest </a>    			</li>';
+	myNavBarHTML[4]='<li class="navBarItem">      <a href="./cv/">  Curriculum Vitae </a>    		</li>';
+	myNavBarHTML[5]='<li class="navBarItem">      <a href="./more/"> More </a>    					</li>';
+}
+else {
+	myNavBarHTML[1]='<li class="navBarItem">   <a href="../"> Home </a>    </li>';
+
+	if (testPN("/publication")>0.5) {
+		myNavBarHTML[2]='<li class="navBarItem">  <a href="../publication/" class="activeLinkColor"> Publication </a>  </li>';
+	}
+	else {
+		myNavBarHTML[2]='<li class="navBarItem">  <a href="../publication/"> Publication </a>  		 </li>';
+	}
+
+	if (testPN("/interest")>0.5) {
+		myNavBarHTML[3]='<li class="navBarItem">  <a href="../interest/" class="activeLinkColor"> Interest </a>  </li>';
+	}
+	else {
+		myNavBarHTML[3]='<li class="navBarItem">  <a href="../interest/"> Interest </a>  		 </li>';
+	}
+
+	if (testPN("/cv")>0.5) {
+		myNavBarHTML[4]='<li class="navBarItem">  <a href="../cv/" class="activeLinkColor"> Curriculum Vitae </a>  </li>';
+	}
+	else {
+		myNavBarHTML[4]='<li class="navBarItem">  <a href="../cv/"> Curriculum Vitae </a>  		 </li>';
+	}
+
+	if (testPN("/more")>0.5) {
+		myNavBarHTML[5]='<li class="navBarItem">  <a href="../more/" class="activeLinkColor"> More </a>  </li>';
+	}
+	else {
+		myNavBarHTML[5]='<li class="navBarItem">  <a href="../more/"> More </a>  		 </li>';
+	}
+}
+
+myNavBarHTML[6]='</ul>';
+navBarHTML.innerHTML=myNavBarHTML.join('')  
+/*.join() has commas
+const elements = ['Fire', 'Air', 'Water'];
+
+console.log(elements.join());
+// expected output: "Fire,Air,Water"
+
+console.log(elements.join(''));
+// expected output: "FireAirWater"
+
+console.log(elements.join('-'));
+// expected output: "Fire-Air-Water"
+*/  
+  
 //navBar setting
 var navBar=document.getElementById("navBar");
 var whitSpaceForNavBar=document.getElementById("whitSpaceForNavBar");
-/*add white space for nav bar*/
+//add white space after nav bar, vspace 
 whitSpaceForNavBar.style.height=window.getComputedStyle(navBar,null).getPropertyValue("height");
 //set navBar fontsize
 
@@ -87,15 +159,10 @@ document.getElementById("leftMostNavBarItem").style.width=leftMostNavBarItemWidt
 
 
 
-/*add footer*/
-function testPN(pn) {
-var currentPN=document.location.pathname;
-if (currentPN.match(pn)==null){return 0;}
-else {return 1;}
-}
-//check whether this page is homepage
-var homeOrNot=testPN("/cv")+testPN("/publication")+testPN("/more")+testPN("/interest");
-if (homeOrNot>0.5) {footerImgPN="../file/img/zsjBlue.gif"} else {footerImgPN="./file/img/zsjBlue.gif"}
+
+
+//  add footer
+if (homeOrNot>0.5) {footerImgPN="./file/img/zsjBlue.gif"} else {footerImgPN="../file/img/zsjBlue.gif"}
 var footer=document.getElementById("footer");
 var myFooter = new Array();
 myFooter[0]="<div style='height:30px'> </div> Email:&ensp;zhangshijun@u.nus.edu &ensp;<b>or</b>&ensp; shijun.math@outlook.com <br>";
@@ -104,7 +171,8 @@ var footerPicWidth=w*0.018*12*2.2;
 if (phoneOrPc==1) {footerPicWidth=w*0.018*12*2*2.2;}
 myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'>";
 myFooter[3]="<div style='height:30px'> </div>";
-footer.innerHTML=myFooter.join('') /*.join() has commas*/
+footer.innerHTML=myFooter.join('') 
+
 
 var myfooterFontSize=w*0.01*1.8*0.75; 
 var myfooterLineHeight=w*0.01*1.8*0.9980;
@@ -119,6 +187,10 @@ footer.style.lineHeight=myfooterLineHeight+"px";
 footer.style.maxHeight= "100%";
 
 
+
+
+
+
 /*add links or metas to head*/
 var linkNew = document.createElement("link");
 linkNew.rel = "icon"; 
@@ -131,7 +203,7 @@ document.getElementsByTagName("head")[0].appendChild(linkNew);
 
 
 
-/*add style in js*/
+//add style in js
 if (phoneOrPc==0) {var h1Size=w*0.024; var pageWidth=0.8*w;} else {  var h1Size=w*0.048; var pageWidth=0.999*w;}
 var insertStyle=new Array();
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
