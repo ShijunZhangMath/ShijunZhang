@@ -124,7 +124,16 @@ else {
 		myNavBarHTML[5]='<li class="navBarItem">  <a href="../more/"> More </a>  		 </li>';
 	}
 }
+/*Starting with / returns to the root directory and starts there
 
+./file/doc.pdf    =    file/doc.pdf
+
+Starting with ../ moves one directory backward and starts there
+
+Starting with ../../ moves two directories backward and starts there (and so on...)
+
+To move forward, just start with the first sub directory and keep moving forward.
+*/
 myNavBarHTML[6]='</ul>';
 navBarHTML.innerHTML=myNavBarHTML.join('')  
 /*.join() has commas
