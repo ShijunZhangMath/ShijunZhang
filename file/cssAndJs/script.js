@@ -98,7 +98,7 @@ var homeOrNot=testPN("/cv")+testPN("/publication")+testPN("/more")+testPN("/inte
 if (homeOrNot>0.5) {footerImgPN="../file/img/zsjBlue.gif"} else {footerImgPN="./file/img/zsjBlue.gif"}
 var footer=document.getElementById("footer");
 var myFooter = new Array();
-myFooter[0]="<div style='height:30px'> </div> Email:&ensp;zhangshijun@u.nus.edu <b>or</b> shijun.math@outlook.com <br>";
+myFooter[0]="<div style='height:30px'> </div> Email:&ensp;zhangshijun@u.nus.edu &ensp;<b>or</b>&ensp; shijun.math@outlook.com <br>";
 myFooter[1]="Address:&ensp;Department of Mathematics, National University of Singapore, Singapore 119076 <br>";
 var footerPicWidth=w*0.018*12*2.2;
 if (phoneOrPc==1) {footerPicWidth=w*0.018*12*2*2.2;}
