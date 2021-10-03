@@ -114,7 +114,7 @@ Some others may be added in the future.
 
 
 <script type="text/javascript">
-  if (phoneOrPc==0) {var pageWidth=0.75*w;var dynamicImageWidth=w*0.2830;} else {var pageWidth=0.92*w;var dynamicImageWidth=w*0.69;}
+  if (phoneOrPc) {var pageWidth=0.92*w;var dynamicImageWidth=w*0.69;} else {var pageWidth=0.75*w;var dynamicImageWidth=w*0.2830;}
 var insertDynamicImgJs=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
 insertDynamicImgJs+=" .dynamicImage { width:"+dynamicImageWidth+"px;}";
 document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertDynamicImgJs;

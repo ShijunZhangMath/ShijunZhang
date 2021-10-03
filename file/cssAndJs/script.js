@@ -79,14 +79,18 @@ else {return 1;}
 }
 
 //check whether this page is homepage
-var homeOrNot=1-testPN("/cv")-testPN("/publication")-testPN("/more")-testPN("/interest");
+var cvOrNot=testPN("/cv");
+var publicationOrNot=testPN("/publication");
+var moreOrNot=testPN("/more");
+var interestOrNot=testPN("/interest");
+var homeOrNot=1-cvOrNot-publicationOrNot-moreOrNot-interestOrNot;
 // return 1 if home; return 0 if not
 
 
 var navBarHTML=document.getElementById("navBarHTML");
 var myNavBarHTML = new Array();
 myNavBarHTML[0]='<ul class="navBarContainer navBarLinkColor" id="navBar">  <li id="leftMostNavBarItem" class="navBarItem"></li>';
-if (homeOrNot>0.5){
+if (homeOrNot){
 	myNavBarHTML[1]='<li class="navBarItem">	  <a href="./" class="activeLinkColor"> Home </a>    </li>';
 	myNavBarHTML[2]='<li class="navBarItem">	  <a href="./publication/"> Publication </a>  		 </li>';
 	myNavBarHTML[3]='<li class="navBarItem">      <a href="./interest/"> Interest </a>    			</li>';
@@ -96,28 +100,28 @@ if (homeOrNot>0.5){
 else {
 	myNavBarHTML[1]='<li class="navBarItem">   <a href="../"> Home </a>    </li>';
 
-	if (testPN("/publication")>0.5) {
+	if (publicationOrNot) {
 		myNavBarHTML[2]='<li class="navBarItem">  <a href="../publication/" class="activeLinkColor"> Publication </a>  </li>';
 	}
 	else {
 		myNavBarHTML[2]='<li class="navBarItem">  <a href="../publication/"> Publication </a>  		 </li>';
 	}
 
-	if (testPN("/interest")>0.5) {
+	if (interestOrNot) {
 		myNavBarHTML[3]='<li class="navBarItem">  <a href="../interest/" class="activeLinkColor"> Interest </a>  </li>';
 	}
 	else {
 		myNavBarHTML[3]='<li class="navBarItem">  <a href="../interest/"> Interest </a>  		 </li>';
 	}
 
-	if (testPN("/cv")>0.5) {
+	if (cvOrNot) {
 		myNavBarHTML[4]='<li class="navBarItem">  <a href="../cv/" class="activeLinkColor"> Curriculum Vitae </a>  </li>';
 	}
 	else {
 		myNavBarHTML[4]='<li class="navBarItem">  <a href="../cv/"> Curriculum Vitae </a>  		 </li>';
 	}
 
-	if (testPN("/more")>0.5) {
+	if (moreOrNot) {
 		myNavBarHTML[5]='<li class="navBarItem">  <a href="../more/" class="activeLinkColor"> More </a>  </li>';
 	}
 	else {
@@ -151,27 +155,26 @@ console.log(elements.join('-'));
   
 //navBar setting
 var navBar=document.getElementById("navBar");
-var whitSpaceForNavBar=document.getElementById("whitSpaceForNavBar");
-//add white space after nav bar, vspace 
-whitSpaceForNavBar.style.height=window.getComputedStyle(navBar,null).getPropertyValue("height");
 //set navBar fontsize
-
 var narVavBarFontSize=0.02*w;
-if (phoneOrPc==1) {narVavBarFontSize=0.0342*w;}
+if (phoneOrPc) {narVavBarFontSize=0.0342*w;}
 
 navBar.style.setProperty("font-size",narVavBarFontSize+"px");
 navBar.style.setProperty("font-weight",440);
 var leftMostNavBarItemWidth=w*0.0655421;
-if (phoneOrPc==1){leftMostNavBarItemWidth=w*0.032;}
+if (phoneOrPc){leftMostNavBarItemWidth=w*0.032;}
 document.getElementById("leftMostNavBarItem").style.width=leftMostNavBarItemWidth+"px";
 
+var whitSpaceForNavBar=document.getElementById("whitSpaceForNavBar");
+//add white space after nav bar, vspace 
+whitSpaceForNavBar.style.height=window.getComputedStyle(navBar,null).getPropertyValue("height");
 
 
 
 
 
 //  add footer
-if (homeOrNot>0.5) {footerImgPN="./file/img/zsjBlue.gif"} else {footerImgPN="../file/img/zsjBlue.gif"}
+if (homeOrNot) {footerImgPN="./file/img/zsjBlue.gif"} else {footerImgPN="../file/img/zsjBlue.gif"}
 var footer=document.getElementById("footer");
 var myFooter = new Array();
 myFooter[0]="<div style='height:30px'> </div> Email:&ensp;zhangshijun@u.nus.edu &ensp;<b>or</b>&ensp; shijun.math@outlook.com <br>";
@@ -203,17 +206,17 @@ footer.style.maxHeight= "100%";
 /*add links or metas to head*/
 var linkNew = document.createElement("link");
 linkNew.rel = "icon"; 
-if (homeOrNot>0.5) {linkNew.href = "../file/img/nus.jpg";} else { linkNew.href = "./file/img/nus.jpg";}
+if (homeOrNot) {linkNew.href = "./file/img/nus.jpg";} else { linkNew.href = "../file/img/nus.jpg";}
 document.getElementsByTagName("head")[0].appendChild(linkNew);
-var linkNew = document.createElement("link");
-linkNew.rel = "apple-touch-icon"; 
-if (homeOrNot>0.5) {linkNew.href = "../file/img/nus.jpg";} else { linkNew.href = "./file/img/nus.jpg";}
-document.getElementsByTagName("head")[0].appendChild(linkNew);
+var linkNewApple = document.createElement("link");
+linkNewApple.rel = "apple-touch-icon"; 
+if (homeOrNot) {linkNewApple.href = "./file/img/nus.jpg";} else { linkNewApple.href = "../file/img/nus.jpg";}
+document.getElementsByTagName("head")[0].appendChild(linkNewApple);
 
 
 
 //add style in js
-if (phoneOrPc==0) {var h1Size=w*0.024; var pageWidth=0.8*w;} else {  var h1Size=w*0.048; var pageWidth=0.999*w;}
+if (phoneOrPc){  var h1Size=w*0.048; var pageWidth=0.999*w;} else {var h1Size=w*0.024; var pageWidth=0.8*w;} 
 var insertStyle=new Array();
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
 insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";

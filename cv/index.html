@@ -210,9 +210,9 @@
 <!-- <script type="text/javascript" src="./cv.js"></script> -->
 
 <script type="text/javascript">
-  if (phoneOrPc==0) {var pageWidth=0.55*w;} else {var pageWidth=0.95*w;}
+  if (phoneOrPc) {var pageWidth=0.95*w;} else {var pageWidth=0.55*w;} 
 document.getElementById("styleInJs").innerHTML=insertStyle.join('')+" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
-if (phoneOrPc==1) {document.getElementById("PhD-thesis").style.fontSize='72%'; 
+if (phoneOrPc) {document.getElementById("PhD-thesis").style.fontSize='72%'; 
           document.getElementById("EASIAM-prize").style.fontSize='83%';
          document.getElementById("PhD-university").style.fontSize='98%';}        
 </script>

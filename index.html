@@ -130,29 +130,31 @@
 
 <script type="text/javascript">
   var zsjPhoto=document.getElementById("zsjPhoto");
-if (phoneOrPc==1) {zsjPhoto.style.width=w*0.8 +"px";} else { zsjPhoto.style.width=w*0.30 +"px";}
+  var zsjIntroduction=document.getElementById("introduction")
+if (phoneOrPc) {
+  zsjPhoto.style.width=w*0.8 +"px";
+  zsjIntroduction.style.lineHeight=w*0.0995421+"px";
+  zsjIntroduction.style.fontSize=w*0.0365421+"px";
+  zsjIntroduction.style.fontWeight=520;
+  zsjIntroduction.style.flexFlow="column nowrap";
+  document.getElementById("spaceBeforeName").className='addWhiteSpaceOne';
 
-if (phoneOrPc==0){
-  document.getElementById("introduction").style.lineHeight=w*0.055421+"px";
-document.getElementById("introduction").style.fontSize=w*0.01795421+"px";
-document.getElementById("introduction").style.fontWeight=320;
+} 
+else { 
+  zsjPhoto.style.width=w*0.30 +"px";
+  zsjIntroduction.style.lineHeight=w*0.055421+"px";
+  zsjIntroduction.style.fontSize=w*0.01795421+"px";
+  zsjIntroduction.style.fontWeight=320;
 /*document.getElementById("spaceBeforeName").className='addWhiteSpaceOne';*/
-}
-else {  document.getElementById("introduction").style.lineHeight=w*0.0995421+"px";
-document.getElementById("introduction").style.fontSize=w*0.0365421+"px";
-document.getElementById("introduction").style.fontWeight=520;
-document.getElementById("introAndPic").style.flexFlow="column nowrap";
-document.getElementById("spaceBeforeName").className='addWhiteSpaceOne';
 }
 
 
 /*insert Css*/ 
-var pageWidth=0
-if (phoneOrPc==0) {pageWidth=0.76*w;} else { pageWidth=0.96*w; }
+if (phoneOrPc) {var pageWidth=0.96*w; }  else {var pageWidth=0.76*w;} 
 var insertHomeCss=".pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
 document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertHomeCss;
-
 </script>
+
 </html>
 
 
