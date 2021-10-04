@@ -94,7 +94,7 @@ if (homeOrNot){
 	myNavBarHTML[1]='<li class="navBarItem">	  <a href="./" class="activeLinkColor"> Home </a>    </li>';
 	myNavBarHTML[2]='<li class="navBarItem">	  <a href="./publication/"> Publication </a>  		 </li>';
 	myNavBarHTML[3]='<li class="navBarItem">      <a href="./interest/"> Interest </a>    			</li>';
-	myNavBarHTML[4]='<li class="navBarItem">      <a href="./cv/">  Curriculum Vitae </a>    		</li>';
+	myNavBarHTML[4]='<li class="navBarItem">      <a href="./cv/">  CV </a>    		</li>';
 	myNavBarHTML[5]='<li class="navBarItem">      <a href="./more/"> More </a>    					</li>';
 }
 else {
@@ -115,10 +115,10 @@ else {
 	}
 
 	if (cvOrNot) {
-		myNavBarHTML[4]='<li class="navBarItem">  <a href="../cv/" class="activeLinkColor"> Curriculum Vitae </a>  </li>';
+		myNavBarHTML[4]='<li class="navBarItem">  <a href="../cv/" class="activeLinkColor"> CV </a>  </li>';
 	}
 	else {
-		myNavBarHTML[4]='<li class="navBarItem">  <a href="../cv/"> Curriculum Vitae </a>  		 </li>';
+		myNavBarHTML[4]='<li class="navBarItem">  <a href="../cv/"> CV </a>  		 </li>';
 	}
 
 	if (moreOrNot) {
@@ -163,7 +163,7 @@ navBar.style.setProperty("font-size",narVavBarFontSize+"px");
 navBar.style.setProperty("font-weight",440);
 var leftMostNavBarItemWidth=w*0.0655421;
 if (phoneOrPc){leftMostNavBarItemWidth=w*0.032;}
-document.getElementById("leftMostNavBarItem").style.width=leftMostNavBarItemWidth+"px";
+document.getElementById("leftMostNavBarItem").style.width=0+"px";
 
 var whitSpaceForNavBar=document.getElementById("whitSpaceForNavBar");
 //add white space after nav bar, vspace 
@@ -174,21 +174,25 @@ whitSpaceForNavBar.style.height=window.getComputedStyle(navBar,null).getProperty
 
 
 //  add footer
-if (homeOrNot) {footerImgPN="./file/img/zsjBlue.gif"} else {footerImgPN="../file/img/zsjBlue.gif"}
+
 var footer=document.getElementById("footer");
 var myFooter = new Array();
 myFooter[0]="<div style='height:30px'> </div> Email:&ensp;zhangshijun@u.nus.edu &ensp;<b>or</b>&ensp; shijun.math@outlook.com <br>";
 myFooter[1]="Address:&ensp;Department of Mathematics, National University of Singapore, Singapore 119076 <br>";
+
+/*var footerImgPN="../file/img/zsjBlue.gif";
+if (homeOrNot) {var footerImgPN="./file/img/zsjBlue.gif";} 
 var footerPicWidth=w*0.018*12*2.2;
-if (phoneOrPc==1) {footerPicWidth=w*0.018*12*2*2.2;}
-myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'>";
+if (phoneOrPc) {footerPicWidth=w*0.018*12*2*2.2;}
+myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'>";*/
+myFooter[2]="Last updated on October 5, 2021<br>"
 myFooter[3]="<div style='height:30px'> </div>";
 footer.innerHTML=myFooter.join('') 
 
 
 var myfooterFontSize=w*0.01*1.8*0.75; 
 var myfooterLineHeight=w*0.01*1.8*0.9980;
-if (phoneOrPc==1) {
+if (phoneOrPc) {
 	 myfooterFontSize=w*0.01*1.8*0.6*2.05; 
 	myfooterLineHeight=w*0.01*1.8*0.980*2.05;
 	}
@@ -221,7 +225,7 @@ var insertStyle=new Array();
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
 insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";
 insertStyle[2]=" h3 { font-size:"+h1Size*0.8+"px;color:black;text-align:left;font-weight:450;}";
-insertStyle[3]=" .normalFont {font-size:"+h1Size*0.7+"px;color:#555555;text-align:left;line-height:"+h1Size*1.2444  +"px;}";
+insertStyle[3]=" .normalFont {font-size:"+h1Size*0.7+"px;color:#000000;text-align:justify;line-height:"+h1Size*1.2444  +"px;}";
 insertStyle[4]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}"; /* this is overwrite by Css in each index.html*/
 insertStyle[5]=" .addWhiteSpaceOne { height:"+h1Size+"px;}";
 insertStyle[6]=" .addWhiteSpaceTwo { height:"+h1Size*0.7 +"px;}";

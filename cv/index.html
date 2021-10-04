@@ -32,11 +32,18 @@
 
 <link rel="stylesheet" href="../file/cssAndJs/style.css"> 
 <style id="styleInJs"></style>
+<link rel="stylesheet" href="../file/background/bgSetting.css"> 
+
+
 </head>
 
 
 
 <body>
+<!-- The background will be added later via js. -->
+<canvas id="background"></canvas>
+
+
 <!-- add nav in js -->
 <nav id='navBarHTML'></nav>
 
@@ -68,10 +75,11 @@
 
 <h1> Curriculum Vitae (<a href="../file/pdf/CV_shijunZHANG.pdf">PDF</a>) </h1>
 
+<div class="addWhiteSpaceOne"></div>
 
 <!-- <div class="addWhiteSpaceOne"></div> -->
 
-<h2> Personal:</h2>
+<!-- <h2> Personal:</h2> -->
 
 <div  class="cvContainer">
     <span class="cvItemOne"> Name: </span>
@@ -79,32 +87,37 @@
 </div>
 
 
-
-
-
 <div  class="cvContainer">
-    <span class="cvItemOne"> Google Scholar: </span>
-    <span class="cvItemTwo" > <a href="https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/">Google Scholar of Shijun Zhang &nbsp; 张仕俊</a></span>
+    <span class="cvItemOne"> Email: </span>
+    <span class="cvItemTwo" > zhangshijun@u.nus.edu 
+          <br> <b> or </b> &ensp; shijun.math@outlook.com</span>
 </div>
 
 
 <div  class="cvContainer">
     <span class="cvItemOne"> ORCID: </span>
-    <span class="cvItemTwo" > <a href="https://orcid.org/0000-0003-4115-7891">ORCID of Shijun Zhang</a></span>
+    <span class="cvItemTwo" > <a href="https://orcid.org/0000-0003-4115-7891/">0000-0003-4115-7891</a></span>
 </div>
 
+
 <div  class="cvContainer">
+    <span class="cvItemOne"> Google Scholar: </span>
+    <span class="cvItemTwo" > <a href="https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/">
+        Google Scholar of Shijun Zhang  张仕俊
+    </a></span>
+</div>
+
+
+
+
+<!-- <div  class="cvContainer">
     <span class="cvItemOne"> ResearchGate: </span>
     <span class="cvItemTwo" > <a href="https://www.researchgate.net/profile/Shijun_Zhang12/">ResearchGate of Shijun Zhang</a></span>
 </div>
+ -->
 
 
 
-<div  class="cvContainer">
-    <span class="cvItemOne"> Email: </span>
-    <span class="cvItemTwo" > zhangshijun@u.nus.edu 
-          <br> <b> or </b> &nbsp; shijun.math@outlook.com</span>
-</div>
 
 
 <div  class="cvContainer">
@@ -198,19 +211,19 @@
 
 
 
-
-
-</section>
-
 <div class="addWhiteSpaceOne"></div>
 <footer id="footer"></footer>
 <div class="addWhiteSpaceOne"></div>
+
+</section>
+
+
 
 <script type="text/javascript" src="../file/cssAndJs/script.js"></script>
 <!-- <script type="text/javascript" src="./cv.js"></script> -->
 
 <script type="text/javascript">
-  if (phoneOrPc) {var pageWidth=0.95*w;} else {var pageWidth=0.55*w;} 
+  if (phoneOrPc) {var pageWidth=0.95*w;} else {var pageWidth=0.52*w;} 
 document.getElementById("styleInJs").innerHTML=insertStyle.join('')+" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
 if (phoneOrPc) {
     document.getElementById("PhD-thesis").style.fontSize='72%'; 
@@ -219,7 +232,8 @@ if (phoneOrPc) {
 }        
 </script>
 
-
+<!-- add background on canvas -->
+<script type="text/javascript" src="../file/background/bg.js"></script>
 </body>
 </html>
 

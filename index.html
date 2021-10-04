@@ -33,11 +33,16 @@
 <link rel="stylesheet" href="./file/cssAndJs/style.css"> 
 <style id="styleInJs"></style>
 
+
+<link rel="stylesheet" href="./file/background/bgSetting.css"> 
 </head>
 
 
 
 <body>
+<!-- The background will be added later via js. -->
+<canvas id="background"></canvas>
+
 
 <!-- add nav in js -->
 <nav id='navBarHTML'></nav>
@@ -70,89 +75,90 @@
 <div class="addWhiteSpaceOne"></div>
 
 
-<h1> Welcome to Shijun Zhang's Homepage</h1>
+<!-- <h1> Welcome to Shijun Zhang's Homepage</h1> -->
 
 
 <div class="addWhiteSpaceOne"></div>
 
 
-<div class="introRowContainer" id="introAndPic"> <!-- in  a   row -->
-    <div> <a href="./file/img/ShijunZhang.jpg"><img src="./file/img/ShijunZhang.jpg" alt='A Photo Of Shijun Zhang' id="zsjPhoto" style="width:35%;"></a></div>
-  
-    <div class="introColumnContainer" id="introduction"> <!-- in  a  column-->
-          <div id='spaceBeforeName'></div>
+<div class="introRowContainer"> <!-- in  a   row -->
+    <!-- photo  -->
+    <div id="photoContainer"> 
+        <a href="./file/img/ShijunZhang.jpg">
+            <img src="./file/img/ShijunZhang.jpg" alt='A Photo Of Shijun Zhang' id="zsjPhoto" class="circledBorder imgCenter">
+        </a>
+    </div>
+    
+    <!-- space -->
+    <div id="spacePhotoAndIntro"> </div>
 
-          <div style="font-size: 150%;"> Shijun Zhang &nbsp; 张仕俊 </div>
+    <!-- introduction -->
+    <div id="introduction" class='normalFont'> 
+           <span style="font-size:220%;font-style: oblique;">Welcome!</span>  <br>
 
-          <div class="introRowContainerN introItem"> <a href="https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/">
-          Google Scholar</a> <a href="https://orcid.org/0000-0003-4115-7891">ORCID</a> <a href="https://www.researchgate.net/profile/Shijun_Zhang12/">ResearchGate</a> </div>
+           <div id="spaceAfterWelcome"> </div>
 
-
-           <div> Research Fellow 
-           in <a href="http://ww1.math.nus.edu.sg/">  
-           Department of Mathematics </a> 
-          </div>
-
-          <div>  <a href="http://www.nus.edu.sg/" > National University of Singapore</a>  </div>
-
-          <div> Supervisor: &nbsp
-            <a href="https://blog.nus.edu.sg/matzuows/"> 
-            Zuowei Shen</a>
-<!--             and 
-            <a href="https://sites.google.com/prod/view/haizhaoyang/home"> Haizhao Yang</a>   -->
-          </div> 
-
-
-          <div class="introRowContainerN introItem"><a href="./publication/" class='introItemN'> Publication </a>
-    	       <a href="./interest/" class='introItemN'> Interest </a> 
-           </div>
-
-    	     <div class="introRowContainerN introItem"><a href="./cv/" class='introItemN'>  Curriculum Vitae </a>
-    	       <a href="./more/" class='introItemN'> More </a> 
-           </div>
+          &emsp; I am Shijun Zhang (张仕俊), a Research Fellow at National University of Singapore (NUS), supervised by Professor <a href="https://blog.nus.edu.sg/matzuows/">
+                 Zuowei Shen</a>. Currently, I am interested in the error analysis of deep neural networks, especially the approximation error. For more information, check out the following links:
+                 <a href="https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/">Google&nbsp;Scholar</a>,
+                  <a href="https://orcid.org/0000-0003-4115-7891">ORICD</a>,
+                  <a href="./publiction/">Publication</a>,
+                  <a href="./interest/">Interest</a>, 
+                  <a href="./cv/">CV</a>, 
+                  and 
+                  <a href="./more/">More</a>.
     </div>
 </div>
 
+
+<div class="addWhiteSpaceOne"></div>
+<footer id="footer"></footer>
+<div class="addWhiteSpaceOne"></div>
 </section>
 
 
-<div class="addWhiteSpaceOne"></div>
 
-<footer id="footer"></footer>
-
-<div class="addWhiteSpaceOne"></div>
 
 <script type="text/javascript" src="./file/cssAndJs/script.js"></script>
 <!-- <script type="text/javascript" src="./home.js"></script> -->
 
 <script type="text/javascript">
   var zsjPhoto=document.getElementById("zsjPhoto");
-  var zsjIntroduction=document.getElementById("introduction");
+  var photoContainer=document.getElementById("photoContainer");
+  var introduction=document.getElementById("introduction");
+  var spaceAfterWelcome=document.getElementById("spaceAfterWelcome");
+  var spacePhotoAndIntro=document.getElementById("spacePhotoAndIntro");
 if (phoneOrPc) {
-  zsjPhoto.style.width=w*0.8 +"px";
-  zsjIntroduction.style.lineHeight=w*0.0995421+"px";
-  zsjIntroduction.style.fontSize=w*0.0365421+"px";
-  zsjIntroduction.style.fontWeight=520;
-  zsjIntroduction.style.flexFlow="column nowrap";
-  document.getElementById("spaceBeforeName").className='addWhiteSpaceOne';
-
+  photoContainer.style.width= "60%";
+  zsjPhoto.style.width=w*0.6+"px";
+  introduction.style.textAlign="justify";
+  introduction.style.width= "80%";
+  introduction.style.flexFlow="column"; 
+  spacePhotoAndIntro.style.height=0.12*w +"px";
+  spacePhotoAndIntro.style.width=0.82*w +"px";
+  spaceAfterWelcome.style.height=0.06*w +"px";
 } 
 else { 
-  zsjPhoto.style.width=w*0.30 +"px";
-  zsjIntroduction.style.lineHeight=w*0.055421+"px";
-  zsjIntroduction.style.fontSize=w*0.01795421+"px";
-  zsjIntroduction.style.fontWeight=320;
-/*document.getElementById("spaceBeforeName").className='addWhiteSpaceOne';*/
+  photoContainer.style.width= "28%";
+  zsjPhoto.style.width=w*0.22 +"px";
+  introduction.style.textAlign="justify";
+  introduction.style.width= "60%";
+  spacePhotoAndIntro.style.width=0.0632*w +"px";
+/*  spacePhotoAndIntro.style.display="none";*/
+  spaceAfterWelcome.style.height=0.01*w +"px";
 }
 
 
 /*insert Css*/ 
-if (phoneOrPc) {var pageWidth=0.96*w; }  else {var pageWidth=0.76*w;} 
-var insertHomeCss=".pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
+if (phoneOrPc) {var pageWidth=0.95*w; }  else {var pageWidth=0.68*w;} 
+var insertHomeCss=".pageContainer { display:block; margin:0 auto; width:"+pageWidth+"px;}";
 document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertHomeCss;
 </script>
 
 
+
+<!-- add background on canvas -->
+<script type="text/javascript" src="./file/background/bg.js"></script>
 </body>
 </html>
 

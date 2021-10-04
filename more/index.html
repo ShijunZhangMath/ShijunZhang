@@ -32,11 +32,17 @@
 
 <link rel="stylesheet" href="../file/cssAndJs/style.css"> 
 <style id="styleInJs"></style>
+<link rel="stylesheet" href="../file/background/bgSetting.css"> 
+
+
 </head>
 
 
 
 <body>
+<!-- The background will be added later via js. -->
+<canvas id="background"></canvas>
+
 <!-- add nav in js -->
 <nav id='navBarHTML'></nav>
 
@@ -73,7 +79,7 @@
 <h1> More Information </h1>
 <!-- <div class="addWhiteSpaceOne"></div> -->
 
-<h3> I am deeply interested in so many things. Some of them are listed below.     </h3> <br>
+<h3> I have a broad interest in so many things. Some of them are listed below.     </h3> <br>
 <div class='listStyle'>  
    <ul>  
      <li>  
@@ -91,18 +97,16 @@
    </ul>  
  </div> 
 
+
+<div class="addWhiteSpaceOne"></div>
+<footer id="footer"></footer>
+<div class="addWhiteSpaceOne"></div>
 </section>
 
 
 
 
-<div class="addWhiteSpaceOne"></div>
 
-
-<footer id="footer"></footer>
-
-
-<div class="addWhiteSpaceOne"></div>
 
 
 <script type="text/javascript" src="../file/cssAndJs/script.js"></script>
@@ -110,13 +114,14 @@
 
 
 <script type="text/javascript">
-  if (phoneOrPc) {var pageWidth=0.9*w;} else {var pageWidth=0.69*w;} 
+  if (phoneOrPc) {var pageWidth=0.9*w;} else {var pageWidth=0.62*w;} 
 var insertMoreJs=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
 document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertMoreJs;
 </script>
 
 
-
+<!-- add background on canvas -->
+<script type="text/javascript" src="../file/background/bg.js"></script>
 </body>
 </html>
 

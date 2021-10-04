@@ -32,11 +32,18 @@
 
 <link rel="stylesheet" href="../file/cssAndJs/style.css"> 
 <style id="styleInJs"></style>
+<link rel="stylesheet" href="../file/background/bgSetting.css"> 
+
+
 </head>
 
 
 
 <body>
+<!-- The background will be added later via js. -->
+<canvas id="background"></canvas>
+
+
 <!-- add nav in js -->
 <nav id='navBarHTML'></nav>
 
@@ -74,39 +81,40 @@
 <!-- <div class="addWhiteSpaceOne"></div> -->
 
 <!-- <h2 > Dynadic Images:</h2> -->
- Some dynadic images made by myself by Matplotlib or Matlab.
+It is of great interest to 
+create mathathecal dynamic images via Matplotlib or Matlab. See several examples below.
 <br>
 
 <div class="dynamicImageContainer">
     <div class="dynamicImageItem"> 
         <a href="../file/img/clover.gif"> <img src="../file/img/clover.gif" class="dynamicImage"> </a>
     </div>
+
     <div class="dynamicImageItem">
         <a href="../file/img/cardioid.gif"><img src="../file/img/cardioid.gif"  class="dynamicImage"></a>
     </div>
+
     <div class="dynamicImageItem">
         <a href="../file/img/rotateEarth.gif"> <img src="../file/img/rotateEarth.gif" class="dynamicImage"></a>
     </div>
+
     <div class="dynamicImageItem">
         <a href="../file/img/asteroid.gif"> <img src="../file/img/asteroid.gif" class="dynamicImage"></a>
     </div>
 </div>
-Some others may be added in the future.
+<!-- Some others may be added in the future. -->
 
-    </div>
 
+
+<div class="addWhiteSpaceOne"></div>
+<footer id="footer"></footer>
+<div class="addWhiteSpaceOne"></div>
 </section>
 
 
 
 
-<div class="addWhiteSpaceOne"></div>
 
-
-<footer id="footer"></footer>
-
-
-<div class="addWhiteSpaceOne"></div>
 
 
 <script type="text/javascript" src="../file/cssAndJs/script.js"></script>
@@ -114,13 +122,15 @@ Some others may be added in the future.
 
 
 <script type="text/javascript">
-  if (phoneOrPc) {var pageWidth=0.92*w;var dynamicImageWidth=w*0.69;} else {var pageWidth=0.75*w;var dynamicImageWidth=w*0.2830;}
+  if (phoneOrPc) {var pageWidth=0.84*w;var dynamicImageWidth=w*0.69;} else {var pageWidth=0.66*w;var dynamicImageWidth=w*0.28;}
 var insertDynamicImgJs=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
 insertDynamicImgJs+=" .dynamicImage { width:"+dynamicImageWidth+"px;}";
 document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertDynamicImgJs;
 </script>
 
 
+<!-- add background on canvas -->
+<script type="text/javascript" src="../file/background/bg.js"></script>
 </body>
 </html>
 
