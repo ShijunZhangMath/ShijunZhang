@@ -1,3 +1,5 @@
+/*Adapted from https://blog.csdn.net/qq_41756580/article/details/96425764  */
+
 function addBackground() {
   var ctx = document.getElementById('background').getContext('2d');
   //gradient
@@ -15,22 +17,22 @@ function addBackground() {
       },
       saturation:
       {
-        min: 30,
-        max: 60
+        min: 30, //40
+        max: 60  //80
       },
       lightness:
       {
-        min: 65,
-        max: 85
+        min: 65, //25 
+        max: 85  //45
       }
     },
     bokeh:
     {
-      count: 25, // How many circles at the beginning
+      count: 25, // How many circles at the beginning,  30
       size:
       {
-        min: 0.1,
-        max: 0.3
+        min: 0.08, //0.1
+        max: 0.25  //0.3
       },
       alpha:
       {

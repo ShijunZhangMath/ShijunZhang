@@ -185,7 +185,7 @@ if (homeOrNot) {var footerImgPN="./file/img/zsjBlue.gif";}
 var footerPicWidth=w*0.018*12*2.2;
 if (phoneOrPc) {footerPicWidth=w*0.018*12*2*2.2;}
 myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'>";*/
-myFooter[2]="Last updated on October 5, 2021<br>"
+myFooter[2]="The background is adapted from the code in <a href='https://blog.csdn.net/qq_41756580/article/details/96425764'>this post</a> <br> Last updated on October 5, 2021<br>"
 myFooter[3]="<div style='height:30px'> </div>";
 footer.innerHTML=myFooter.join('') 
 
