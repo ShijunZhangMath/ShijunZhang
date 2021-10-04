@@ -193,7 +193,7 @@ footer.innerHTML=myFooter.join('')
 var myfooterFontSize=w*0.01*1.8*0.75; 
 var myfooterLineHeight=w*0.01*1.8*0.9980;
 if (phoneOrPc) {
-	 myfooterFontSize=w*0.01*1.8*0.6*2.05; 
+	 myfooterFontSize=w*0.01*1.8*0.6*1.8; 
 	myfooterLineHeight=w*0.01*1.8*0.980*2.05;
 	}
 

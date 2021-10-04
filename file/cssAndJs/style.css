@@ -43,7 +43,7 @@ color:black;
   align-items: center;
 /*    align-items: flex-start;*/
   flex-flow: row nowrap;
-  background-color:#20B2AA;
+  background-color:rgba(98,201,195,0.99);
       margin: 0px auto;
     padding: 0px;
     border: 0px dashed red;

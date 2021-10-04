@@ -15,8 +15,8 @@ function addBackground() {
       },
       saturation:
       {
-        min: 40,
-        max: 80
+        min: 30,
+        max: 60
       },
       lightness:
       {
@@ -69,7 +69,7 @@ function addBackground() {
   var circleBuffer = document.createElement('canvas').getContext('2d');
   //render time, fps calculations, debug
   var time;
-  var targetFps = 256; //not actual fps, but updates per second
+  var targetFps = 160; //not actual fps, but updates per second
   var curFps = 0;
   var cntFps = 0;
   var fps = 0;
