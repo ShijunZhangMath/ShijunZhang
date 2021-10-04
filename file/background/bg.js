@@ -32,7 +32,7 @@ function addBackground() {
       size:
       {
         min: 0.08, //0.1
-        max: 0.25  //0.3
+        max: 0.225  //0.3
       },
       alpha:
       {
@@ -47,8 +47,8 @@ function addBackground() {
     },
     speed:
     {
-      min: 0.0003, // 0.0001
-      max: 0.003  // 0.001
+      min: 0.00036, // 0.0001
+      max: 0.0036  // 0.001
     },
     debug:
     {
@@ -373,7 +373,8 @@ function addBackground() {
     var height = window.innerHeight;
     var x = e.clientX/width,
       y = e.clientY/height;
-    if(circles.length>45){
+    if(circles.length>51){
+      // >50 
 /*      alert("圆圈太多了");*/
       window.location.reload()
       return;

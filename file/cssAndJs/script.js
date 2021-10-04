@@ -22,7 +22,8 @@ var screenRatio=Math.max(sh,sw)/Math.min(sh,sw);
 /*w=Math.max(w0,h0);
 h=w0+h0-w;*/
 var phoneOrPc=0;
-if (w<=h && screenRatio>=1.432) {
+// 1.432 ipad pro 11
+if (w<=h && screenRatio>=1.33) {
 /*	h=Math.max(w0,h0);
 	w=w0+h0-h;*/
 	phoneOrPc=1;	
