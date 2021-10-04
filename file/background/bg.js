@@ -47,8 +47,8 @@ function addBackground() {
     },
     speed:
     {
-      min: 0.0005, // 0.0001
-      max: 0.005  // 0.001
+      min: 0.0003, // 0.0001
+      max: 0.003  // 0.001
     },
     debug:
     {
@@ -71,7 +71,7 @@ function addBackground() {
   var circleBuffer = document.createElement('canvas').getContext('2d');
   //render time, fps calculations, debug
   var time;
-  var targetFps = 80; //not actual fps, but updates per second,   60
+  var targetFps = 60; //not actual fps, but updates per second,   60
   var curFps = 0;
   var cntFps = 0;
   var fps = 0;
