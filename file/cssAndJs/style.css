@@ -249,8 +249,8 @@ margin:0px;
 
 .myHr {
     border: 0;
-    height: 2.5px;
+    height: 2.85px;
     pardding: 0;
     margin: 0;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.085), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.085));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.075));
 }

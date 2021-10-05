@@ -173,7 +173,7 @@ Starting with ../../ moves two directories backward and starts there (and so on.
 To move forward, just start with the first sub directory and keep moving forward.
 */
 myNavBarHTML[6]='</ul></nav>'+'<div id="navBarRule" style="position:fixed; top: auto; left:0px;width:100%;">';
-myNavBarHTML[7]='<hr class="myHr"></div><div id="vspaceAfterNavBar"></div> ';
+myNavBarHTML[7]='<hr class="myHr"></div><div id="vspaceAfterNavBar"></div> '; 
 navBarHTML.innerHTML=myNavBarHTML.join('')  
 /*.join() has commas
 const elements = ['Fire', 'Air', 'Water'];
@@ -191,10 +191,11 @@ console.log(elements.join('-'));
 //navBar setting
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
-var navBarFontSize=0.012*w;
-if (phoneOrPc) {navBarFontSize=0.0255*w;}
+var navBarFontSize=0.013*w;
+if (phoneOrPc) {navBarFontSize=0.0329*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
+
 
 
 /*navBar.style.setProperty("font-weight",440);*/
@@ -202,7 +203,7 @@ var navBarHome=document.getElementById("navBarHome");
 navBarHome.style.setProperty("font-size",navBarFontSize*1.8+"px");
 navBarHome.style.setProperty("font-weight",440);
 if (phoneOrPc){
-	navBarHome.style.setProperty("padding-right","19%");
+	navBarHome.style.setProperty("padding-right","16%");
 }else{
 	navBarHome.style.setProperty("padding-right","35%");
 }
@@ -261,7 +262,7 @@ footer.style.maxHeight= "100%";
 
 
 //add style in js
-if (phoneOrPc){  var h1Size=w*0.0475; var pageWidth=0.999*w; lineHeight=h1Size*1.23;
+if (phoneOrPc){  var h1Size=w*0.04735; var pageWidth=0.999*w; lineHeight=h1Size*1.23;
 } 
 else {
 		var h1Size=w*0.019; var pageWidth=0.8*w; lineHeight=h1Size*1.12;
