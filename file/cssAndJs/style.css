@@ -72,11 +72,11 @@ color:black;
 
 /*
 link color*/
- a:link {color:#0000F0;
+ a:link {color:#0000BB;
 text-decoration:none;
 }
  a:visited  {
-color:#0000CC;
+color:#000099;
 /*text-decoration:underline;*/
 }
  a:hover {
@@ -85,7 +85,7 @@ text-decoration:underline;
 /*background-color: blue;*/
 }
  a:active  {
-color:black;
+color:#0000EE;
 /*text-decoration:underline;*/
 }
 

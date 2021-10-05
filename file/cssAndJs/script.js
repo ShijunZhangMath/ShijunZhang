@@ -237,17 +237,17 @@ document.getElementsByTagName("head")[0].appendChild(linkNewApple);
 
 
 //add style in js
-if (phoneOrPc){  var h1Size=w*0.045; var pageWidth=0.999*w; 
+if (phoneOrPc){  var h1Size=w*0.045; var pageWidth=0.999*w; lineHeight=h1Size*1.23;
 } 
 else {
-		var h1Size=w*0.0188; var pageWidth=0.8*w;
+		var h1Size=w*0.01925; var pageWidth=0.8*w; lineHeight=h1Size*1.1;
 	} 
 
 var insertStyle=new Array();
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
 insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";
 insertStyle[2]=" h3 { font-size:"+h1Size*0.81+"px;color:black;text-align:left;font-weight:450;}";
-insertStyle[3]=" .normalFont {font-size:"+h1Size*0.729+"px;color:#111111;text-align:justify;line-height:"+h1Size*1.1  +"px;}";
+insertStyle[3]=" .normalFont {font-size:"+h1Size*0.729+"px;color:#111111;text-align:justify;line-height:"+ lineHeight  +"px;}";
 insertStyle[4]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}"; /* this is overwrite by Css in each index.html*/
 /*
 insertStyle[8]=" .eqFont {overflow: scroll;text-align:center;font-size:80%;overflow-y: hidden; overflow-x: scroll;}";*/
