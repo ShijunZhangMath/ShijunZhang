@@ -171,7 +171,7 @@ navBarHome.style.setProperty("font-weight",440);
 if (phoneOrPc){
 	navBarHome.style.setProperty("padding-right","16%");
 }else{
-	navBarHome.style.setProperty("padding-right","21%");
+	navBarHome.style.setProperty("padding-right","30%");
 }
 
 var navBarH=window.getComputedStyle(navBar,null).getPropertyValue("height");
