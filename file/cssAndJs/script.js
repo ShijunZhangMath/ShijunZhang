@@ -90,7 +90,7 @@ var homeOrNot=1-cvOrNot-publicationOrNot-moreOrNot-interestOrNot;
 
 var navBarHTML=document.getElementById("navBarHTML");
 var myNavBarHTML = new Array();
-myNavBarHTML[0]='<ul class="navBarContainer navBarLinkColor" id="navBar">  <li id="leftMostNavBarItem" class="navBarItem"></li>';
+myNavBarHTML[0]='<ul class="navBarContainer navBarLinkColor" id="navBar">';
 if (homeOrNot){
 	myNavBarHTML[1]='<li class="navBarItem">	  <a href="./" class="activeLinkColor"> Home </a>    </li>';
 	myNavBarHTML[2]='<li class="navBarItem">	  <a href="./publication/"> Publication </a>  		 </li>';
@@ -162,9 +162,7 @@ if (phoneOrPc) {narVavBarFontSize=0.0342*w;}
 
 navBar.style.setProperty("font-size",narVavBarFontSize+"px");
 navBar.style.setProperty("font-weight",440);
-var leftMostNavBarItemWidth=w*0.0655421;
-if (phoneOrPc){leftMostNavBarItemWidth=w*0.032;}
-document.getElementById("leftMostNavBarItem").style.width=0+"px";
+
 
 var whitSpaceForNavBar=document.getElementById("whitSpaceForNavBar");
 //add white space after nav bar, vspace 
@@ -194,7 +192,7 @@ footer.innerHTML=myFooter.join('')
 var myfooterFontSize=w*0.01*1.8*0.75; 
 var myfooterLineHeight=w*0.01*1.8*0.9980;
 if (phoneOrPc) {
-	 myfooterFontSize=w*0.01*1.8*0.6*1.9; 
+	 myfooterFontSize=w*0.01*1.8*0.6*1.85; 
 	myfooterLineHeight=w*0.01*1.8*0.980*2.05;
 	}
 

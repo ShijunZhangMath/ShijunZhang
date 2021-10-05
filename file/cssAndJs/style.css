@@ -54,13 +54,14 @@ color:black;
 }
 
 .navBarItem {
-width:auto;
-height:auto;
-padding-top: 20px;
-padding-bottom: 20px;
-padding-left: 0%;
-padding-right: 6%;
-white-space:nowrap;
+  width:auto;
+  height:auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 3.6%;
+  padding-right: 3.6%;
+  text-align: center;
+  white-space:nowrap;
 }
 
 /*
