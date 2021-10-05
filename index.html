@@ -45,7 +45,8 @@
 
 
 <!-- add nav in js -->
-<nav id='navBarHTML'></nav>
+<div id='navBarHTML'></div>
+
 
 <!-- <nav>
   <ul class="navBarContainer navBarLinkColor" id="navBar">
@@ -67,20 +68,13 @@
     </li>
   </ul>
 </nav> -->
-<div  id="whitSpaceForNavBar"></div>
 
+<section id="preSection"></section>
+
+
+<!-- // main section -->
 <section class="pageContainer">
-
-
-<div class="addWhiteSpaceOne"></div>
-<div class="addWhiteSpaceTwo"></div>
-
-
 <!-- <h1> Welcome to Shijun Zhang's Homepage</h1> -->
-
-
-<div class="addWhiteSpaceOne"></div>
-
 
 <div class="introRowContainer"> <!-- in  a   row -->
     <!-- photo  -->
@@ -110,13 +104,17 @@
                   <a href="./more/">More</a>.
     </div>
 </div>
-
-
-<div class="addWhiteSpaceOne"></div>
-<footer id="footer"></footer>
-<div class="addWhiteSpaceOne"></div>
 </section>
 
+
+
+<section id="postSection"></section>
+
+
+<!-- footer section -->
+<section>
+<footer id="footer"></footer>
+</section>
 
 
 
@@ -124,36 +122,53 @@
 <!-- <script type="text/javascript" src="./home.js"></script> -->
 
 <script type="text/javascript">
-  var zsjPhoto=document.getElementById("zsjPhoto");
-  var photoContainer=document.getElementById("photoContainer");
-  var introduction=document.getElementById("introduction");
-  var spaceAfterWelcome=document.getElementById("spaceAfterWelcome");
-  var spacePhotoAndIntro=document.getElementById("spacePhotoAndIntro");
-if (phoneOrPc) {
-  photoContainer.style.width= "60%";
-  zsjPhoto.style.width=w*0.6+"px";
-  introduction.style.textAlign="justify";
-  introduction.style.width= "80%";
-  introduction.style.flexFlow="column"; 
-  spacePhotoAndIntro.style.height=0.063*h +"px";
-  spacePhotoAndIntro.style.width=0.82*w +"px";
-  spaceAfterWelcome.style.height=0.03*h +"px";
-} 
-else { 
-  photoContainer.style.width= "28%";
-  zsjPhoto.style.width=w*0.22 +"px";
-  introduction.style.textAlign="justify";
-  introduction.style.width= "60%";
-  spacePhotoAndIntro.style.width=0.065*w +"px";
-/*  spacePhotoAndIntro.style.display="none";*/
-  spaceAfterWelcome.style.height=0.024*h +"px";
-}
+    var zsjPhoto=document.getElementById("zsjPhoto");
+    var photoContainer=document.getElementById("photoContainer");
+    var introduction=document.getElementById("introduction");
+    var spaceAfterWelcome=document.getElementById("spaceAfterWelcome");
+    var spacePhotoAndIntro=document.getElementById("spacePhotoAndIntro");
+    /*introduction.style.backgroundColor="#E8E8E8";*/
+    /*photoContainer.style.backgroundColor="#E8E8E8";*/
+    introduction.style.textAlign="justify";
+    if (phoneOrPc) {
+        photoContainer.style.width= "60%";
+        zsjPhoto.style.width=w*0.6+"px";
+        introduction.style.width= "80%";
+        introduction.style.flexFlow="column"; 
+        introduction.style.padding=0.045*w+"px";
+        spacePhotoAndIntro.style.height=0.08*h +"px";
+        spacePhotoAndIntro.style.width=0.82*w +"px";
+        spaceAfterWelcome.style.height=0.023*h +"px";
+    } 
+    else { 
+        photoContainer.style.width= "33%";
+        zsjPhoto.style.width=w*0.22 +"px";
+        introduction.style.width= "50%";
+        introduction.style.padding=0.027*w+"px";
+        introduction.style.backgroundColor="#E8E8E8";
+        spacePhotoAndIntro.style.width=0.0365*w +"px";
+      /*  spacePhotoAndIntro.style.display="none";*/
+        spaceAfterWelcome.style.height=0.024*h +"px";
+    }
 
 
-/*insert Css*/ 
-if (phoneOrPc) {var pageWidth=0.95*w; }  else {var pageWidth=0.69*w;} 
-var insertHomeCss=".pageContainer { display:block; margin:0 auto; width:"+pageWidth+"px;}";
-document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertHomeCss;
+    /*insert Css*/ 
+    if (phoneOrPc) {var pageWidth=0.95*w; }  else {var pageWidth=0.69*w;} 
+    var insertHomeCss=".pageContainer { display:block;margin:0 auto; padding-left:3%; padding-right:3%; width:"+pageWidth+"px;}";
+    document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertHomeCss;
+
+
+    // pre and post section
+    var preSection=document.getElementById("preSection");
+    var postSection=document.getElementById("postSection");
+
+    if (phoneOrPc){
+        preSection.style.height=0.09*h +"px";
+        postSection.style.height=0.11*h +"px";
+    }else{
+        preSection.style.height=0.14*h +"px";
+        postSection.style.height=0.18*h +"px";
+    }
 </script>
 
 

@@ -34,6 +34,7 @@ function addBackground() {
     bokeh:
     {
       count: 25, // How many circles at the beginning,  30
+      countUpper: 51,// added
       size:
       {
         min: 0.08, //0.1
@@ -70,6 +71,10 @@ function addBackground() {
       count: 6
     }
   };
+
+ /* if (phoneOrPc) { options.bokeh.count=90; options.bokeh.countUpper=116;}*/
+
+
 
   //buffers
   var gradientBuffer = document.createElement('canvas').getContext('2d');
@@ -378,7 +383,7 @@ function addBackground() {
     var height = window.innerHeight;
     var x = e.clientX/width,
       y = e.clientY/height;
-    if(circles.length>51){
+    if(circles.length>options.bokeh.countUpper){
       // >50 
 /*      alert("圆圈太多了");*/
       window.location.reload()

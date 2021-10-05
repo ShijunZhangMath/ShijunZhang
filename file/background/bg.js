@@ -17,4 +17,4 @@ var bg = document.createElement("script");
 bg.type = "text/javascript";
 bg.src=bgPN;
 bg.async=false;
-document.body.appendChild(bg);
+/*document.body.appendChild(bg);*/

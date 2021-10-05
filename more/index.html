@@ -66,7 +66,9 @@
     </li>
   </ul>
 </nav> -->
-<div id="whitSpaceForNavBar"></div>
+
+
+<section id="preSection"></section>
 
 
 
@@ -75,10 +77,9 @@
 
 <section class="pageContainer normalFont">
 
-<div class="addWhiteSpaceOne"></div>
-<h1> More Information </h1>
-<!-- <div class="addWhiteSpaceOne"></div> -->
 
+<h1> More Information </h1>
+<br>
 <h3> I have a broad interest in so many things. Some of them are listed below.     </h3> <br>
 <div class='listStyle'>  
    <ul>  
@@ -98,9 +99,16 @@
  </div> 
 
 
-<div class="addWhiteSpaceOne"></div>
+</section>
+
+
+
+<section id="postSection"></section>
+
+
+<!-- footer section -->
+<section>
 <footer id="footer"></footer>
-<div class="addWhiteSpaceOne"></div>
 </section>
 
 
@@ -114,9 +122,20 @@
 
 
 <script type="text/javascript">
-  if (phoneOrPc) {var pageWidth=0.9*w;} else {var pageWidth=0.62*w;} 
-var insertMoreJs=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
-document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertMoreJs;
+    if (phoneOrPc) {var pageWidth=0.84*w;} else {var pageWidth=0.45*w;} 
+    var insertMoreJs=" .pageContainer { display:block;margin:0 auto;padding-left:3%; padding-right:3%;width:"+pageWidth+"px;}";
+    document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertMoreJs;
+            // pre and post section
+    var preSection=document.getElementById("preSection");
+    var postSection=document.getElementById("postSection");
+
+    if (phoneOrPc){
+        preSection.style.height=0.079*h +"px";
+        postSection.style.height=0.11*h +"px";
+    }else{
+        preSection.style.height=0.09*h +"px";
+        postSection.style.height=0.164*h +"px";
+    } 
 </script>
 
 

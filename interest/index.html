@@ -84,7 +84,7 @@
 
 
 <!-- add nav in js -->
-<nav id='navBarHTML'></nav>
+<div id='navBarHTML'></div>
 
 <!-- <nav>
   <ul class="navBarContainer navBarLinkColor" id="navBar">
@@ -106,25 +106,29 @@
     </li>
   </ul>
 </nav> -->
-<div id="whitSpaceForNavBar"></div>
+
+
+<section id="preSection"></section>
+
+
 
 <section class="pageContainer normalFont">
 
-<div class="addWhiteSpaceOne"></div>
+
 
 <!-- <h1> Interests </h1> -->
-<!-- <div class="addWhiteSpaceThree"></div> -->
+
 
 <h1> Research Interests</h1>
-
+<br>
 Deep neural networks  have made significant impacts in many 
 fields of computer science and engineering, especially for large-scale and high-dimensional learning problems. Well-designed neural network architectures, efficient training algorithms, and high-performance computing technologies have made neural-network-based methods very successful in real applications. 
 
-<div class='addWhiteSpaceOne'></div>
+<br><br>
 <a href="../file/img/DLapplications.png"> 
   <img src="../file/img/DLapplications.png" class="imgCenter" style="width:65%; " />  
 </a>
-<div class='addWhiteSpaceOne'></div>
+<br><br>
 
 Especially in supervised learning, e.g., image classification and objective detection, the great advantages of neural-network-based methods have been demonstrated over traditional learning methods. Understanding the approximation power of deep neural networks has become a key question for revealing the power of deep learning. A large number of experiments in real applications have shown the large capacity of deep network approximation from many empirical points of view, motivating much effort in establishing the theoretical foundation of deep network approximation. One of the fundamental problems is the characterization of the (optimal) <b>approximation error</b> of deep neural networks in terms of the network size measured in the width, the depth, the number of neurons, or the number of parameters.<br><br>
 
@@ -132,7 +136,8 @@ Currently, I am quite interested in studying the <b>approximation error</b>.
 Designing efficient <b>optimization algorithms</b> and analyzing the <b>generalization bounds</b> are two other separate future directions. 
 See <a href="../file/pdf/Intro_of_AE_OE_and_GE.pdf">this note</a> for the introductions of the <b>approximation error (AE)</b>, the <b>optimization error (OE)</b>, and the <b>generalization error (GE)</b>. 
 
-<div class='addWhiteSpaceOne'></div>
+
+<br><br>
 
 <a href="../file/img/AEOEGE.png"> <img src="../file/img/AEOEGE.png" class="imgCenter" style="width:65%; " />  </a>
 
@@ -249,9 +254,17 @@ Currently, we focus on providing an upper bound of the approximation  error $R_{
 </ol> -->
 
 
-<div class="addWhiteSpaceOne"></div>
+
+</section>
+
+
+
+<section id="postSection"></section>
+
+
+<!-- footer section -->
+<section>
 <footer id="footer"></footer>
-<div class="addWhiteSpaceOne"></div>
 </section>
 
 
@@ -261,8 +274,21 @@ Currently, we focus on providing an upper bound of the approximation  error $R_{
 <script type="text/javascript" src="../file/cssAndJs/script.js"></script>
 <!-- <script type="text/javascript" src="./interest.js"></script> -->
 <script type="text/javascript"> 
-  if (phoneOrPc) {var pageWidth=0.9*w;} else {var pageWidth=0.6*w;}
-document.getElementById("styleInJs").innerHTML=insertStyle.join('')+" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
+    if (phoneOrPc) {var pageWidth=0.84*w;} else {var pageWidth=0.48*w;}
+
+    var insertInterestCss=" .pageContainer { display:block;margin:0 auto;padding-left:3%; padding-right:3%;width:"+pageWidth+"px;}";
+    document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertInterestCss;
+        // pre and post section
+    var preSection=document.getElementById("preSection");
+    var postSection=document.getElementById("postSection");
+
+    if (phoneOrPc){
+        preSection.style.height=0.069*h +"px";
+        postSection.style.height=0.11*h +"px";
+    }else{
+        preSection.style.height=0.07*h +"px";
+        postSection.style.height=0.12*h +"px";
+    }
 </script>
 
 

@@ -67,23 +67,23 @@
     </li>
   </ul>
 </nav> -->
-<div id="whitSpaceForNavBar"></div>
 
 
+<section id="preSection"></section>
 
 
 
 
 <section class="pageContainer normalFont">
 
-<div class="addWhiteSpaceOne"></div>
-<h1> Dynamic Images </h1>
-<!-- <div class="addWhiteSpaceOne"></div> -->
 
+<h1> Dynamic Images </h1>
+
+<br>
 <!-- <h2 > Dynadic Images:</h2> -->
 It is of great interest to 
 create mathathecal dynamic images via Matplotlib or Matlab. See several examples below.
-<br>
+<br><br>
 
 <div class="dynamicImageContainer">
     <div class="dynamicImageItem"> 
@@ -106,9 +106,16 @@ create mathathecal dynamic images via Matplotlib or Matlab. See several examples
 
 
 
-<div class="addWhiteSpaceOne"></div>
+</section>
+
+
+
+<section id="postSection"></section>
+
+
+<!-- footer section -->
+<section>
 <footer id="footer"></footer>
-<div class="addWhiteSpaceOne"></div>
 </section>
 
 
@@ -122,10 +129,22 @@ create mathathecal dynamic images via Matplotlib or Matlab. See several examples
 
 
 <script type="text/javascript">
-  if (phoneOrPc) {var pageWidth=0.9*w;var dynamicImageWidth=w*0.69;} else {var pageWidth=0.66*w;var dynamicImageWidth=w*0.28;}
-var insertDynamicImgJs=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";
-insertDynamicImgJs+=" .dynamicImage { width:"+dynamicImageWidth+"px;}";
-document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertDynamicImgJs;
+    if (phoneOrPc) {var pageWidth=0.84*w;var dynamicImageWidth=w*0.69;} else {var pageWidth=0.6*w;var dynamicImageWidth=w*0.26;}
+    var insertDynamicImgJs=" .pageContainer { display:block;margin:0 auto;padding-left:3%; padding-right:3%;width:"+pageWidth+"px;}";
+    insertDynamicImgJs+=" .dynamicImage { width:"+dynamicImageWidth+"px;}";
+    document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertDynamicImgJs;
+
+            // pre and post section
+    var preSection=document.getElementById("preSection");
+    var postSection=document.getElementById("postSection");
+
+    if (phoneOrPc){
+        preSection.style.height=0.069*h +"px";
+        postSection.style.height=0.11*h +"px";
+    }else{
+        preSection.style.height=0.088*h +"px";
+        postSection.style.height=0.145*h +"px";
+    } 
 </script>
 
 

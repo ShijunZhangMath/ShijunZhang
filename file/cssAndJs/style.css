@@ -1,3 +1,7 @@
+section { 
+  display: block;
+}
+
 
 body, footer { margin: 0px;
     padding: 0px;
@@ -11,18 +15,18 @@ body, footer { margin: 0px;
 
 
 .activeLinkColor {
-  color: #555555 !important;
+  color: #222222 !important;
 }
 /*navbar*/
-.navBarLinkColor a:link {color:#FFFFFF;
+.navBarLinkColor a:link {color:#888888;
 text-decoration:none;
 }
 .navBarLinkColor a:visited  {
-color:#EEEEEE;
+color:#7E7E7E;
 /*text-decoration:underline;*/
 }
 .navBarLinkColor a:hover {
-color:#666666;
+color:#E67E22;
 text-decoration:none;
 /*text-decoration:underline;*/
 /*background-color: blue;*/
@@ -43,7 +47,7 @@ color:black;
   align-items: center;
 /*    align-items: flex-start;*/
   flex-flow: row nowrap;
-  background-color:rgba(98,201,195,0.99);
+  background-color:rgba(252,252,252,0.99);
       margin: 0px auto;
     padding: 0px;
     border: 0px dashed red;
@@ -51,15 +55,17 @@ color:black;
     list-style-type: none;
     position:fixed;
     overflow: auto;
+    top: 0;
+    left: 0;
 }
 
 .navBarItem {
   width:auto;
   height:auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 3.6%;
-  padding-right: 3.6%;
+  padding-top: 30px;
+  padding-bottom: 28px;
+  padding-left: 1.35%;
+  padding-right: 1.35%;
   text-align: center;
   white-space:nowrap;
 }
@@ -206,7 +212,7 @@ margin:0px;
 
            
 .listStyle li {  
-   padding: 10px;  
+   padding: 20px;  
    overflow: auto;  
    border-top-style: none;
   border-right-style: none;
@@ -228,6 +234,7 @@ margin:0px;
 }
 
 
+
   .circledBorder {
 /*    width:50%; */
 /*        height:50%; */
@@ -238,3 +245,12 @@ margin:0px;
         width: 100%;
         height: 100%;
     }*/
+
+
+.myHr {
+    border: 0;
+    height: 2.5px;
+    pardding: 0;
+    margin: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.085), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.085));
+}

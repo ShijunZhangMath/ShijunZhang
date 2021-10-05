@@ -90,16 +90,16 @@ var homeOrNot=1-cvOrNot-publicationOrNot-moreOrNot-interestOrNot;
 
 var navBarHTML=document.getElementById("navBarHTML");
 var myNavBarHTML = new Array();
-myNavBarHTML[0]='<ul class="navBarContainer navBarLinkColor" id="navBar">';
+myNavBarHTML[0]='<nav> <ul class="navBarContainer navBarLinkColor" id="navBar">';
 if (homeOrNot){
-	myNavBarHTML[1]='<li class="navBarItem">	  <a href="./" class="activeLinkColor"> Home </a>    </li>';
+	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">	  <a href="./" class="activeLinkColor"> Shijun Zhang </a>    </li>';
 	myNavBarHTML[2]='<li class="navBarItem">	  <a href="./publication/"> Publication </a>  		 </li>';
 	myNavBarHTML[3]='<li class="navBarItem">      <a href="./interest/"> Interest </a>    			</li>';
 	myNavBarHTML[4]='<li class="navBarItem">      <a href="./cv/">  CV </a>    		</li>';
 	myNavBarHTML[5]='<li class="navBarItem">      <a href="./more/"> More </a>    					</li>';
 }
 else {
-	myNavBarHTML[1]='<li class="navBarItem">   <a href="../"> Home </a>    </li>';
+	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">   <a href="../"> Shijun Zhang </a>    </li>';
 
 	if (publicationOrNot) {
 		myNavBarHTML[2]='<li class="navBarItem">  <a href="../publication/" class="activeLinkColor"> Publication </a>  </li>';
@@ -139,7 +139,8 @@ Starting with ../../ moves two directories backward and starts there (and so on.
 
 To move forward, just start with the first sub directory and keep moving forward.
 */
-myNavBarHTML[6]='</ul>';
+myNavBarHTML[6]='</ul></nav>'+'<div id="navBarRule" style="position:fixed; top: auto; left:0px;width:100%;">';
+myNavBarHTML[7]='<hr class="myHr"></div><div id="vspaceAfterNavBar"></div> ';
 navBarHTML.innerHTML=myNavBarHTML.join('')  
 /*.join() has commas
 const elements = ['Fire', 'Air', 'Water'];
@@ -157,17 +158,28 @@ console.log(elements.join('-'));
 //navBar setting
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
-var narVavBarFontSize=0.02*w;
-if (phoneOrPc) {narVavBarFontSize=0.0342*w;}
+var narBarFontSize=0.0125*w;
+if (phoneOrPc) {narBarFontSize=0.027*w;}
 
-navBar.style.setProperty("font-size",narVavBarFontSize+"px");
-navBar.style.setProperty("font-weight",440);
+navBar.style.setProperty("font-size",narBarFontSize+"px");
 
 
-var whitSpaceForNavBar=document.getElementById("whitSpaceForNavBar");
-//add white space after nav bar, vspace 
-whitSpaceForNavBar.style.height=window.getComputedStyle(navBar,null).getPropertyValue("height");
+/*navBar.style.setProperty("font-weight",440);*/
+var navBarHome=document.getElementById("navBarHome");
+navBarHome.style.setProperty("font-size",narBarFontSize*1.8+"px");
+navBarHome.style.setProperty("font-weight",440);
+if (phoneOrPc){
+	navBarHome.style.setProperty("padding-right","16%");
+}else{
+	navBarHome.style.setProperty("padding-right","21%");
+}
 
+var navBarH=window.getComputedStyle(navBar,null).getPropertyValue("height");
+var navBarRule=document.getElementById("navBarRule");
+navBarRule.style.top=navBarH;
+/*navBarRule.style.backgroundColor="red";*/
+var vspaceAfterNavBar=document.getElementById("vspaceAfterNavBar");
+vspaceAfterNavBar.style.height=navBarH;
 
 
 
@@ -176,23 +188,27 @@ whitSpaceForNavBar.style.height=window.getComputedStyle(navBar,null).getProperty
 
 var footer=document.getElementById("footer");
 var myFooter = new Array();
-myFooter[0]="<div style='height:30px'> </div> Email:&ensp;zhangshijun@u.nus.edu &ensp;<b>or</b>&ensp; shijun.math@outlook.com <br>";
-myFooter[1]="Address:&ensp;Department of Mathematics, National University of Singapore, Singapore 119076 <br>";
+
+myFooter[0]=" <div style='background-color:rgba(240,240,240,0.95); display:block;position:sticky;'>";
+myFooter[1]="<div style='height:"+h*0.053+"px;'></div>";// add vspace
+myFooter[2]=" Email:&ensp;zhangshijun@u.nus.edu &ensp;<b>or</b>&ensp; shijun.math@outlook.com <br>";
+myFooter[3]="Address:&ensp;Department of Mathematics (NUS), Singapore 119076 ";
 
 /*var footerImgPN="../file/img/zsjBlue.gif";
 if (homeOrNot) {var footerImgPN="./file/img/zsjBlue.gif";} 
 var footerPicWidth=w*0.018*12*2.2;
 if (phoneOrPc) {footerPicWidth=w*0.018*12*2*2.2;}
 myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'>";*/
-myFooter[2]="<div id='backgroundSource'></div> Last updated on October 5, 2021<br>"
-myFooter[3]="<div style='height:30px'> </div>";
+myFooter[4]="<div id='backgroundSource'></div> Last updated on October 5, 2021";
+myFooter[5]="<div style='height:"+h*0.036+"px;'></div> </div>";
+/*myFooter[3]="<div style='height:30px'> </div>";*/
 footer.innerHTML=myFooter.join('') 
 
 
 var myfooterFontSize=w*0.01*1.8*0.75; 
 var myfooterLineHeight=w*0.01*1.8*0.9980;
 if (phoneOrPc) {
-	 myfooterFontSize=w*0.01*1.8*0.6*1.85; 
+	 myfooterFontSize=w*0.01*1.8*0.6*2.1; 
 	myfooterLineHeight=w*0.01*1.8*0.980*2.05;
 	}
 
@@ -208,33 +224,33 @@ footer.style.maxHeight= "100%";
 
 /*add links or metas to head*/
 var linkNew = document.createElement("link");
-linkNew.rel = "icon"; 
-if (homeOrNot) {linkNew.href = "./file/img/nus.jpg";} else { linkNew.href = "../file/img/nus.jpg";}
+linkNew.rel = "shortcut icon"; 
+if (homeOrNot) {linkNew.href = "./file/img/nus.ico";} else { linkNew.href = "../file/img/nus.ico";}
 document.getElementsByTagName("head")[0].appendChild(linkNew);
 var linkNewApple = document.createElement("link");
 linkNewApple.rel = "apple-touch-icon"; 
-if (homeOrNot) {linkNewApple.href = "./file/img/nus.jpg";} else { linkNewApple.href = "../file/img/nus.jpg";}
+if (homeOrNot) {linkNewApple.href = "./file/img/nus.ico";} else { linkNewApple.href = "../file/img/nus.ico";}
 document.getElementsByTagName("head")[0].appendChild(linkNewApple);
 
 
 
+
+
 //add style in js
-if (phoneOrPc){  var h1Size=w*0.048; var pageWidth=0.999*w; var hspace=0.031*h;
+if (phoneOrPc){  var h1Size=w*0.045; var pageWidth=0.999*w; 
 } 
 else {
-		var h1Size=w*0.024; var pageWidth=0.8*w;var hspace=0.05*h;
+		var h1Size=w*0.0188; var pageWidth=0.8*w;
 	} 
 
 var insertStyle=new Array();
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
 insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";
-insertStyle[2]=" h3 { font-size:"+h1Size*0.8+"px;color:black;text-align:left;font-weight:450;}";
-insertStyle[3]=" .normalFont {font-size:"+h1Size*0.7+"px;color:#000000;text-align:justify;line-height:"+h1Size*1.2444  +"px;}";
+insertStyle[2]=" h3 { font-size:"+h1Size*0.81+"px;color:black;text-align:left;font-weight:450;}";
+insertStyle[3]=" .normalFont {font-size:"+h1Size*0.729+"px;color:#111111;text-align:justify;line-height:"+h1Size*1.1  +"px;}";
 insertStyle[4]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}"; /* this is overwrite by Css in each index.html*/
-insertStyle[5]=" .addWhiteSpaceOne { height:"+hspace+"px;}";
-insertStyle[6]=" .addWhiteSpaceTwo { height:"+hspace*0.7 +"px;}";
-insertStyle[7]=" .addWhiteSpaceThree { height:"+hspace*0.4+"px;}";
-insertStyle[8]=" .eqFont {overflow: scroll;text-align:center;font-size:80%;overflow-y: hidden; overflow-x: scroll;}";
+/*
+insertStyle[8]=" .eqFont {overflow: scroll;text-align:center;font-size:80%;overflow-y: hidden; overflow-x: scroll;}";*/
 
 
 // styleInJs.innerHTML=insertStyle.join('') 
