@@ -73,6 +73,7 @@
 
 
 <div class="addWhiteSpaceOne"></div>
+<div class="addWhiteSpaceTwo"></div>
 
 
 <!-- <h1> Welcome to Shijun Zhang's Homepage</h1> -->
@@ -98,7 +99,7 @@
 
            <div id="spaceAfterWelcome"> </div>
 
-          &emsp; I am Shijun Zhang (张仕俊), a Research Fellow at National University of Singapore (NUS), supervised by Professor <a href="https://blog.nus.edu.sg/matzuows/">
+          &emsp;&emsp; I am Shijun Zhang (张仕俊), a Research Fellow at National University of Singapore (NUS), supervised by Professor <a href="https://blog.nus.edu.sg/matzuows/">
                  Zuowei Shen</a>. Currently, I am interested in the error analysis of deep neural networks, especially the approximation error. For more information, check out the following links:
                  <a href="https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/">Google&nbsp;Scholar</a>,
                   <a href="https://orcid.org/0000-0003-4115-7891">ORICD</a>,
@@ -134,23 +135,23 @@ if (phoneOrPc) {
   introduction.style.textAlign="justify";
   introduction.style.width= "80%";
   introduction.style.flexFlow="column"; 
-  spacePhotoAndIntro.style.height=0.09*w +"px";
+  spacePhotoAndIntro.style.height=0.063*h +"px";
   spacePhotoAndIntro.style.width=0.82*w +"px";
-  spaceAfterWelcome.style.height=0.035*w +"px";
+  spaceAfterWelcome.style.height=0.03*h +"px";
 } 
 else { 
   photoContainer.style.width= "28%";
   zsjPhoto.style.width=w*0.22 +"px";
   introduction.style.textAlign="justify";
   introduction.style.width= "60%";
-  spacePhotoAndIntro.style.width=0.0632*w +"px";
+  spacePhotoAndIntro.style.width=0.065*w +"px";
 /*  spacePhotoAndIntro.style.display="none";*/
-  spaceAfterWelcome.style.height=0.01*w +"px";
+  spaceAfterWelcome.style.height=0.024*h +"px";
 }
 
 
 /*insert Css*/ 
-if (phoneOrPc) {var pageWidth=0.95*w; }  else {var pageWidth=0.68*w;} 
+if (phoneOrPc) {var pageWidth=0.95*w; }  else {var pageWidth=0.69*w;} 
 var insertHomeCss=".pageContainer { display:block; margin:0 auto; width:"+pageWidth+"px;}";
 document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertHomeCss;
 </script>

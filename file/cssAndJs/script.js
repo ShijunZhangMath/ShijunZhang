@@ -186,7 +186,7 @@ if (homeOrNot) {var footerImgPN="./file/img/zsjBlue.gif";}
 var footerPicWidth=w*0.018*12*2.2;
 if (phoneOrPc) {footerPicWidth=w*0.018*12*2*2.2;}
 myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'>";*/
-myFooter[2]="The background is adapted from the code in <a href='https://blog.csdn.net/qq_41756580/article/details/96425764'>this post</a> <br> Last updated on October 5, 2021<br>"
+myFooter[2]="The background is adapted from the code in <a id='backgroundSource'>this post</a> <br> Last updated on October 5, 2021<br>"
 myFooter[3]="<div style='height:30px'> </div>";
 footer.innerHTML=myFooter.join('') 
 
@@ -194,7 +194,7 @@ footer.innerHTML=myFooter.join('')
 var myfooterFontSize=w*0.01*1.8*0.75; 
 var myfooterLineHeight=w*0.01*1.8*0.9980;
 if (phoneOrPc) {
-	 myfooterFontSize=w*0.01*1.8*0.6*1.8; 
+	 myfooterFontSize=w*0.01*1.8*0.6*1.9; 
 	myfooterLineHeight=w*0.01*1.8*0.980*2.05;
 	}
 
@@ -221,16 +221,21 @@ document.getElementsByTagName("head")[0].appendChild(linkNewApple);
 
 
 //add style in js
-if (phoneOrPc){  var h1Size=w*0.048; var pageWidth=0.999*w;} else {var h1Size=w*0.024; var pageWidth=0.8*w;} 
+if (phoneOrPc){  var h1Size=w*0.048; var pageWidth=0.999*w; var hspace=0.031*h;
+} 
+else {
+		var h1Size=w*0.024; var pageWidth=0.8*w;var hspace=0.05*h;
+	} 
+
 var insertStyle=new Array();
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
 insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";
 insertStyle[2]=" h3 { font-size:"+h1Size*0.8+"px;color:black;text-align:left;font-weight:450;}";
 insertStyle[3]=" .normalFont {font-size:"+h1Size*0.7+"px;color:#000000;text-align:justify;line-height:"+h1Size*1.2444  +"px;}";
 insertStyle[4]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}"; /* this is overwrite by Css in each index.html*/
-insertStyle[5]=" .addWhiteSpaceOne { height:"+h1Size+"px;}";
-insertStyle[6]=" .addWhiteSpaceTwo { height:"+h1Size*0.7 +"px;}";
-insertStyle[7]=" .addWhiteSpaceThree { height:"+h1Size*0.4+"px;}";
+insertStyle[5]=" .addWhiteSpaceOne { height:"+hspace+"px;}";
+insertStyle[6]=" .addWhiteSpaceTwo { height:"+hspace*0.7 +"px;}";
+insertStyle[7]=" .addWhiteSpaceThree { height:"+hspace*0.4+"px;}";
 insertStyle[8]=" .eqFont {overflow: scroll;text-align:center;font-size:80%;overflow-y: hidden; overflow-x: scroll;}";
 
 
