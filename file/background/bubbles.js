@@ -1,6 +1,10 @@
 /*Adapted from https://blog.csdn.net/qq_41756580/article/details/96425764  */
-document.getElementById('backgroundSource').href='https://blog.csdn.net/qq_41756580/article/details/96425764';
+var bgSrc="The background is adapted from the code in " 
+bgSrc+=" <a href='https://blog.csdn.net/qq_41756580/article/details/96425764'>this post</a><br>";
+document.getElementById('backgroundSource').innerHTML=bgSrc;
 
+
+// add backgound
 function addBackground() {
   var ctx = document.getElementById('background').getContext('2d');
   //gradient
