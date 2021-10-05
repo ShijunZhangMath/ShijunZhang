@@ -8,6 +8,11 @@ dddd<span id="zsj"></span>dddd
 </script>*/
 // alert(screen.width)
 
+
+
+
+
+
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
@@ -71,7 +76,15 @@ if (window.innerHeight<=window.innerWidth && Math.abs(myorientation)==90) {
 
 
 
-// Add HTML to nav bar
+
+
+
+
+
+
+
+
+
 // define a function to test pathname
 function testPN(pn) {
 var currentPN=document.location.pathname;
@@ -88,6 +101,26 @@ var homeOrNot=1-cvOrNot-publicationOrNot-moreOrNot-interestOrNot;
 // return 1 if home; return 0 if not
 
 
+/*add links or metas to head*/
+// add icon
+var iconN, iconPN;
+iconN='luckyClover';
+if (homeOrNot) {iconPN = "./file/img/"+iconN+".ico";} else { iconPN = "../file/img/"+iconN+".ico";}
+
+var linkNew = document.createElement("link");
+linkNew.rel = "shortcut icon"; 
+linkNew.href=iconPN;
+document.getElementsByTagName("head")[0].appendChild(linkNew);
+
+var linkNewApple = document.createElement("link");
+linkNewApple.rel = "apple-touch-icon"; 
+linkNewApple.href=iconPN;
+document.getElementsByTagName("head")[0].appendChild(linkNewApple);
+
+
+
+
+// Add HTML to nav bar
 var navBarHTML=document.getElementById("navBarHTML");
 var myNavBarHTML = new Array();
 myNavBarHTML[0]='<nav> <ul class="navBarContainer navBarLinkColor" id="navBar">';
@@ -169,9 +202,9 @@ var navBarHome=document.getElementById("navBarHome");
 navBarHome.style.setProperty("font-size",narBarFontSize*1.8+"px");
 navBarHome.style.setProperty("font-weight",440);
 if (phoneOrPc){
-	navBarHome.style.setProperty("padding-right","16%");
+	navBarHome.style.setProperty("padding-right","18%");
 }else{
-	navBarHome.style.setProperty("padding-right","30%");
+	navBarHome.style.setProperty("padding-right","35%");
 }
 
 var navBarH=window.getComputedStyle(navBar,null).getPropertyValue("height");
@@ -180,6 +213,8 @@ navBarRule.style.top=navBarH;
 /*navBarRule.style.backgroundColor="red";*/
 var vspaceAfterNavBar=document.getElementById("vspaceAfterNavBar");
 vspaceAfterNavBar.style.height=navBarH;
+
+
 
 
 
@@ -222,25 +257,14 @@ footer.style.maxHeight= "100%";
 
 
 
-/*add links or metas to head*/
-var linkNew = document.createElement("link");
-linkNew.rel = "shortcut icon"; 
-if (homeOrNot) {linkNew.href = "./file/img/nus.ico";} else { linkNew.href = "../file/img/nus.ico";}
-document.getElementsByTagName("head")[0].appendChild(linkNew);
-var linkNewApple = document.createElement("link");
-linkNewApple.rel = "apple-touch-icon"; 
-if (homeOrNot) {linkNewApple.href = "./file/img/nus.ico";} else { linkNewApple.href = "../file/img/nus.ico";}
-document.getElementsByTagName("head")[0].appendChild(linkNewApple);
-
-
 
 
 
 //add style in js
-if (phoneOrPc){  var h1Size=w*0.045; var pageWidth=0.999*w; lineHeight=h1Size*1.23;
+if (phoneOrPc){  var h1Size=w*0.046; var pageWidth=0.999*w; lineHeight=h1Size*1.23;
 } 
 else {
-		var h1Size=w*0.01925; var pageWidth=0.8*w; lineHeight=h1Size*1.1;
+		var h1Size=w*0.0198; var pageWidth=0.8*w; lineHeight=h1Size*1.12;
 	} 
 
 var insertStyle=new Array();
