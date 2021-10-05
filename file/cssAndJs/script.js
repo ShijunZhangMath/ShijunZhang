@@ -192,7 +192,7 @@ console.log(elements.join('-'));
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
 var navBarFontSize=0.013*w;
-if (phoneOrPc) {navBarFontSize=0.03*w;}
+if (phoneOrPc) {navBarFontSize=0.0295*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
 
