@@ -1,6 +1,10 @@
 // Create a script element to add background
 
-var bgPN, bgN;
+
+document.getElementById('background').style.display="none";
+
+
+/*var bgPN, bgN;
 
 
 bgN="bubbles"
@@ -17,4 +21,4 @@ var bg = document.createElement("script");
 bg.type = "text/javascript";
 bg.src=bgPN;
 bg.async=false;
-/*document.body.appendChild(bg);*/
+document.body.appendChild(bg);*/
