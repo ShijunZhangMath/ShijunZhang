@@ -125,14 +125,14 @@ var navBarHTML=document.getElementById("navBarHTML");
 var myNavBarHTML = new Array();
 myNavBarHTML[0]='<nav> <ul class="navBarContainer navBarLinkColor" id="navBar">';
 if (homeOrNot){
-	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">	  <a href="./" class="activeLinkColor"> Shijun&thinsp;Zhang </a>    </li>';
+	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">	  <a href="./" class="activeLinkColor"> Shijun&thinsp;ZHANG </a>    </li>';
 	myNavBarHTML[2]='<li class="navBarItem">	  <a href="./publication/"> Publication </a>  		 </li>';
 	myNavBarHTML[3]='<li class="navBarItem">      <a href="./interest/"> Interest </a>    			</li>';
 	myNavBarHTML[4]='<li class="navBarItem">      <a href="./cv/">  C&thinsp;V</a>    		</li>';
 	myNavBarHTML[5]='<li class="navBarItem">      <a href="./more/"> More </a>    					</li>';
 }
 else {
-	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">   <a href="../"> Shijun&thinsp;Zhang </a>    </li>';
+	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">   <a href="../"> Shijun&thinsp;ZHANG </a>    </li>';
 
 	if (publicationOrNot) {
 		myNavBarHTML[2]='<li class="navBarItem">  <a href="../publication/" class="activeLinkColor"> Publication </a>  </li>';
@@ -200,12 +200,13 @@ navBar.style.setProperty("font-size",navBarFontSize+"px");
 
 /*navBar.style.setProperty("font-weight",440);*/
 var navBarHome=document.getElementById("navBarHome");
-navBarHome.style.setProperty("font-weight",440);
+navBarHome.style.setProperty("font-weight",520);
+navBarHome.style.setProperty("font-family","cursive,fantasy,serif");
 if (phoneOrPc){
-	navBarHome.style.setProperty("padding-right","11%");
+	navBarHome.style.setProperty("padding-right","9%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.5+"px");
 }else{
-	navBarHome.style.setProperty("padding-right","30%");
+	navBarHome.style.setProperty("padding-right","27%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.8+"px");
 }
 
@@ -270,9 +271,9 @@ else {
 	} 
 
 var insertStyle=new Array();
-insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:650;}";
-insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:545;}";
-insertStyle[2]=" h3 { font-size:"+h1Size*0.81+"px;color:black;text-align:left;font-weight:450;}";
+insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:600;}";
+insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:500;}";
+insertStyle[2]=" h3 { font-size:"+h1Size*0.81+"px;color:black;text-align:left;font-weight:400;}";
 insertStyle[3]=" .normalFont {font-size:"+h1Size*0.729+"px;color:#111111;text-align:justify;line-height:"+ lineHeight  +"px;}";
 insertStyle[4]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}"; /* this is overwrite by Css in each index.html*/
 /*
