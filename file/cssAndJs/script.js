@@ -282,9 +282,9 @@ insertStyle[6]= lineHeight*0.85  +"px;font-family:Helvetica, sans-serif;}";
 insertStyle[7]=" .footnoteFont {font-size:"+h1Size*0.729*0.9*0.9+"px;color:#242424;text-align:left;line-height:";
 insertStyle[8]= lineHeight*0.85*0.9  +"px;font-family:Helvetica, sans-serif;}";
 if (phoneOrPc) {
-	insertStyle[9]= ".imgWidth {width:88%;}";
+	insertStyle[9]= ".imgWidth {width:88%;padding:"+0.019*h+"px;}";
 }else{
-	insertStyle[9]= ".imgWidth {width:68%;}";
+	insertStyle[9]= ".imgWidth {width:68%;padding:"+0.0218*h+"px;}";
 }
 
 /*insertStyle[9]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";*/ /* this is overwrite by Css in each index.html*/
