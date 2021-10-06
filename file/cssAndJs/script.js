@@ -125,14 +125,14 @@ var navBarHTML=document.getElementById("navBarHTML");
 var myNavBarHTML = new Array();
 myNavBarHTML[0]='<nav> <ul class="navBarContainer navBarLinkColor" id="navBar">';
 if (homeOrNot){
-	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">	  <a href="./" class="activeLinkColor"> Shijun Zhang </a>    </li>';
+	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">	  <a href="./" class="activeLinkColor"> Shijun&thinsp;Zhang </a>    </li>';
 	myNavBarHTML[2]='<li class="navBarItem">	  <a href="./publication/"> Publication </a>  		 </li>';
 	myNavBarHTML[3]='<li class="navBarItem">      <a href="./interest/"> Interest </a>    			</li>';
-	myNavBarHTML[4]='<li class="navBarItem">      <a href="./cv/">  CV </a>    		</li>';
+	myNavBarHTML[4]='<li class="navBarItem">      <a href="./cv/">  C&thinsp;V</a>    		</li>';
 	myNavBarHTML[5]='<li class="navBarItem">      <a href="./more/"> More </a>    					</li>';
 }
 else {
-	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">   <a href="../"> Shijun Zhang </a>    </li>';
+	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">   <a href="../"> Shijun&thinsp;Zhang </a>    </li>';
 
 	if (publicationOrNot) {
 		myNavBarHTML[2]='<li class="navBarItem">  <a href="../publication/" class="activeLinkColor"> Publication </a>  </li>';
@@ -149,10 +149,10 @@ else {
 	}
 
 	if (cvOrNot) {
-		myNavBarHTML[4]='<li class="navBarItem">  <a href="../cv/" class="activeLinkColor"> CV </a>  </li>';
+		myNavBarHTML[4]='<li class="navBarItem">  <a href="../cv/" class="activeLinkColor"> C&thinsp;V </a>  </li>';
 	}
 	else {
-		myNavBarHTML[4]='<li class="navBarItem">  <a href="../cv/"> CV </a>  		 </li>';
+		myNavBarHTML[4]='<li class="navBarItem">  <a href="../cv/"> C&thinsp;V </a>  		 </li>';
 	}
 
 	if (moreOrNot) {
@@ -202,10 +202,10 @@ navBar.style.setProperty("font-size",navBarFontSize+"px");
 var navBarHome=document.getElementById("navBarHome");
 navBarHome.style.setProperty("font-weight",440);
 if (phoneOrPc){
-	navBarHome.style.setProperty("padding-right","14%");
+	navBarHome.style.setProperty("padding-right","11%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.5+"px");
 }else{
-	navBarHome.style.setProperty("padding-right","32%");
+	navBarHome.style.setProperty("padding-right","30%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.8+"px");
 }
 
