@@ -273,8 +273,8 @@ else {
 
 var insertStyle=new Array();
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:#242424;text-align:center;font-weight:600;font-family:serif;}";
-insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:#242424;text-align:left;font-weight:500;font-family:serif;}";
-insertStyle[2]=" h3 { font-size:"+h1Size*0.81+"px;color:#242424;text-align:left;font-weight:400;font-family:serif;}";
+insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:#242424;text-align:left;font-weight:500;font-family:sans-serif;}";
+insertStyle[2]=" h3 { font-size:"+h1Size*0.81+"px;color:#242424;text-align:left;font-weight:400;font-family:sans-serif;}";
 insertStyle[3]=" .normalFont {font-size:"+h1Size*0.729+"px;color:#242424;text-align:justify;line-height:";
 insertStyle[4]= lineHeight*0.98  +"px;font-family:Helvetica, sans-serif;}";
 insertStyle[5]=" .smallFont {font-size:"+h1Size*0.729*0.9+"px;color:#242424;text-align:justify;line-height:";
