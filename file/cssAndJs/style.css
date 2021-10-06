@@ -178,12 +178,14 @@ padding: 0px;
 text-align: left;
 margin:0px;
 }
+
 .cvItemTwo {
 width:auto;
 height:auto;
 padding: 0px;
 text-align: right;
-margin:0px;
+margin-right:0px;
+margin-left:auto;
 }
 
 
