@@ -265,19 +265,21 @@ footer.style.maxHeight= "100%";
 
 
 //add style in js
-if (phoneOrPc){  var h1Size=w*0.04735; var pageWidth=0.999*w; lineHeight=h1Size*1.23;
+if (phoneOrPc){  var h1Size=w*0.04735; var pageWidth=0.999*w; lineHeight=h1Size*1.21;
 } 
 else {
-		var h1Size=w*0.0185; var pageWidth=0.8*w; lineHeight=h1Size*1.2;
+		var h1Size=w*0.0185; var pageWidth=0.8*w; lineHeight=h1Size*1.18;
 	} 
 
 var insertStyle=new Array();
-insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:black;text-align:center;font-weight:600;}";
-insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:black;text-align:left;font-weight:500;}";
-insertStyle[2]=" h3 { font-size:"+h1Size*0.81+"px;color:black;text-align:left;font-weight:400;}";
-insertStyle[3]=" .normalFont {font-size:"+h1Size*0.729+"px;color:#222222;text-align:justify;line-height:";
-insertStyle[4]= lineHeight  +"px;font-family:Helvetica, sans-serif;}";
-insertStyle[5]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}"; /* this is overwrite by Css in each index.html*/
+insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:#242424;text-align:center;font-weight:600;}";
+insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:#242424;text-align:left;font-weight:500;}";
+insertStyle[2]=" h3 { font-size:"+h1Size*0.81+"px;color:#242424;text-align:left;font-weight:400;}";
+insertStyle[3]=" .normalFont {font-size:"+h1Size*0.729+"px;color:#242424;text-align:justify;line-height:";
+insertStyle[4]= lineHeight*0.98  +"px;font-family:Helvetica, sans-serif;}";
+insertStyle[5]=" .smallFont {font-size:"+h1Size*0.729*0.9+"px;color:#242424;text-align:justify;line-height:";
+insertStyle[6]= lineHeight*0.85  +"px;font-family:Helvetica, sans-serif;}";
+insertStyle[7]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}"; /* this is overwrite by Css in each index.html*/
 /*
 insertStyle[8]=" .eqFont {overflow: scroll;text-align:center;font-size:80%;overflow-y: hidden; overflow-x: scroll;}";*/
 

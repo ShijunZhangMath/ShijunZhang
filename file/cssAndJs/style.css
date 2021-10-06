@@ -15,14 +15,14 @@ body, footer { margin: 0px;
 
 
 .activeLinkColor {
-  color: #222222 !important;
+  color: #111111 !important;
 }
 /*navbar*/
-.navBarLinkColor a:link {color:#888888;
+.navBarLinkColor a:link {color:#8E8E8E;
 text-decoration:none;
 }
 .navBarLinkColor a:visited  {
-color:#7E7E7E;
+color:#808080;
 /*text-decoration:underline;*/
 }
 .navBarLinkColor a:hover {
@@ -252,7 +252,7 @@ margin:0px;
     height: 2.85px;
     pardding: 0;
     margin: 0;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.075));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
 }
 
 
@@ -270,5 +270,7 @@ text-shadow:  1px 0px 1px #CCCCCC,
               5px 4px 1px #CCCCCC, 
               4px 5px 1px #EEEEEE, 
               6px 5px 1px #CCCCCC, 
-              5px 6px 1px #EEEEEE; 
+              5px 6px 1px #EEEEEE,
+              7px 6px 1px #CCCCCC, 
+              6px 7px 1px #EEEEEE; 
 }
