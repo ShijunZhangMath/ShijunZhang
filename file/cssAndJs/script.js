@@ -265,7 +265,7 @@ footer.style.maxHeight= "100%";
 
 
 //add style in js
-if (phoneOrPc){  var h1Size=w*0.04735; var pageWidth=0.999*w; lineHeight=h1Size*1.22;
+if (phoneOrPc){  var h1Size=w*0.0453; var pageWidth=0.999*w; lineHeight=h1Size*1.22;
 } 
 else {
 		var h1Size=w*0.0185; var pageWidth=0.8*w; lineHeight=h1Size*1.2;
