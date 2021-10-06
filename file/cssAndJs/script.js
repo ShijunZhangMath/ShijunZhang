@@ -265,21 +265,21 @@ footer.style.maxHeight= "100%";
 
 
 //add style in js
-if (phoneOrPc){  var h1Size=w*0.04735; var pageWidth=0.999*w; lineHeight=h1Size*1.21;
+if (phoneOrPc){  var h1Size=w*0.04735; var pageWidth=0.999*w; lineHeight=h1Size*1.22;
 } 
 else {
-		var h1Size=w*0.0185; var pageWidth=0.8*w; lineHeight=h1Size*1.18;
+		var h1Size=w*0.0185; var pageWidth=0.8*w; lineHeight=h1Size*1.2;
 	} 
 
 var insertStyle=new Array();
 insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:#242424;text-align:center;font-weight:600;font-family:serif;}";
 insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:#242424;text-align:left;font-weight:500;font-family:sans-serif;}";
 insertStyle[2]=" h3 { font-size:"+h1Size*0.81+"px;color:#242424;text-align:left;font-weight:400;font-family:sans-serif;}";
-insertStyle[3]=" .normalFont {font-size:"+h1Size*0.729+"px;color:#242424;text-align:justify;line-height:";
+insertStyle[3]=" .normalFont {font-size:"+h1Size*0.729+"px;color:#242424;text-align:left;line-height:";
 insertStyle[4]= lineHeight*0.98  +"px;font-family:Helvetica, sans-serif;}";
-insertStyle[5]=" .smallFont {font-size:"+h1Size*0.729*0.9+"px;color:#242424;text-align:justify;line-height:";
+insertStyle[5]=" .smallFont {font-size:"+h1Size*0.729*0.9+"px;color:#242424;text-align:left;line-height:";
 insertStyle[6]= lineHeight*0.85  +"px;font-family:Helvetica, sans-serif;}";
-insertStyle[7]=" .footnoteFont {font-size:"+h1Size*0.729*0.9*0.9+"px;color:#242424;text-align:justify;line-height:";
+insertStyle[7]=" .footnoteFont {font-size:"+h1Size*0.729*0.9*0.9+"px;color:#242424;text-align:left;line-height:";
 insertStyle[8]= lineHeight*0.85*0.9  +"px;font-family:Helvetica, sans-serif;}";
 if (phoneOrPc) {
 	insertStyle[9]= ".imgWidth {width:88%;}";
