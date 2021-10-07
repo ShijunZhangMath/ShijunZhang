@@ -157,7 +157,7 @@ myNavBarHTML[0]='<nav id="navBar">      <ul class="navBarContainer navBarLinkCol
 
 
 homeName='<div class="centerImgText"> <img src="'+relativePath;
-homeName+='/file/img/zsjLogo.ico" style="height:0.825em;width:auto;padding:0;margin-right:0.1em;"><span>Shijun&thinsp;ZHANG </span></div>';
+homeName+='/file/img/zsjLogo.png" style="height:0.825em;width:auto;padding:0;margin-right:0.1em;"><span>Shijun&thinsp;ZHANG </span></div>';
 myNavBarHTML[1]='<li class="navBarItem" id="navBarHome"><a href="'+relativePath+'" class="myTextShadow '+homeActiveOrNot+'"> '+ homeName +' </a> </li>';
 
 
