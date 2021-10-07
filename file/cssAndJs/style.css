@@ -23,7 +23,7 @@ body, footer { margin: 0px;
 }
 
 .navBarLinkColor a:hover {
-  color: #E65C00;
+  color: #EF7C00;
   text-shadow:  none;
 /*color:#E67E22;*/
  text-decoration:none;
@@ -32,7 +32,7 @@ body, footer { margin: 0px;
 }
 
 .navBarLinkColor a:active  {
-color:#FF6600;
+color:#FF8400;
 /*text-decoration:underline;*/
 }
 
@@ -83,14 +83,14 @@ color:#000090;
 }
 
  a:hover {
-  color: #E65C00;
+  color: #EF7C00;
 /*color:  #00CED1;*/
 /*text-decoration:underline;*/
 /*background-color: blue;*/
 }
 
  a:active  {
-color:#FF6600;
+color:#FF8400;
 /*text-decoration:underline;*/
 }
 
