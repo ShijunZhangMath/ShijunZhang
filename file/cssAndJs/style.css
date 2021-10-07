@@ -336,29 +336,29 @@ text-shadow:  calc(1em / 40)  calc(0em / 40)  calc(1em / 40)  #CCCCCC,
 
 
 .myTextBlink {
-    animation: myBlink 1.53s linear infinite;
-    -webkit-animation: myBlink 1.3s linear infinite;
+    animation: myBlink 1.7s linear infinite;
+    -webkit-animation: myBlink 1.7s linear infinite;
 
 }
 
 @keyframes myBlink {
     0% {
-        color: rgba(0,0,0,0.8);
+        color: rgba(0,0,0,0.9);
     }
 
-    20% {
-        color: rgba(0,0,0,0.7);
+    25% {
+        color: rgba(0,0,0,0.8);
     }
 
     50% {
-        color: rgba(0,0,0,0.1);
+        color: rgba(0,0,0,0.075);
     }
 
-    80% {
-        color: rgba(0,0,0,0.7);
+    75% {
+        color: rgba(0,0,0,0.8);
     }
 
     100% {
-        color: rgba(0,0,0,0.8);
+        color: rgba(0,0,0,0.9);
     }
 }
