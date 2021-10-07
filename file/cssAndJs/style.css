@@ -336,8 +336,8 @@ text-shadow:  calc(1em / 40)  calc(0em / 40)  calc(1em / 40)  #CCCCCC,
 
 
 .myTextBlink {
-    animation: myBlink 1.13s linear infinite;
-    -webkit-animation: myBlink 1.13s linear infinite;
+    animation: myBlink 1.53s linear infinite;
+    -webkit-animation: myBlink 1.3s linear infinite;
 
 }
 
