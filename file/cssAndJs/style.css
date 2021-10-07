@@ -1,6 +1,4 @@
-section { 
-  display: block;
-}
+
 
 
 body, footer { margin: 0px;
@@ -27,7 +25,7 @@ body, footer { margin: 0px;
 }
 
 .navBarLinkColor a:hover {
-  color: #EB5E00 ;
+  color: #F26100;
   text-shadow:  none;
 /*color:#E67E22;*/
  text-decoration:none;
@@ -36,7 +34,7 @@ body, footer { margin: 0px;
 }
 
 .navBarLinkColor a:active  {
-color:black;
+color:#FF6600;
 /*text-decoration:underline;*/
 }
 
@@ -77,21 +75,24 @@ a[class~="myTextShadow"][class~="activeLinkColor"] {
 
 /*
 link color*/
- a:link {color:#0000B2;
+ a:link {color:#0000A2;
 text-decoration:none;
 }
+
  a:visited  {
-color:#0000A8;
+color:#000090;
 /*text-decoration:underline;*/
 }
+
  a:hover {
-  color:  #EB5E00;
+  color:  #F26100;
 /*color:  #00CED1;*/
 /*text-decoration:underline;*/
 /*background-color: blue;*/
 }
+
  a:active  {
-color:#0000EE;
+color:#FF6600;
 /*text-decoration:underline;*/
 }
 
@@ -375,8 +376,8 @@ text-shadow:  calc(1em / 43)  calc(0em / 43)  calc(1em / 43)  #CCCCCC,
 
 
 .myTextBlink {
-    animation: myBlink 1.7s ease infinite;
-    -webkit-animation: myBlink 1.7s ease infinite;
+    animation: myBlink 1.88s ease infinite;
+    -webkit-animation: myBlink 1.88s ease infinite;
 
 }
 

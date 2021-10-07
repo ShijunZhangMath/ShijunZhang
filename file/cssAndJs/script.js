@@ -16,8 +16,8 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var navBarFontSize=20;
-var footerFontSize=20;
+var dayUpdate="October 7, 2021"
+
 
 var	w=window.innerWidth;
 var	h=window.innerHeight;
@@ -225,7 +225,7 @@ vspaceAfterNavBar.style.height=navBarH;
 
 
 //  add footer
-
+var navBarFontSize, footerFontSize=20;
 var footer=document.getElementById("footer");
 var myFooter = new Array();
 
@@ -239,7 +239,7 @@ if (homeOrNot) {var footerImgPN="./file/img/zsjBlue.gif";}
 var footerPicWidth=w*0.018*12*2.2;
 if (phoneOrPc) {footerPicWidth=w*0.018*12*2*2.2;}
 myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'>";*/
-myFooter[4]="<div id='backgroundSource'></div> Last updated on October 5, 2021";
+myFooter[4]="<div id='backgroundSource'></div> Last updated on "+dayUpdate;
 myFooter[5]="<div style='height:"+h*0.036+"px;'></div> </div>";
 /*myFooter[3]="<div style='height:30px'> </div>";*/
 footer.innerHTML=myFooter.join('') 
