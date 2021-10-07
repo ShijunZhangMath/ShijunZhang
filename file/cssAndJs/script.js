@@ -104,7 +104,7 @@ var homeOrNot=1-cvOrNot-publicationOrNot-moreOrNot-interestOrNot;
 /*add links or metas to head*/
 // add icon
 var iconN, iconPN;
-iconN='luckyClover';
+iconN='zsjLogo2';
 if (homeOrNot) {iconPN = "./file/img/"+iconN+".ico";} else { iconPN = "../file/img/"+iconN+".ico";}
 
 var linkNew = document.createElement("link");
@@ -123,45 +123,56 @@ document.getElementsByTagName("head")[0].appendChild(linkNewApple);
 // Add HTML to nav bar
 var navBarHTML=document.getElementById("navBarHTML");
 var myNavBarHTML = new Array();
-myNavBarHTML[0]='<nav id="navBar"> <ul class="navBarContainer navBarLinkColor" id="navBarInner">';
+
+var relativePath='../';
+if (homeOrNot){ relativePath='./';}
+
+var homeActiveOrNot=" ";
 if (homeOrNot){
-	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome"><a href="./" class="activeLinkColor myTextShadow"> Shijun&thinsp;ZHANG </a></li>';
-	myNavBarHTML[2]='<li class="navBarItem">	  <a href="./publication/"> Publication </a>  		 </li>';
-	myNavBarHTML[3]='<li class="navBarItem">      <a href="./interest/"> Interest </a>    			</li>';
-	myNavBarHTML[4]='<li class="navBarItem">      <a href="./cv/">  C&thinsp;V</a>    		</li>';
-	myNavBarHTML[5]='<li class="navBarItem">      <a href="./more/"> More </a>    					</li>';
+	homeActiveOrNot=" activeLinkColor";
 }
-else {
-	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">   <a href="../" class="myTextShadow"> Shijun&thinsp;ZHANG </a>    </li>';
 
-	if (publicationOrNot) {
-		myNavBarHTML[2]='<li class="navBarItem">  <a href="../publication/" class="activeLinkColor"> Publication </a>  </li>';
-	}
-	else {
-		myNavBarHTML[2]='<li class="navBarItem">  <a href="../publication/"> Publication </a>  		 </li>';
-	}
-
-	if (interestOrNot) {
-		myNavBarHTML[3]='<li class="navBarItem">  <a href="../interest/" class="activeLinkColor"> Interest </a>  </li>';
-	}
-	else {
-		myNavBarHTML[3]='<li class="navBarItem">  <a href="../interest/"> Interest </a>  		 </li>';
-	}
-
-	if (cvOrNot) {
-		myNavBarHTML[4]='<li class="navBarItem">  <a href="../cv/" class="activeLinkColor"> C&thinsp;V </a>  </li>';
-	}
-	else {
-		myNavBarHTML[4]='<li class="navBarItem">  <a href="../cv/"> C&thinsp;V </a>  		 </li>';
-	}
-
-	if (moreOrNot) {
-		myNavBarHTML[5]='<li class="navBarItem">  <a href="../more/" class="activeLinkColor"> More </a>  </li>';
-	}
-	else {
-		myNavBarHTML[5]='<li class="navBarItem">  <a href="../more/"> More </a>  		 </li>';
-	}
+var publicationActiveOrNot=" ";
+if (publicationOrNot){
+	publicationActiveOrNot=" activeLinkColor";
 }
+
+var interestActiveOrNot=" ";
+if (interestOrNot){
+	interestActiveOrNot=" activeLinkColor";
+}
+
+var cvActiveOrNot=" ";
+if (cvOrNot){
+	cvActiveOrNot=" activeLinkColor";
+}
+
+var moreActiveOrNot=" ";
+if (moreOrNot){
+	moreActiveOrNot=" activeLinkColor";
+}
+
+
+myNavBarHTML[0]='<nav id="navBar">      <ul class="navBarContainer navBarLinkColor" id="navBarInner">';
+
+
+homeName='<div class="centerImgText"> <img src="'+relativePath;
+homeName+='/file/img/zsjLogo2.ico" style="height:1em;width:auto;padding:0;margin:0;"><span>Shijun&thinsp;ZHANG </span></div>';
+myNavBarHTML[1]='<li class="navBarItem" id="navBarHome"><a href="'+relativePath+'" class="myTextShadow '+homeActiveOrNot+'"> '+ homeName +' </a> </li>';
+
+
+myNavBarHTML[2]='<li class="navBarItem"><a href="'+relativePath+'publication/" class="'+publicationActiveOrNot+'"> Publication </a>  </li>';
+
+
+myNavBarHTML[3]='<li class="navBarItem">  <a href="'+relativePath+'interest/" class="'+interestActiveOrNot+'"> Interest </a>  </li>';
+
+
+myNavBarHTML[4]='<li class="navBarItem">  <a href="'+relativePath+'cv/" class="'+cvActiveOrNot+'"> C&thinsp;V </a>  </li>';
+
+
+myNavBarHTML[5]='<li class="navBarItem">  <a href="'+relativePath+'more/" class="'+moreActiveOrNot+'"> More </a>  </li>';
+
+
 /*Starting with / returns to the root directory and starts there
 
 ./file/doc.pdf    =    file/doc.pdf
@@ -172,8 +183,8 @@ Starting with ../../ moves two directories backward and starts there (and so on.
 
 To move forward, just start with the first sub directory and keep moving forward.
 */
-myNavBarHTML[6]='</ul>'+'<div id="navBarRule" style="position:fixed; top: auto; left:0px;width:100%;">';
-myNavBarHTML[7]='<hr class="myHr"></div><div id="vspaceAfterNavBar"></div></nav>'; 
+myNavBarHTML[6]='</ul>'+' <div id="navBarRule" style="position:fixed; top: auto; left:0px;width:100%;"><hr class="myHr"></div>  ';
+myNavBarHTML[7]='<div id="vspaceAfterNavBar"></div>            </nav>'; 
 navBarHTML.innerHTML=myNavBarHTML.join('')  
 /*.join() has commas
 const elements = ['Fire', 'Air', 'Water'];
@@ -192,7 +203,7 @@ console.log(elements.join('-'));
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
 var navBarFontSize=0.0112*w;
-if (phoneOrPc) {navBarFontSize=0.031*w;}
+if (phoneOrPc) {navBarFontSize=0.027*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
 navBar.style.setProperty("font-family","Helvetica, sans-serif");
@@ -204,7 +215,7 @@ navBarHome.style.setProperty("font-weight",430);
 navBarHome.style.setProperty("font-family","serif");
 /*navBarHome.style.setProperty("font-style","oblique");*/
 if (phoneOrPc){
-	navBarHome.style.setProperty("padding-right","9%");
+	navBarHome.style.setProperty("padding-right","11%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.5+"px");
 }else{
 	navBarHome.style.setProperty("padding-right","27%");
@@ -240,7 +251,9 @@ var footerPicWidth=w*0.018*12*2.2;
 if (phoneOrPc) {footerPicWidth=w*0.018*12*2*2.2;}
 myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'>";*/
 myFooter[4]="<div id='backgroundSource'></div> Last updated on "+dayUpdate;
-myFooter[5]="<div style='height:"+h*0.036+"px;'></div> </div>";
+myFooter[5]="<div style='height:1em;'></div>";
+myFooter[6]="<a href='"+relativePath+"'> <img src='"+relativePath+"file/img/zsjLogo.ico' style='height:3em;width:auto;'> </a>";
+myFooter[7]="<div style='height:2em;'></div>        </div>";
 /*myFooter[3]="<div style='height:30px'> </div>";*/
 footer.innerHTML=myFooter.join('') 
 

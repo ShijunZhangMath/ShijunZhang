@@ -1,6 +1,4 @@
 
-
-
 body, footer { margin: 0px;
     padding: 0px;
 /*    background-color: #FFFAF0;*/
@@ -25,7 +23,7 @@ body, footer { margin: 0px;
 }
 
 .navBarLinkColor a:hover {
-  color: #F26100;
+  color: #E65C00;
   text-shadow:  none;
 /*color:#E67E22;*/
  text-decoration:none;
@@ -42,33 +40,33 @@ color:#FF6600;
 
 /* provide a high priority via repeating   */
  a.activeLinkColor.activeLinkColor {
-   color: #111111;
+   color: #020202;
 /*   font-weight: bold;*/
 /*   text-shadow:  calc(3em / 58)  calc(3em / 58)  calc(0em / 58)  #EEEEEE,
                 calc(7.5em / 58)  calc(6em / 58)  calc(0em / 58)  rgba(0,0,0,0.15);*/
 
-/*              calc(0em / 43)  calc(6em / 43)  calc(1em / 43)  #CCCCCC;*/
+/*              calc(0em / 42)  calc(6em / 42)  calc(1em / 42)  #CCCCCC;*/
 }
 
 
 /* overwrith the text-shadow of a:hover */
 a[class~="myTextShadow"][class~="activeLinkColor"] {
-  text-shadow:  calc(1em / 43)  calc(0em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(0em / 43)  calc(1em / 43)  calc(1em / 43)  #EEEEEE, 
-              calc(2em / 43)  calc(1em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(1em / 43)  calc(2em / 43)  calc(1em / 43)  #EEEEEE,
-              calc(3em / 43)  calc(2em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(2em / 43)  calc(3em / 43)  calc(1em / 43)  #EEEEEE, 
-              calc(4em / 43)  calc(3em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(3em / 43)  calc(4em / 43)  calc(1em / 43)  #EEEEEE,
-              calc(5em / 43)  calc(4em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(4em / 43)  calc(5em / 43)  calc(1em / 43)  #EEEEEE, 
-              calc(6em / 43)  calc(5em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(5em / 43)  calc(6em / 43)  calc(1em / 43)  #EEEEEE,
-              calc(7em / 43)  calc(6em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(6em / 43)  calc(7em / 43)  calc(1em / 43)  #EEEEEE, 
-              calc(8em / 43)  calc(7em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(7em / 43)  calc(8em / 43)  calc(1em / 43)  #EEEEEE;
+  text-shadow:  calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(0em / 42)  calc(1em / 42)  calc(1em / 42)  #EEEEEE, 
+              calc(2em / 42)  calc(1em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(1em / 42)  calc(2em / 42)  calc(1em / 42)  #EEEEEE,
+              calc(3em / 42)  calc(2em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(2em / 42)  calc(3em / 42)  calc(1em / 42)  #EEEEEE, 
+              calc(4em / 42)  calc(3em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(3em / 42)  calc(4em / 42)  calc(1em / 42)  #EEEEEE,
+              calc(5em / 42)  calc(4em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(4em / 42)  calc(5em / 42)  calc(1em / 42)  #EEEEEE, 
+              calc(6em / 42)  calc(5em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(5em / 42)  calc(6em / 42)  calc(1em / 42)  #EEEEEE,
+              calc(7em / 42)  calc(6em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(6em / 42)  calc(7em / 42)  calc(1em / 42)  #EEEEEE, 
+              calc(8em / 42)  calc(7em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(7em / 42)  calc(8em / 42)  calc(1em / 42)  #EEEEEE;
 }
 
 
@@ -85,7 +83,7 @@ color:#000090;
 }
 
  a:hover {
-  color:  #F26100;
+  color: #E65C00;
 /*color:  #00CED1;*/
 /*text-decoration:underline;*/
 /*background-color: blue;*/
@@ -341,22 +339,22 @@ text-shadow:  1px 0px 1px #CCCCCC,
 .myTextShadow {
 /*color: #555555;*/
 /*background: #FFFFFF;*/
-text-shadow:  calc(1em / 43)  calc(0em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(0em / 43)  calc(1em / 43)  calc(1em / 43)  #EEEEEE, 
-              calc(2em / 43)  calc(1em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(1em / 43)  calc(2em / 43)  calc(1em / 43)  #EEEEEE,
-              calc(3em / 43)  calc(2em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(2em / 43)  calc(3em / 43)  calc(1em / 43)  #EEEEEE, 
-              calc(4em / 43)  calc(3em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(3em / 43)  calc(4em / 43)  calc(1em / 43)  #EEEEEE,
-              calc(5em / 43)  calc(4em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(4em / 43)  calc(5em / 43)  calc(1em / 43)  #EEEEEE, 
-              calc(6em / 43)  calc(5em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(5em / 43)  calc(6em / 43)  calc(1em / 43)  #EEEEEE,
-              calc(7em / 43)  calc(6em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(6em / 43)  calc(7em / 43)  calc(1em / 43)  #EEEEEE, 
-              calc(8em / 43)  calc(7em / 43)  calc(1em / 43)  #CCCCCC, 
-              calc(7em / 43)  calc(8em / 43)  calc(1em / 43)  #EEEEEE;
+text-shadow:  calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(0em / 42)  calc(1em / 42)  calc(1em / 42)  #EEEEEE, 
+              calc(2em / 42)  calc(1em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(1em / 42)  calc(2em / 42)  calc(1em / 42)  #EEEEEE,
+              calc(3em / 42)  calc(2em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(2em / 42)  calc(3em / 42)  calc(1em / 42)  #EEEEEE, 
+              calc(4em / 42)  calc(3em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(3em / 42)  calc(4em / 42)  calc(1em / 42)  #EEEEEE,
+              calc(5em / 42)  calc(4em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(4em / 42)  calc(5em / 42)  calc(1em / 42)  #EEEEEE, 
+              calc(6em / 42)  calc(5em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(5em / 42)  calc(6em / 42)  calc(1em / 42)  #EEEEEE,
+              calc(7em / 42)  calc(6em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(6em / 42)  calc(7em / 42)  calc(1em / 42)  #EEEEEE, 
+              calc(8em / 42)  calc(7em / 42)  calc(1em / 42)  #CCCCCC, 
+              calc(7em / 42)  calc(8em / 42)  calc(1em / 42)  #EEEEEE;
 /*              2px 1px 1px #CCCCCC, 
               1px 2px 1px #EEEEEE, 
               3px 2px 1px #CCCCCC, 
@@ -401,4 +399,21 @@ text-shadow:  calc(1em / 43)  calc(0em / 43)  calc(1em / 43)  #CCCCCC,
     100% {
         color: rgba(0,0,0,0.9);
     }
+}
+
+
+
+.centerImgText {
+    display: flex;
+    align-items: center; /*垂直居中*/
+    justify-content: center; /*水平居中*/
+    flex-flow: row nowrap;
+    height: auto;
+    width:100%;
+    margin: 0 auto;
+    padding: 0;
+    border: 0px dashed red;
+    cursor: pointer;
+    list-style-type: none;
+    overflow: auto;
 }
