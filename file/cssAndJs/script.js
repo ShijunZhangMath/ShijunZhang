@@ -123,7 +123,7 @@ document.getElementsByTagName("head")[0].appendChild(linkNewApple);
 // Add HTML to nav bar
 var navBarHTML=document.getElementById("navBarHTML");
 var myNavBarHTML = new Array();
-myNavBarHTML[0]='<nav> <ul class="navBarContainer navBarLinkColor" id="navBar">';
+myNavBarHTML[0]='<nav id="navBar"> <ul class="navBarContainer navBarLinkColor" id="navBarInner">';
 if (homeOrNot){
 	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">	  <a href="./" class="activeLinkColor myTextShadow"> Shijun&thinsp;ZHANG </a>    </li>';
 	myNavBarHTML[2]='<li class="navBarItem">	  <a href="./publication/"> Publication </a>  		 </li>';
@@ -172,8 +172,8 @@ Starting with ../../ moves two directories backward and starts there (and so on.
 
 To move forward, just start with the first sub directory and keep moving forward.
 */
-myNavBarHTML[6]='</ul></nav>'+'<div id="navBarRule" style="position:fixed; top: auto; left:0px;width:100%;">';
-myNavBarHTML[7]='<hr class="myHr"></div><div id="vspaceAfterNavBar"></div> '; 
+myNavBarHTML[6]='</ul>'+'<div id="navBarRule" style="position:fixed; top: auto; left:0px;width:100%;">';
+myNavBarHTML[7]='<hr class="myHr"></div><div id="vspaceAfterNavBar"></div></nav>'; 
 navBarHTML.innerHTML=myNavBarHTML.join('')  
 /*.join() has commas
 const elements = ['Fire', 'Air', 'Water'];
@@ -191,7 +191,7 @@ console.log(elements.join('-'));
 //navBar setting
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
-var navBarFontSize=0.0135*w;
+var navBarFontSize=0.0112*w;
 if (phoneOrPc) {navBarFontSize=0.031*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
@@ -211,7 +211,8 @@ if (phoneOrPc){
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.8+"px");
 }
 
-var navBarH=window.getComputedStyle(navBar,null).getPropertyValue("height");
+var navBarInner=document.getElementById("navBarInner");
+var navBarH=window.getComputedStyle(navBarInner,null).getPropertyValue("height");
 var navBarRule=document.getElementById("navBarRule");
 navBarRule.style.top=navBarH;
 /*navBarRule.style.backgroundColor="red";*/
@@ -245,10 +246,10 @@ footer.innerHTML=myFooter.join('')
 
 
 var myfooterFontSize=w*0.01*1.8*0.75; 
-var myfooterLineHeight=w*0.01*1.8*0.9980;
+var myfooterLineHeight=myfooterFontSize*1.25;
 if (phoneOrPc) {
-	 myfooterFontSize=w*0.01*1.8*0.6*2.1; 
-	myfooterLineHeight=w*0.01*1.8*0.980*2.05;
+	 myfooterFontSize=w*0.01*1.8*0.6*2.374; 
+		myfooterLineHeight=myfooterFontSize*1.45;
 	}
 
 footer.setAttribute("style","text-align:center;text-size-adjust:none;-webkit-text-size-adjust:none; ");

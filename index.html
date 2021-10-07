@@ -89,7 +89,7 @@
 
     <!-- introduction -->
     <div id="introduction" class='normalFont'> 
-           <span style="font-size:240%;font-style: oblique;font-family:serif;">Welcome!</span>  <br>
+           <span style="font-size:240%;font-style: italic;font-family:serif;">Welcome!</span>  <br>
 
            <div id="spaceAfterWelcome"> </div>
 
@@ -131,12 +131,12 @@
     /*photoContainer.style.backgroundColor="#E8E8E8";*/
     introduction.style.textAlign="left";
     if (phoneOrPc) {
-        photoContainer.style.width= "60%";
+        photoContainer.style.width= "65%";
         zsjPhoto.style.width=w*0.6+"px";
         introduction.style.width= "80%";
         introduction.style.flexFlow="column"; 
         introduction.style.padding=0.045*w+"px";
-        introduction.style.lineHeight="179%";
+        introduction.style.lineHeight="188%";
         spacePhotoAndIntro.style.height=0.03*h +"px";
         spacePhotoAndIntro.style.width=0.82*w +"px";
         spaceAfterWelcome.style.height=0.02*h +"px";
@@ -145,10 +145,10 @@
         photoContainer.style.width= "33%";
         zsjPhoto.style.width=w*0.22 +"px";
         introduction.style.width= "50%";
-        introduction.style.padding=0.03152*w+"px";
+        introduction.style.padding=0.0303*w+"px";
         introduction.style.backgroundColor="#EEEEEE";
-        introduction.style.lineHeight="182%";
-        spacePhotoAndIntro.style.width=0.0365*w +"px";
+        introduction.style.lineHeight="181%";
+        spacePhotoAndIntro.style.width=0.05*w +"px";
       /*  spacePhotoAndIntro.style.display="none";*/
         spaceAfterWelcome.style.height=0.024*h +"px";
     }
@@ -156,7 +156,7 @@
 
     /*insert Css*/ 
     if (phoneOrPc) {var pageWidth=0.95*w; }  else {var pageWidth=0.69*w;} 
-    var insertHomeCss=".pageContainer { display:block;margin:0 auto; padding-left:3%; padding-right:3%; width:"+pageWidth+"px;}";
+    var insertHomeCss=".pageContainer { display:block;margin:0 auto; padding-left:1%; padding-right:1%; width:"+pageWidth+"px;}";
     document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertHomeCss;
 
 
@@ -165,7 +165,7 @@
     var postSection=document.getElementById("postSection");
 
     if (phoneOrPc){
-        preSection.style.height=0.05*h +"px";
+        preSection.style.height=0.058*h +"px";
         postSection.style.height=0.12*h +"px";
     }else{
         preSection.style.height=0.14*h +"px";

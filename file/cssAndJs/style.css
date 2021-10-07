@@ -37,6 +37,25 @@ color:black;
 }
 
 
+/*
+link color*/
+ a:link {color:#0000BB;
+text-decoration:none;
+}
+ a:visited  {
+color:#0000A9;
+/*text-decoration:underline;*/
+}
+ a:hover {
+color:  #00CED1;
+/*text-decoration:underline;*/
+/*background-color: blue;*/
+}
+ a:active  {
+color:#0000EE;
+/*text-decoration:underline;*/
+}
+
 
 .navBarContainer {
   display: flex;
@@ -62,32 +81,14 @@ color:black;
 .navBarItem {
   width:auto;
   height:auto;
-  padding-top: 30px;
-  padding-bottom: 28px;
+  padding-top: 0.75em;
+  padding-bottom: 0.6em;
   padding-left: 2%;
   padding-right: 2%;
   text-align: center;
   white-space:nowrap;
 }
 
-/*
-link color*/
- a:link {color:#0000BB;
-text-decoration:none;
-}
- a:visited  {
-color:#0000A9;
-/*text-decoration:underline;*/
-}
- a:hover {
-color:  #00CED1;
-text-decoration:underline;
-/*background-color: blue;*/
-}
- a:active  {
-color:#0000EE;
-/*text-decoration:underline;*/
-}
 
 
 
@@ -214,7 +215,7 @@ margin-left:auto;
 
            
 .listStyle li {  
-   padding: 15px;  
+   padding: 0.7em;  
    overflow: auto;  
    border-top-style: none;
   border-right-style: none;
@@ -222,7 +223,15 @@ margin-left:auto;
   border-left-style: none;
    border-color: #CCCCCC;
  }  
-           
+
+ .listStyle li {  
+  padding-top: 0.5em;
+  padding-bottom: 0.2em;
+   margin-top: 0.79em;  
+margin-bottom: 2.1em;
+ }  
+  
+
 .listStyle li:hover {  
    background: #EEEEEE;  
    cursor: pointer;  
@@ -252,14 +261,24 @@ margin-left:auto;
 
 .myHr {
     border: 0;
-    height: 2.85px;
+/*    height: 2.85px;*/
+    height: 0.17em;
     pardding: 0;
     margin: 0;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.045), rgba(0, 0, 0, 0.072), rgba(0, 0, 0, 0.045));
 }
 
+.myHrTwo {
+    border: 0;
+/*    height: 2.85px;*/
+    height: 0.09em;
+/*    pardding: 0;
+    margin: 0;*/
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.15));
+}
 
-.myTextShadow {
+
+.myTextShadowtwo {
 /*color: #555555;*/
 /*background: #FFFFFF;*/
 text-shadow:  1px 0px 1px #CCCCCC, 
@@ -276,4 +295,38 @@ text-shadow:  1px 0px 1px #CCCCCC,
               5px 6px 1px #EEEEEE,
               7px 6px 1px #CCCCCC, 
               6px 7px 1px #EEEEEE; 
+}
+
+
+.myTextShadow {
+/*color: #555555;*/
+/*background: #FFFFFF;*/
+text-shadow:  calc(1em / 40)  calc(0em / 40)  calc(1em / 40)  #CCCCCC, 
+              calc(0em / 40)  calc(1em / 40)  calc(1em / 40)  #EEEEEE, 
+              calc(2em / 40)  calc(1em / 40)  calc(1em / 40)  #CCCCCC, 
+              calc(1em / 40)  calc(2em / 40)  calc(1em / 40)  #EEEEEE,
+              calc(3em / 40)  calc(2em / 40)  calc(1em / 40)  #CCCCCC, 
+              calc(2em / 40)  calc(3em / 40)  calc(1em / 40)  #EEEEEE, 
+              calc(4em / 40)  calc(3em / 40)  calc(1em / 40)  #CCCCCC, 
+              calc(3em / 40)  calc(4em / 40)  calc(1em / 40)  #EEEEEE,
+              calc(5em / 40)  calc(4em / 40)  calc(1em / 40)  #CCCCCC, 
+              calc(4em / 40)  calc(5em / 40)  calc(1em / 40)  #EEEEEE, 
+              calc(6em / 40)  calc(5em / 40)  calc(1em / 40)  #CCCCCC, 
+              calc(5em / 40)  calc(6em / 40)  calc(1em / 40)  #EEEEEE,
+              calc(7em / 40)  calc(6em / 40)  calc(1em / 40)  #CCCCCC, 
+              calc(6em / 40)  calc(7em / 40)  calc(1em / 40)  #EEEEEE, 
+              calc(8em / 40)  calc(7em / 40)  calc(1em / 40)  #CCCCCC, 
+              calc(7em / 40)  calc(8em / 40)  calc(1em / 40)  #EEEEEE;
+/*              2px 1px 1px #CCCCCC, 
+              1px 2px 1px #EEEEEE, 
+              3px 2px 1px #CCCCCC, 
+              2px 3px 1px #EEEEEE,
+              4px 3px 1px #CCCCCC, 
+              3px 4px 1px #EEEEEE, 
+              5px 4px 1px #CCCCCC, 
+              4px 5px 1px #EEEEEE, 
+              6px 5px 1px #CCCCCC, 
+              5px 6px 1px #EEEEEE,
+              7px 6px 1px #CCCCCC, 
+              6px 7px 1px #EEEEEE; */
 }
