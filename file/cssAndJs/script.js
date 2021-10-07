@@ -125,7 +125,7 @@ var navBarHTML=document.getElementById("navBarHTML");
 var myNavBarHTML = new Array();
 myNavBarHTML[0]='<nav id="navBar"> <ul class="navBarContainer navBarLinkColor" id="navBarInner">';
 if (homeOrNot){
-	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">	  <a href="./" class="activeLinkColor myTextShadow"> Shijun&thinsp;ZHANG </a>    </li>';
+	myNavBarHTML[1]='<li class="navBarItem" id="navBarHome"><a href="./" class="activeLinkColor myTextShadow"> Shijun&thinsp;ZHANG </a></li>';
 	myNavBarHTML[2]='<li class="navBarItem">	  <a href="./publication/"> Publication </a>  		 </li>';
 	myNavBarHTML[3]='<li class="navBarItem">      <a href="./interest/"> Interest </a>    			</li>';
 	myNavBarHTML[4]='<li class="navBarItem">      <a href="./cv/">  C&thinsp;V</a>    		</li>';
