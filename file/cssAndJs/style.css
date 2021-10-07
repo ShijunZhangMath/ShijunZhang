@@ -7,7 +7,8 @@ body, footer { margin: 0px;
     padding: 0px;
 /*    background-color: #FFFAF0;*/
     word-break: keep-all;
-    word-wrap: break-word;}
+    word-wrap: break-word;
+}
 
 /*div, footer, h1, h2, h3, p, img, span{max-height: 100%;text-size-adjust:none;-webkit-text-size-adjust:none;}*/
 * {max-height: 100%;text-size-adjust:none;-webkit-text-size-adjust:none;}
@@ -15,18 +16,25 @@ body, footer { margin: 0px;
 
 
 .activeLinkColor {
-  color: #111111 !important;
+   color: #111111 !important;
+   text-shadow:  calc(3em / 58)  calc(3em / 58)  calc(0em / 58)  #EEEEEE,
+                calc(7.5em / 58)  calc(6em / 58)  calc(0em / 58)  rgba(0,0,0,0.15);
+
+/*              calc(0em / 43)  calc(6em / 43)  calc(1em / 43)  #CCCCCC;*/
 }
 /*navbar*/
 .navBarLinkColor a:link {color:#8E8E8E;
-text-decoration:none;
+    text-decoration:none;
 }
 .navBarLinkColor a:visited  {
-color:#808080;
+    color:#808080;
 /*text-decoration:underline;*/
 }
 .navBarLinkColor a:hover {
-color:#E67E22;
+  color: #EB5E00;
+/*     text-shadow:  calc(3em / 58)  calc(3em / 58)  calc(0em / 58)  #EEEEEE,
+                calc(7.5em / 58)  calc(6em / 58)  calc(0em / 58)  rgba(0,0,0,0.15) !important;*/
+/*color:#E67E22;*/
 text-decoration:none;
 /*text-decoration:underline;*/
 /*background-color: blue;*/
@@ -39,15 +47,16 @@ color:black;
 
 /*
 link color*/
- a:link {color:#0000BB;
+ a:link {color:#0000B2;
 text-decoration:none;
 }
  a:visited  {
-color:#0000A9;
+color:#0000A8;
 /*text-decoration:underline;*/
 }
  a:hover {
-color:  #00CED1;
+  color:  #EB5E00;
+/*color:  #00CED1;*/
 /*text-decoration:underline;*/
 /*background-color: blue;*/
 }
@@ -301,22 +310,22 @@ text-shadow:  1px 0px 1px #CCCCCC,
 .myTextShadow {
 /*color: #555555;*/
 /*background: #FFFFFF;*/
-text-shadow:  calc(1em / 40)  calc(0em / 40)  calc(1em / 40)  #CCCCCC, 
-              calc(0em / 40)  calc(1em / 40)  calc(1em / 40)  #EEEEEE, 
-              calc(2em / 40)  calc(1em / 40)  calc(1em / 40)  #CCCCCC, 
-              calc(1em / 40)  calc(2em / 40)  calc(1em / 40)  #EEEEEE,
-              calc(3em / 40)  calc(2em / 40)  calc(1em / 40)  #CCCCCC, 
-              calc(2em / 40)  calc(3em / 40)  calc(1em / 40)  #EEEEEE, 
-              calc(4em / 40)  calc(3em / 40)  calc(1em / 40)  #CCCCCC, 
-              calc(3em / 40)  calc(4em / 40)  calc(1em / 40)  #EEEEEE,
-              calc(5em / 40)  calc(4em / 40)  calc(1em / 40)  #CCCCCC, 
-              calc(4em / 40)  calc(5em / 40)  calc(1em / 40)  #EEEEEE, 
-              calc(6em / 40)  calc(5em / 40)  calc(1em / 40)  #CCCCCC, 
-              calc(5em / 40)  calc(6em / 40)  calc(1em / 40)  #EEEEEE,
-              calc(7em / 40)  calc(6em / 40)  calc(1em / 40)  #CCCCCC, 
-              calc(6em / 40)  calc(7em / 40)  calc(1em / 40)  #EEEEEE, 
-              calc(8em / 40)  calc(7em / 40)  calc(1em / 40)  #CCCCCC, 
-              calc(7em / 40)  calc(8em / 40)  calc(1em / 40)  #EEEEEE;
+text-shadow:  calc(1em / 43)  calc(0em / 43)  calc(1em / 43)  #CCCCCC, 
+              calc(0em / 43)  calc(1em / 43)  calc(1em / 43)  #EEEEEE, 
+              calc(2em / 43)  calc(1em / 43)  calc(1em / 43)  #CCCCCC, 
+              calc(1em / 43)  calc(2em / 43)  calc(1em / 43)  #EEEEEE,
+              calc(3em / 43)  calc(2em / 43)  calc(1em / 43)  #CCCCCC, 
+              calc(2em / 43)  calc(3em / 43)  calc(1em / 43)  #EEEEEE, 
+              calc(4em / 43)  calc(3em / 43)  calc(1em / 43)  #CCCCCC, 
+              calc(3em / 43)  calc(4em / 43)  calc(1em / 43)  #EEEEEE,
+              calc(5em / 43)  calc(4em / 43)  calc(1em / 43)  #CCCCCC, 
+              calc(4em / 43)  calc(5em / 43)  calc(1em / 43)  #EEEEEE, 
+              calc(6em / 43)  calc(5em / 43)  calc(1em / 43)  #CCCCCC, 
+              calc(5em / 43)  calc(6em / 43)  calc(1em / 43)  #EEEEEE,
+              calc(7em / 43)  calc(6em / 43)  calc(1em / 43)  #CCCCCC, 
+              calc(6em / 43)  calc(7em / 43)  calc(1em / 43)  #EEEEEE, 
+              calc(8em / 43)  calc(7em / 43)  calc(1em / 43)  #CCCCCC, 
+              calc(7em / 43)  calc(8em / 43)  calc(1em / 43)  #EEEEEE;
 /*              2px 1px 1px #CCCCCC, 
               1px 2px 1px #EEEEEE, 
               3px 2px 1px #CCCCCC, 
@@ -336,8 +345,8 @@ text-shadow:  calc(1em / 40)  calc(0em / 40)  calc(1em / 40)  #CCCCCC,
 
 
 .myTextBlink {
-    animation: myBlink 1.7s linear infinite;
-    -webkit-animation: myBlink 1.7s linear infinite;
+    animation: myBlink 1.7s ease infinite;
+    -webkit-animation: myBlink 1.7s ease infinite;
 
 }
 
@@ -351,7 +360,7 @@ text-shadow:  calc(1em / 40)  calc(0em / 40)  calc(1em / 40)  #CCCCCC,
     }
 
     50% {
-        color: rgba(0,0,0,0.075);
+        color: rgba(0,0,0,0.1);
     }
 
     75% {
