@@ -77,8 +77,12 @@ link color*/
 text-decoration:none;
 }
 
+
+
+
  a:visited  {
-color:#000090;
+    color: #003D7C;
+/*color:#000090;*/
 /*text-decoration:underline;*/
 }
 

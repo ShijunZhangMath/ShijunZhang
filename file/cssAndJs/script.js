@@ -104,8 +104,8 @@ var homeOrNot=1-cvOrNot-publicationOrNot-moreOrNot-interestOrNot;
 /*add links or metas to head*/
 // add icon
 var iconN, iconPN;
-iconN='zsjLogo2';
-if (homeOrNot) {iconPN = "./file/img/"+iconN+".ico";} else { iconPN = "../file/img/"+iconN+".ico";}
+iconN='zsjLogo';
+if (homeOrNot) {iconPN = "./file/img/"+iconN+".ico";} else { iconPN = "../file/img/"+iconN+".png";}
 
 var linkNew = document.createElement("link");
 linkNew.rel = "shortcut icon"; 
@@ -157,7 +157,7 @@ myNavBarHTML[0]='<nav id="navBar">      <ul class="navBarContainer navBarLinkCol
 
 
 homeName='<div class="centerImgText"> <img src="'+relativePath;
-homeName+='/file/img/zsjLogo2.ico" style="height:1em;width:auto;padding:0;margin-right:0.1em;"><span>Shijun&thinsp;ZHANG </span></div>';
+homeName+='/file/img/zsjLogo.ico" style="height:0.825em;width:auto;padding:0;margin-right:0.1em;"><span>Shijun&thinsp;ZHANG </span></div>';
 myNavBarHTML[1]='<li class="navBarItem" id="navBarHome"><a href="'+relativePath+'" class="myTextShadow '+homeActiveOrNot+'"> '+ homeName +' </a> </li>';
 
 
@@ -252,7 +252,7 @@ if (phoneOrPc) {footerPicWidth=w*0.018*12*2*2.2;}
 myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'>";*/
 myFooter[4]="<div id='backgroundSource'></div> Last updated on "+dayUpdate;
 myFooter[5]="<div style='height:1em;'></div>";
-myFooter[6]="<a href='"+relativePath+"'> <img src='"+relativePath+"file/img/zsjLogo.ico' style='height:3em;width:auto;'> </a>";
+myFooter[6]="<a href='"+relativePath+"'> <img src='"+relativePath+"file/img/zsjLogo2.png' style='height:3.5em;width:auto;'> </a>";
 myFooter[7]="<div style='height:2em;'></div>        </div>";
 /*myFooter[3]="<div style='height:30px'> </div>";*/
 footer.innerHTML=myFooter.join('') 
