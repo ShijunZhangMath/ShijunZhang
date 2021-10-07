@@ -215,11 +215,11 @@ margin-left:auto;
 
            
 .listStyle li {  
-   padding: 0.7em;  
+   padding: 0.66em;  
    overflow: auto;  
    border-top-style: none;
   border-right-style: none;
-  border-bottom-style: solid;
+  border-bottom: 0.125em solid;
   border-left-style: none;
    border-color: #CCCCCC;
  }  
@@ -329,4 +329,36 @@ text-shadow:  calc(1em / 40)  calc(0em / 40)  calc(1em / 40)  #CCCCCC,
               5px 6px 1px #EEEEEE,
               7px 6px 1px #CCCCCC, 
               6px 7px 1px #EEEEEE; */
+}
+
+
+
+
+
+.myTextBlink {
+    animation: myBlink 1.13s linear infinite;
+    -webkit-animation: myBlink 1.13s linear infinite;
+
+}
+
+@keyframes myBlink {
+    0% {
+        color: rgba(0,0,0,0.8);
+    }
+
+    20% {
+        color: rgba(0,0,0,0.7);
+    }
+
+    50% {
+        color: rgba(0,0,0,0.1);
+    }
+
+    80% {
+        color: rgba(0,0,0,0.7);
+    }
+
+    100% {
+        color: rgba(0,0,0,0.8);
+    }
 }
