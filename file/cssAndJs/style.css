@@ -257,7 +257,8 @@ margin-left:auto;
 
            
 .listStyle li {  
-   padding: 0.66em;  
+    background: #F1F1F1;
+   padding: 0.8em;  
    overflow: auto;  
    border-top-style: none;
   border-right-style: none;
@@ -267,15 +268,15 @@ margin-left:auto;
  }  
 
  .listStyle li {  
-  padding-top: 0.5em;
-  padding-bottom: 0.2em;
+  padding-top: 0.7em;
+  padding-bottom: 0.3em;
    margin-top: 0.79em;  
 margin-bottom: 2.1em;
  }  
   
 
 .listStyle li:hover {  
-   background: #EEEEEE;  
+   background: #E8E8E8;  
    cursor: pointer;  
  } 
 

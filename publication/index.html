@@ -42,22 +42,26 @@
   .paperTitle {
     font-style: italic;
   }
-  ul {
+  ul.ulPuclication {
     list-style-type:none;
     padding: 0;
     margin: 0;
   }
-  li {
-    padding-top: 1px;
-    padding-bottom: 0.15em;
+  ul.ulPuclication li {
+    padding: 0.8em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+       margin-top: 0.0em;  
+    margin-bottom: 0.8em;
+    background-color: #F1F1F1;
   }
   h2 {padding:0;
       margin:0;
 /*      line-height:100%;*/
   }
   h2 {
-    padding-top:0.72em;
-    padding-bottom:0.25em;
+    padding-top:0.52em;
+    padding-bottom:0.45em;
   }
 </style>
 <style id="liPadding"></style>
@@ -111,7 +115,7 @@
 
       <h2 style="padding-top:0;"> Ph.D. Thesis: </h2> 
 
-      <ul>
+      <ul class="ulPuclication">
 
         <li>
           <span> Shijun Zhang. 
@@ -131,7 +135,7 @@
 
       
       <!--  publications below -->   
-      <ul>
+      <ul class="ulPuclication">
 
           <li>
             <span class="paperNumberColor">[7]
@@ -141,6 +145,7 @@
              &nbsp;[<a href="../file/pdf/Arbitrary_Accuracy_with_Fixed_Number_of_Neurons.pdf">PDF</a>, 
               &nbsp;<a href="https://arxiv.org/abs/2107.02397">arXiv</a>] 
          </li>
+       </ul>
 
        
       
@@ -150,7 +155,7 @@
 
       <h2> Published (Accepted): </h2>  
         
-    <ul>
+    <ul class="ulPuclication">
 
       <li>
           <span class="paperNumberColor">[6]
@@ -249,7 +254,7 @@
 <!-- <script type="text/javascript" src="./publication.js"></script> -->
 
 <script type="text/javascript">
-    if (phoneOrPc){ var pageWidth=0.89*w ;} else {var pageWidth=0.5*w; }
+    if (phoneOrPc){ var pageWidth=0.95*w ;} else {var pageWidth=0.5*w; }
     var insertPublicationCss=" .pageContainer { display:block; padding-left:3%; padding-right:3%; margin:0 auto;width:"+pageWidth+"px;}";
     document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertPublicationCss;
     if (phoneOrPc){
