@@ -156,9 +156,9 @@ if (moreOrNot){
 myNavBarHTML[0]='<nav id="navBar">      <ul class="navBarContainer navBarLinkColor" id="navBarInner">';
 
 
-homeName='<div class="centerImgText"> <img src="'+relativePath;
-homeName+='/file/img/zsjLogo.png" style="height:0.825em;width:auto;padding:0;margin-right:0.1em;"><span>Shijun&thinsp;ZHANG </span></div>';
-myNavBarHTML[1]='<li class="navBarItem" id="navBarHome"><a href="'+relativePath+'" class="myTextShadow '+homeActiveOrNot+'"> '+ homeName +' </a> </li>';
+var homeName='<a href="'+relativePath+'" class="myTextShadow '+homeActiveOrNot+'"> Shijun&thinsp;ZHANG </a>';
+
+myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">'+homeName+'</li>';
 
 
 myNavBarHTML[2]='<li class="navBarItem"><a href="'+relativePath+'publication/" class="'+publicationActiveOrNot+'"> Publication </a>  </li>';
@@ -203,7 +203,7 @@ console.log(elements.join('-'));
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
 var navBarFontSize=0.0112*w;
-if (phoneOrPc) {navBarFontSize=0.027*w;}
+if (phoneOrPc) {navBarFontSize=0.03*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
 navBar.style.setProperty("font-family","Helvetica, sans-serif");
@@ -215,7 +215,7 @@ navBarHome.style.setProperty("font-weight",430);
 navBarHome.style.setProperty("font-family","serif");
 /*navBarHome.style.setProperty("font-style","oblique");*/
 if (phoneOrPc){
-	navBarHome.style.setProperty("padding-right","11%");
+	navBarHome.style.setProperty("padding-right","10%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.5+"px");
 }else{
 	navBarHome.style.setProperty("padding-right","27%");
