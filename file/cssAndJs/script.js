@@ -232,7 +232,8 @@ if (phoneOrPc){
 
 var navBarInner=document.getElementById("navBarInner");
 var navBarH=window.getComputedStyle(navBarInner,null).getPropertyValue("height");
-alert(navBarH);
+var navBarHT=document.defaultView.getComputedStyle(navBarInner,null).getPropertyValue("height");
+alert(navBarH,'xxx',navBarHT);
 var navBarRule=document.getElementById("navBarRule");
 navBarRule.style.top=navBarH;
 alert(navBarH);
