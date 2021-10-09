@@ -1,3 +1,39 @@
+/*
+css 选择器的逻辑是 通过一些条件 选中 html 中的一些元素(element), 
+然后赋予这些元素 选择器后面的 属性值
+
+
+如果 一个标签(div)有多个选择器，则需要判断优先级
+选择器 优先级
+!important   >    内联 style=""   >    下面的3级选择器  >  继承而来
+
+3级选择器：
+1. id 选择器 (#id)
+2. 类选择器 (.class ); 属性选择器 ( a[title] ); 伪类 ( :hover )
+3. 标签选择器 ( div );  伪元素选择器 ( ::before )
+
+
+优先级如下：
+逐级比较， 
+同一级个数出现次数多， 直接胜出； 
+同一级个数出现次数一样，则比较下一级
+每一级都打平， 则比较 生效顺序， 一般在后的胜出
+
+
+技巧
+可以通过重复(交集)来增加优先级
+.class {...} 优先级为 1级1个       <   
+.class:hover {...} 1级1个 2级1个   <
+.class.class {...} 1级2个 ;
+
+
+直接相连(每空格)，如 .classOne.classTwo ;  a.class  表示两个选择器的 并集
+空格相连， 如  .classOne .classTwo .classThree  表示后代选择器 （可以嵌套）
+> 相连， 如  .class>.child 表示直接子代选择器
++ 相连， 如  .class + img  紧邻兄弟选择器，  同一代且相邻
+~ 相连，  如  p ~ img    通用兄弟选择器， 同一代
+*/
+
 
 body, footer { margin: 0px;
     padding: 0px;
@@ -7,40 +43,102 @@ body, footer { margin: 0px;
 }
 
 /*div, footer, h1, h2, h3, p, img, span{max-height: 100%;text-size-adjust:none;-webkit-text-size-adjust:none;}*/
-* {max-height: 100%;text-size-adjust:none;-webkit-text-size-adjust:none;}
+/** {max-height: 100%;text-size-adjust:none;-webkit-text-size-adjust:none;}*/
+
+
+
+/*  navbar   */
+.navBarContainer {
+    display: flex;
+    height: auto;
+    width:100%;
+    justify-content: center;
+    /*  justify-content: flex-start;*/
+    align-items: center;
+    /*    align-items: flex-start;*/
+    flex-flow: row nowrap;
+    background-color:rgba(250,250,250,0.99);
+    margin: 0px auto;
+    padding: 0px;
+    border: 0px dashed red;
+    cursor: pointer;
+    list-style-type: none;
+    position:fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+}
+
+.navBarItem {
+    width:auto;
+    height:auto;
+    padding-top: 0.75em;
+    padding-bottom: 0.6em;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    white-space:nowrap;
+}
 
 
 
 
-/*navbar*/
-.navBarLinkColor a:link {color:#8E8E8E;
+
+/*  link color */
+ a:link {
+    color:#0053A6;
+    text-decoration:none;
+}
+
+
+ a:visited  {
+    color: #003D7C;
+    /*color:#000090;*/
+    /*text-decoration:underline;*/
+}
+
+ a:hover {
+    color: #EF7C00;
+    /*color:  #00CED1;*/
+    /*text-decoration:underline;*/
+    /*background-color: blue;*/
+}
+
+ a:active  {
+    color:#FF8400;
+    /*text-decoration:underline;*/
+}
+
+
+
+/* navbar link color */
+.navBarLinkColor a:link {
+    color:#8E8E8E;
     text-decoration:none;
 }
 
 .navBarLinkColor a:visited  {
     color:#888888;
-/*text-decoration:underline;*/
+    /*text-decoration:underline;*/
 }
 
 .navBarLinkColor a:hover {
-  color: #EF7C00;
-  text-shadow:  none;
-/*color:#E67E22;*/
- text-decoration:none;
-/*text-decoration:underline;*/
-/*background-color: blue;*/
+    color: #EF7C00;
+    text-shadow:  none;
+    /*color:#E67E22;*/
+    text-decoration:none;
+    /*text-decoration:underline;*/
+    /*background-color: blue;*/
 }
 
 .navBarLinkColor a:active  {
-color:#FF8400;
-/*text-decoration:underline;*/
+    color:#FF8400;
+    /*text-decoration:underline;*/
 }
-
-
 
 /* provide a high priority via repeating   */
  a.activeLinkColor.activeLinkColor {
-   color: #020202;
+   color: #060606;
 /*   font-weight: bold;*/
 /*   text-shadow:  calc(3em / 58)  calc(3em / 58)  calc(0em / 58)  #EEEEEE,
                 calc(7.5em / 58)  calc(6em / 58)  calc(0em / 58)  rgba(0,0,0,0.15);*/
@@ -51,7 +149,7 @@ color:#FF8400;
 
 /* overwrith the text-shadow of a:hover */
 a[class~="myTextShadow"][class~="activeLinkColor"] {
-  text-shadow:  calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC, 
+  text-shadow:calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC, 
               calc(0em / 42)  calc(1em / 42)  calc(1em / 42)  #EEEEEE, 
               calc(2em / 42)  calc(1em / 42)  calc(1em / 42)  #CCCCCC, 
               calc(1em / 42)  calc(2em / 42)  calc(1em / 42)  #EEEEEE,
@@ -71,172 +169,90 @@ a[class~="myTextShadow"][class~="activeLinkColor"] {
 
 
 
-/*
-link color*/
- a:link {color:#0000A2;
-text-decoration:none;
-}
 
 
 
 
- a:visited  {
-    color: #003D7C;
-/*color:#000090;*/
-/*text-decoration:underline;*/
-}
-
- a:hover {
-  color: #EF7C00;
-/*color:  #00CED1;*/
-/*text-decoration:underline;*/
-/*background-color: blue;*/
-}
-
- a:active  {
-color:#FF8400;
-/*text-decoration:underline;*/
-}
 
 
-.navBarContainer {
-  display: flex;
-  height: auto;
-  width:100%;
-  justify-content: center;
-  /*  justify-content: flex-start;*/
-  align-items: center;
-/*    align-items: flex-start;*/
-  flex-flow: row nowrap;
-  background-color:rgba(250,250,250,0.99);
-      margin: 0px auto;
-    padding: 0px;
-    border: 0px dashed red;
-    cursor: pointer;
-    list-style-type: none;
-    position:fixed;
-    overflow: auto;
-    top: 0;
-    left: 0;
-}
-
-.navBarItem {
-  width:auto;
-  height:auto;
-  padding-top: 0.75em;
-  padding-bottom: 0.6em;
-  padding-left: 2%;
-  padding-right: 2%;
-  text-align: center;
-  white-space:nowrap;
-}
-
-
-
-
-/*homepage*/
-.introRowContainer {
-  display: flex;
-  height: auto;
-  width:auto;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-      margin: 0px;
+/*   homepage  */
+.introContainer {
+    display: flex;
+    height: auto;
+    width:auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0px;
     padding: 0px;
     border: 0px dashed red;
 }
 
 
-.introColumnContainer {
-  display: flex;
-  height: auto;
-  width:auto;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: column nowrap;
-      margin: 0px;
-    padding: 0px;
-    border: 0px dashed red;
-}
 
 
-.introItem {
-width:100%;
-height:auto;
-padding: 0px;
-text-align: center;
-margin:0px;
-}
-
-.introItemN {
-width:50%;
-height:auto;
-padding-right: 0px;
-padding-left: 9.5%;
-text-align: center;
-margin:0px;
-}
 
 /*dynamicImage*/
-
-/*homepage*/
 .dynamicImageContainer {
-  display: flex;
-  height: auto;
-  width:auto;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-      margin: 0px;
+    display: flex;
+    height: auto;
+    width:auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0px;
     padding: 0px;
     border: 0px dashed red;
 }
+
 .dynamicImageItem {
-width:auto;
-height:auto;
-padding: 10px;
-text-align: center;
-margin:10px;
+    width:auto;
+    height:auto;
+    padding: 10px;
+    text-align: center;
+    margin:10px;
 }
 
 
-/*cv*/
+
+
+/*  cv  */
 .cvContainer {
-  display: flex;
-  height: auto;
-  width:auto;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-flow: row wrap;
-      margin: 0px;
+    display: flex;
+    height: auto;
+    width:auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin: 0px;
     padding: 0px;
     border: 0px dashed red;
 }
 
-.cvItemOne {
-width:auto;
-height:auto;
-padding: 0px;
-text-align: left;
-margin:0px;
+.cvContainer span:first-child {
+    width:auto;
+    height:auto;
+    padding: 0px;
+    text-align: left;
+    margin:0px;
 }
 
-.cvItemTwo {
-width:auto;
-height:auto;
-padding: 0px;
-text-align: right;
-margin-right:0px;
-margin-left:auto;
+.cvContainer span:last-child {
+    width:auto;
+    height:auto;
+    padding: 0px;
+    text-align: right;
+    margin:0px;
 }
 
 
 
   
-
 /*list style for `more' page */       
-.listStyle * {margin: 0; padding: 0;}  
+.listStyle * {
+    margin: 0; 
+    padding: 0;
+}  
            
 .listStyle div {  
    margin: 12px;  
@@ -250,42 +266,47 @@ margin-left:auto;
            
 .listStyle li img {  
    float: left;  
-   margin: 0 12px 0 0;  
-   width: 24%;
+   margin: 0;  
+   margin-right: 0.55em;
+   width: 22%;
  }  
            
-
-           
+          
 .listStyle li {  
-    background: #F1F1F1;
-   padding: 0.8em;  
-   overflow: auto;  
-   border-top-style: none;
-  border-right-style: none;
-  border-bottom: 0.125em solid;
-  border-left-style: none;
-   border-color: #CCCCCC;
+    background: #F7F7F7;
+    padding: 0.8em;  
+    overflow: auto;  
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom: 0.125em solid;
+    border-left-style: none;
+    border-color: #D0D0D0;
  }  
 
  .listStyle li {  
-  padding-top: 0.7em;
-  padding-bottom: 0.3em;
-   margin-top: 0.79em;  
-margin-bottom: 2.1em;
+    padding-top: 0.7em;
+    padding-bottom: 0.3em;
+    margin-top: 0.948em;  
+    margin-bottom: 2.01em;
  }  
   
 
 .listStyle li:hover {  
-   background: #E8E8E8;  
-   cursor: pointer;  
+    background: #EEEEEE;  
+    cursor: pointer;  
  } 
 
 
- .imgCenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+
+
+
+
+/* Others */
+.imgCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 
@@ -379,31 +400,74 @@ text-shadow:  calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC,
 
 
 .myTextBlink {
-    animation: myBlink 1.88s ease infinite;
-    -webkit-animation: myBlink 1.88s ease infinite;
-
+    animation: myBlink 0.8s ease infinite;
+    font-weight: bold;
+/*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
+
+.one {
+    animation: myBlink 1.6s linear infinite;
+    animation-delay: 0.0s;
+}
+
+.two {
+    animation: myBlink 1.6s linear infinite;
+    animation-delay: 0.2s;
+}
+
+.three {
+    animation: myBlink 1.6s linear infinite;
+    animation-delay: 0.4s;
+}
+
+.four {
+    animation: myBlink 1.6s linear infinite;
+    animation-delay: 0.6s;
+}
+
+.five {
+    animation: myBlink 1.6s linear infinite;
+    animation-delay: 1.0s;
+}
+
+.six {
+    animation: myBlink 1.6s linear infinite;
+    animation-delay: 1.2s;
+}
+
+.seven {
+    animation: myBlink 1.6s linear infinite;
+    animation-delay: 1.2s;
+}
+
+.eight {
+    animation: myBlink 1.6s linear infinite;
+    animation-delay: 1.4s;
+}
+
+
+
 @keyframes myBlink {
-    0% {
+/*    0% {
         color: rgba(0,0,0,0.9);
     }
-
-    25% {
-        color: rgba(0,0,0,0.8);
+*/
+    0% {
+        color: #EF7C00;
     }
 
-    50% {
+/*    50% {
         color: rgba(0,0,0,0.1);
-    }
-
-    75% {
-        color: rgba(0,0,0,0.8);
-    }
+    }*/
 
     100% {
-        color: rgba(0,0,0,0.9);
+        color: #003D7C;
     }
+
+/*    100% {
+        color: rgba(0,233,0,0.9);
+    }*/
 }
 
 
@@ -422,3 +486,12 @@ text-shadow:  calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC,
     list-style-type: none;
     overflow: auto;
 }
+
+
+.footerLinks a i {
+    font-size:2.5em;
+    margin-left: 0.435em;
+    margin-right: 0.435em;
+}
+
+

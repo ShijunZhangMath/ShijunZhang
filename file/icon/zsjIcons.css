@@ -1,0 +1,82 @@
+.zsjIcons {
+      align-items: center;
+      display: inline-flex;
+      justify-content: center;
+    background-color: #0053A6;
+    border-radius:11%; 
+    text-align: center;
+    font-size: calc(1em * 1);
+    vertical-align: middle;
+    height: 0.5em;
+    width: 0.9em;
+/*    color:white;*/
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif; /*monospace*/
+    font-weight: bold;
+    position: absolute;
+   top:0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin:auto;
+}
+
+
+.ziLink  {    
+/*    align-items: center;
+      display: inline-flex;
+      position: absolute;
+      justify-content: center;
+      width: 0.5em;
+      height: 0.9em;*/
+      position: relative;
+      top: 0;
+      bottom: 0;
+}
+
+.ziLink:link i {
+    background-color:#0053A6;
+}
+
+
+.ziLink:visited i {   
+    background-color: #003D7C;
+}
+
+.ziLink:hover i {   
+    background-color: #EF7C00;
+}
+
+.ziLink:active i {   
+    background-color: #FF8400;
+}
+
+
+
+/*后代选择器， 嵌套*/
+.zi-pdf::before {
+    content: 'PDF';
+    font-size: 0.329em;
+    color:white;
+    font-style: normal;
+}
+
+.zi-arxiv::before {
+    content: 'arXiv';
+    font-size: 0.26329em;
+    color:white;
+    font-style: normal;
+}
+
+
+.zi-doi::before {
+    content: 'doi';
+    font-size: 0.264329em;
+    color:white;
+    font-style: normal;
+}
+
+
+
+

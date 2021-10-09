@@ -3,45 +3,60 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="author" content="Shijun Zhang"> 
-  <meta property="og:site_name" content="Shijun Zhang"> 
-  <meta property="og:title" content="Shijun Zhang">
+    <meta charset="utf-8">
+    <meta name="author" content="Shijun Zhang"> 
+    <meta property="og:site_name" content="Shijun Zhang"> 
+    <meta property="og:title" content="Shijun Zhang">
 
-  <meta name="description" content="The homepage of Shijun Zhang (张仕俊)"> 
-  <meta property="og:description" content="The homepage of Shijun Zhang (张仕俊)"> 
+    <meta name="description" content="The homepage of Shijun Zhang (张仕俊)"> 
+    <meta property="og:description" content="The homepage of Shijun Zhang (张仕俊)"> 
 
-  <meta name="keywords" content="Shijun Zhang, 张仕俊, ShijunZhang, Zhang Shijun, ZhangShijun, Zhang, Shijun" />
+    <meta name="keywords" content="Shijun Zhang, 张仕俊, ShijunZhang, Zhang Shijun, ZhangShijun, Zhang, Shijun" />
 
-  <meta name="robots" content="index, follow" />
-  <meta name="google" content="index, follow" />
-  <meta name="googlebot" content="index, follow" />
-  <meta name="verify" content="index, follow" />
+    <meta name="robots" content="index, follow" />
+    <meta name="google" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="verify" content="index, follow" />
 
-  <meta name="theme-color" content="#EF525B">
-  <meta property="og:url" content="/"> 
-  <meta property="og:locale" content="en-us">
-  <link rel="alternate" hreflang="en-us" href="/">
-  <link rel="canonical" href="/">  
+    <meta name="theme-color" content="#EF525B">
+    <meta property="og:url" content="/"> 
+    <meta property="og:locale" content="en-us">
+    <link rel="alternate" hreflang="en-us" href="/">
+    <link rel="canonical" href="/">  
 
-  <!--   <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png"> -->
-  <!-- The icon is changed in script.js -->
+    <!--   <link rel="icon" type="image/png" href="/img/icon.png">
+    <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png"> -->
+    <!-- The icon is changed in script.js -->
 
- <title>Shijun Zhang</title>
+<title>Shijun Zhang</title>
 
 <link rel="stylesheet" href="./file/cssAndJs/style.css"> 
 <style id="styleInJs"></style>
-
-
 <link rel="stylesheet" href="./file/background/bgSetting.css"> 
+
+<style>
+    .homeLinks a {
+        margin: o auto;
+        margin-left: 0.11em;
+        margin-right: 0.11em;
+        /*    font-weight: bold;*/
+        font-family:sans-serif, monospace;
+        /*    font-size: 1.9384em;*/
+    }
+
+    .homeLinks a:not(:last-child)::after {
+        content: ",";
+        color: #242424;
+    }
+</style>
+
 </head>
 
 
 
 <body>
 <!-- The background will be added later via js. -->
-<canvas id="background"></canvas>
+<!-- <canvas id="background"></canvas> -->
 
 
 <!-- add nav in js -->
@@ -76,7 +91,7 @@
 <section class="pageContainer">
 <!-- <h1> Welcome to Shijun Zhang's Homepage</h1> -->
 
-<div class="introRowContainer"> <!-- in  a   row -->
+<div class="introContainer"> <!-- in  a   row -->
     <!-- photo  -->
     <div id="photoContainer"> 
         <a href="./file/img/ShijunZhang.jpg">
@@ -84,24 +99,31 @@
         </a>
     </div>
     
+
     <!-- space -->
     <div id="spacePhotoAndIntro"> </div>
 
+
     <!-- introduction -->
     <div id="introduction" class='normalFont'> 
-           <span class="myTextBlink" style="font-size:240%;font-style: italic;font-family:serif;">Welcome!</span>  <br>
+           <span class="myTextBlink" style="font-size:240%;font-style: italic;font-family:serif;">
+           <span class='one'>W</span><span class='two'>e</span><span class='three'>l</span><span class='four'>c</span><span class='five'>o</span><span class='six'>m</span><span class='seven'>e</span><span class='eight'>!</span>
+            </span> 
 
            <div id="spaceAfterWelcome"> </div>
 
-          &emsp;&emsp; I am Shijun Zhang (张仕俊), a Research Fellow at National University of Singapore (NUS), supervised by Professor <a href="https://blog.nus.edu.sg/matzuows/">
+          &emsp;&emsp; I am Shijun Zhang (张仕俊), a Research Fellow at National University of Singapore (<a href="https://www.nus.edu.sg/">NUS</a>), supervised by Professor <a href="https://blog.nus.edu.sg/matzuows/">
                  Zuowei Shen</a>. Currently, I am interested in the error analysis of deep neural networks, especially the approximation error. For more information, check out the following links:
-                 <a href="https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/">Google&thinsp;Scholar</a>,
-                  <a href="https://orcid.org/0000-0003-4115-7891">ORICD</a>,
-                  <a href="./publiction/">Publication</a>,
-                  <a href="./interest/">Interest</a>, 
-                  <a href="./cv/">CV</a>, 
-                  and 
-                  <a href="./more/">More</a>.
+                 <span class="homeLinks">
+                         <a href="https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/">Google&thinsp;Scholar</a>
+                          <a href="https://orcid.org/0000-0003-4115-7891">ORICD</a>
+                          <a href="./publiction/">Publication</a>
+                          <a href="./interest/">Interest</a>
+                          <a href="./cv/">CV</a>
+                          and 
+                          <a href="./more/">More</a>.
+                  </span>
+
     </div>
 </div>
 </section>
@@ -127,7 +149,7 @@
     var introduction=document.getElementById("introduction");
     var spaceAfterWelcome=document.getElementById("spaceAfterWelcome");
     var spacePhotoAndIntro=document.getElementById("spacePhotoAndIntro");
-    introduction.style.backgroundColor="#E9E9E9";
+    introduction.style.backgroundColor="#EDEDED";
     /*photoContainer.style.backgroundColor="#E8E8E8";*/
     introduction.style.textAlign="left";
     if (phoneOrPc) {
@@ -137,7 +159,7 @@
         introduction.style.flexFlow="column"; 
         introduction.style.padding=0.03*h+"px";
         introduction.style.lineHeight="188%";
-        spacePhotoAndIntro.style.height=0.054*h +"px";
+        spacePhotoAndIntro.style.height=0.0575*h +"px";
         spacePhotoAndIntro.style.width=0.82*w +"px";
         spaceAfterWelcome.style.height=0.02*h +"px";
     } 
@@ -154,7 +176,7 @@
 
 
     /*insert Css*/ 
-    if (phoneOrPc) {var pageWidth=0.95*w; }  else {var pageWidth=0.69*w;} 
+    if (phoneOrPc) {var pageWidth=0.96*w; }  else {var pageWidth=0.69*w;} 
     var insertHomeCss=".pageContainer { display:block;margin:0 auto; padding-left:1%; padding-right:1%; width:"+pageWidth+"px;}";
     document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertHomeCss;
 
@@ -173,9 +195,8 @@
 </script>
 
 
-
 <!-- add background on canvas -->
-<script type="text/javascript" src="./file/background/bg.js"></script>
+<!-- <script type="text/javascript" src="./file/background/bg.js"></script> -->
 </body>
 </html>
 

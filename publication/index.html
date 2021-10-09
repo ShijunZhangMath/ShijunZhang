@@ -3,30 +3,30 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="author" content="Shijun Zhang"> 
-  <meta property="og:site_name" content="Shijun Zhang"> 
-  <meta property="og:title" content="Shijun Zhang">
+    <meta charset="utf-8">
+    <meta name="author" content="Shijun Zhang"> 
+    <meta property="og:site_name" content="Shijun Zhang"> 
+    <meta property="og:title" content="Shijun Zhang">
 
-  <meta name="description" content="The homepage of Shijun Zhang (张仕俊)"> 
-  <meta property="og:description" content="The homepage of Shijun Zhang (张仕俊)"> 
+    <meta name="description" content="The homepage of Shijun Zhang (张仕俊)"> 
+    <meta property="og:description" content="The homepage of Shijun Zhang (张仕俊)"> 
 
-  <meta name="keywords" content="Shijun Zhang, 张仕俊, ShijunZhang, Zhang Shijun, ZhangShijun, Zhang, Shijun" />
+    <meta name="keywords" content="Shijun Zhang, 张仕俊, ShijunZhang, Zhang Shijun, ZhangShijun, Zhang, Shijun" />
 
-  <meta name="robots" content="index, follow" />
-  <meta name="google" content="index, follow" />
-  <meta name="googlebot" content="index, follow" />
-  <meta name="verify" content="index, follow" />
+    <meta name="robots" content="index, follow" />
+    <meta name="google" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="verify" content="index, follow" />
 
-  <meta name="theme-color" content="#EF525B">
-  <meta property="og:url" content="/"> 
-  <meta property="og:locale" content="en-us">
-  <link rel="alternate" hreflang="en-us" href="/">
-  <link rel="canonical" href="/">  
+    <meta name="theme-color" content="#EF525B">
+    <meta property="og:url" content="/"> 
+    <meta property="og:locale" content="en-us">
+    <link rel="alternate" hreflang="en-us" href="/">
+    <link rel="canonical" href="/">  
 
-  <!--   <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png"> -->
-  <!-- The icon is changed in script.js -->
+    <!--   <link rel="icon" type="image/png" href="/img/icon.png">
+    <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png"> -->
+    <!-- The icon is changed in script.js -->
 
  <title>Shijun Zhang</title>
 
@@ -36,42 +36,63 @@
 
 <!-- Paper number color  Style-->
 <style>
-  .paperNumberColor {
-  color:  #C71585;
-  }
-  .paperTitle {
-    font-style: italic;
-  }
-  ul.ulPuclication {
-    list-style-type:none;
-    padding: 0;
-    margin: 0;
-  }
-  ul.ulPuclication li {
-    padding: 0.8em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-       margin-top: 0.0em;  
-    margin-bottom: 0.8em;
-    background-color: #F1F1F1;
-  }
-  h2 {padding:0;
-      margin:0;
-/*      line-height:100%;*/
-  }
-  h2 {
-    padding-top:0.52em;
-    padding-bottom:0.45em;
-  }
+    .paperNumberColor {
+        color:  #C71585;
+    }
+
+    .paperTitle {
+        font-style: italic;
+    }
+
+    h2 {padding:0;
+        margin:0;
+        padding-top:0.55em;
+        padding-bottom:0.425em;
+    }
+
+    ul.ulPuclication {
+        list-style-type:none;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul.ulPuclication li {
+        padding: 0.68em;
+        padding-top: 0.35em;
+        padding-bottom: 0.35em;
+        margin-top: 0.2em;  
+        margin-bottom: 1.2em;
+        background-color: #F6F6F6;
+    }
+
+
+    /*ul.ulPuclication li:not(:last-child) {
+    margin-bottom: 1.3em;
+    }*/
+
+    .paperLinks a {
+        margin: o auto;
+        margin-left: 0.08em;
+        margin-right: 0.08em;
+        font-weight: bold;
+        font-family:sans-serif, monospace;
+        /*    font-size: 1.9384em;*/
+    }
+
+    .paperLinks a:not(:last-child)::after {
+        content: ",";
+        color: #242424;
+    }
 </style>
 <style id="liPadding"></style>
+
 </head>
 
 
 
 <body>
 <!-- The background will be added later via js. -->
-<canvas id="background"></canvas>
+<!-- <canvas id="background"></canvas> -->
 
 
 <!-- add nav in js -->
@@ -113,19 +134,21 @@
 <h1> Publications (<a href="../file/bibtex/references.bib">BibTex</a>) </h1>
 
 
-      <h2 style="padding-top:0;"> Ph.D. Thesis: </h2> 
+      <h2 style="padding-top:0.15em;"> Ph.D. Thesis: </h2> 
 
       <ul class="ulPuclication">
 
-        <li>
-          <span> Shijun Zhang. 
-             &nbsp;  <span class="paperTitle"> Deep neural network approximation via function compositions</span>. 
-           &nbsp;  PhD Thesis,  <a href="http://nus.edu.sg/"> National University of Singapore</a>, August 2020. 
-          &nbsp;[<a href="../file/pdf/Thesis_ShijunZHANG_2020.pdf">PDF</a>, 
-           &nbsp;<a href="https://scholarbank.nus.edu.sg/handle/10635/186064">URL</a>, 
-           &nbsp;<a href="../file/pdf/OnePageSummary.pdf">One-Page Summary</a>]   </span>  
-          <!-- The thesis is a summary of <span class="paperNumberColor">[1][2][3][5]</span> with systematic and detailed proofs. -->
-        </li>
+          <li>
+             Shijun Zhang. 
+               &nbsp;  <span class="paperTitle"> Deep neural network approximation via function compositions</span>. 
+             &nbsp;  PhD Thesis,  <a href="http://nus.edu.sg/"> National University of Singapore</a>, August 2020. 
+            [<span class="paperLinks">
+                <a href="../file/pdf/Thesis_ShijunZHANG_2020.pdf">PDF</a>
+                <a href="https://scholarbank.nus.edu.sg/handle/10635/186064">URL</a>
+                <br><a href="../file/pdf/OnePageSummary.pdf">One-Page Summary</a>
+           </span>]  
+            <!-- The thesis is a summary of <span class="paperNumberColor">[1][2][3][5]</span> with systematic and detailed proofs. -->
+          </li>
       </ul>
 
 
@@ -138,12 +161,15 @@
       <ul class="ulPuclication">
 
           <li>
-            <span class="paperNumberColor">[7]
-            </span> &nbsp; (RF at NUS,&nbsp; 06 Jul 2021)  &nbsp; Zuowei Shen, Haizhao Yang, Shijun Zhang. 
-             &nbsp; <span class="paperTitle">Deep network approximation: achieving arbitrary accuracy with  fixed number of neurons.</span>
-             &nbsp;Submitted. 
-             &nbsp;[<a href="../file/pdf/Arbitrary_Accuracy_with_Fixed_Number_of_Neurons.pdf">PDF</a>, 
-              &nbsp;<a href="https://arxiv.org/abs/2107.02397">arXiv</a>] 
+              <span class="paperNumberColor">[7] </span> 
+              &nbsp; (RF at NUS,&nbsp; 06 Jul 2021)  &nbsp; Zuowei Shen, Haizhao Yang, Shijun Zhang. 
+               &nbsp; <span class="paperTitle"> Deep network approximation: 
+                          achieving arbitrary accuracy with  fixed number of neurons.</span>
+               &nbsp; Submitted. 
+               [<span class="paperLinks">
+                  <a href="../file/pdf/Arbitrary_Accuracy_with_Fixed_Number_of_Neurons.pdf">PDF</a>
+                  <a href="https://arxiv.org/abs/2107.02397">arXiv</a>
+              </span>] 
          </li>
        </ul>
 
@@ -158,13 +184,17 @@
     <ul class="ulPuclication">
 
       <li>
-          <span class="paperNumberColor">[6]
-          </span> &nbsp; (Ph.D. at NUS,&nbsp; 28 Feb 2021)  &nbsp; Zuowei Shen, Haizhao Yang, Shijun Zhang. 
+          <span class="paperNumberColor">[6]</span> 
+          &nbsp; (Ph.D. at NUS,&nbsp; 28 Feb 2021)  &nbsp; Zuowei Shen, Haizhao Yang, Shijun Zhang. 
            &nbsp; <span class="paperTitle">Optimal approximation rate of ReLU networks in terms of width and depth.</span>
-           &nbsp;Accepted by <a href="https://www.journals.elsevier.com/journal-de-mathematiques-pures-et-appliquees"> Journal de Math<span>&eacute</span>matiques Pures et Appliqu<span>&eacute</span>es</a>. 
-           &nbsp;[<a href="../file/pdf/Optimal_rate_in_width_and_depth.pdf">PDF</a>, 
-            &nbsp;<a href="https://arxiv.org/abs/2103.00502">arXiv</a>,
-            &nbsp;<a href="https://doi.org/10.1016/j.matpur.2021.07.009">DOI</a>] 
+           &nbsp;Accepted by <a href="https://www.journals.elsevier.com/journal-de-mathematiques-pures-et-appliquees"> 
+                          Journal de Math&eacute;matiques Pures et Appliqu&eacute;es</a>. 
+           [<span class="paperLinks">
+                <a href="../file/pdf/Optimal_rate_in_width_and_depth.pdf">PDF</a><br>
+                <a href="https://arxiv.org/abs/2103.00502">arXiv</a>
+                <a href="https://doi.org/10.1016/j.matpur.2021.07.009">DOI</a>
+          </span>] 
+
       </li>
 
       <li>
@@ -172,30 +202,38 @@
           &nbsp;  (Ph.D. at NUS,&nbsp; 9 Jan 2020) &nbsp; Jianfeng Lu, Zuowei Shen, Haizhao Yang, Shijun Zhang. 
           &nbsp; <span class="paperTitle">Deep network approximation for smooth functions. </span>
           &nbsp;<a href="https://www.siam.org/publications/journals/siam-journal-on-mathematical-analysis-sima">SIAM Journal on Mathematical Analysis</a>, Volume 53, Issue 5, September 2021, Pages 5465–5506. 
-          &nbsp;[<a href="../file/pdf/Deep_Net_Approximation_for_Smooth_Functions.pdf">PDF</a>, 
-          &nbsp;<a href="https://arxiv.org/abs/2001.03040">arXiv</a>,
-          &nbsp;<a href="https://doi.org/10.1137/20M134695X">DOI</a>]
+          [<span class="paperLinks">
+              <a href="../file/pdf/Deep_Net_Approximation_for_Smooth_Functions.pdf">PDF</a>
+              <a href="https://arxiv.org/abs/2001.03040">arXiv</a>
+              <a href="https://doi.org/10.1137/20M134695X">DOI</a>
+          </span>]
       </li>
 
       <li>
            <span class="paperNumberColor">[4]
           </span> &nbsp; (Ph.D. at NUS,&nbsp; 25 Oct 2020)  &nbsp; Zuowei Shen, Haizhao Yang, Shijun Zhang. 
           &nbsp; <span class="paperTitle">Neural network approximation: Three hidden layers are enough.</span>
-           &nbsp;<a href="https://www.journals.elsevier.com/neural-networks">Neural Networks</a>, Volume 141, September 2021, Pages 160-173. &nbsp; [<a href="../file/pdf/Three_Hidden_Layer_Enough.pdf">PDF</a>, 
-           &nbsp;<a href="https://arxiv.org/abs/2010.14075">arXiv</a>,
-           &nbsp;<a href="https://doi.org/10.1016/j.neunet.2021.04.011">DOI</a>]
+           &nbsp;<a href="https://www.journals.elsevier.com/neural-networks">Neural Networks</a>, Volume 141, September 2021, Pages 160-173. 
+           [<span class="paperLinks">
+                <a href="../file/pdf/Three_Hidden_Layer_Enough.pdf">PDF</a> 
+               <a href="https://arxiv.org/abs/2010.14075">arXiv</a>
+               <a href="https://doi.org/10.1016/j.neunet.2021.04.011">DOI</a>
+         </span>]
      </li>
 
 
       <li>
           <span class="paperNumberColor">[3]</span> 
           &nbsp; (Ph.D. at NUS,&nbsp; 22 Jun 2020) &nbsp; Zuowei Shen, Haizhao Yang, Shijun Zhang. 
-          &nbsp; <span class="paperTitle"> Deep network with approximation error being reciprocal 
-                        of width to power of square root of depth.</span>
-           &nbsp;<a href="https://www.mitpressjournals.org/journal/neco?mobileUi=0"> Neural Computation</a>, Volume 33, Issue 4, April 2021, Pages 1005-1036. 
-           &nbsp;[<a href="../file/pdf/Floor_ReLU.pdf">PDF</a>, 
-           &nbsp;<a href="https://arxiv.org/abs/2006.12231">arXiv</a>,
-           &nbsp;<a href="https://doi.org/10.1162/neco_a_01364">DOI</a>]
+          &nbsp; <span class="paperTitle"> Deep network with approximation error 
+                      being reciprocal of width to power of square root of depth.</span>
+           &nbsp;<a href="https://www.mitpressjournals.org/journal/neco?mobileUi=0"> 
+                      Neural Computation</a>, Volume 33, Issue 4, April 2021, Pages 1005-1036. 
+           [<span class="paperLinks">
+                  <a href="../file/pdf/Floor_ReLU.pdf">PDF</a> 
+                 <a href="https://arxiv.org/abs/2006.12231">arXiv</a>
+                  <a href="https://doi.org/10.1162/neco_a_01364">DOI</a>
+          </span>]
      </li>
 
 
@@ -203,20 +241,26 @@
           <span class="paperNumberColor">[2]</span> 
           &nbsp;  (Ph.D. at NUS,&nbsp; 13 Jun 2019) &nbsp; Zuowei Shen, Haizhao Yang, Shijun Zhang. 
           &nbsp; <span class="paperTitle"> Deep network approximation characterized by number of nuerons. </span>
-          &nbsp;<a href="http://www.global-sci.com/cicp.html"> Communications in Computational Physics</a>, Volume 28, Issue 5, November 2020, Pages 1768-1811. 
-          &nbsp;[<a href="../file/pdf/Deep_Network_Approximation_Characterized_by_Number_of_Neurons.pdf">PDF</a>, 
-          &nbsp;<a href="https://arxiv.org/abs/1906.05497">arXiv</a>,
-          &nbsp;<a href="https://www.doi.org/10.4208/cicp.OA-2020-0149">DOI</a>]
+          &nbsp;<a href="http://www.global-sci.com/cicp.html"> Communications in Computational Physics</a>, 
+                            Volume 28, Issue 5, November 2020, Pages 1768-1811. 
+          [<span class="paperLinks">
+                <a href="../file/pdf/Deep_Network_Approximation_Characterized_by_Number_of_Neurons.pdf">PDF</a>
+                <a href="https://arxiv.org/abs/1906.05497">arXiv</a>
+                <a href="https://www.doi.org/10.4208/cicp.OA-2020-0149">DOI</a>
+          </span>]
       </li>
 
       <li>
           <span class="paperNumberColor">[1]</span> 
           &nbsp; (Ph.D. at NUS,&nbsp; 26 Feb 2019) &nbsp; Zuowei Shen, Haizhao Yang, Shijun Zhang. 
           &nbsp; <span class="paperTitle">Nonlinear approximation via compositions.</span>
-           &nbsp;<a href="https://www.journals.elsevier.com/neural-networks">Neural Networks</a>, Volume 119, November 2019, Pages 74-84. &nbsp; [<a href="../file/pdf/Nonlinear_Approximation_via_Compositions.pdf">PDF</a>, 
-           &nbsp;<a href="https://arxiv.org/abs/1902.10170">arXiv</a>, <!--&nbsp
-          <a href="../file/pdf/(published-verison)Nonlinear-approximation-via-composition.pdf">Published version,</a>-->
-          &nbsp;<a href="https://www.doi.org/10.1016/j.neunet.2019.07.011">DOI</a>]
+           &nbsp;<a href="https://www.journals.elsevier.com/neural-networks">Neural Networks</a>, 
+                             Volume 119, November 2019, Pages 74-84. 
+           [<span class="paperLinks">
+                  <a href="../file/pdf/Nonlinear_Approximation_via_Compositions.pdf">PDF</a>
+                 <a href="https://arxiv.org/abs/1902.10170">arXiv</a>
+                <a href="https://www.doi.org/10.1016/j.neunet.2019.07.011">DOI</a>
+          </span>]
       </li>
 
 
@@ -280,7 +324,7 @@
 
 
 <!-- add background on canvas -->
-<script type="text/javascript" src="../file/background/bg.js"></script>
+<!-- <script type="text/javascript" src="../file/background/bg.js"></script> -->
 </body>
 </html>
 
