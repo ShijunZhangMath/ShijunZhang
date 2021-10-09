@@ -38,15 +38,17 @@ css 选择器的逻辑是 通过一些条件 选中 html 中的一些元素(elem
 body { margin: 0px;
     padding: 0px;
 /*    background-color: #FFFAF0;*/
-/*    word-break: keep-all;*/
+    word-break: keep-all;
     word-wrap: break-word;
 }
 
 footer {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-color:rgba(240,240,240,0.8);
-    width: 100%;
+/*    width: 100%;*/
+    word-break: keep-all;
+    word-wrap: break-word;
 }
 
 /*div, footer, h1, h2, h3, p, img, span{max-height: 100%;text-size-adjust:none;-webkit-text-size-adjust:none;}*/
@@ -219,7 +221,7 @@ a[class~="myTextShadow"][class~="activeLinkColor"] {
     text-align: center;
     margin:0.6em;
     margin-top: 1.26em;
-    background-color: #F6F6F6;
+/*    background-color: #F6F6F6;*/
 }
 
 

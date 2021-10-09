@@ -245,9 +245,9 @@ var footerFontSize=20;
 var footer=document.getElementById("footer");
 var myFooter = new Array();
 
-myFooter[0]=" <div class='footerBasic'>";
+myFooter[0]=" ";
 
-myFooter[1]="<div style='height:"+h*0.053+"px;'></div>";// add vspace
+myFooter[1]="<div style='height:"+h*0.046+"px;'></div>";// add vspace
 
 myFooter[2]=" Email:&ensp;zhangshijun@u.nus.edu &ensp;<b>or</b>&ensp; shijun.math@outlook.com <br>";
 
@@ -278,8 +278,7 @@ myFooter[8]="<a href='"+relativePath+"file/pdf/CV_ShijunZHANG.pdf' title='Curric
 myFooter[9]="</div>";
 
 
-myFooter[10]="<div style='height:2em;'></div>"+
-			"</div>";
+myFooter[10]="<div style='height:2em;'></div>";
 /*myFooter[3]="<div style='height:30px'> </div>";*/
 footer.innerHTML=myFooter.join('') 
 
@@ -289,10 +288,10 @@ if (phoneOrPc) {
 	 myfooterFontSize=w*0.01*1.8*0.6*2.374; 
 		myfooterLineHeight=myfooterFontSize*1.45;
 	}
-footer.setAttribute("style","text-align:center;text-size-adjust:none;-webkit-text-size-adjust:none; ");
+footer.setAttribute("style","text-align:center; ");
 footer.style.fontSize=myfooterFontSize+"px";
 footer.style.lineHeight=myfooterLineHeight+"px";
-footer.style.maxHeight= "100%";
+/*footer.style.maxHeight= "100%";*/
 
 
 
