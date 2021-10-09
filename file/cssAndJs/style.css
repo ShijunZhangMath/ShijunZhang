@@ -63,6 +63,7 @@ footer {
 .navBarContainer {
     display: flex;
 /*    height: auto;*/
+    height: 10em;
     width:100%;
     justify-content: center;
     /*  justify-content: flex-start;*/
