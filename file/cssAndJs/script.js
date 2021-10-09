@@ -278,20 +278,20 @@ myFooter[8]="<a href='"+relativePath+"file/pdf/CV_ShijunZHANG.pdf' title='Curric
 myFooter[9]="</div>";
 
 
-myFooter[10]="<div style='height:2em;'></div>";
+myFooter[10]="<div style='height:2em;'></div> ";
 /*myFooter[3]="<div style='height:30px'> </div>";*/
 footer.innerHTML=myFooter.join('') 
 
 var myfooterFontSize=w*0.01*1.8*0.75; 
 var myfooterLineHeight=myfooterFontSize*1.35;
 if (phoneOrPc) {
-	 myfooterFontSize=w*0.01*1.8*0.6*2.374; 
+	 myfooterFontSize=w*0.01*1.8*0.6*2.25; 
 		myfooterLineHeight=myfooterFontSize*1.45;
 	}
 footer.setAttribute("style","text-align:center; ");
 footer.style.fontSize=myfooterFontSize+"px";
 footer.style.lineHeight=myfooterLineHeight+"px";
-/*footer.style.maxHeight= "100%";*/
+footer.style.maxHeight= "100%";
 
 
 
