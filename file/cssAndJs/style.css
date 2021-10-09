@@ -226,10 +226,10 @@ a[class~="myTextShadow"][class~="activeLinkColor"] {
 .dynamicImageContainer>div  {
     width:auto;
     height:auto;
-    padding: 1.35em;
+    padding: 0.35em;
     text-align: center;
-    margin:0.6em;
-    margin-top: 1.26em;
+    margin:0.385em;
+    margin-top: 1.006em;
 /*    background-color: #F6F6F6;*/
 }
 
@@ -418,54 +418,57 @@ text-shadow:  calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC,
 }
 
 
-
+.blinkInitial {
+    color: #003D7C;
+/*    -webkit-animation: myBlink 1.6s linear infinite;*/
+}
 
 /*  Text blink */
 .blinkZero {
-    animation: myBlink 2s ease infinite;   
-    animation-delay: 0.0s;
+    animation: myBlink calc(0.44s * 8) ease infinite;   
+    animation-delay: calc(0.44s * 0);
 /*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
 .blinkOne {
-    animation: myBlink 2s ease infinite;   
-    animation-delay: 0.25s;
+    animation: myBlink calc(0.44s * 8) ease infinite;   
+    animation-delay: calc(0.44s * 1);
 /*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
 .blinkTwo {
-    animation: myBlink 2s ease infinite;   
-    animation-delay: 0.5s;
+    animation: myBlink calc(0.44s * 8) ease infinite;   
+    animation-delay: calc(0.44s * 2);
 /*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
 .blinkThree {
-    animation: myBlink 2s ease infinite;   
-    animation-delay: 0.75s;
+    animation: myBlink calc(0.44s * 8) ease infinite;   
+    animation-delay: calc(0.44s * 3);
 /*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
 .blinkFour {
-    animation: myBlink 2s ease infinite;   
-    animation-delay: 1.0s;
+    animation: myBlink calc(0.44s * 8) ease infinite;   
+    animation-delay: calc(0.44s * 4);
 /*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
 .blinkFive {
-    animation: myBlink 2s ease infinite;   
-    animation-delay: 1.25s;
+    animation: myBlink calc(0.44s * 8) ease infinite;   
+    animation-delay: calc(0.44s * 5);
 /*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
 .blinkSix {
-    animation: myBlink 2s ease infinite;   
-    animation-delay: 1.5s;
+    animation: myBlink calc(0.44s * 8) ease infinite;   
+    animation-delay: calc(0.44s * 6);
 /*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
 .blinkSeven {
-    animation: myBlink 2s ease infinite;   
-    animation-delay: 1.75s;
+    animation: myBlink calc(0.44s * 8) ease infinite;   
+    animation-delay: calc(0.44s * 7);
 /*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
@@ -478,7 +481,7 @@ text-shadow:  calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC,
 */
     0% {
         color: #EF7C00;
-        font-weight: bold;
+/*        font-weight: bold;*/
     }
 
 /*    50% {
@@ -487,7 +490,7 @@ text-shadow:  calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC,
 
     100% {
         color: #003D7C;
-        font-weight: bold;
+/*        font-weight: bold;*/
     }
 
 /*    100% {
