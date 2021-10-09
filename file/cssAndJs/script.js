@@ -230,15 +230,14 @@ if (phoneOrPc){
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.8+"px");
 }
 
-var navBarInner=document.getElementById("navBarInner");
-var navBarH=window.getComputedStyle(navBarInner,null).getPropertyValue("height");
-alert(navBarH);
-alert(document.defaultView.getComputedStyle(navBarInner,null).height)
-/*var navBarRule=document.getElementById("navBarRule");
-navBarRule.style.top=navBarH;
-var vspaceAfterNavBar=document.getElementById("vspaceAfterNavBar");
-vspaceAfterNavBar.style.height=navBarH;*/
-
+window.onload = function() {
+	var navBarInner=document.getElementById("navBarInner");
+	var navBarH=window.getComputedStyle(navBarInner,null).getPropertyValue("height");
+	var navBarRule=document.getElementById("navBarRule");
+	navBarRule.style.top=navBarH;
+	var vspaceAfterNavBar=document.getElementById("vspaceAfterNavBar");
+	vspaceAfterNavBar.style.height=navBarH;
+}
 
 
 
