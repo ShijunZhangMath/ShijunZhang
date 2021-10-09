@@ -36,10 +36,8 @@ css 选择器的逻辑是 通过一些条件 选中 html 中的一些元素(elem
 
 
 body { margin: 0px;
-    padding: 0px;
+        padding: 0px;
 /*    background-color: #FFFAF0;*/
-    word-break: keep-all;
-    word-wrap: break-word;
 }
 
 footer {
@@ -47,14 +45,21 @@ footer {
     padding: 0;
     background-color:rgba(240,240,240,0.8);
 /*    width: 100%;*/
-    word-break: keep-all;
-    word-wrap: break-word;
 }
 
 /*div, footer, h1, h2, h3, p, img, span{max-height: 100%;text-size-adjust:none;-webkit-text-size-adjust:none;}*/
-* {max-height: 100%;
+* {  
+    word-break: keep-all;
+    word-wrap: break-word;
+    max-height: 100%;
     -webkit-text-size-adjust:none;
     text-size-adjust:none;
+}
+
+
+img,video {
+    width: 10%;
+    height: auto;
 }
 
 
@@ -63,6 +68,7 @@ footer {
 .navBarContainer {
     display: flex;
     height: auto;
+/*    height: 4em;*/
     width:100%;
     justify-content: center;
     /*  justify-content: flex-start;*/
@@ -84,8 +90,8 @@ footer {
 .navBarItem {
     width:auto;
     height:auto;
-    padding-top: 0.75em;
-    padding-bottom: 0.6em;
+    padding-top: 0.148em;
+    padding-bottom: 0.0em;
     padding-left: 2%;
     padding-right: 2%;
     text-align: center;
@@ -301,7 +307,7 @@ a[class~="myTextShadow"][class~="activeLinkColor"] {
  .listStyle li {  
     padding-top: 0.7em;
     padding-bottom: 0.3em;
-    margin-top: 0.948em;  
+    margin-top: 1.102em;  
     margin-bottom: 2.01em;
  }  
   
@@ -310,7 +316,6 @@ a[class~="myTextShadow"][class~="activeLinkColor"] {
     background: #EEEEEE;  
     cursor: pointer;  
  } 
-
 
 
 
@@ -415,52 +420,53 @@ text-shadow:  calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC,
 
 
 
-
-.myTextBlink {
-    animation: myBlink 0.8s ease infinite;
-    font-weight: bold;
+/*  Text blink */
+.blinkZero {
+    animation: myBlink 2s ease infinite;   
+    animation-delay: 0.0s;
 /*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
-
-.one {
-    animation: myBlink 1.6s linear infinite;
-    animation-delay: 0.0s;
+.blinkOne {
+    animation: myBlink 2s ease infinite;   
+    animation-delay: 0.25s;
+/*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
-.two {
-    animation: myBlink 1.6s linear infinite;
-    animation-delay: 0.2s;
+.blinkTwo {
+    animation: myBlink 2s ease infinite;   
+    animation-delay: 0.5s;
+/*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
-.three {
-    animation: myBlink 1.6s linear infinite;
-    animation-delay: 0.4s;
+.blinkThree {
+    animation: myBlink 2s ease infinite;   
+    animation-delay: 0.75s;
+/*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
-.four {
-    animation: myBlink 1.6s linear infinite;
-    animation-delay: 0.6s;
-}
-
-.five {
-    animation: myBlink 1.6s linear infinite;
-    animation-delay: 0.8s;
-}
-
-.six {
-    animation: myBlink 1.6s linear infinite;
+.blinkFour {
+    animation: myBlink 2s ease infinite;   
     animation-delay: 1.0s;
+/*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
-.seven {
-    animation: myBlink 1.6s linear infinite;
-    animation-delay: 1.2s;
+.blinkFive {
+    animation: myBlink 2s ease infinite;   
+    animation-delay: 1.25s;
+/*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
-.eight {
-    animation: myBlink 1.6s linear infinite;
-    animation-delay: 1.4s;
+.blinkSix {
+    animation: myBlink 2s ease infinite;   
+    animation-delay: 1.5s;
+/*    -webkit-animation: myBlink 1.6s linear infinite;*/
+}
+
+.blinkSeven {
+    animation: myBlink 2s ease infinite;   
+    animation-delay: 1.75s;
+/*    -webkit-animation: myBlink 1.6s linear infinite;*/
 }
 
 
@@ -472,6 +478,7 @@ text-shadow:  calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC,
 */
     0% {
         color: #EF7C00;
+        font-weight: bold;
     }
 
 /*    50% {
@@ -480,12 +487,15 @@ text-shadow:  calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC,
 
     100% {
         color: #003D7C;
+        font-weight: bold;
     }
 
 /*    100% {
         color: rgba(0,233,0,0.9);
     }*/
 }
+
+
 
 
 

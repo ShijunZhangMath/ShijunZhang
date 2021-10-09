@@ -157,8 +157,8 @@ if (moreOrNot){
 }
 
 
-myNavBarHTML[0]='<nav id="navBar">'+
-						'<ul class="navBarContainer navBarLinkColor" id="navBarInner">';
+myNavBarHTML[0]='<nav>'+
+						'<ul class="navBarContainer navBarLinkColor" id="navBar">';
 
 myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">'+
 	'<a href="'+relativePath+'" class="myTextShadow '+homeActiveOrNot+'"> Shijun&thinsp;ZHANG </a>'+
@@ -188,7 +188,7 @@ Starting with ../../ moves two directories backward and starts there (and so on.
 To move forward, just start with the first sub directory and keep moving forward.
 */
 myNavBarHTML[6]='</ul>'+
-				'<div id="navBarRule" style="position:fixed; top: auto; left:0px;width:100%;">'+
+				'<div id="navBarRule" style="position:fixed;left:0px;width:100%;">'+
 					'<hr class="myHr">'+
 				'</div>';
 
@@ -222,23 +222,28 @@ var navBarHome=document.getElementById("navBarHome");
 navBarHome.style.setProperty("font-weight",430);
 navBarHome.style.setProperty("font-family","serif");
 /*navBarHome.style.setProperty("font-style","oblique");*/
-if (phoneOrPc){
+var navBarH;
+if (phoneOrPc){	
+	navBarH=navBarFontSize*4.225+"px";
 	navBarHome.style.setProperty("padding-right","11%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.5+"px");
 }else{
+	navBarH=navBarFontSize*4.525+"px";
 	navBarHome.style.setProperty("padding-right","27%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.8+"px");
 }
+navBar.style.setProperty("height",navBarH);
+document.getElementById("navBarRule").style.top=navBarH;
+document.getElementById("vspaceAfterNavBar").style.height=navBarH;
 
-window.onload = function() {
-	var navBarInner=document.getElementById("navBarInner");
-	var navBarH=window.getComputedStyle(navBarInner,null).getPropertyValue("height");
-	var navBarRule=document.getElementById("navBarRule");
-	navBarRule.style.top=navBarH;
-	var vspaceAfterNavBar=document.getElementById("vspaceAfterNavBar");
-	vspaceAfterNavBar.style.height=navBarH;
+// Use window.getComputedStyle when loaded
+/*window.onload = function() {
+	var navBar=document.getElementById("navBar");
+	var navBarH=window.getComputedStyle(navBar,null).getPropertyValue("height");
+	document.getElementById("navBarRule").style.top=navBarH;
+	document.getElementById("vspaceAfterNavBar").style.height=navBarH;
 }
-
+*/
 
 
 //  add footer
@@ -262,7 +267,7 @@ if (phoneOrPc) {footerPicWidth=w*0.018*12*2*2.2;}
 myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'>";*/
 myFooter[4]="<div id='backgroundSource'></div> Last updated on "+ dayUpdate;
 
-myFooter[5]="<div style='height:1em;'></div> ";
+myFooter[5]="<div style='height:1.4em;'></div> ";
 
 
 myFooter[6]="<div class='footerLinks'>"+
@@ -283,17 +288,17 @@ myFooter[10]="<div style='height:2em;'></div> ";
 /*myFooter[3]="<div style='height:30px'> </div>";*/
 footer.innerHTML=myFooter.join('') 
 
+
 var myfooterFontSize=w*0.01*1.8*0.75; 
 var myfooterLineHeight=myfooterFontSize*1.35;
 if (phoneOrPc) {
 	 myfooterFontSize=w*0.01*1.8*0.6*2.25; 
 		myfooterLineHeight=myfooterFontSize*1.45;
 	}
-footer.setAttribute("style","text-align:center; ");
+footer.setAttribute("style","text-align:center;");
 footer.style.fontSize=myfooterFontSize+"px";
 footer.style.lineHeight=myfooterLineHeight+"px";
 footer.style.maxHeight= "100%";
-
 
 
 
@@ -326,7 +331,7 @@ insertStyle[8]= lineHeight*0.85*0.9  +"px;font-family:Helvetica, sans-serif;}";
 if (phoneOrPc) {
 	insertStyle[9]= ".imgWidth {width:88%;padding-top:"+0.0328*h+"px;padding-bottom:"+0.0328*h+"px;}";
 }else{
-	insertStyle[9]= ".imgWidth {width:68%;padding-top:"+0.025*h+"px;padding-bottom:"+0.0328*h+"px;}";
+	insertStyle[9]= ".imgWidth {width:68%;padding-top:"+0.026*h+"px;padding-bottom:"+0.0325*h+"px;}";
 }
 
 /*insertStyle[9]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";*/ /* this is overwrite by Css in each index.html*/
