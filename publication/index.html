@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Shijun Zhang"> 
+    <meta name="viewport" content="width=device-width">
     <meta property="og:site_name" content="Shijun Zhang"> 
     <meta property="og:title" content="Shijun Zhang">
 
@@ -18,7 +19,7 @@
     <meta name="googlebot" content="index, follow" />
     <meta name="verify" content="index, follow" />
 
-    <meta name="theme-color" content="#EF525B">
+<!--     <meta name="theme-color" content="#EF525B"> -->
     <meta property="og:url" content="/"> 
     <meta property="og:locale" content="en-us">
     <link rel="alternate" hreflang="en-us" href="/">
@@ -74,8 +75,8 @@
         margin: o auto;
         margin-left: 0.08em;
         margin-right: 0.08em;
-        font-weight: bold;
-        font-family:sans-serif, monospace;
+/*        font-weight: bold;*/
+        font-family:sans-serif; /*, monospace*/
         /*    font-size: 1.9384em;*/
     }
 
@@ -298,8 +299,8 @@
 <!-- <script type="text/javascript" src="./publication.js"></script> -->
 
 <script type="text/javascript">
-    if (phoneOrPc){ var pageWidth=0.95*w ;} else {var pageWidth=0.5*w; }
-    var insertPublicationCss=" .pageContainer { display:block; padding-left:3%; padding-right:3%; margin:0 auto;width:"+pageWidth+"px;}";
+    if (phoneOrPc){ var pageWidth=0.93*w ;} else {var pageWidth=0.5*w; }
+    var insertPublicationCss=" .pageContainer { display:block; padding-left:2.3%; padding-right:2.3%; margin:0 auto;width:"+pageWidth+"px;}";
     document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertPublicationCss;
     if (phoneOrPc){
       var liPaddingCss="li {padding-top:"+0.005*h*0.4+"px; padding-bottom:"+0.02*h*0.825+"px;}";

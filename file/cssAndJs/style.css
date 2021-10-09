@@ -35,11 +35,18 @@ css 选择器的逻辑是 通过一些条件 选中 html 中的一些元素(elem
 */
 
 
-body, footer { margin: 0px;
+body { margin: 0px;
     padding: 0px;
 /*    background-color: #FFFAF0;*/
-    word-break: keep-all;
+/*    word-break: keep-all;*/
     word-wrap: break-word;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    background-color:rgba(240,240,240,0.8);
+    width: 100%;
 }
 
 /*div, footer, h1, h2, h3, p, img, span{max-height: 100%;text-size-adjust:none;-webkit-text-size-adjust:none;}*/
@@ -205,12 +212,14 @@ a[class~="myTextShadow"][class~="activeLinkColor"] {
     border: 0px dashed red;
 }
 
-.dynamicImageItem {
+.dynamicImageContainer>div  {
     width:auto;
     height:auto;
-    padding: 10px;
+    padding: 1.35em;
     text-align: center;
-    margin:10px;
+    margin:0.6em;
+    margin-top: 1.26em;
+    background-color: #F6F6F6;
 }
 
 
@@ -242,7 +251,8 @@ a[class~="myTextShadow"][class~="activeLinkColor"] {
     height:auto;
     padding: 0px;
     text-align: right;
-    margin:0px;
+    margin-right:0px;
+    margin-left: auto;
 }
 
 
@@ -295,6 +305,8 @@ a[class~="myTextShadow"][class~="activeLinkColor"] {
     background: #EEEEEE;  
     cursor: pointer;  
  } 
+
+
 
 
 
@@ -428,12 +440,12 @@ text-shadow:  calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC,
 
 .five {
     animation: myBlink 1.6s linear infinite;
-    animation-delay: 1.0s;
+    animation-delay: 0.8s;
 }
 
 .six {
     animation: myBlink 1.6s linear infinite;
-    animation-delay: 1.2s;
+    animation-delay: 1.0s;
 }
 
 .seven {
@@ -489,9 +501,9 @@ text-shadow:  calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC,
 
 
 .footerLinks a i {
-    font-size:2.5em;
-    margin-left: 0.435em;
-    margin-right: 0.435em;
+    font-size:2.8em;
+    margin-left: 0.375em;
+    margin-right: 0.375em;
 }
 
 

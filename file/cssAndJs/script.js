@@ -245,7 +245,7 @@ var footerFontSize=20;
 var footer=document.getElementById("footer");
 var myFooter = new Array();
 
-myFooter[0]=" <div style='background-color:rgba(240,240,240,0.8); display:block;position:sticky;'>";
+myFooter[0]=" <div class='footerBasic'>";
 
 myFooter[1]="<div style='height:"+h*0.053+"px;'></div>";// add vspace
 
@@ -298,7 +298,7 @@ footer.style.maxHeight= "100%";
 
 
 //add style in js
-if (phoneOrPc){  var h1Size=w*0.0453; var pageWidth=0.999*w; lineHeight=h1Size*1.22;
+if (phoneOrPc){  var h1Size=w*0.045; var pageWidth=0.999*w; lineHeight=h1Size*1.22;
 } 
 else {
 		var h1Size=w*0.0185; var pageWidth=0.8*w; lineHeight=h1Size*1.2;

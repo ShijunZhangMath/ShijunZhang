@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Shijun Zhang"> 
+    <meta name="viewport" content="width=device-width">
     <meta property="og:site_name" content="Shijun Zhang"> 
     <meta property="og:title" content="Shijun Zhang">
 
@@ -18,7 +19,7 @@
     <meta name="googlebot" content="index, follow" />
     <meta name="verify" content="index, follow" />
 
-    <meta name="theme-color" content="#EF525B">
+<!--     <meta name="theme-color" content="#EF525B"> -->
     <meta property="og:url" content="/"> 
     <meta property="og:locale" content="en-us">
     <link rel="alternate" hreflang="en-us" href="/">
@@ -32,7 +33,7 @@
 
 <link rel="stylesheet" href="../file/cssAndJs/style.css"> 
 <style id="styleInJs"></style>
-<link rel="stylesheet" href="../file/background/bgSetting.css"> 
+<!-- <link rel="stylesheet" href="../file/background/bgSetting.css">  -->
 
 
 </head>
@@ -84,28 +85,25 @@ It is of great interest to
 create mathathecal dynamic images via Python (Matplotlib) or Matlab. See several examples below.
 
 <div class="dynamicImageContainer">
-    <div class="dynamicImageItem"> 
-        <a href="../file/img/clover.gif"> <img src="../file/img/clover.gif" class="dynamicImage"> </a>
+    <div> 
+        <a href="../file/img/clover.gif"> <img src="../file/img/clover.gif"> </a>
     </div>
 
-    <div class="dynamicImageItem">
-        <a href="../file/img/cardioid.gif"><img src="../file/img/cardioid.gif"  class="dynamicImage"></a>
+    <div>
+        <a href="../file/img/cardioid.gif"><img src="../file/img/cardioid.gif"></a>
     </div>
 
-    <div class="dynamicImageItem">
-        <a href="../file/img/rotateEarth.gif"> <img src="../file/img/rotateEarth.gif" class="dynamicImage"></a>
+    <div>
+        <a href="../file/img/rotateEarth.gif"> <img src="../file/img/rotateEarth.gif"></a>
     </div>
 
-    <div class="dynamicImageItem">
-        <a href="../file/img/asteroid.gif"> <img src="../file/img/asteroid.gif" class="dynamicImage"></a>
+    <div>
+        <a href="../file/img/asteroid.gif"> <img src="../file/img/asteroid.gif"></a>
     </div>
 </div>
 <!-- Some others may be added in the future. -->
 
-
-
 </section>
-
 
 
 <section id="postSection"></section>
@@ -128,12 +126,12 @@ create mathathecal dynamic images via Python (Matplotlib) or Matlab. See several
 
 <script type="text/javascript">
     if (phoneOrPc) {
-        var pageWidth=0.80*w;var dynamicImageWidth=w*0.69;
+        var pageWidth=0.95*w; var dynamicImageWidth=w*0.72;
     } else {
-        var pageWidth=0.6*w;var dynamicImageWidth=w*0.26;
+        var pageWidth=0.6*w; var dynamicImageWidth=w*0.24;
     }
     var insertDynamicImgJs=" .pageContainer { display:block;margin:0 auto;padding-left:3%; padding-right:3%;width:"+pageWidth+"px;}";
-    insertDynamicImgJs+=" .dynamicImage { width:"+dynamicImageWidth+"px;}";
+    insertDynamicImgJs+=" .dynamicImageContainer div img { width:"+dynamicImageWidth+"px;}";
     document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertDynamicImgJs;
 
             // pre and post section
@@ -144,7 +142,7 @@ create mathathecal dynamic images via Python (Matplotlib) or Matlab. See several
         preSection.style.height=0.025*h +"px";
         postSection.style.height=0.125*h +"px";
     }else{
-        preSection.style.height=0.088*h +"px";
+        preSection.style.height=0.035*h +"px";
         postSection.style.height=0.145*h +"px";
     } 
 </script>
