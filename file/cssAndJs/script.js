@@ -235,11 +235,10 @@ var navBarH=window.getComputedStyle(navBarInner,null).getPropertyValue("height")
 alert(navBarH);
 var navBarRule=document.getElementById("navBarRule");
 navBarRule.style.top=navBarH;
-alert(navBarH);
 /*navBarRule.style.backgroundColor="red";*/
 var vspaceAfterNavBar=document.getElementById("vspaceAfterNavBar");
 vspaceAfterNavBar.style.height=navBarH;
-alert(navBarH);
+
 
 
 
