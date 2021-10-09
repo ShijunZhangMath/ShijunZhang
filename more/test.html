@@ -4,14 +4,15 @@
 
 <style type="text/css">
 	button {
-    max-height:20px;
+    max-height:40px;
+    font-size: 20px;
 }
 </style>
 <body>
 
 <p>Click the button to display an alert box.</p>
 
-<button onclick="myFunction()">Try it <br><br> tryTry it <br><br> tryTry it <br><br> try</button>
+<button onclick="myFunction()">Window width and height</button>
 
 <script>
 var myorientation=0;
@@ -27,11 +28,11 @@ var sh=window.screen.height;
 var sw=window.screen.width;
 var screenRatio=Math.max(sh,sw)/Math.min(sh,sw);
 function myFunction() {
-  alert("win.scr.WH:"+window.screen.width+":"+window.screen.height);
-  alert("win.scr.availWH:"+window.screen.availWidth+":"+window.screen.availHeight);
-	alert("win.outerWH"+window.outerWidth+':'+window.outerHeight);
-	alert("win.innerWH"+window.innerWidth+':'+window.innerHeight);	
-	  alert("orin"+myorientation+"pxRatio"+window.devicePixelRatio);
+  alert("win.scr.WH::"+window.screen.width+"  ::"+window.screen.height+"\n"+
+  "win.scr.availWH:"+window.screen.availWidth+"  ::"+window.screen.availHeight+"\n"+
+	"win.outerWH:"+window.outerWidth+'  ::'+window.outerHeight+"\n"+
+	"win.innerWH:"+window.innerWidth+'  ::'+window.innerHeight+"\n"+
+	 "orin::"+myorientation+"  pxRatio::"+window.devicePixelRatio);
 }
 </script>
 
