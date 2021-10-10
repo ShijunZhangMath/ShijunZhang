@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>霓虹灯</title>
+    <style>
+            .textFlicker {
+                position: fixed;
+                top: 200px;
+                left: 200px;
+                font-size: 50px;
+                text-align: center;
+                width: 300px;
+                animation: flicker calc(0.36s * 3) ease infinite; 
+            }
+            @keyframes flicker {
+              0%, 18%, 22%, 25%, 53%, 57%, 100% {
+                box-shadow:
+                  0 0 4px #fff,
+                  0 0 11px #fff,
+                  0 0 19px #fff,
+                  0 0 40px #0fa,
+                  0 0 80px #0fa,
+                  0 0 90px #0fa,
+                  0 0 100px #0fa,
+                  0 0 150px #0fa;
+              }
+              20%, 24%, 55% {       
+                box-shadow: none;
+              }
+            }
+    </style>
+</head>
+<body>
+<div class="textFlicker"> Welcome! </div>
+
+
+
+
+</body>
+</html>
+
+
+

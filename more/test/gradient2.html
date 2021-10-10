@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>渐变</title>
+    <style>
+
+        /*  Text blink */
+        .blinkZero {
+            animation: myBlink calc(0.36s * 8) ease infinite;   
+            animation-delay: calc(0.36s * 0);
+        /*    -webkit-animation: myBlink 1.6s linear infinite;*/
+        }
+
+        .blinkOne {
+            animation: myBlink calc(0.36s * 8) ease infinite;   
+            animation-delay: calc(0.36s * 1);
+        /*    -webkit-animation: myBlink 1.6s linear infinite;*/
+        }
+
+        .blinkTwo {
+            animation: myBlink calc(0.36s * 8) ease infinite;   
+            animation-delay: calc(0.36s * 2);
+        /*    -webkit-animation: myBlink 1.6s linear infinite;*/
+        }
+
+        .blinkThree {
+            animation: myBlink calc(0.36s * 8) ease infinite;   
+            animation-delay: calc(0.36s * 3);
+        /*    -webkit-animation: myBlink 1.6s linear infinite;*/
+        }
+
+        .blinkFour {
+            animation: myBlink calc(0.36s * 8) ease infinite;   
+            animation-delay: calc(0.36s * 4);
+        /*    -webkit-animation: myBlink 1.6s linear infinite;*/
+        }
+
+        .blinkFive {
+            animation: myBlink calc(0.36s * 8) ease infinite;   
+            animation-delay: calc(0.36s * 5);
+        /*    -webkit-animation: myBlink 1.6s linear infinite;*/
+        }
+
+        .blinkSix {
+            animation: myBlink calc(0.36s * 8) ease infinite;   
+            animation-delay: calc(0.36s * 6);
+        /*    -webkit-animation: myBlink 1.6s linear infinite;*/
+        }
+
+        .blinkSeven {
+            animation: myBlink calc(0.36s * 8) ease infinite;   
+            animation-delay: calc(0.36s * 7);
+        /*    -webkit-animation: myBlink 1.6s linear infinite;*/
+        }
+
+
+
+        @keyframes myBlink {
+        /*    0% {
+                color: rgba(0,0,0,0.9);
+            }
+        */
+            0% {
+                color: #EF7C00;
+        /*        font-weight: bold;*/
+            }
+
+        /*    50% {
+                color: rgba(0,0,0,0.1);
+            }*/
+
+            100% {
+                color: #003D7C;
+        /*        font-weight: bold;*/
+            }
+
+        /*    100% {
+                color: rgba(0,233,0,0.9);
+            }*/
+        }
+
+        div {
+                position: fixed;
+                top: 200px;
+                left: 200px;
+                font-size: 50px;
+                text-align: center;
+                width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div>
+<span class='blinkZero'>W</span><span class='blinkOne'>e</span><span class='blinkTwo'>l</span><span class='blinkThree'>c</span><span class='blinkFour'>o</span><span class='blinkFive'>m</span><span class='blinkSix'>e</span><span class='blinkSeven'>!</span>
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
