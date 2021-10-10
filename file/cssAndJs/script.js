@@ -327,7 +327,7 @@ insertStyle[8]= lineHeight*0.85*0.9  +"px;font-family:Helvetica, sans-serif;}";
 
 if (phoneOrPc) {
 	insertStyle[9]= ".imgWidth {width:88%;padding-top:"+0.0328*h+"px;padding-bottom:"+0.0328*h+"px;}"+
-	".footerLinks a i {font-size:2.95em; margin-left: 0.365em; margin-right: 0.365em;}"+
+	".footerLinks a i {font-size:3.2em; margin-left: 0.359em; margin-right: 0.359em;}"+
 	".footerLinks {padding-top: 2.375em; padding-bottom: 6.8em; }"+
 	"#footer::before {content:' '; display:block; height:4.8em;}" +
 	".myHr {height:0.132em;}";

@@ -161,28 +161,36 @@ img,video {
 /*   text-shadow:  calc(3em / 58)  calc(3em / 58)  calc(0em / 58)  #EEEEEE,
                 calc(7.5em / 58)  calc(6em / 58)  calc(0em / 58)  rgba(0,0,0,0.15);*/
 
-/*              calc(0em / 42)  calc(6em / 42)  calc(1em / 42)  #CCCCCC;*/
+/*              calc(0em / 72)  calc(6em / 72)  calc(1em / 72)  #CCCCCC;*/
 }
 
 
 /* overwrith the text-shadow of a:hover */
 a[class~="myTextShadow"][class~="activeLinkColor"] {
-  text-shadow:calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(0em / 42)  calc(1em / 42)  calc(1em / 42)  #EEEEEE, 
-              calc(2em / 42)  calc(1em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(1em / 42)  calc(2em / 42)  calc(1em / 42)  #EEEEEE,
-              calc(3em / 42)  calc(2em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(2em / 42)  calc(3em / 42)  calc(1em / 42)  #EEEEEE, 
-              calc(4em / 42)  calc(3em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(3em / 42)  calc(4em / 42)  calc(1em / 42)  #EEEEEE,
-              calc(5em / 42)  calc(4em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(4em / 42)  calc(5em / 42)  calc(1em / 42)  #EEEEEE, 
-              calc(6em / 42)  calc(5em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(5em / 42)  calc(6em / 42)  calc(1em / 42)  #EEEEEE,
-              calc(7em / 42)  calc(6em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(6em / 42)  calc(7em / 42)  calc(1em / 42)  #EEEEEE, 
-              calc(8em / 42)  calc(7em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(7em / 42)  calc(8em / 42)  calc(1em / 42)  #EEEEEE;
+text-shadow:  calc(1em / 72)  calc(0em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(0em / 72)  calc(1em / 72)  calc(1em / 72)  #EEEEEE, 
+              calc(2em / 72)  calc(1em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(1em / 72)  calc(2em / 72)  calc(1em / 72)  #EEEEEE,
+              calc(3em / 72)  calc(2em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(2em / 72)  calc(3em / 72)  calc(1em / 72)  #EEEEEE, 
+              calc(4em / 72)  calc(3em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(3em / 72)  calc(4em / 72)  calc(1em / 72)  #EEEEEE,
+              calc(5em / 72)  calc(4em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(4em / 72)  calc(5em / 72)  calc(1em / 72)  #EEEEEE, 
+              calc(6em / 72)  calc(5em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(5em / 72)  calc(6em / 72)  calc(1em / 72)  #EEEEEE,
+              calc(7em / 72)  calc(6em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(6em / 72)  calc(7em / 72)  calc(1em / 72)  #EEEEEE, 
+              calc(8em / 72)  calc(7em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(7em / 72)  calc(8em / 72)  calc(1em / 72)  #EEEEEE,
+              calc(9em / 72)  calc(8em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(8em / 72)  calc(9em / 72)  calc(1em / 72)  #EEEEEE, 
+              calc(10em / 72)  calc(9em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(9em / 72)  calc(10em / 72)  calc(1em / 72)  #EEEEEE,
+              calc(11em / 72)  calc(10em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(10em / 72)  calc(11em / 72)  calc(1em / 72)  #EEEEEE, 
+              calc(12em / 72)  calc(11em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(11em / 72)  calc(12em / 72)  calc(1em / 72)  #EEEEEE;
 }
 
 
@@ -387,22 +395,30 @@ text-shadow:  1px 0px 1px #CCCCCC,
 .myTextShadow {
 /*color: #555555;*/
 /*background: #FFFFFF;*/
-text-shadow:  calc(1em / 42)  calc(0em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(0em / 42)  calc(1em / 42)  calc(1em / 42)  #EEEEEE, 
-              calc(2em / 42)  calc(1em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(1em / 42)  calc(2em / 42)  calc(1em / 42)  #EEEEEE,
-              calc(3em / 42)  calc(2em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(2em / 42)  calc(3em / 42)  calc(1em / 42)  #EEEEEE, 
-              calc(4em / 42)  calc(3em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(3em / 42)  calc(4em / 42)  calc(1em / 42)  #EEEEEE,
-              calc(5em / 42)  calc(4em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(4em / 42)  calc(5em / 42)  calc(1em / 42)  #EEEEEE, 
-              calc(6em / 42)  calc(5em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(5em / 42)  calc(6em / 42)  calc(1em / 42)  #EEEEEE,
-              calc(7em / 42)  calc(6em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(6em / 42)  calc(7em / 42)  calc(1em / 42)  #EEEEEE, 
-              calc(8em / 42)  calc(7em / 42)  calc(1em / 42)  #CCCCCC, 
-              calc(7em / 42)  calc(8em / 42)  calc(1em / 42)  #EEEEEE;
+text-shadow:  calc(1em / 72)  calc(0em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(0em / 72)  calc(1em / 72)  calc(1em / 72)  #EEEEEE, 
+              calc(2em / 72)  calc(1em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(1em / 72)  calc(2em / 72)  calc(1em / 72)  #EEEEEE,
+              calc(3em / 72)  calc(2em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(2em / 72)  calc(3em / 72)  calc(1em / 72)  #EEEEEE, 
+              calc(4em / 72)  calc(3em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(3em / 72)  calc(4em / 72)  calc(1em / 72)  #EEEEEE,
+              calc(5em / 72)  calc(4em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(4em / 72)  calc(5em / 72)  calc(1em / 72)  #EEEEEE, 
+              calc(6em / 72)  calc(5em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(5em / 72)  calc(6em / 72)  calc(1em / 72)  #EEEEEE,
+              calc(7em / 72)  calc(6em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(6em / 72)  calc(7em / 72)  calc(1em / 72)  #EEEEEE, 
+              calc(8em / 72)  calc(7em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(7em / 72)  calc(8em / 72)  calc(1em / 72)  #EEEEEE,
+              calc(9em / 72)  calc(8em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(8em / 72)  calc(9em / 72)  calc(1em / 72)  #EEEEEE, 
+              calc(10em / 72)  calc(9em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(9em / 72)  calc(10em / 72)  calc(1em / 72)  #EEEEEE,
+              calc(11em / 72)  calc(10em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(10em / 72)  calc(11em / 72)  calc(1em / 72)  #EEEEEE, 
+              calc(12em / 72)  calc(11em / 72)  calc(1em / 72)  #CCCCCC, 
+              calc(11em / 72)  calc(12em / 72)  calc(1em / 72)  #EEEEEE;
 /*              2px 1px 1px #CCCCCC, 
               1px 2px 1px #EEEEEE, 
               3px 2px 1px #CCCCCC, 
