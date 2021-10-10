@@ -295,7 +295,7 @@ a[class~="myTextShadow"][class~="activeLinkColor"] {
           
 .listStyle li {  
     background: #F7F7F7;
-    padding: 0.8em;  
+    padding: 1.2em;  
     overflow: auto;  
     border-top-style: none;
     border-right-style: none;
@@ -305,8 +305,8 @@ a[class~="myTextShadow"][class~="activeLinkColor"] {
  }  
 
  .listStyle li {  
-    padding-top: 0.7em;
-    padding-bottom: 0.3em;
+    padding-top: 0.99em;
+    padding-bottom: 0.6em;
     margin-top: 1.102em;  
     margin-bottom: 2.01em;
  }  
