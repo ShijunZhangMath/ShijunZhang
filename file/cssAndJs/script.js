@@ -16,7 +16,7 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="October 10, 2021"
+var dayUpdate="October 10, 2021";
 
 
 var	w=window.innerWidth;
@@ -78,16 +78,16 @@ if (window.innerHeight<=window.innerWidth && Math.abs(myorientation)==90) {
 
 // define a function to test pathname
 function testPN(pn) {
-var currentPN=document.location.pathname;
-if (currentPN.match(pn)==null){return 0;}
-else {return 1;}
+	var currentPN=document.location.pathname;
+	if (currentPN.search('/'+pn)==-1){return 0;}
+	else {return 1;}
 }
 
 //check whether this page is homepage
-var cvOrNot=testPN("/cv");
-var publicationOrNot=testPN("/publication");
-var moreOrNot=testPN("/more");
-var interestOrNot=testPN("/interest");
+var cvOrNot=testPN("cv");
+var publicationOrNot=testPN("publication");
+var moreOrNot=testPN("more");
+var interestOrNot=testPN("interest");
 var homeOrNot=1-cvOrNot-publicationOrNot-moreOrNot-interestOrNot;
 // return 1 if home; return 0 if not
 
@@ -283,7 +283,7 @@ myFooter[8]="</div>";
 
 
 /*myFooter[3]="<div style='height:30px'> </div>";*/
-footer.innerHTML=myFooter.join('') 
+footer.innerHTML=myFooter.join('');
 
 
 var myfooterFontSize=w*0.01*1.8*0.75; 
@@ -329,12 +329,14 @@ if (phoneOrPc) {
 	insertStyle[9]= ".imgWidth {width:88%;padding-top:"+0.0328*h+"px;padding-bottom:"+0.0328*h+"px;}"+
 	".footerLinks a i {font-size:2.95em; margin-left: 0.365em; margin-right: 0.365em;}"+
 	".footerLinks {padding-top: 2.375em; padding-bottom: 6.8em; }"+
-	"#footer::before {content:' '; display:block; height:4.8em;}";
+	"#footer::before {content:' '; display:block; height:4.8em;}" +
+	".myHr {height:0.132em;}";
 }else{
 	insertStyle[9]= ".imgWidth {width:68%;padding-top:"+0.026*h+"px;padding-bottom:"+0.0325*h+"px;}"+
 	".footerLinks a i {font-size:2.2em; margin-left: 0.385em; margin-right: 0.385em;}"+
 	".footerLinks {padding-top: 1.995em; padding-bottom: 4.8em;}"+
-	"#footer::before { content:' ';display:block; height:3.6em;}";
+	"#footer::before { content:' ';display:block; height:3.6em;}"+
+	".myHr {height:0.185em;}";
 }
 
 /*insertStyle[9]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";*/ /* this is overwrite by Css in each index.html*/

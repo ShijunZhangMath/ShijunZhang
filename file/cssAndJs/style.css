@@ -348,7 +348,7 @@ a[class~="myTextShadow"][class~="activeLinkColor"] {
 .myHr {
     border: 0;
 /*    height: 2.85px;*/
-    height: 0.17em;
+/*    height: 0.17em;*/
     pardding: 0;
     margin: 0;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.045), rgba(0, 0, 0, 0.072), rgba(0, 0, 0, 0.045));

@@ -37,7 +37,7 @@
 
 <style>
     .homeLinks a {
-        margin: o auto;
+        margin: 0 auto;
         margin-left: 0.11em;
         margin-right: 0.11em;
         /*    font-weight: bold;*/
@@ -114,7 +114,7 @@
           &emsp;&emsp; I am Shijun Zhang (张仕俊), a Research Fellow at National University of Singapore (<a href="https://www.nus.edu.sg/">NUS</a>), under the supervision of Professor <a href="https://blog.nus.edu.sg/matzuows/">
                  Zuowei Shen</a>. Currently, I am interested in the error analysis of deep neural networks, especially the approximation error. For more information, check out the following links:
                  <span class="homeLinks">
-                         <a href="https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/">Google&thinsp;Scholar</a>
+                         <a href="https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/">Google Scholar</a>
                           <a href="https://orcid.org/0000-0003-4115-7891">ORICD</a>
                           <a href="./publiction/">Publication</a>
                           <a href="./interest/">Interest</a>
@@ -156,7 +156,9 @@
         zsjPhoto.style.width=w*0.6+"px";
         introduction.style.width= "80%";
         introduction.style.flexFlow="column"; 
-        introduction.style.padding=0.03*h+"px";
+        introduction.style.padding=0.05*w+"px";
+        introduction.style.setProperty('padding-top',0.0486*h+"px");
+        introduction.style.setProperty('padding-bottom',0.039*h+"px");
         introduction.style.lineHeight="195%";
         spacePhotoAndIntro.style.height=0.0585*h +"px";
         spacePhotoAndIntro.style.width=0.82*w +"px";
@@ -167,6 +169,8 @@
         zsjPhoto.style.width=w*0.22 +"px";
         introduction.style.width= "50%";
         introduction.style.padding=0.0333*w+"px";
+        introduction.style.setProperty('padding-top',0.0756*h+"px");
+        introduction.style.setProperty('padding-bottom',0.0632*h+"px");
         introduction.style.lineHeight="198%";
         spacePhotoAndIntro.style.width=0.05*w +"px";
       /*  spacePhotoAndIntro.style.display="none";*/
