@@ -16,7 +16,7 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="October 9, 2021"
+var dayUpdate="October 10, 2021"
 
 
 var	w=window.innerWidth;
@@ -253,11 +253,11 @@ var myFooter = new Array();
 
 myFooter[0]=" ";
 
-myFooter[1]="<div style='height:"+h*0.046+"px;'></div>";// add vspace
+myFooter[1]=" "
 
-myFooter[2]=" Email:&ensp;zhangshijun@u.nus.edu &ensp;<b>or</b>&ensp; shijun.math@outlook.com <br>";
+myFooter[2]="Email:&ensp;zhangshijun@u.nus.edu &ensp;<b>or</b>&ensp; shijun.math@outlook.com";
 
-myFooter[3]="Address:&ensp;Department of Mathematics (NUS), Singapore 119076";
+myFooter[3]="<br>Address:&ensp;Department of Mathematics (NUS), Singapore 119076";
 
 
 /*var footerImgPN="../file/img/zsjBlue.gif";
@@ -265,26 +265,23 @@ if (homeOrNot) {var footerImgPN="./file/img/zsjBlue.gif";}
 var footerPicWidth=w*0.018*12*2.2;
 if (phoneOrPc) {footerPicWidth=w*0.018*12*2*2.2;}
 myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'>";*/
-myFooter[4]="<div id='backgroundSource'></div> Last updated on "+ dayUpdate;
-
-myFooter[5]="<div style='height:1.4em;'></div> ";
+myFooter[4]="<br>Last updated on "+ dayUpdate;
 
 
-myFooter[6]="<div class='footerLinks'>"+
+myFooter[5]="<div class='footerLinks'>"+
 			" <a href='https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/' title='Google Scholar'>" +
 			"<i class='ai ai-google-scholar-square'></i>    </a>";
 
-myFooter[7]="<a href='https://orcid.org/0000-0003-4115-7891/' title='ORCID'>" +
+myFooter[6]="<a href='https://orcid.org/0000-0003-4115-7891/' title='ORCID'>" +
 			" <i class='ai ai-orcid-square'></i>    </a>";
 
-myFooter[8]="<a href='"+relativePath+"file/pdf/CV_ShijunZHANG.pdf' title='Curriculum Vitae'>" +
+myFooter[7]="<a href='"+relativePath+"file/pdf/CV_ShijunZHANG.pdf' title='Curriculum Vitae'>" +
 			" <i class='ai ai-cv-square'></i>      </a>";
 /*myFooter[9]="<a href='https://www.researchgate.net/profile/Shijun-Zhang-6/'>" +
 			" <i class='ai ai-researchgate-square'></i></a>"+*/
-myFooter[9]="</div>";
+myFooter[8]="</div>";
 
 
-myFooter[10]="<div style='height:2em;'></div> ";
 /*myFooter[3]="<div style='height:30px'> </div>";*/
 footer.innerHTML=myFooter.join('') 
 
@@ -295,7 +292,7 @@ if (phoneOrPc) {
 	 myfooterFontSize=w*0.01*1.8*0.6*2.25; 
 		myfooterLineHeight=myfooterFontSize*1.45;
 	}
-footer.setAttribute("style","text-align:center;");
+footer.style.textAlign="center";
 footer.style.fontSize=myfooterFontSize+"px";
 footer.style.lineHeight=myfooterLineHeight+"px";
 footer.style.maxHeight= "100%";
@@ -329,9 +326,15 @@ insertStyle[7]=" .footnoteFont {font-size:"+h1Size*0.729*0.9*0.9+"px;color:#2424
 insertStyle[8]= lineHeight*0.85*0.9  +"px;font-family:Helvetica, sans-serif;}";
 
 if (phoneOrPc) {
-	insertStyle[9]= ".imgWidth {width:88%;padding-top:"+0.0328*h+"px;padding-bottom:"+0.0328*h+"px;}";
+	insertStyle[9]= ".imgWidth {width:88%;padding-top:"+0.0328*h+"px;padding-bottom:"+0.0328*h+"px;}"+
+	".footerLinks a i {font-size:2.95em; margin-left: 0.365em; margin-right: 0.365em;}"+
+	".footerLinks {padding-top: 2.375em; padding-bottom: 6.8em; }"+
+	"#footer::before {content:' '; display:block; height:4.8em;}";
 }else{
-	insertStyle[9]= ".imgWidth {width:68%;padding-top:"+0.026*h+"px;padding-bottom:"+0.0325*h+"px;}";
+	insertStyle[9]= ".imgWidth {width:68%;padding-top:"+0.026*h+"px;padding-bottom:"+0.0325*h+"px;}"+
+	".footerLinks a i {font-size:2.2em; margin-left: 0.385em; margin-right: 0.385em;}"+
+	".footerLinks {padding-top: 1.995em; padding-bottom: 4.8em;}"+
+	"#footer::before { content:' ';display:block; height:3.6em;}";
 }
 
 /*insertStyle[9]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";*/ /* this is overwrite by Css in each index.html*/
