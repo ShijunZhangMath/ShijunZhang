@@ -35,14 +35,21 @@ css 选择器的逻辑是 通过一些条件 选中 html 中的一些元素(elem
 */
 
 
-body { margin: 0px;
-        padding: 0px;
-        width:  auto;
-        height: height;
-        overflow-x: auto;
-        overflow-y: scroll;
+body { 
+    margin: 0px;
+    padding: 0px;
+    width:  auto;
+    height: height;
+    overflow-x: auto;
+    overflow-y: hidden;
 /*    background-color: #FFFAF0;*/
 }
+
+html {
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
 
 
 footer {
