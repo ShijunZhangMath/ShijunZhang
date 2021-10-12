@@ -40,15 +40,15 @@ body {
     padding: 0px;
     width:  auto;
     height: height;
-    overflow-x: auto;
-    overflow-y: hidden;
+/*    overflow-x: auto;*/
+    overflow-y: auto;
 /*    background-color: #FFFAF0;*/
 }
 
-html {
+/*html {
     overflow-x: auto;
     overflow-y: scroll;
-}
+}*/
 
 
 
