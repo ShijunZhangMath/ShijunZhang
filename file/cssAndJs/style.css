@@ -37,6 +37,8 @@ css 选择器的逻辑是 通过一些条件 选中 html 中的一些元素(elem
 
 body { margin: 0px;
         padding: 0px;
+        overflow-x: auto;
+        overflow-y: scroll;
 /*    background-color: #FFFAF0;*/
 }
 

@@ -16,7 +16,7 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="October 10, 2021";
+var dayUpdate="October 12, 2021";
 
 
 var	w=window.innerWidth;
@@ -220,7 +220,7 @@ navBar.style.setProperty("font-family","Helvetica, sans-serif");
 
 /*navBar.style.setProperty("font-weight",440);*/
 var navBarHome=document.getElementById("navBarHome");
-navBarHome.style.setProperty("font-weight",430);
+navBarHome.style.setProperty("font-weight",420);
 navBarHome.style.setProperty("font-family","serif");
 /*navBarHome.style.setProperty("font-style","oblique");*/
 var navBarH;
@@ -249,10 +249,8 @@ document.getElementById("vspaceAfterNavBar").style.height=navBarH;
 
 
 //  add footer
-var footerFontSize=20;
 var footer=document.getElementById("footer");
 var myFooter = new Array();
-
 
 myFooter[0]="Email:&ensp;zhangshijun@u.nus.edu &ensp;<b>or</b>&ensp; shijun.math@outlook.com";
 
@@ -285,15 +283,15 @@ myFooter[6]="</div>";
 footer.innerHTML=myFooter.join('');
 
 
-var myfooterFontSize=w*0.01*1.8*0.75; 
-var myfooterLineHeight=myfooterFontSize*1.35;
+var myFooterFontSize=w*0.01*1.8*0.75; 
+var myFooterLineHeight=myFooterFontSize*1.35;
 if (phoneOrPc) {
-	 myfooterFontSize=w*0.01*1.8*0.6*2.25; 
-		myfooterLineHeight=myfooterFontSize*1.45;
-	}
+	 myFooterFontSize=w*0.01*1.8*0.6*2.25; 
+	myFooterLineHeight=myFooterFontSize*1.45;
+}
 footer.style.textAlign="center";
-footer.style.fontSize=myfooterFontSize+"px";
-footer.style.lineHeight=myfooterLineHeight+"px";
+footer.style.fontSize=myFooterFontSize+"px";
+footer.style.lineHeight=myFooterLineHeight+"px";
 footer.style.maxHeight= "100%";
 
 
@@ -326,25 +324,14 @@ if (phoneOrPc) {
 	".myHr {height:0.185em;}";
 }
 
-/*insertStyle[9]=" .pageContainer { display:block;margin:0 auto;width:"+pageWidth+"px;}";*/ /* this is overwrite by Css in each index.html*/
-/*
-insertStyle[8]=" .eqFont {overflow: scroll;text-align:center;font-size:80%;overflow-y: hidden; overflow-x: scroll;}";*/
-
-
-// styleInJs.innerHTML=insertStyle.join('') 
 //InsertStyle will be added in corresponding HTML file, variables are valid in whole HTML file
-
 /*alert('w'+window.innerWidth+'wc'+screen.width)*/
-
 
 //refresh if the window size is changed
 // window.onresize =function(){location.reload();} // it can be replaced by 
 //window.addEventListener('resize',function(){location.reload();})
 
-window.addEventListener("orientationchange", function (){ "use strict"; window.location.reload();});
-
-/*if (w>=h && screenRatio<=1.78 && screenRatio>=1.499) {
-	window.addEventListener('resize', function () { "use strict"; window.location.reload(); });
-}*/
-
 // reload the page if its orientation is changed
+window.addEventListener("orientationchange", function (){"use strict"; window.location.reload();});
+
+
