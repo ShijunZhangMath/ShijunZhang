@@ -158,10 +158,10 @@ if (moreOrNot){
 
 
 myNavBarHTML[0]='<nav>'+
-						'<ul class="navBarContainer navBarLinkColor" id="navBar">';
+				'<ul class="navBarContainer navBarLinkColor" id="navBar">';
 
 myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">'+
-	'<a href="'+relativePath+'" class="myTextShadow '+homeActiveOrNot+'"> Shijun&thinsp;ZHANG </a>'+
+	'<a href="'+relativePath+'"class="myTextShadow '+homeActiveOrNot+'"> Shijun&thinsp;ZHANG </a>'+
 		'</li>';
 
 myNavBarHTML[2]='<li class="navBarItem">'+
@@ -192,8 +192,9 @@ myNavBarHTML[6]='</ul>'+
 					'<hr class="myHr">'+
 				'</div>';
 
-myNavBarHTML[7]=   '<div id="vspaceAfterNavBar"></div>' +
+myNavBarHTML[7]='<div id="vspaceAfterNavBar"></div>' +
 				'</nav>'; 
+
 navBarHTML.innerHTML=myNavBarHTML.join('')  
 /*.join() has commas
 const elements = ['Fire', 'Air', 'Water'];
