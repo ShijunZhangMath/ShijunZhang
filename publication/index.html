@@ -50,7 +50,12 @@
 
 
     h2 {
-        padding-top:0.0em;
+        padding-top:0.3em;
+    }
+
+    h2.first {
+        padding-top: 0.23em;
+        margin-top: 0.0em;
     }
 
     ul.ulPuclication {
@@ -137,7 +142,7 @@
 <h1> Publications (<a href="../file/bibtex/references.bib">BibTex</a>) </h1>
 
 
-      <h2> Ph.D. Thesis: </h2> 
+      <h2 class='first'> Ph.D. Thesis: </h2> 
 
       <ul class="ulPuclication">
 
@@ -320,10 +325,10 @@
     var postSection=document.getElementById("postSection");
 
     if (phoneOrPc){
-        preSection.style.height=0.023*h +"px";
+        preSection.style.height=0.027*h +"px";
         postSection.style.height=0.12*h +"px";
     }else{
-        preSection.style.height=0.0415*h +"px";
+        preSection.style.height=0.0425*h +"px";
         postSection.style.height=0.125*h +"px";
     }
 </script>

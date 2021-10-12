@@ -85,8 +85,8 @@ h1 {
     text-align:center;
     font-weight:600;
     font-family:serif;
-    margin: 0.85em; /* margin and padding are reset in js */
-    margin-top: 0.88em;
+    margin:0.905em; /* margin and padding are reset in js */
+    margin-top: 0.8690em;
     padding: 0.1em;
 }
 
@@ -328,20 +328,17 @@ h2 {
           
 .listStyle li {  
     background: #F7F7F7;
-    padding: 1.2em;  
 /*    overflow: auto;  */
     border-top-style: none;
     border-right-style: none;
     border-bottom: 0.125em solid;
     border-left-style: none;
-    border-color: #D0D0D0;
- }  
-
- .listStyle li {  
-    padding-top: 0.99em;
-    padding-bottom: 0.6em;
-    margin-top: 1.272em;  
-    margin-bottom: 1.8801em;
+    border-color: #D0D0D0; 
+    padding: 1.27em;  
+    padding-top: 1.010em;
+    padding-bottom: 1.1808em;
+    margin-top: 1.1272em;  
+    margin-bottom: 1.938801em;
  }  
   
 
