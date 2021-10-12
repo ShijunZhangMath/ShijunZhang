@@ -230,7 +230,7 @@ if (phoneOrPc){
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.55+"px");
 }else{
 	navBarH=navBarFontSize*4.54+"px";
-	navBarHome.style.setProperty("padding-right","26%");
+	navBarHome.style.setProperty("padding-right","27%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.8+"px");
 }
 
@@ -333,5 +333,5 @@ if (phoneOrPc) {
 
 // reload the page if its orientation is changed
 window.addEventListener("orientationchange", function (){"use strict"; window.location.reload();});
-window.scrollTo(0,0);
+
 

@@ -34,12 +34,12 @@ css 选择器的逻辑是 通过一些条件 选中 html 中的一些元素(elem
 ~ 相连，  如  p ~ img    通用兄弟选择器， 同一代
 */
 
-html,html:hover {
+html {
+    width:  auto;
+    height: auto;
     overflow-x: auto;
     overflow-y: auto;
     overflow-y: overlay;
-    width:  auto;
-    height: auto;
 }
 
 
