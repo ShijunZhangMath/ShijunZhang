@@ -321,7 +321,8 @@ if (phoneOrPc) {
 	".footerLinks a i {font-size:2.2em; margin-left: 0.385em; margin-right: 0.385em;}"+
 	".footerLinks {padding-top: 1.995em; padding-bottom: 4.8em;}"+
 	"#footer::before { content:' ';display:block; height:3.6em;}"+
-	".myHr {height:0.185em;}";
+	".myHr {height:0.185em;}"+
+	"html { overflow-y: scroll; }";
 }
 
 //InsertStyle will be added in corresponding HTML file, variables are valid in whole HTML file
