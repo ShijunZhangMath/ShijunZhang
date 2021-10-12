@@ -130,7 +130,7 @@ h2 {
     cursor: pointer;
     list-style-type: none;
     position:fixed;
-    overflow: auto;
+/*    overflow: auto;*/
     top: 0;
     left: 0;
 }
@@ -320,7 +320,7 @@ h2 {
 .listStyle li {  
     background: #F7F7F7;
     padding: 1.2em;  
-    overflow: auto;  
+/*    overflow: auto;  */
     border-top-style: none;
     border-right-style: none;
     border-bottom: 0.125em solid;
@@ -361,7 +361,7 @@ h2 {
 /*    width:50%; */
 /*        height:50%; */
         border-radius:50%; 
-        overflow:hidden;
+/*        overflow:hidden;*/
     }
 /*    .mycircle > img{
         width: 100%;
@@ -443,7 +443,7 @@ text-shadow:  calc(1em / 49)  calc(0em / 49)  calc(1em / 30)  #CCCCCC,
     border: 0px dashed red;
     cursor: pointer;
     list-style-type: none;
-    overflow: auto;
+/*    overflow: auto;*/
 }
 
 
