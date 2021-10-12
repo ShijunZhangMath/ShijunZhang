@@ -251,13 +251,10 @@ var footerFontSize=20;
 var footer=document.getElementById("footer");
 var myFooter = new Array();
 
-myFooter[0]=" ";
 
-myFooter[1]=" "
+myFooter[0]="Email:&ensp;zhangshijun@u.nus.edu &ensp;<b>or</b>&ensp; shijun.math@outlook.com";
 
-myFooter[2]="Email:&ensp;zhangshijun@u.nus.edu &ensp;<b>or</b>&ensp; shijun.math@outlook.com";
-
-myFooter[3]="<br>Address:&ensp;Department of Mathematics (NUS), Singapore 119076";
+myFooter[1]="<br>Address:&ensp;Department of Mathematics (NUS), Singapore 119076";
 
 
 /*var footerImgPN="../file/img/zsjBlue.gif";
@@ -265,21 +262,21 @@ if (homeOrNot) {var footerImgPN="./file/img/zsjBlue.gif";}
 var footerPicWidth=w*0.018*12*2.2;
 if (phoneOrPc) {footerPicWidth=w*0.018*12*2*2.2;}
 myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'>";*/
-myFooter[4]="<br>Last updated on "+ dayUpdate;
+myFooter[2]="<br>Last updated on "+ dayUpdate;
 
 
-myFooter[5]="<div class='footerLinks'>"+
+myFooter[3]="<div class='footerLinks'>"+
 			" <a href='https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/' title='Google Scholar'>" +
 			"<i class='ai ai-google-scholar-square'></i>    </a>";
 
-myFooter[6]="<a href='https://orcid.org/0000-0003-4115-7891/' title='ORCID'>" +
+myFooter[4]="<a href='https://orcid.org/0000-0003-4115-7891/' title='ORCID'>" +
 			" <i class='ai ai-orcid-square'></i>    </a>";
 
-myFooter[7]="<a href='"+relativePath+"file/pdf/CV_ShijunZHANG.pdf' title='Curriculum Vitae'>" +
+myFooter[5]="<a href='"+relativePath+"file/pdf/CV_ShijunZHANG.pdf' title='Curriculum Vitae'>" +
 			" <i class='ai ai-cv-square'></i>      </a>";
 /*myFooter[9]="<a href='https://www.researchgate.net/profile/Shijun-Zhang-6/'>" +
 			" <i class='ai ai-researchgate-square'></i></a>"+*/
-myFooter[8]="</div>";
+myFooter[6]="</div>";
 
 
 /*myFooter[3]="<div style='height:30px'> </div>";*/
@@ -300,39 +297,27 @@ footer.style.maxHeight= "100%";
 
 
 //add style in js
-if (phoneOrPc){  var h1Size=w*0.045; var pageWidth=0.999*w; lineHeight=h1Size*1.22;
+if (phoneOrPc){  
+	var normalFontSize=w*0.045*0.729; var lineHeight=1.671;
 } 
 else {
-		var h1Size=w*0.0185; var pageWidth=0.8*w; lineHeight=h1Size*1.2;
-	} 
+	var normalFontSize=w*0.0185*0.729; var lineHeight=1.642;
+} 
 
 var insertStyle=new Array();
-insertStyle[0]=" h1 { font-size:"+h1Size+"px;color:#242424;text-align:center;font-weight:600;font-family:serif;}";
 
-insertStyle[1]=" h2 { font-size:"+h1Size*0.9+"px;color:#242424;text-align:left;font-weight:500;font-family:sans-serif;}";
+insertStyle[0]=" .normalFont {font-size:"+normalFontSize+"px;line-height:"+ lineHeight +"em;}";
 
-insertStyle[2]=" h3 { font-size:"+h1Size*0.81+"px;color:#242424;text-align:left;font-weight:400;font-family:sans-serif;}";
-
-insertStyle[3]=" .normalFont {font-size:"+h1Size*0.729+"px;color:#242424;text-align:left;line-height:";
-
-insertStyle[4]= lineHeight*0.98  +"px;font-family:Helvetica, sans-serif;}";
-
-insertStyle[5]=" .smallFont {font-size:"+h1Size*0.729*0.9+"px;color:#242424;text-align:left;line-height:";
-
-insertStyle[6]= lineHeight*0.85  +"px;font-family:Helvetica, sans-serif;}";
-
-insertStyle[7]=" .footnoteFont {font-size:"+h1Size*0.729*0.9*0.9+"px;color:#242424;text-align:left;line-height:";
-
-insertStyle[8]= lineHeight*0.85*0.9  +"px;font-family:Helvetica, sans-serif;}";
+insertStyle[1]=" .smallFont {font-size:"+normalFontSize*0.9+"px;line-height:"+ lineHeight*0.95 +"em;}";
 
 if (phoneOrPc) {
-	insertStyle[9]= ".imgWidth {width:88%;padding-top:"+0.0328*h+"px;padding-bottom:"+0.0328*h+"px;}"+
+	insertStyle[2]= ".imgWidth {width:88%;padding-top:"+0.0328*h+"px;padding-bottom:"+0.0328*h+"px;}"+
 	".footerLinks a i {font-size:3.2em; margin-left: 0.359em; margin-right: 0.359em;}"+
 	".footerLinks {padding-top: 2.375em; padding-bottom: 6.8em; }"+
 	"#footer::before {content:' '; display:block; height:4.8em;}" +
 	".myHr {height:0.132em;}";
 }else{
-	insertStyle[9]= ".imgWidth {width:68%;padding-top:"+0.026*h+"px;padding-bottom:"+0.0325*h+"px;}"+
+	insertStyle[2]= ".imgWidth {width:68%;padding-top:"+0.026*h+"px;padding-bottom:"+0.0325*h+"px;}"+
 	".footerLinks a i {font-size:2.2em; margin-left: 0.385em; margin-right: 0.385em;}"+
 	".footerLinks {padding-top: 1.995em; padding-bottom: 4.8em;}"+
 	"#footer::before { content:' ';display:block; height:3.6em;}"+

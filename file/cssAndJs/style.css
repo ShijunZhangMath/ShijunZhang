@@ -64,6 +64,48 @@ img,video {
 
 
 
+h1 { 
+    font-size: 1.5em;
+    text-align:center;
+    font-weight:600;
+    font-family:serif;
+    margin: 0.8em; /* margin and padding are reset in js */
+    padding: 0.1em;
+}
+
+h2 { 
+    font-size: 1.25em;
+    text-align:left;
+    font-weight:500;
+    font-family:sans-serif;
+    padding: 0.1em; /* margin and padding are reset in js */
+    margin: 0.1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.normalFont {
+    font-size:1em; /* reset in js */
+    color:#242424;
+    text-align:left;
+    line-height:1.6em; /* reset in js */
+    font-family:Helvetica, sans-serif;
+}
+
+.smallFont {
+    font-size:0.9em; /* reset in js */
+    color:#242424;
+    text-align:left;
+    line-height:1.58em; /* reset in js */
+    font-family:Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
 /*  navbar   */
 .navBarContainer {
     display: flex;
@@ -283,8 +325,8 @@ img,video {
  .listStyle li {  
     padding-top: 0.99em;
     padding-bottom: 0.6em;
-    margin-top: 1.102em;  
-    margin-bottom: 2.01em;
+    margin-top: 1.272em;  
+    margin-bottom: 1.8801em;
  }  
   
 
