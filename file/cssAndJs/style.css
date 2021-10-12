@@ -36,9 +36,9 @@ css 选择器的逻辑是 通过一些条件 选中 html 中的一些元素(elem
 
 html {
     overflow-x: auto;
-    overflow-y: scroll;
-    width:  100%;
-    height: 100%;
+    overflow-y: auto;
+/*    width:  100%;
+    height: 100%;*/
 }
 
 
@@ -47,8 +47,8 @@ body {
     padding: 0px;
     width:  auto;
     height: auto;
-/*    overflow-x: auto;*/
-/*    overflow-y: scroll;*/
+/*    overflow-y: auto;*/
+/*    overflow-y: scroll;
 /*    background-color: #FFFAF0;*/
 }
 
