@@ -212,8 +212,8 @@ console.log(elements.join('-'));
 //navBar setting
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
-var navBarFontSize=0.0112*w;
-if (phoneOrPc) {navBarFontSize=0.03*w;}
+var navBarFontSize=0.0116*w;
+if (phoneOrPc) {navBarFontSize=0.0305*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
 navBar.style.setProperty("font-family","Helvetica, sans-serif");
@@ -225,14 +225,15 @@ navBarHome.style.setProperty("font-family","serif");
 /*navBarHome.style.setProperty("font-style","oblique");*/
 var navBarH;
 if (phoneOrPc){	
-	navBarH=navBarFontSize*4.225+"px";
-	navBarHome.style.setProperty("padding-right","11%");
-	navBarHome.style.setProperty("font-size",navBarFontSize*1.5+"px");
+	navBarH=navBarFontSize*4.24+"px";
+	navBarHome.style.setProperty("padding-right","10%");
+	navBarHome.style.setProperty("font-size",navBarFontSize*1.55+"px");
 }else{
-	navBarH=navBarFontSize*4.525+"px";
-	navBarHome.style.setProperty("padding-right","27%");
+	navBarH=navBarFontSize*4.54+"px";
+	navBarHome.style.setProperty("padding-right","26%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.8+"px");
 }
+
 navBar.style.setProperty("height",navBarH);
 document.getElementById("navBarRule").style.top=navBarH;
 document.getElementById("vspaceAfterNavBar").style.height=navBarH;
