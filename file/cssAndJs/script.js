@@ -333,5 +333,5 @@ if (phoneOrPc) {
 
 // reload the page if its orientation is changed
 window.addEventListener("orientationchange", function (){"use strict"; window.location.reload();});
-window.location.reload();
+
 
