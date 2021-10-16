@@ -252,17 +252,25 @@ h2 {
     align-items: center;
     flex-flow: row wrap;
     margin: 0px;
-    padding: 0px;
+    margin-top: 1em;
+    padding-top: 3.8%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    padding-left: 2%;
     border: 0px dashed red;
+    background-color:#F1F1F1;
+    border-radius:2.7%/2%; 
 }
 
 .dynamicImageContainer>div  {
     width:auto;
     height:auto;
-    padding: 0.35em;
+    padding: 0.25em;
+/*    padding-top: 1.3em;
+    padding-bottom: 1.3;*/
     text-align: center;
-    margin:0.385em;
-    margin-top: 1.006em;
+    margin:0.08385em;
+    margin-top: 0.05006em;
 /*    background-color: #F6F6F6;*/
 }
 
@@ -334,6 +342,7 @@ h2 {
     border-bottom: 0.125em solid;
     border-left-style: none;
     border-color: #D0D0D0; 
+    border-radius:1.5%/6%; 
     padding: 1.27em;  
     padding-top: 1.010em;
     padding-bottom: 0.931808em;
@@ -358,7 +367,8 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 30%;
+    border-radius:9%/7%; 
 }
 
 
@@ -366,7 +376,7 @@ h2 {
   .circledBorder {
 /*    width:50%; */
 /*        height:50%; */
-        border-radius:50%; 
+        border-radius:9%/7%; 
 /*        overflow:hidden;*/
     }
 /*    .mycircle > img{
