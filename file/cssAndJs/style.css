@@ -373,12 +373,12 @@ h2 {
 
 
 
-  .circledBorder {
+/*  .circledBorder {*/
 /*    width:50%; */
 /*        height:50%; */
-        border-radius:9%/7%; 
+/*        border-radius:9%/7%; */
 /*        overflow:hidden;*/
-    }
+/*    }*/
 /*    .mycircle > img{
         width: 100%;
         height: 100%;

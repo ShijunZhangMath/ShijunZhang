@@ -154,6 +154,7 @@
     if (phoneOrPc) {
         photoContainer.style.width= "65%";
         zsjPhoto.style.width=w*0.6+"px";
+        zsjPhoto.style.setProperty('border-radius',"13%/10%");
         introduction.style.width= "80%";
         introduction.style.flexFlow="column"; 
         introduction.style.padding=0.05*w+"px";
@@ -168,11 +169,12 @@
     else { 
         photoContainer.style.width= "33%";
         zsjPhoto.style.width=w*0.21 +"px";
+        zsjPhoto.style.setProperty('border-radius',"14%/10.8%");
         introduction.style.width= "50%";
         introduction.style.padding=0.032*w+"px";
         introduction.style.setProperty('padding-top',0.064*h+"px");
         introduction.style.setProperty('padding-bottom',0.0505*h+"px");
-        introduction.style.setProperty('border-radius',"3.8%/5%");
+        introduction.style.setProperty('border-radius',"5%/6.4%");
         introduction.style.lineHeight="198%";
         spacePhotoAndIntro.style.width=0.0535*w +"px";
       /*  spacePhotoAndIntro.style.display="none";*/
