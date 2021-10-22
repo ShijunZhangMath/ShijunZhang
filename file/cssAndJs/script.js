@@ -230,7 +230,7 @@ if (phoneOrPc){
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.55+"px");
 }else{
 	navBarH=navBarFontSize*4.54+"px";
-	navBarHome.style.setProperty("padding-right","26.5%");
+	navBarHome.style.setProperty("padding-right","26.05%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.8+"px");
 }
 
@@ -266,17 +266,19 @@ myFooter[2]="<br>Last updated on "+ dayUpdate;
 
 
 myFooter[3]="<div class='footerLinks'>"+
-			" <a href='https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en' title='Google Scholar'>" +
+			" <a href='https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/' title='Google Scholar'>" +
 			"<i class='ai ai-google-scholar-square'></i>    </a>";
 
-myFooter[4]="<a href='https://orcid.org/0000-0003-4115-7891' title='ORCID'>" +
+myFooter[4]="<a href='"+relativePath+"cv/' title='Curriculum Vitae'>" +
+			" <i class='ai ai-cv-square'></i>      </a>";
+
+myFooter[5]="<a href='https://orcid.org/0000-0003-4115-7891' title='ORCID'>" +
 			" <i class='ai ai-orcid-square'></i>    </a>";
 
-myFooter[5]="<a href='"+relativePath+"cv/' title='Curriculum Vitae'>" +
-			" <i class='ai ai-cv-square'></i>      </a>";
-/*myFooter[9]="<a href='https://www.researchgate.net/profile/Shijun-Zhang-6/'>" +
-			" <i class='ai ai-researchgate-square'></i></a>"+*/
-myFooter[6]="</div>";
+myFooter[6]="<a href='https://www.researchgate.net/profile/Shijun-Zhang-6'>" +
+			" <i class='ai ai-researchgate-square'></i></a>";
+
+myFooter[7]="</div>";
 
 
 /*myFooter[3]="<div style='height:30px'> </div>";*/
@@ -313,13 +315,13 @@ insertStyle[1]=" .smallFont {font-size:"+normalFontSize*0.9+"px;line-height:"+ l
 if (phoneOrPc) {
 	insertStyle[2]= ".imgWidth {width:88%;padding-top:"+0.0328*h+"px;padding-bottom:"+0.0328*h+"px;}"+
 	".footerLinks a i {font-size:3.2em; margin-left: 0.359em; margin-right: 0.359em;}"+
-	".footerLinks {padding-top: 2.375em; padding-bottom: 6.8em; }"+
+	".footerLinks {padding-top: 3.2em; padding-bottom: 7.8em; }"+
 	"#footer::before {content:' '; display:block; height:4.8em;}" +
 	".myHr {height:0.132em;}";
 }else{
 	insertStyle[2]= ".imgWidth {width:68%;padding-top:"+0.026*h+"px;padding-bottom:"+0.0325*h+"px;}"+
-	".footerLinks a i {font-size:2.2em; margin-left: 0.385em; margin-right: 0.385em;}"+
-	".footerLinks {padding-top: 1.995em; padding-bottom: 4.8em;}"+
+	".footerLinks a i {font-size:2.2em; margin-left: 0.39385em; margin-right: 0.39385em;}"+
+	".footerLinks {padding-top: 3.195em; padding-bottom: 6.40em;}"+
 	"#footer::before { content:' ';display:block; height:3.6em;}"+
 	".myHr {height:0.185em;}";
 }
