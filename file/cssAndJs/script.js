@@ -266,13 +266,13 @@ myFooter[2]="<br>Last updated on "+ dayUpdate;
 
 
 myFooter[3]="<div class='footerLinks'>"+
-			" <a href='https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/' title='Google Scholar'>" +
+			" <a href='https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en' title='Google Scholar'>" +
 			"<i class='ai ai-google-scholar-square'></i>    </a>";
 
-myFooter[4]="<a href='https://orcid.org/0000-0003-4115-7891/' title='ORCID'>" +
+myFooter[4]="<a href='https://orcid.org/0000-0003-4115-7891' title='ORCID'>" +
 			" <i class='ai ai-orcid-square'></i>    </a>";
 
-myFooter[5]="<a href='"+relativePath+"file/pdf/CV_ShijunZHANG.pdf' title='Curriculum Vitae'>" +
+myFooter[5]="<a href='"+relativePath+"cv/' title='Curriculum Vitae'>" +
 			" <i class='ai ai-cv-square'></i>      </a>";
 /*myFooter[9]="<a href='https://www.researchgate.net/profile/Shijun-Zhang-6/'>" +
 			" <i class='ai ai-researchgate-square'></i></a>"+*/

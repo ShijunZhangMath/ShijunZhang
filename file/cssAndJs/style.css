@@ -259,7 +259,7 @@ h2 {
     padding-left: 2%;
     border: 0px dashed red;
     background-color:#F1F1F1;
-    border-radius:2.7%/2%; 
+    border-radius:3.37%/3%; 
 }
 
 .dynamicImageContainer>div  {
@@ -342,7 +342,7 @@ h2 {
     border-bottom: 0.125em solid;
     border-left-style: none;
     border-color: #D0D0D0; 
-    border-radius:1.5%/6%; 
+    border-radius:3.109%/9%; /*reset for phone in js*/
     padding: 1.27em;  
     padding-top: 1.010em;
     padding-bottom: 0.931808em;

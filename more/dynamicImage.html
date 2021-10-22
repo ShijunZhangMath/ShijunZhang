@@ -129,9 +129,13 @@ create mathathecal dynamic images via Python (Matplotlib) or Matlab. See several
     } else {
         var pageWidth=0.53*w; var dynamicImageWidth=w*0.226;
     }
+    if (phoneOrPc){
+        var dynamicImageContainer=".dynamicImageContainer {margin-top:2em;padding-top:6.8%;padding-bottom:6%;border-radius:8%/3%;}"+ 
+        ".dynamicImageContainer>div  {padding: 0.25em;    margin:0.621em;    margin-top: 0.621em;}";    
+        }
     document.getElementById("styleInJs").innerHTML=insertStyle.join('')+
         " .pageContainer { display:block;margin:0 auto;padding-left:3%; padding-right:3%;width:"+pageWidth+"px;}"+
-        " .dynamicImageContainer div img { width:"+dynamicImageWidth+"px;}";
+        " .dynamicImageContainer div img { width:"+dynamicImageWidth+"px;}"+dynamicImageContainer;
             // pre and post section
     var preSection=document.getElementById("preSection");
     var postSection=document.getElementById("postSection");
