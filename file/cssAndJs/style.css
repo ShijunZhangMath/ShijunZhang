@@ -258,19 +258,19 @@ h2 {
     padding-bottom: 3%;
     padding-left: 2%;
     border: 0px dashed red;
-    background-color:#F1F1F1;
+    background-color:#F6F6F6;
     border-radius:3.37%/3%; 
 }
 
 .dynamicImageContainer>div  {
     width:auto;
     height:auto;
-    padding: 0.25em;
+    padding: 0.325em;
 /*    padding-top: 1.3em;
     padding-bottom: 1.3;*/
     text-align: center;
-    margin:0.1em;
-    margin-top: 0.11em;
+    margin:0.21em;
+    margin-top: 0.211em;
 /*    background-color: #F6F6F6;*/
 }
 

@@ -227,7 +227,7 @@ var navBarH;
 if (phoneOrPc){	
 	navBarH=navBarFontSize*4.24+"px";
 	navBarHome.style.setProperty("padding-right","10%");
-	navBarHome.style.setProperty("font-size",navBarFontSize*1.55+"px");
+	navBarHome.style.setProperty("font-size",navBarFontSize*1.575+"px");
 }else{
 	navBarH=navBarFontSize*4.54+"px";
 	navBarHome.style.setProperty("padding-right","26.05%");
@@ -275,7 +275,7 @@ myFooter[4]="<a href='"+relativePath+"cv/' title='Curriculum Vitae'>" +
 myFooter[5]="<a href='https://orcid.org/0000-0003-4115-7891' title='ORCID'>" +
 			" <i class='ai ai-orcid-square'></i>    </a>";
 
-myFooter[6]="<a href='https://www.researchgate.net/profile/Shijun-Zhang-6'>" +
+myFooter[6]="<a href='https://www.researchgate.net/profile/Shijun-Zhang-6' title='ResearchGate'>" +
 			" <i class='ai ai-researchgate-square'></i></a>";
 
 myFooter[7]="</div>";
@@ -319,7 +319,7 @@ if (phoneOrPc) {
 	"#footer::before {content:' '; display:block; height:4.8em;}" +
 	".myHr {height:0.132em;}";
 }else{
-	insertStyle[2]= ".imgWidth {width:68%;padding-top:"+0.026*h+"px;padding-bottom:"+0.0325*h+"px;}"+
+	insertStyle[2]= ".imgWidth {width:68%;padding-top:"+0.03826*h+"px;padding-bottom:"+0.0485325*h+"px;}"+
 	".footerLinks a i {font-size:2.2em; margin-left: 0.39385em; margin-right: 0.39385em;}"+
 	".footerLinks {padding-top: 3.195em; padding-bottom: 6.40em;}"+
 	"#footer::before { content:' ';display:block; height:3.6em;}"+
