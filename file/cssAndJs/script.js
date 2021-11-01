@@ -212,8 +212,8 @@ console.log(elements.join('-'));
 //navBar setting
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
-var navBarFontSize=0.0121*w;
-if (phoneOrPc) {navBarFontSize=0.0305*w;}
+var navBarFontSize=0.0116*w;
+if (phoneOrPc) {navBarFontSize=0.0300*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
 navBar.style.setProperty("font-family","Helvetica, sans-serif");
@@ -226,11 +226,11 @@ navBarHome.style.setProperty("font-family","serif");
 var navBarH;
 if (phoneOrPc){	
 	navBarH=navBarFontSize*4.24+"px";
-	navBarHome.style.setProperty("padding-right","10%");
-	navBarHome.style.setProperty("font-size",navBarFontSize*1.575+"px");
+	navBarHome.style.setProperty("padding-right","9.5%");
+	navBarHome.style.setProperty("font-size",navBarFontSize*1.585+"px");
 }else{
 	navBarH=navBarFontSize*4.54+"px";
-	navBarHome.style.setProperty("padding-right","26.05%");
+	navBarHome.style.setProperty("padding-right","25.0605%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.8+"px");
 }
 
@@ -288,7 +288,7 @@ footer.innerHTML=myFooter.join('');
 var myFooterFontSize=w*0.01*1.8*0.75; 
 var myFooterLineHeight=myFooterFontSize*1.35;
 if (phoneOrPc) {
-	 myFooterFontSize=w*0.01*1.8*0.6*2.25; 
+	 myFooterFontSize=w*0.01*1.8*0.6*2.35; 
 	myFooterLineHeight=myFooterFontSize*1.45;
 }
 footer.style.textAlign="center";
@@ -315,15 +315,17 @@ insertStyle[1]=" .smallFont {font-size:"+normalFontSize*0.9+"px;line-height:"+ l
 if (phoneOrPc) {
 	insertStyle[2]= ".imgWidth {width:88%;padding-top:"+0.0328*h+"px;padding-bottom:"+0.0328*h+"px;}"+
 	".footerLinks a i {font-size:3.2em; margin-left: 0.359em; margin-right: 0.359em;}"+
-	".footerLinks {padding-top: 3.2em; padding-bottom: 7.8em; }"+
+	".footerLinks {padding-top: 3.2em; padding-bottom: 8.8em; }"+
 	"#footer::before {content:' '; display:block; height:4.8em;}" +
-	".myHr {height:0.132em;}";
+	".myHr {height:0.132em;}"+
+	".navBarItem {padding-top: 0.66em;padding-bottom: 0.3em;padding-left: 2.1%;padding-right: 2.1%;}";
 }else{
 	insertStyle[2]= ".imgWidth {width:68%;padding-top:"+0.03826*h+"px;padding-bottom:"+0.0485325*h+"px;}"+
 	".footerLinks a i {font-size:2.2em; margin-left: 0.39385em; margin-right: 0.39385em;}"+
-	".footerLinks {padding-top: 3.195em; padding-bottom: 6.40em;}"+
+	".footerLinks {padding-top: 3.195em; padding-bottom: 7.40em;}"+
 	"#footer::before { content:' ';display:block; height:3.6em;}"+
-	".myHr {height:0.185em;}";
+	".myHr {height:0.185em;}"+
+	".navBarItem {padding-top: 0.3em;padding-bottom: 0.1em;padding-left: 1.792%;padding-right: 1.792%;}";
 }
 
 //InsertStyle will be added in corresponding HTML file, variables are valid in whole HTML file
