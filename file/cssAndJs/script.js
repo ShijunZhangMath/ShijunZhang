@@ -227,11 +227,11 @@ var navBarH;
 if (phoneOrPc){	
 	navBarH=navBarFontSize*4.33+"px";
 	navBarHome.style.setProperty("padding-right","9.5%");
-	navBarHome.style.setProperty("font-size",navBarFontSize*1.585+"px");
+	navBarHome.style.setProperty("font-size",navBarFontSize*1.60+"px");
 }else{
 	navBarH=navBarFontSize*4.64+"px";
-	navBarHome.style.setProperty("padding-right","29.169%");
-	navBarHome.style.setProperty("font-size",navBarFontSize*1.88+"px");
+	navBarHome.style.setProperty("padding-right","26.8799%");
+	navBarHome.style.setProperty("font-size",navBarFontSize*1.95+"px");
 }
 
 navBar.style.setProperty("height",navBarH);
@@ -325,7 +325,7 @@ if (phoneOrPc) {
 	".footerLinks {padding-top: 3.195em; padding-bottom: 7.40em;}"+
 	"#footer::before { content:' ';display:block; height:3.6em;}"+
 	".myHr {height:0.185em;}"+
-	".navBarItem {padding-top:"+0.012*h+"px;padding-bottom: 0em;padding-left: 1.45%;padding-right: 1.45%;}";
+	".navBarItem {padding-top:"+0.012*h+"px;padding-bottom: 0em;padding-left: 1.2%;padding-right: 1.2%;}";
 }
 
 //InsertStyle will be added in corresponding HTML file, variables are valid in whole HTML file
