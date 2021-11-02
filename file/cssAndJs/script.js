@@ -16,7 +16,7 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="November 1, 2021";
+var dayUpdate="November 2, 2021";
 
 
 var	w=window.innerWidth;
@@ -212,7 +212,7 @@ console.log(elements.join('-'));
 //navBar setting
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
-var navBarFontSize=0.0114*w;
+var navBarFontSize=0.0111*w;
 if (phoneOrPc) {navBarFontSize=0.0300*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
@@ -231,7 +231,7 @@ if (phoneOrPc){
 }else{
 	navBarH=navBarFontSize*4.54+"px";
 	navBarHome.style.setProperty("padding-right","28.2%");
-	navBarHome.style.setProperty("font-size",navBarFontSize*1.8+"px");
+	navBarHome.style.setProperty("font-size",navBarFontSize*1.88+"px");
 }
 
 navBar.style.setProperty("height",navBarH);
@@ -325,7 +325,7 @@ if (phoneOrPc) {
 	".footerLinks {padding-top: 3.195em; padding-bottom: 7.40em;}"+
 	"#footer::before { content:' ';display:block; height:3.6em;}"+
 	".myHr {height:0.185em;}"+
-	".navBarItem {padding-top: 0.3em;padding-bottom: 0.1em;padding-left: 1.792%;padding-right: 1.792%;}";
+	".navBarItem {padding-top: 0.35em;padding-bottom: 0.218em;padding-left: 1.792%;padding-right: 1.792%;}";
 }
 
 //InsertStyle will be added in corresponding HTML file, variables are valid in whole HTML file
