@@ -135,7 +135,7 @@ Designing efficient optimization algorithms and analyzing the generalization bou
 See <a href="../file/pdf/Intro_of_AE_OE_and_GE.pdf">this note</a> for the introductions of the approximation error (<b>AE</b>), the optimization error (<b>OE</b>), and the generalization error (<b>GE</b>). 
 
 
-<a href="../file/img/AEOEGE.pdf"> <img src="../file/img/AEOEGE.png" class="imgCenter imgWidth" />  </a>
+<a href="../file/img/AEOEGE.pdf"> <img src="../file/img/AEOEGE.png" class="imgCenter imgWidth" id="AOGE"/>  </a>
 
 <!-- <div class='addWhiteSpaceOne'></div>
 <a href="../file/img/AEOEGE.png"> <img src="../file/img/AEOEGE.png" class="imgCenter" style="width:68%; " />  </a>
@@ -272,6 +272,12 @@ Currently, we focus on providing an upper bound of the approximation  error $R_{
 
     var insertInterestCss=" .pageContainer {display:block;margin:0 auto;padding-left:3%; padding-right:3%;width:"+pageWidth+"px;}";
     document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertInterestCss;
+
+    if (phoneOrPc) {
+        document.getElementById("AOGE").style.width="99%";
+      }else{
+        document.getElementById("AOGE").style.width="85%";
+      }
         // pre and post section
     var preSection=document.getElementById("preSection");
     var postSection=document.getElementById("postSection");
