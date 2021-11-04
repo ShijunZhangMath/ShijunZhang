@@ -16,7 +16,7 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="November 2, 2021";
+var dayUpdate="November 4, 2021";
 
 
 var	w=window.innerWidth;
@@ -212,7 +212,7 @@ console.log(elements.join('-'));
 //navBar setting
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
-var navBarFontSize=0.0111*w;
+var navBarFontSize=0.0108*w;
 if (phoneOrPc) {navBarFontSize=0.0300*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
@@ -230,7 +230,7 @@ if (phoneOrPc){
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.60+"px");
 }else{
 	navBarH=navBarFontSize*4.64+"px";
-	navBarHome.style.setProperty("padding-right","26.8799%");
+	navBarHome.style.setProperty("padding-right","24.88%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.95+"px");
 }
 
@@ -252,7 +252,10 @@ document.getElementById("vspaceAfterNavBar").style.height=navBarH;
 var footer=document.getElementById("footer");
 var myFooter = new Array();
 
-myFooter[0]="Email:&ensp;zhangshijun@u.nus.edu &ensp;<b>or</b>&ensp; shijun.math@outlook.com";
+myFooter[0]="Email:&ensp;<a href='mailto:shijun.math@outlook.com?cc=zhangshijun@u.nus.edu'>shijun.math@outlook.com</a>"+
+	        " &ensp;<b>or</b>&ensp;"+
+	        "<a href='mailto:zhangshijun@u.nus.edu?cc=shijun.math@outlook.com'>zhangshijun@u.nus.edu</a>";
+
 
 myFooter[1]="<br>Address:&ensp;Department of Mathematics (NUS), Singapore 119076";
 
@@ -325,7 +328,7 @@ if (phoneOrPc) {
 	".footerLinks {padding-top: 3.195em; padding-bottom: 7.40em;}"+
 	"#footer::before { content:' ';display:block; height:3.6em;}"+
 	".myHr {height:0.185em;}"+
-	".navBarItem {padding-top:"+0.012*h+"px;padding-bottom: 0em;padding-left: 1.2%;padding-right: 1.2%;}";
+	".navBarItem {padding-top:"+0.012*h+"px;padding-bottom: 0em;padding-left: 1.5%;padding-right: 1.5%;}";
 }
 
 //InsertStyle will be added in corresponding HTML file, variables are valid in whole HTML file
