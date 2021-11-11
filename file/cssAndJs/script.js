@@ -16,7 +16,7 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="November 4, 2021";
+var dayUpdate="November 12, 2021";
 
 
 var	w=window.innerWidth;
@@ -212,7 +212,7 @@ console.log(elements.join('-'));
 //navBar setting
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
-var navBarFontSize=0.0108*w;
+var navBarFontSize=0.010518*w;
 if (phoneOrPc) {navBarFontSize=0.0300*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
@@ -230,7 +230,7 @@ if (phoneOrPc){
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.60+"px");
 }else{
 	navBarH=navBarFontSize*4.64+"px";
-	navBarHome.style.setProperty("padding-right","24.88%");
+	navBarHome.style.setProperty("padding-right","25.1288%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.95+"px");
 }
 
@@ -288,7 +288,7 @@ myFooter[7]="</div>";
 footer.innerHTML=myFooter.join('');
 
 
-var myFooterFontSize=w*0.01*1.8*0.75; 
+var myFooterFontSize=w*0.01*1.8*0.7105; 
 var myFooterLineHeight=myFooterFontSize*1.35;
 if (phoneOrPc) {
 	 myFooterFontSize=w*0.01*1.8*0.6*2.35; 
@@ -306,7 +306,7 @@ if (phoneOrPc){
 	var normalFontSize=w*0.045*0.729; var lineHeight=1.671;
 } 
 else {
-	var normalFontSize=w*0.0185*0.729; var lineHeight=1.642;
+	var normalFontSize=w*0.0185*0.69982; var lineHeight=1.642;
 } 
 
 var insertStyle=new Array();
