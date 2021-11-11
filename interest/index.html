@@ -286,9 +286,16 @@ Currently, we focus on providing an upper bound of the approximation  error $R_{
 <script type="text/javascript" src="../file/cssAndJs/script.js"></script>
 <!-- <script type="text/javascript" src="./interest.js"></script> -->
 <script type="text/javascript"> 
-    if (phoneOrPc) {var pageWidth=0.875*w;} else {var pageWidth=0.5*w;}
+    if (phoneOrPc) {
+      var pageWidth=0.875*w;
+      var imgWidth=".imgWidth {width:88%;padding-top:"+0.0328*h+"px;padding-bottom:"+0.0328*h+"px;}";
+    } else {
+      var pageWidth=0.5*w;
+      imgWidth=".imgWidth {width:68%;padding-top:"+0.03826*h+"px;padding-bottom:"+0.0485325*h+"px;}";
+    }
 
-    var insertInterestCss=" .pageContainer {display:block;margin:0 auto;padding-left:3%; padding-right:3%;width:"+pageWidth+"px;}";
+    var insertInterestCss=" .pageContainer {display:block;margin:0 auto;padding-left:3%;"+
+    " padding-right:3%;width:"+pageWidth+"px;}"+ imgWidth;
     document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertInterestCss;
 
     if (phoneOrPc) {

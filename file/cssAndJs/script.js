@@ -127,6 +127,7 @@ document.getElementsByTagName("head")[0].appendChild(iconLibrary);*/
 
 
 
+
 // Add HTML to nav bar
 var navBarHTML=document.getElementById("navBarHTML");
 var myNavBarHTML = new Array();
@@ -248,6 +249,11 @@ document.getElementById("vspaceAfterNavBar").style.height=navBarH;
 */
 
 
+
+
+
+
+
 //  add footer
 var footer=document.getElementById("footer");
 var myFooter = new Array();
@@ -301,6 +307,8 @@ footer.style.maxHeight= "100%";
 
 
 
+
+
 //add style in js
 if (phoneOrPc){  
 	var normalFontSize=w*0.045*0.729; var lineHeight=1.671;
@@ -316,15 +324,13 @@ insertStyle[0]=" .normalFont {font-size:"+normalFontSize+"px;line-height:"+ line
 insertStyle[1]=" .smallFont {font-size:"+normalFontSize*0.9+"px;line-height:"+ lineHeight*0.95 +"em;}";
 
 if (phoneOrPc) {
-	insertStyle[2]= ".imgWidth {width:88%;padding-top:"+0.0328*h+"px;padding-bottom:"+0.0328*h+"px;}"+
-	".footerLinks a i {font-size:3.2em; margin-left: 0.359em; margin-right: 0.359em;}"+
+	insertStyle[2]= ".footerLinks a i {font-size:3.2em; margin-left: 0.359em; margin-right: 0.359em;}"+
 	".footerLinks {padding-top: 3.2em; padding-bottom: 8.8em; }"+
 	"#footer::before {content:' '; display:block; height:4.8em;}" +
 	".myHr {height:0.132em;}"+
 	".navBarItem {padding-top:"+0.012*h+"px;padding-bottom: 0.3em;padding-left: 2.01%;padding-right: 2.01%;}";
 }else{
-	insertStyle[2]= ".imgWidth {width:68%;padding-top:"+0.03826*h+"px;padding-bottom:"+0.0485325*h+"px;}"+
-	".footerLinks a i {font-size:2.2em; margin-left: 0.39385em; margin-right: 0.39385em;}"+
+	insertStyle[2]= ".footerLinks a i {font-size:2.2em; margin-left: 0.39385em; margin-right: 0.39385em;}"+
 	".footerLinks {padding-top: 3.195em; padding-bottom: 7.40em;}"+
 	"#footer::before { content:' ';display:block; height:3.6em;}"+
 	".myHr {height:0.185em;}"+

@@ -36,7 +36,7 @@
 <link rel="stylesheet" href="../file/background/bgSetting.css"> 
 
 <!-- Paper number color  Style-->
-<style>
+<style type="text/css">
     .paperNumberColor {
         color:  #C71585;
         margin-right: 0.18em;
@@ -76,7 +76,7 @@
         margin-top: 0.2em;  
         margin-bottom: 1.2em;
         background-color: #F6F6F6;
-        border-radius: 2%/12%;
+/*        border-radius: 15px/15px;*/
     }
 
 
@@ -334,8 +334,15 @@
 <!-- <script type="text/javascript" src="./publication.js"></script> -->
 
 <script type="text/javascript">
-    if (phoneOrPc){ var pageWidth=0.91*w ;} else {var pageWidth=0.5*w; }
-    var insertPublicationCss=" .pageContainer { display:block; padding-left:2.3%; padding-right:2.3%; margin:0 auto;width:"+pageWidth+"px;}";
+    if (phoneOrPc){ 
+        var pageWidth=0.91*w ; var paperBorderRadius=0.015*h;
+    } 
+    else {
+        var pageWidth=0.5*w; var paperBorderRadius=0.0105*w;
+    }
+    var insertPublicationCss=" .pageContainer { display:block; padding-left:2.3%; padding-right:2.3%;"+
+    " margin:0 auto;width:"+pageWidth+"px;}"+
+    "ul.ulPuclication li { border-radius:"+paperBorderRadius+"px;}";
     document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertPublicationCss;
     if (phoneOrPc){
       var liPaddingCss="li {padding-top:"+0.005*h*0.4+"px; padding-bottom:"+0.02*h*0.825+"px;}";
