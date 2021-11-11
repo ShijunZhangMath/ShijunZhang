@@ -231,7 +231,7 @@ if (phoneOrPc){
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.60+"px");
 }else{
 	navBarH=navBarFontSize*4.64+"px";
-	navBarHome.style.setProperty("padding-right","25.1288%");
+	navBarHome.style.setProperty("padding-right","25.41288%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.95+"px");
 }
 
