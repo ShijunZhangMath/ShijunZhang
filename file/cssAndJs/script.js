@@ -259,7 +259,7 @@ var footer=document.getElementById("footer");
 var myFooter = new Array();
 
 myFooter[0]="Email:&ensp;<a href='mailto:shijun.math@outlook.com?cc=zhangshijun@u.nus.edu'>shijun.math@outlook.com</a>"+
-	        " &ensp;<b>or</b>&ensp;"+
+	        "&ensp;<span style='font-style: normal;'>or</span>&ensp;"+
 	        "<a href='mailto:zhangshijun@u.nus.edu?cc=shijun.math@outlook.com'>zhangshijun@u.nus.edu</a>";
 
 
