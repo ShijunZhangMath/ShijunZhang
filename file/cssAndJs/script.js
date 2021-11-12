@@ -100,7 +100,7 @@ if (homeOrNot){ relativePath='./';}
 // add icon
 var iconN, iconPN;
 iconN='zsjLogo';
-if (homeOrNot) {iconPN = "./file/img/"+iconN+".ico";} else { iconPN = "../file/img/"+iconN+".png";}
+if (homeOrNot) {iconPN = "./file/img/"+iconN+".ico";} else { iconPN = "../file/img/"+iconN+".ico";}
 
 var linkNew = document.createElement("link");
 linkNew.rel = "shortcut icon"; 
