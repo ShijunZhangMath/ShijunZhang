@@ -226,11 +226,11 @@ navBarHome.style.setProperty("font-family","serif");
 /*navBarHome.style.setProperty("font-style","oblique");*/
 var navBarH;
 if (phoneOrPc){	
-	navBarH=navBarFontSize*4.33+"px";
+	navBarH=navBarFontSize*4.58+"px";
 	navBarHome.style.setProperty("padding-right","9.5%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.60+"px");
 }else{
-	navBarH=navBarFontSize*4.64+"px";
+	navBarH=navBarFontSize*4.764+"px";
 	navBarHome.style.setProperty("padding-right","25.41288%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.95+"px");
 }
@@ -328,13 +328,13 @@ if (phoneOrPc) {
 	".footerLinks {padding-top: 3.2em; padding-bottom: 8.8em; }"+
 	"#footer::before {content:' '; display:block; height:4.8em;}" +
 	".myHr {height:0.132em;}"+
-	".navBarItem {padding-top:"+0.012*h+"px;padding-bottom: 0.3em;padding-left: 2.01%;padding-right: 2.01%;}";
+	".navBarItem {padding-top:"+0.014*h+"px;padding-bottom:"+0.00462*h+"px;padding-left: 2.01%;padding-right: 2.01%;}";
 }else{
 	insertStyle[2]= ".footerLinks a i {font-size:2.2em; margin-left: 0.39385em; margin-right: 0.39385em;}"+
 	".footerLinks {padding-top: 3.195em; padding-bottom: 7.40em;}"+
 	"#footer::before { content:' ';display:block; height:3.6em;}"+
 	".myHr {height:0.185em;}"+
-	".navBarItem {padding-top:"+0.012*h+"px;padding-bottom: 0em;padding-left: 1.5%;padding-right: 1.5%;}";
+	".navBarItem {padding-top:"+0.013*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 1.5%;padding-right: 1.5%;}";
 }
 
 //InsertStyle will be added in corresponding HTML file, variables are valid in whole HTML file
