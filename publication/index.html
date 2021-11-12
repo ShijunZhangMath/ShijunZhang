@@ -32,8 +32,8 @@
  <title>Shijun Zhang</title>
 
 <link rel="stylesheet" href="../file/cssAndJs/style.css"> 
-<style id="styleInJs"></style>
-<link rel="stylesheet" href="../file/background/bgSetting.css"> 
+
+<!-- <link rel="stylesheet" href="../file/background/bgSetting.css">  -->
 
 <!-- Paper number color  Style-->
 <style type="text/css">
@@ -98,7 +98,7 @@
         color: #242424;
     }
 </style>
-<style id="liPadding"></style>
+<style id="styleInJs"></style>
 
 </head>
 
@@ -343,13 +343,12 @@
     var insertPublicationCss=" .pageContainer { display:block; padding-left:2.3%; padding-right:2.3%;"+
     " margin:0 auto;width:"+pageWidth+"px;}"+
     "ul.ulPuclication li { border-radius:"+paperBorderRadius+"px;}";
-    document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertPublicationCss;
     if (phoneOrPc){
-      var liPaddingCss="li {padding-top:"+0.005*h*0.4+"px; padding-bottom:"+0.02*h*0.825+"px;}";
+      insertPublicationCss+="li {padding-top:"+0.005*h*0.4+"px; padding-bottom:"+0.02*h*0.825+"px;}";
     }else{
-      var liPaddingCss="li {padding-top:"+0.005*h*0.4+"px; padding-bottom:"+0.02*h*0.735+"px;}";
+      insertPublicationCss+="li {padding-top:"+0.005*h*0.4+"px; padding-bottom:"+0.02*h*0.735+"px;}";
     }
-    document.getElementById("liPadding").innerHTML=liPaddingCss;
+    document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertPublicationCss;
 
 
     // pre and post section
