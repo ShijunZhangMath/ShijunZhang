@@ -16,7 +16,7 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="November 12, 2021";
+var dayUpdate="November 13, 2021";
 
 
 var	w=window.innerWidth;
@@ -343,6 +343,9 @@ if (phoneOrPc) {
 //refresh if the window size is changed
 // window.onresize =function(){location.reload();} // it can be replaced by 
 //window.addEventListener('resize',function(){location.reload();})
+
+
+
 
 // reload the page if its orientation is changed
 window.addEventListener("orientationchange", function (){"use strict"; window.location.reload();});
