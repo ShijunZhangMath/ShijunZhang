@@ -351,3 +351,8 @@ if (phoneOrPc) {
 window.addEventListener("orientationchange", function (){"use strict"; window.location.reload();});
 
 
+// reset the display of body to block
+document.onreadystatechange = function () { 
+	if (document.readyState == "complete") { document.getElementById("bodyDiv").style.display = "block"; };
+};
+
