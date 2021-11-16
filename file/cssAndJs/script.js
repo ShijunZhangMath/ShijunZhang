@@ -16,7 +16,7 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="November 15, 2021";
+var dayUpdate="November 16, 2021";
 
 
 var	w=window.innerWidth;
@@ -274,6 +274,7 @@ myFooter[2]="<img src=" +  footerImgPN   +" style='width:"+ footerPicWidth +"px'
 myFooter[2]="<br>Last updated on "+ dayUpdate;
 
 
+// .footerLinks selector will be added later
 myFooter[3]="<div class='footerLinks'>"+
 			" <a href='https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/' title='Google Scholar'>" +
 			"<i class='ai ai-google-scholar-square'></i>    </a>";
@@ -284,10 +285,13 @@ myFooter[4]="<a href='"+relativePath+"cv/' title='Curriculum Vitae'>" +
 myFooter[5]="<a href='https://orcid.org/0000-0003-4115-7891' title='ORCID'>" +
 			" <i class='ai ai-orcid-square'></i>    </a>";
 
-myFooter[6]="<a href='https://www.researchgate.net/profile/Shijun-Zhang-6' title='ResearchGate'>" +
+myFooter[6]="<a href='https://www.semanticscholar.org/author/47180207' title='Semantic Scholar'>" +
+			" <i class='ai ai-semantic-scholar-square'></i></a>";
+
+myFooter[7]="<a href='https://www.researchgate.net/profile/Shijun-Zhang-6' title='ResearchGate'>" +
 			" <i class='ai ai-researchgate-square'></i></a>";
 
-myFooter[7]="</div>";
+myFooter[8]="</div>";
 
 
 /*myFooter[3]="<div style='height:30px'> </div>";*/
@@ -314,7 +318,7 @@ if (phoneOrPc){
 	var normalFontSize=w*0.045*0.729; var lineHeight=1.671;
 } 
 else {
-	var normalFontSize=w*0.0185*0.69982; var lineHeight=1.642;
+	var normalFontSize=w*0.0185*0.692; var lineHeight=1.642;
 } 
 
 var insertStyle=new Array();
@@ -330,7 +334,7 @@ if (phoneOrPc) {
 	".myHr {height:0.132em;}"+
 	".navBarItem {padding-top:"+0.014*h+"px;padding-bottom:"+0.00462*h+"px;padding-left: 2.01%;padding-right: 2.01%;}";
 }else{
-	insertStyle[2]= ".footerLinks a i {font-size:2.2em; margin-left: 0.39385em; margin-right: 0.39385em;}"+
+	insertStyle[2]= ".footerLinks a i {font-size:2.32em; margin-left: 0.3656em; margin-right: 0.3656em;}"+
 	".footerLinks {padding-top: 3.195em; padding-bottom: 7.40em;}"+
 	"#footer::before { content:' ';display:block; height:3.6em;}"+
 	".myHr {height:0.185em;}"+
