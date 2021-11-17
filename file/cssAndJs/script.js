@@ -213,7 +213,7 @@ console.log(elements.join('-'));
 //navBar setting
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
-var navBarFontSize=0.01015*w;
+var navBarFontSize=0.0114*w;
 if (phoneOrPc) {navBarFontSize=0.029*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
@@ -231,8 +231,8 @@ if (phoneOrPc){
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.60+"px");
 }else{
 	navBarH=navBarFontSize*4.99+"px";
-	navBarHome.style.setProperty("padding-right","25.98%");
-	navBarHome.style.setProperty("font-size",navBarFontSize*1.95+"px");
+	navBarHome.style.setProperty("padding-right","24.65%");
+	navBarHome.style.setProperty("font-size",navBarFontSize*1.9+"px");
 }
 
 navBar.style.setProperty("height",navBarH);
