@@ -16,7 +16,7 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="November 16, 2021";
+var dayUpdate="November 17, 2021";
 
 
 var	w=window.innerWidth;
@@ -213,8 +213,8 @@ console.log(elements.join('-'));
 //navBar setting
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
-var navBarFontSize=0.010518*w;
-if (phoneOrPc) {navBarFontSize=0.0300*w;}
+var navBarFontSize=0.01015*w;
+if (phoneOrPc) {navBarFontSize=0.029*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
 navBar.style.setProperty("font-family","Helvetica, sans-serif");
@@ -226,12 +226,12 @@ navBarHome.style.setProperty("font-family","serif");
 /*navBarHome.style.setProperty("font-style","oblique");*/
 var navBarH;
 if (phoneOrPc){	
-	navBarH=navBarFontSize*4.58+"px";
+	navBarH=navBarFontSize*4.7+"px";
 	navBarHome.style.setProperty("padding-right","9.5%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.60+"px");
 }else{
-	navBarH=navBarFontSize*4.764+"px";
-	navBarHome.style.setProperty("padding-right","25.41288%");
+	navBarH=navBarFontSize*4.99+"px";
+	navBarHome.style.setProperty("padding-right","25.98%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.95+"px");
 }
 
@@ -298,7 +298,7 @@ myFooter[8]="</div>";
 footer.innerHTML=myFooter.join('');
 
 
-var myFooterFontSize=w*0.01*1.8*0.7105; 
+var myFooterFontSize=w*0.01*1.8*0.65701; 
 var myFooterLineHeight=myFooterFontSize*1.35;
 if (phoneOrPc) {
 	 myFooterFontSize=w*0.01*1.8*0.6*2.35; 
@@ -318,7 +318,7 @@ if (phoneOrPc){
 	var normalFontSize=w*0.045*0.729; var lineHeight=1.671;
 } 
 else {
-	var normalFontSize=w*0.0185*0.692; var lineHeight=1.642;
+	var normalFontSize=w*0.0185*0.66; var lineHeight=1.642;
 } 
 
 var insertStyle=new Array();
@@ -329,13 +329,13 @@ insertStyle[1]=" .smallFont {font-size:"+normalFontSize*0.9+"px;line-height:"+ l
 
 if (phoneOrPc) {
 	insertStyle[2]= ".footerLinks a i {font-size:3.2em; margin-left: 0.359em; margin-right: 0.359em;}"+
-	".footerLinks {padding-top: 3.2em; padding-bottom: 8.8em; }"+
+	".footerLinks {padding-top: 3.2em; padding-bottom: 8.98em; }"+
 	"#footer::before {content:' '; display:block; height:4.8em;}" +
 	".myHr {height:0.132em;}"+
 	".navBarItem {padding-top:"+0.014*h+"px;padding-bottom:"+0.00462*h+"px;padding-left: 2.01%;padding-right: 2.01%;}";
 }else{
 	insertStyle[2]= ".footerLinks a i {font-size:2.32em; margin-left: 0.3656em; margin-right: 0.3656em;}"+
-	".footerLinks {padding-top: 3.195em; padding-bottom: 7.40em;}"+
+	".footerLinks {padding-top: 3.195em; padding-bottom: 7.940em;}"+
 	"#footer::before { content:' ';display:block; height:3.6em;}"+
 	".myHr {height:0.185em;}"+
 	".navBarItem {padding-top:"+0.013*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 1.5%;padding-right: 1.5%;}";

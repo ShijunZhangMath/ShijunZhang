@@ -124,13 +124,13 @@ For full functionality of this site, it is necessary to enable JavaScript.</p></
 
     <!-- introduction -->
     <div id="introduction" class='normalFont'> 
-           <span style="font-size:240%;font-style: italic;font-family:serif;">Welcome!</span> 
+           <span style="font-size:220%;font-style: italic;font-family:serif;">Welcome!</span> 
 
            <div id="spaceAfterWelcome"> </div>
 
           &emsp;&emsp; I am Shijun Zhang (张仕俊), a Research Fellow at National University of Singapore (<a href="https://www.nus.edu.sg/">NUS</a>), under the supervision of Professor <a href="https://blog.nus.edu.sg/matzuows/">
                  Zuowei Shen</a>. At this point in my career, my primary interest is in contributing to a deeper understanding 
-of deep learning. The  majority  of  my  current  research  focuses on the approximation of deep neural networks.
+of deep learning. The  majority  of  my  current  research  focuses on the approximation theory of deep neural networks.
                <!--   Currently, I am interested in the error analysis of deep neural networks, especially the approximation error.  -->
                  For more information, check out the following links:
                  <span class="homeLinks">
@@ -173,30 +173,36 @@ of deep learning. The  majority  of  my  current  research  focuses on the appro
     introduction.style.textAlign="left";
     if (phoneOrPc) {
         photoContainer.style.width= "65%";
-        zsjPhoto.style.width=w*0.6+"px";
+        zsjPhoto.style.width=w*0.65+"px";
         zsjPhoto.style.setProperty('border-radius',0.039296*h+"px");
         introduction.style.width= "80%";
         introduction.style.flexFlow="column"; 
         introduction.style.padding=0.05*w+"px";
-        introduction.style.setProperty('padding-top',0.0486*h+"px");
-        introduction.style.setProperty('padding-bottom',0.039*h+"px");
+/*        introduction.style.setProperty('padding-top',0.0486*h+"px");
+        introduction.style.setProperty('padding-bottom',0.039*h+"px");*/
+        introduction.style.setProperty('padding-top',"1.9em");
+        introduction.style.setProperty('padding-bottom',"1.4em");
         introduction.style.setProperty('border-radius',0.0343226312*h+"px");
         introduction.style.lineHeight="195%";
-        spacePhotoAndIntro.style.height=0.059*h +"px";
+/*        spacePhotoAndIntro.style.height=0.059*h +"px";*/
+        spacePhotoAndIntro.style.height="2.64195em";
         spacePhotoAndIntro.style.width=0.82*w +"px";
-        spaceAfterWelcome.style.height=0.02*h +"px";
+/*        spaceAfterWelcome.style.height=0.02*h +"px";*/
+        spaceAfterWelcome.style.height="0.685em";
     } 
     else { 
-        photoContainer.style.width= "33%";
-        zsjPhoto.style.width=w*0.21 +"px";
+        photoContainer.style.width= "32%";
+        zsjPhoto.style.width=w*0.19 +"px";
         zsjPhoto.style.setProperty('border-radius',0.02596*w+"px");
         introduction.style.width= "50%";
         introduction.style.padding=0.032*w+"px";
-        introduction.style.setProperty('padding-top',0.0564*h+"px");
-        introduction.style.setProperty('padding-bottom',0.041505*h+"px");
+/*        introduction.style.setProperty('padding-top',0.050364*h+"px");
+        introduction.style.setProperty('padding-bottom',0.03369401505*h+"px");*/
+        introduction.style.setProperty('padding-top',"1.7em");
+        introduction.style.setProperty('padding-bottom',"1.2em");
         introduction.style.setProperty('border-radius',0.022*w+"px");
-        introduction.style.lineHeight="186%";
-        spacePhotoAndIntro.style.width=0.0535*w +"px";
+        introduction.style.lineHeight="181%";
+        spacePhotoAndIntro.style.width=0.06*w +"px";
       /*  spacePhotoAndIntro.style.display="none";*/
         spaceAfterWelcome.style.height=0.015*h +"px";
     }
@@ -216,7 +222,7 @@ of deep learning. The  majority  of  my  current  research  focuses on the appro
         preSection.style.height=0.058*h +"px";
         postSection.style.height=0.12*h +"px";
     }else{
-        preSection.style.height=0.17269*h +"px";
+        preSection.style.height=0.19983*h +"px";
         postSection.style.height=0.18*h +"px";
     }
 </script>
