@@ -16,7 +16,7 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="November 17, 2021";
+var dayUpdate="November 18, 2021";
 
 
 var	w=window.innerWidth;
@@ -169,11 +169,9 @@ myNavBarHTML[2]='<li class="navBarItem">'+
 					'<a href="'+relativePath+'publication/" class="'+publicationActiveOrNot+'"> Publication </a>'+
 				'</li>';
 
-myNavBarHTML[3]='<li class="navBarItem">  <a href="'+relativePath+'interest/" class="'+interestActiveOrNot+'"> Interest </a>  </li>';
+myNavBarHTML[3]='<li class="navBarItem">  <a href="'+relativePath+'cv/" class="'+cvActiveOrNot+'"> C&thinsp;V </a>  </li>';
 
-
-myNavBarHTML[4]='<li class="navBarItem">  <a href="'+relativePath+'cv/" class="'+cvActiveOrNot+'"> C&thinsp;V </a>  </li>';
-
+myNavBarHTML[4]='<li class="navBarItem">  <a href="'+relativePath+'interest/" class="'+interestActiveOrNot+'"> Interest </a>  </li>';
 
 myNavBarHTML[5]='<li class="navBarItem">  <a href="'+relativePath+'more/" class="'+moreActiveOrNot+'"> More </a>  </li>';
 
@@ -230,9 +228,9 @@ if (phoneOrPc){
 	navBarHome.style.setProperty("padding-right","9.5%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.60+"px");
 }else{
-	navBarH=navBarFontSize*4.99+"px";
-	navBarHome.style.setProperty("padding-right","24.65%");
-	navBarHome.style.setProperty("font-size",navBarFontSize*1.9+"px");
+	navBarH=navBarFontSize*4.9+"px";
+	navBarHome.style.setProperty("padding-right","25.641%");
+	navBarHome.style.setProperty("font-size",navBarFontSize*1.99+"px");
 }
 
 navBar.style.setProperty("height",navBarH);
@@ -331,14 +329,14 @@ if (phoneOrPc) {
 	insertStyle[2]= ".footerLinks a i {font-size:3.2em; margin-left: 0.359em; margin-right: 0.359em;}"+
 	".footerLinks {padding-top: 3.2em; padding-bottom: 8.98em; }"+
 	"#footer::before {content:' '; display:block; height:4.8em;}" +
-	".myHr {height:0.132em;}"+
+	".myHr {height:0.1132em;}"+
 	".navBarItem {padding-top:"+0.014*h+"px;padding-bottom:"+0.00462*h+"px;padding-left: 2.01%;padding-right: 2.01%;}";
 }else{
 	insertStyle[2]= ".footerLinks a i {font-size:2.32em; margin-left: 0.3656em; margin-right: 0.3656em;}"+
 	".footerLinks {padding-top: 3.195em; padding-bottom: 7.940em;}"+
 	"#footer::before { content:' ';display:block; height:3.6em;}"+
-	".myHr {height:0.185em;}"+
-	".navBarItem {padding-top:"+0.013*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 1.5%;padding-right: 1.5%;}";
+	".myHr {height:0.13em;}"+
+	".navBarItem {padding-top:"+0.013*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 1.35%;padding-right: 1.35%;}";
 }
 
 //InsertStyle will be added in corresponding HTML file, variables are valid in whole HTML file
@@ -357,6 +355,9 @@ window.addEventListener("orientationchange", function (){"use strict"; window.lo
 
 // reset the display of div (next to body) to block
 document.onreadystatechange = function () { 
-	if (document.readyState == "complete") { document.getElementById("bodyDiv").style.display = "block"; };
+	if (document.readyState == "complete") { 
+		document.getElementById("bodyDiv").style.display = "block"; 
+/*		document.getElementById("bodyDiv").style.backgroundColor = "#F8FAFC";*/
+	};
 };
 
