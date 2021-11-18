@@ -51,14 +51,14 @@ body {
     height: auto;
 /*    overflow-y: auto;*/
 /*    overflow-y: scroll;*/
-/*   background-color: #F8FAFC;*/ /*#FFFAF0;*/
+   background-color: #F8FAFC; /*#FFFAF0;*/
 }
 
 
 footer {
     margin: 0 auto;
     padding: 0;
-    background-color:rgba(240,240,240,0.8);
+    background-color:rgba(240,240,240,0.95);
 /*    width: 100%;*/
 }
 
@@ -123,6 +123,15 @@ h2 {
 
 
 
+/* my name at the upper left conner */
+/*.myNameContainer {
+    display: block;
+    height: auto;
+    width:100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+}*/
 
 
 /*  navbar   */
@@ -136,7 +145,7 @@ h2 {
     align-items: center;
     /*    align-items: flex-start;*/
     flex-flow: row nowrap;
-    background-color:rgba(250,250,250,0.99);
+    background-color:rgba(245,245,245,0.99);
     margin: 0px auto;
     padding: 0px;
     border: 0px dashed red;
@@ -192,12 +201,12 @@ h2 {
 
 /* navbar link color */
 .navBarLinkColor a:link {
-    color:#939393;
+    color:#8E8E8E;
     text-decoration:none;
 }
 
 .navBarLinkColor a:visited  {
-    color:#8E8E8E;
+    color:#888888;
     /*text-decoration:underline;*/
 }
 
@@ -209,8 +218,6 @@ h2 {
     /*text-decoration:underline;*/
     /*background-color: blue;*/
 }
-
-
 
 .navBarLinkColor a:active  {
     color:#FF8400;

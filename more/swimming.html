@@ -38,6 +38,9 @@
 /*        border-radius:9%/7%; */
     }
 </style>
+
+
+<style id="styleInPublicJs"></style>
 <style id="styleInJs"></style>
 
 </head>
@@ -117,8 +120,8 @@ For full functionality of this site, it is necessary to enable JavaScript.</p></
 
 <script type="text/javascript">
     if (phoneOrPc) {var pageWidth=0.999*w;} else {var pageWidth=0.66*w;} 
-    var insertMoreJs=" .pageContainer { display:block;margin:0 auto;padding-left:0%; padding-right:0%;width:"+pageWidth+"px;}";
-    document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertMoreJs;
+    document.getElementById("styleInJs").innerHTML=" .pageContainer { display:block;margin:0 auto;padding-left:0%;"+
+    "padding-right:0%;width:"+pageWidth+"px;}";
 
                 // pre and post section
     var preSection=document.getElementById("preSection");

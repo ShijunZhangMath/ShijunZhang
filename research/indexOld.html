@@ -67,6 +67,9 @@
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script> -->
+
+
+<style id="styleInPublicJs"></style>
 <style id="styleInJs"></style>
 
 </head>
@@ -301,7 +304,7 @@ Currently, we focus on providing an upper bound of the approximation  error $R_{
 
     var insertInterestCss=" .pageContainer {display:block;margin:0 auto;padding-left:3%;"+
     " padding-right:3%;width:"+pageWidth+"px;}"+ imgWidth;
-    document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertInterestCss;
+    document.getElementById("styleInJs").innerHTML=insertInterestCss;
 
     if (phoneOrPc) {
         document.getElementById("AOGE").style.width="99%";

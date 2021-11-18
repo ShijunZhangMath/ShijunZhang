@@ -27,6 +27,7 @@
 
 <title>Shijun Zhang 张仕俊</title>
 
+<!--  public css -->
 <link rel="stylesheet" href="./file/cssAndJs/style.css"> 
 <!-- <link rel="stylesheet" href="./file/background/bgSetting.css">  -->
 
@@ -60,6 +61,9 @@
         color: #242424;
     }
 </style>
+
+
+<style id="styleInPublicJs"></style>
 <style id="styleInJs"></style>
 
 
@@ -139,8 +143,8 @@ of deep learning. The  majority  of  my  current  research  focuses on the appro
                          <a href="https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/">Google Scholar</a>
                           <a href="https://orcid.org/0000-0003-4115-7891">ORICD</a>
                           <a href="./publication/">Publication</a>
-                          <a href="./interest/">Interest</a>
                           <a href="./cv/">CV</a>
+                          <a href="./research/">Research</a>
                           and 
                           <a href="./more/">More</a>.
                   </span>
@@ -160,7 +164,7 @@ of deep learning. The  majority  of  my  current  research  focuses on the appro
 </section>
 
 
-
+<!-- puclic js -->
 <script type="text/javascript" src="./file/cssAndJs/script.js"></script>
 <!-- <script type="text/javascript" src="./home.js"></script> -->
 
@@ -170,7 +174,7 @@ of deep learning. The  majority  of  my  current  research  focuses on the appro
     var introduction=document.getElementById("introduction");
     var spaceAfterWelcome=document.getElementById("spaceAfterWelcome");
     var spacePhotoAndIntro=document.getElementById("spacePhotoAndIntro");
-    introduction.style.backgroundColor="#F2F2F2";
+    introduction.style.backgroundColor="rgba(222,209,190,0.45)"; /*"#F2F2F2";*/
     /*photoContainer.style.backgroundColor="#E8E8E8";*/
     introduction.style.textAlign="left";
     if (phoneOrPc) {
@@ -212,8 +216,8 @@ of deep learning. The  majority  of  my  current  research  focuses on the appro
 
     /*insert Css*/ 
     if (phoneOrPc) {var pageWidth=0.96*w; }  else {var pageWidth=0.72*w;} 
-    var insertHomeCss=".pageContainer { display:block;margin:0 auto; padding-left:1%; padding-right:1%; width:"+pageWidth+"px;}";
-    document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertHomeCss;
+    document.getElementById("styleInJs").innerHTML=".pageContainer { display:block;margin:0 auto;"+
+                                    " padding-left:1%; padding-right:1%; width:"+pageWidth+"px;}";
 
 
     // pre and post section

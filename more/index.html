@@ -56,28 +56,30 @@
                
               
     .listStyle li {  
-        background: #F7F7F7;
+        background: #EEEEEE;
     /*    overflow: auto;  */
         border-top-style: none;
         border-right-style: none;
         border-bottom: 0.125em solid;
         border-left-style: none;
-        border-color: #D0D0D0; 
+        border-color: #AAAAAA; 
         /*border-radius:3.109%/9%;*/ /*reset for phone in js*/
         padding: 1.27em;  
-        padding-top: 1.010em;
-        padding-bottom: 0.931808em;
+        padding-top: 1.32010em;
+        padding-bottom: 1.0931808em;
         margin-top: 1.66em;  
         margin-bottom: 2.6em;
      }  
       
 
     .listStyle li:hover {  
-        background: #EEEEEE;  
+        background: #E4E4E4;  
         cursor: pointer;  
      } 
 
 </style>
+
+<style id="styleInPublicJs"></style>
 <style id="styleInJs"></style>
 
 </head>
@@ -180,7 +182,7 @@ For full functionality of this site, it is necessary to enable JavaScript.</p></
     } else{
         insertMoreJs+=".listStyle li { border-radius:"+ 0.01583*w +"px;}";
     }
-    document.getElementById("styleInJs").innerHTML=insertStyle.join('')+insertMoreJs;
+    document.getElementById("styleInJs").innerHTML=insertMoreJs;
             // pre and post section
     var preSection=document.getElementById("preSection");
     var postSection=document.getElementById("postSection");

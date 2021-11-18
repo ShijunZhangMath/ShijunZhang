@@ -17,6 +17,7 @@ dddd<span id="zsj"></span>dddd
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
 var dayUpdate="November 18, 2021";
+var jsInsertStyle=" ";
 
 
 var	w=window.innerWidth;
@@ -84,11 +85,15 @@ function testPN(pn) {
 }
 
 //check whether this page is homepage
-var cvOrNot=testPN("cv");
-var publicationOrNot=testPN("publication");
-var moreOrNot=testPN("more");
-var interestOrNot=testPN("interest");
-var homeOrNot=1-cvOrNot-publicationOrNot-moreOrNot-interestOrNot;
+var items=new Array("publication","cv","research","more");
+var itemsName=new Array("Publications","C&thinsp;V","Research","More");
+var itemsOrNot=new Array();
+var i;
+var homeOrNot=1;
+for (i=0;i<items.length;i++){
+	itemsOrNot[i]=testPN(items[i]);
+	homeOrNot-=itemsOrNot[i];
+}
 // return 1 if home; return 0 if not
 
 
@@ -130,33 +135,23 @@ document.getElementsByTagName("head")[0].appendChild(iconLibrary);*/
 
 // Add HTML to nav bar
 var navBarHTML=document.getElementById("navBarHTML");
-var myNavBarHTML = new Array();
+
 
 var homeActiveOrNot=" ";
 if (homeOrNot){
 	homeActiveOrNot=" activeLinkColor";
 }
-
-var publicationActiveOrNot=" ";
-if (publicationOrNot){
-	publicationActiveOrNot=" activeLinkColor";
+var itemsActiveOrNot=new Array();
+for (i=0;i<items.length;i++){
+	if (itemsOrNot[i]){
+		itemsActiveOrNot[i]=" activeLinkColor";
+	}else{
+		itemsActiveOrNot[i]=" ";
+	}
 }
 
-var interestActiveOrNot=" ";
-if (interestOrNot){
-	interestActiveOrNot=" activeLinkColor";
-}
 
-var cvActiveOrNot=" ";
-if (cvOrNot){
-	cvActiveOrNot=" activeLinkColor";
-}
-
-var moreActiveOrNot=" ";
-if (moreOrNot){
-	moreActiveOrNot=" activeLinkColor";
-}
-
+var myNavBarHTML = new Array();
 
 myNavBarHTML[0]='<nav>'+
 				'<ul class="navBarContainer navBarLinkColor" id="navBar">';
@@ -166,14 +161,17 @@ myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">'+
 		'</li>';
 
 myNavBarHTML[2]='<li class="navBarItem">'+
-					'<a href="'+relativePath+'publication/" class="'+publicationActiveOrNot+'"> Publication </a>'+
+					'<a href="'+relativePath+'publication/" class="'+itemsActiveOrNot[0]+'">'+itemsName[0]+' </a>'+
 				'</li>';
 
-myNavBarHTML[3]='<li class="navBarItem">  <a href="'+relativePath+'cv/" class="'+cvActiveOrNot+'"> C&thinsp;V </a>  </li>';
+myNavBarHTML[3]='<li class="navBarItem">  <a href="'+relativePath+'cv/" class="'+itemsActiveOrNot[1]+'">'+
+	             itemsName[1] + '</a>  </li>';
 
-myNavBarHTML[4]='<li class="navBarItem">  <a href="'+relativePath+'interest/" class="'+interestActiveOrNot+'"> Interest </a>  </li>';
+myNavBarHTML[4]='<li class="navBarItem">  <a href="'+relativePath+'research/" class="'+itemsActiveOrNot[2]+'">'+
+                  itemsName[2]+ ' </a>  </li>';
 
-myNavBarHTML[5]='<li class="navBarItem">  <a href="'+relativePath+'more/" class="'+moreActiveOrNot+'"> More </a>  </li>';
+myNavBarHTML[5]='<li class="navBarItem">  <a href="'+relativePath+'more/" class="'+itemsActiveOrNot[3]+'">'+
+                  itemsName[3]+'  </a>  </li>';
 
 
 /*Starting with / returns to the root directory and starts there
@@ -209,10 +207,18 @@ console.log(elements.join('-'));
 */  
   
 //navBar setting
+if (phoneOrPc) {
+	jsInsertStyle += ".myHr {height:0.1132em;}"+
+	".navBarItem {padding-top:"+0.014*h+"px;padding-bottom:"+0.00462*h+"px;padding-left: 0.8em;padding-right: 0.8em;}";
+}else{
+	jsInsertStyle += ".myHr {height:0.13em;}"+
+	".navBarItem {padding-top:"+0.003*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 1em;padding-right: 1em;}";
+}
+
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
-var navBarFontSize=0.0114*w;
-if (phoneOrPc) {navBarFontSize=0.029*w;}
+var navBarFontSize=0.0116*w;
+if (phoneOrPc) {navBarFontSize=0.0275*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
 navBar.style.setProperty("font-family","Helvetica, sans-serif");
@@ -224,11 +230,11 @@ navBarHome.style.setProperty("font-family","serif");
 /*navBarHome.style.setProperty("font-style","oblique");*/
 var navBarH;
 if (phoneOrPc){	
-	navBarH=navBarFontSize*4.7+"px";
-	navBarHome.style.setProperty("padding-right","9.5%");
+	navBarH=navBarFontSize*4.5+"px";
+	navBarHome.style.setProperty("padding-right","8.802%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.60+"px");
 }else{
-	navBarH=navBarFontSize*4.9+"px";
+	navBarH=navBarFontSize*3.95+"px";
 	navBarHome.style.setProperty("padding-right","25.641%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.99+"px");
 }
@@ -307,37 +313,40 @@ footer.style.fontSize=myFooterFontSize+"px";
 footer.style.lineHeight=myFooterLineHeight+"px";
 footer.style.maxHeight= "100%";
 
+if (phoneOrPc) {
+	jsInsertStyle += ".footerLinks a i {font-size:3.2em; margin-left: 0.359em; margin-right: 0.359em;}"+
+	".footerLinks {padding-top: 3.2em; padding-bottom: 8.98em; }"+
+	"#footer::before {content:' '; display:block; height:4.8em;}";
+}else{
+	jsInsertStyle += ".footerLinks a i {font-size:2.32em; margin-left: 0.3656em; margin-right: 0.3656em;}"+
+	".footerLinks {padding-top: 3.195em; padding-bottom: 7.940em;}"+
+	"#footer::before { content:' ';display:block; height:3.6em;}";
+}
 
 
 
 
-//add style in js
+
+
+
+
+//font size
 if (phoneOrPc){  
-	var normalFontSize=w*0.045*0.729; var lineHeight=1.671;
+	var normalFontSize=w*0.045*0.729; var lineHeight=1.6;
 } 
 else {
-	var normalFontSize=w*0.0185*0.66; var lineHeight=1.642;
+	var normalFontSize=w*0.0185*0.666; var lineHeight=1.6;
 } 
 
-var insertStyle=new Array();
 
-insertStyle[0]=" .normalFont {font-size:"+normalFontSize+"px;line-height:"+ lineHeight +"em;}";
+jsInsertStyle +=" .normalFont {font-size:"+normalFontSize+"px;line-height:"+ lineHeight +"em;}";
 
-insertStyle[1]=" .smallFont {font-size:"+normalFontSize*0.9+"px;line-height:"+ lineHeight*0.95 +"em;}";
+jsInsertStyle +=" .smallFont {font-size:"+normalFontSize*0.9+"px;line-height:"+ lineHeight*0.95 +"em;}";
 
-if (phoneOrPc) {
-	insertStyle[2]= ".footerLinks a i {font-size:3.2em; margin-left: 0.359em; margin-right: 0.359em;}"+
-	".footerLinks {padding-top: 3.2em; padding-bottom: 8.98em; }"+
-	"#footer::before {content:' '; display:block; height:4.8em;}" +
-	".myHr {height:0.1132em;}"+
-	".navBarItem {padding-top:"+0.014*h+"px;padding-bottom:"+0.00462*h+"px;padding-left: 2.01%;padding-right: 2.01%;}";
-}else{
-	insertStyle[2]= ".footerLinks a i {font-size:2.32em; margin-left: 0.3656em; margin-right: 0.3656em;}"+
-	".footerLinks {padding-top: 3.195em; padding-bottom: 7.940em;}"+
-	"#footer::before { content:' ';display:block; height:3.6em;}"+
-	".myHr {height:0.13em;}"+
-	".navBarItem {padding-top:"+0.013*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 1.35%;padding-right: 1.35%;}";
-}
+
+document.getElementById("styleInPublicJs").innerHTML=jsInsertStyle;
+
+
 
 //InsertStyle will be added in corresponding HTML file, variables are valid in whole HTML file
 /*alert('w'+window.innerWidth+'wc'+screen.width)*/
