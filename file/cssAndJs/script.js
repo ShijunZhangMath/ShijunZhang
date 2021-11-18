@@ -156,9 +156,12 @@ var myNavBarHTML = new Array();
 myNavBarHTML[0]='<nav>'+
 				'<ul class="navBarContainer navBarLinkColor" id="navBar">';
 
-myNavBarHTML[1]='<li class="navBarItem" id="navBarHome">'+
-	'<a href="'+relativePath+'"class="myTextShadow '+homeActiveOrNot+'"> Shijun&thinsp;ZHANG </a>'+
-		'</li>';
+myNavBarHTML[1]='<li class="navBarItem" id="navBarMyName">'+
+	'<a href="'+relativePath+'"class="myTextShadow activeLinkColor"> Shijun&thinsp;ZHANG </a>'+
+		'</li>'+
+		'<li class="navBarItem" id="navBarHome">'+
+	'<a href="'+relativePath+'"class=" '+homeActiveOrNot+'"> Home</a>'+
+		'</li>'
 
 myNavBarHTML[2]='<li class="navBarItem">'+
 					'<a href="'+relativePath+'publication/" class="'+itemsActiveOrNot[0]+'">'+itemsName[0]+' </a>'+
@@ -209,7 +212,7 @@ console.log(elements.join('-'));
 //navBar setting
 if (phoneOrPc) {
 	jsInsertStyle += ".myHr {height:0.1132em;}"+
-	".navBarItem {padding-top:"+0.01*h+"px;padding-bottom:"+0.008462*h+"px;padding-left: 0.88em;padding-right: 0.88em;}";
+	".navBarItem {padding-top:"+0.01*h+"px;padding-bottom:"+0.008462*h+"px;padding-left: 0.988em;padding-right: 0.988em;}";
 }else{
 	jsInsertStyle += ".myHr {height:0.13em;}"+
 	".navBarItem {padding-top:"+0.003*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 1em;padding-right: 1em;}";
@@ -218,25 +221,26 @@ if (phoneOrPc) {
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
 var navBarFontSize=0.0116*w;
-if (phoneOrPc) {navBarFontSize=0.0275*w;}
+if (phoneOrPc) {navBarFontSize=0.03275*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
 navBar.style.setProperty("font-family","Helvetica, sans-serif");
 
 /*navBar.style.setProperty("font-weight",440);*/
-var navBarHome=document.getElementById("navBarHome");
-navBarHome.style.setProperty("font-weight",420);
-navBarHome.style.setProperty("font-family","serif");
-/*navBarHome.style.setProperty("font-style","oblique");*/
+var navBarMyName=document.getElementById("navBarMyName");
+navBarMyName.style.setProperty("font-weight",420);
+navBarMyName.style.setProperty("font-family","serif");
+/*navBarMyName.style.setProperty("font-style","oblique");*/
 var navBarH;
 if (phoneOrPc){	
 	navBarH=navBarFontSize*4.5+"px";
-	navBarHome.style.setProperty("padding-right","8.5802%");
-	navBarHome.style.setProperty("font-size",navBarFontSize*1.60+"px");
+/*	navBarMyName.style.setProperty("padding-right","8.5802%");
+	navBarMyName.style.setProperty("font-size",navBarFontSize*1.60+"px");*/
+	navBarMyName.style.setProperty("display","none");
 }else{
 	navBarH=navBarFontSize*3.95+"px";
-	navBarHome.style.setProperty("padding-right","25.641%");
-	navBarHome.style.setProperty("font-size",navBarFontSize*1.99+"px");
+	navBarMyName.style.setProperty("padding-right","20.791%");
+	navBarMyName.style.setProperty("font-size",navBarFontSize*1.99+"px");
 }
 
 navBar.style.setProperty("height",navBarH);
