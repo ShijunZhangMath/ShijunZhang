@@ -209,7 +209,7 @@ console.log(elements.join('-'));
 //navBar setting
 if (phoneOrPc) {
 	jsInsertStyle += ".myHr {height:0.1132em;}"+
-	".navBarItem {padding-top:"+0.014*h+"px;padding-bottom:"+0.00462*h+"px;padding-left: 0.8em;padding-right: 0.8em;}";
+	".navBarItem {padding-top:"+0.01*h+"px;padding-bottom:"+0.008462*h+"px;padding-left: 0.88em;padding-right: 0.88em;}";
 }else{
 	jsInsertStyle += ".myHr {height:0.13em;}"+
 	".navBarItem {padding-top:"+0.003*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 1em;padding-right: 1em;}";
@@ -231,7 +231,7 @@ navBarHome.style.setProperty("font-family","serif");
 var navBarH;
 if (phoneOrPc){	
 	navBarH=navBarFontSize*4.5+"px";
-	navBarHome.style.setProperty("padding-right","8.802%");
+	navBarHome.style.setProperty("padding-right","8.5802%");
 	navBarHome.style.setProperty("font-size",navBarFontSize*1.60+"px");
 }else{
 	navBarH=navBarFontSize*3.95+"px";
