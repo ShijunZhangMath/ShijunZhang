@@ -212,16 +212,16 @@ console.log(elements.join('-'));
 //navBar setting
 if (phoneOrPc) {
 	jsInsertStyle += ".myHr {height:0.1132em;}"+
-	".navBarItem {padding-top:"+0.01*h+"px;padding-bottom:"+0.008462*h+"px;padding-left: 0.988em;padding-right: 0.988em;}";
+	".navBarItem {padding-top:"+0.01*h+"px;padding-bottom:"+0.008462*h+"px;padding-left: 1.1em;padding-right: 1.1em;}";
 }else{
 	jsInsertStyle += ".myHr {height:0.13em;}"+
-	".navBarItem {padding-top:"+0.003*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 1em;padding-right: 1em;}";
+	".navBarItem {padding-top:"+0.003*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 0.95em;padding-right: 0.95em;}";
 }
 
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
 var navBarFontSize=0.0116*w;
-if (phoneOrPc) {navBarFontSize=0.03275*w;}
+if (phoneOrPc) {navBarFontSize=0.033*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
 navBar.style.setProperty("font-family","Helvetica, sans-serif");
