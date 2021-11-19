@@ -16,7 +16,7 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="November 18, 2021";
+var dayUpdate="November 19, 2021";
 var jsInsertStyle=" ";
 
 
@@ -239,7 +239,7 @@ if (phoneOrPc){
 	navBarMyName.style.setProperty("display","none");
 }else{
 	navBarH=navBarFontSize*3.95+"px";
-	navBarMyName.style.setProperty("padding-right","20.791%");
+	navBarMyName.style.setProperty("padding-right","20.95%");
 	navBarMyName.style.setProperty("font-size",navBarFontSize*1.99+"px");
 }
 
