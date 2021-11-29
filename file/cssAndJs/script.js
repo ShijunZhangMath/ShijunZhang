@@ -16,7 +16,7 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="November 19, 2021";
+var dayUpdate="November 29, 2021";
 var jsInsertStyle=" ";
 
 
@@ -215,7 +215,7 @@ if (phoneOrPc) {
 	".navBarItem {padding-top:"+0.01*h+"px;padding-bottom:"+0.008462*h+"px;padding-left: 1.1em;padding-right: 1.1em;}";
 }else{
 	jsInsertStyle += ".myHr {height:0.13em;}"+
-	".navBarItem {padding-top:"+0.003*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 0.95em;padding-right: 0.95em;}";
+	".navBarItem {padding-top:"+0.008*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 0.95em;padding-right: 0.95em;}";
 }
 
 var navBar=document.getElementById("navBar");
@@ -238,7 +238,7 @@ if (phoneOrPc){
 	navBarMyName.style.setProperty("font-size",navBarFontSize*1.60+"px");*/
 	navBarMyName.style.setProperty("display","none");
 }else{
-	navBarH=navBarFontSize*4.1+"px";
+	navBarH=navBarFontSize*4.01+"px";
 	navBarMyName.style.setProperty("padding-right","20.95%");
 	navBarMyName.style.setProperty("font-size",navBarFontSize*1.99+"px");
 }
@@ -293,13 +293,16 @@ myFooter[4]="<a href='"+relativePath+"cv/' title='Curriculum Vitae'>" +
 myFooter[5]="<a href='https://orcid.org/0000-0003-4115-7891' title='ORCID'>" +
 			" <i class='ai ai-orcid-square'></i>    </a>";
 
-myFooter[6]="<a href='https://www.semanticscholar.org/author/47180207' title='Semantic Scholar'>" +
+myFooter[6]="<a href='https://arxiv.org/a/zhang_s_8.html' title='Articles on arXiv'>" +
+			" <i class='ai ai-arxiv-square'></i>    </a>";
+
+myFooter[7]="<a href='https://www.semanticscholar.org/author/47180207' title='Semantic Scholar'>" +
 			" <i class='ai ai-semantic-scholar-square'></i></a>";
 
-myFooter[7]="<a href='https://www.researchgate.net/profile/Shijun-Zhang-6' title='ResearchGate'>" +
+myFooter[8]="<a href='https://www.researchgate.net/profile/Shijun-Zhang-6' title='ResearchGate'>" +
 			" <i class='ai ai-researchgate-square'></i></a>";
 
-myFooter[8]="</div>";
+myFooter[9]="</div>";
 
 
 /*myFooter[3]="<div style='height:30px'> </div>";*/
@@ -318,11 +321,11 @@ footer.style.lineHeight=myFooterLineHeight+"px";
 footer.style.maxHeight= "100%";
 
 if (phoneOrPc) {
-	jsInsertStyle += ".footerLinks a i {font-size:3.2em; margin-left: 0.359em; margin-right: 0.359em;}"+
+	jsInsertStyle += ".footerLinks a i {font-size:3.2em; margin-left: 0.32359em; margin-right: 0.32359em;}"+
 	".footerLinks {padding-top: 3.2em; padding-bottom: 8.98em; }"+
 	"#footer::before {content:' '; display:block; height:4.8em;}";
 }else{
-	jsInsertStyle += ".footerLinks a i {font-size:2.32em; margin-left: 0.3656em; margin-right: 0.3656em;}"+
+	jsInsertStyle += ".footerLinks a i {font-size:2.32em; margin-left: 0.33656em; margin-right: 0.33656em;}"+
 	".footerLinks {padding-top: 3.195em; padding-bottom: 7.940em;}"+
 	"#footer::before { content:' ';display:block; height:3.6em;}";
 }
