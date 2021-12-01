@@ -16,7 +16,7 @@ dddd<span id="zsj"></span>dddd
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="November 29, 2021";
+var dayUpdate="December 1, 2021";
 var jsInsertStyle=" ";
 
 
@@ -215,7 +215,7 @@ if (phoneOrPc) {
 	".navBarItem {padding-top:"+0.01*h+"px;padding-bottom:"+0.008462*h+"px;padding-left: 1.1em;padding-right: 1.1em;}";
 }else{
 	jsInsertStyle += ".myHr {height:0.13em;}"+
-	".navBarItem {padding-top:"+0.008*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 0.95em;padding-right: 0.95em;}";
+	".navBarItem {padding-top:"+0.006*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 0.95em;padding-right: 0.95em;}";
 }
 
 var navBar=document.getElementById("navBar");
@@ -238,8 +238,8 @@ if (phoneOrPc){
 	navBarMyName.style.setProperty("font-size",navBarFontSize*1.60+"px");*/
 	navBarMyName.style.setProperty("display","none");
 }else{
-	navBarH=navBarFontSize*4.01+"px";
-	navBarMyName.style.setProperty("padding-right","20.95%");
+	navBarH=navBarFontSize*3.6+"px";
+	navBarMyName.style.setProperty("padding-right","23.95%");
 	navBarMyName.style.setProperty("font-size",navBarFontSize*1.99+"px");
 }
 
