@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<style type="text/css">
+	button {
+    max-height:40px;
+    font-size: 20px;
+}
+</style>
+<body>
+
+<p>Click the button to display an alert box.</p>
+
+<button onclick="myFunction()">Window width and height</button>
+
+<script>
+var myorientation=0;
+
+if (typeof(window.orientation)=="undefined") { 
+	if (typeof(window.screen.orientation)!="undefined"){
+		myorientation=window.screen.orientation.angle;
+	}
+} else {
+	myorientation=window.orientation;
+}
+var sh=window.screen.height;
+var sw=window.screen.width;
+var screenRatio=Math.max(sh,sw)/Math.min(sh,sw);
+
+var uaLower = navigator.userAgent.toLowerCase();
+var mobileCases =new Array("phone","android","mobile","pad");
+
+function isMobile() {
+		for (let i=0;i<mobileCases.length;i++){
+		       if (uaLower.search(mobileCases[i])>-0.5) {return 1;}
+		}
+		return 0;
+}
+
+function myFunction() {
+  alert(uaLower);
+  alert(isMobile());
+
+}
+</script>
+
+</body>
+</html>

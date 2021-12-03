@@ -88,9 +88,8 @@ function testPN(pn) {
 var items=new Array("publication","cv","research","more");
 var itemsName=new Array("Publications","C&thinsp;V","Research","More");
 var itemsOrNot=new Array();
-var i;
 var homeOrNot=1;
-for (i=0;i<items.length;i++){
+for (let i=0;i<items.length;i++){
 	itemsOrNot[i]=testPN(items[i]);
 	homeOrNot-=itemsOrNot[i];
 }
