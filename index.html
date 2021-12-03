@@ -83,7 +83,7 @@
 
 
 
-<body>  <noscript> <p style="margin: 40px;font-size:1.7em;"> You are visiting the personal website of Shijun Zhang (张仕俊) at
+<body class="normalFont">  <noscript> <p style="margin: 40px;font-size:1.5em;line-height: 1.5;"> You are visiting the personal website of Shijun Zhang (张仕俊) at
     <a href="https://shijunzhang.top">https://shijunzhang.top</a>.<br><br>
 For full functionality of this site, it is necessary to enable JavaScript.</p></noscript>
 <div style="display:none;" id="bodyDiv">
@@ -128,7 +128,7 @@ For full functionality of this site, it is necessary to enable JavaScript.</p></
 
 <div class="profileContainer"> <!-- in  a   row -->
         <!-- introduction -->
-    <div  class='personalInformation normalFont'> 
+    <div  class='personalInformation'> 
                     <span style='font-size: 150%;'>Shijun Zhang&ensp;张仕俊</span> <br>
 
                     <div style='height:2.08em;'></div>
@@ -218,7 +218,7 @@ of deep learning. The  majority  of  my  current  research  focuses on the appro
     if (phoneOrPc) {
         photoContainer.style.width= "68%";
         zsjPhoto.style.width="100%"; /*w*0.65+"px";*/
-        zsjPhoto.style.setProperty('border-radius',0.036*h+"px");
+        zsjPhoto.style.setProperty('border-radius',0.036*w*1.9+"px");
         introduction.style.width= "85%";
         introduction.style.flexFlow="column"; 
 /*        introduction.style.padding=0.05*w+"px";*/
@@ -226,10 +226,10 @@ of deep learning. The  majority  of  my  current  research  focuses on the appro
         introduction.style.setProperty('padding-bottom',0.039*h+"px");*/
         introduction.style.setProperty('padding-top',"4em");
 /*        introduction.style.setProperty('padding-bottom',"1.4em");*/
-        introduction.style.setProperty('border-radius',0.032*h+"px");
+        introduction.style.setProperty('border-radius',0.032*w*1.9+"px");
         introduction.style.lineHeight="195%";
 /*        spaceBetween.style.height=0.059*h +"px";*/
-        spaceBetween.style.height="5.9em";
+        spaceBetween.style.height="3em";
         spaceBetween.style.width=0.82*w +"px";
 /*        welcome.style.height=0.02*h +"px";*/
         welcome.style.marginBottom="0.685em";
@@ -248,7 +248,7 @@ of deep learning. The  majority  of  my  current  research  focuses on the appro
         introduction.style.lineHeight="173%";
         spaceBetween.style.width=0.045*w +"px";
       /*  spaceBetween.style.display="none";*/
-        welcome.style.marginBottom=0.015*h +"px";
+        welcome.style.marginBottom="1em"; /*0.015*h +"px";*/
     }
 
 
@@ -263,11 +263,11 @@ of deep learning. The  majority  of  my  current  research  focuses on the appro
     var postSection=document.getElementById("postSection");
 
     if (phoneOrPc){
-        preSection.style.height=0.062*h +"px";
-        postSection.style.height=0.12*h +"px";
+        preSection.style.height="3em"; /*0.062*h +"px";*/
+        postSection.style.height="5.8em"; /*0.12*h +"px";*/
     }else{
-        preSection.style.height=0.092*h +"px";
-        postSection.style.height=0.18*h +"px";
+        preSection.style.height="4.15em"; /*0.092*h +"px";*/
+        postSection.style.height="5em"; /*0.18*h +"px";*/
     }
 </script>
 

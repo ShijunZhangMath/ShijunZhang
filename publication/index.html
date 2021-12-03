@@ -103,7 +103,7 @@
 
 
 
-<body>  <noscript> <p style="margin: 40px;font-size:1.7em;"> You are visiting the personal website of Shijun Zhang (张仕俊) at
+<body class="normalFont">  <noscript> <p style="margin: 40px;font-size:1.5em;line-height: 1.5;"> You are visiting the personal website of Shijun Zhang (张仕俊) at
     <a href="https://shijunzhang.top">https://shijunzhang.top</a>.<br><br>
 For full functionality of this site, it is necessary to enable JavaScript.</p></noscript>
 <div style="display:none;" id="bodyDiv">
@@ -146,7 +146,7 @@ For full functionality of this site, it is necessary to enable JavaScript.</p></
 
 
 <!-- // main section -->
-<section class="pageContainer normalFont">
+<section class="pageContainer">
 <!-- The font size for publications is modified in the css of this page. -->
 
 
@@ -349,7 +349,7 @@ For full functionality of this site, it is necessary to enable JavaScript.</p></
 
 <script type="text/javascript">
     if (phoneOrPc){ 
-        var pageWidth=0.91*w ; var paperBorderRadius=0.015*h;
+        var pageWidth=0.91*w ; var paperBorderRadius=0.015*w*1.8;
     } 
     else {
         var pageWidth=0.52*w; var paperBorderRadius=0.009*w;
@@ -357,11 +357,11 @@ For full functionality of this site, it is necessary to enable JavaScript.</p></
     var insertPublicationCss=" .pageContainer { display:block; padding-left:2.3%; padding-right:2.3%;"+
     " margin:0 auto;width:"+pageWidth+"px;}"+
     "ul.ulPuclication li { border-radius:"+paperBorderRadius+"px;}";
-    if (phoneOrPc){
-      insertPublicationCss+="li {padding-top:"+0.005*h*0.4+"px; padding-bottom:"+0.02*h*0.825+"px;}";
+/*    if (phoneOrPc){
+      insertPublicationCss+="li {padding-top:0.2em; padding-bottom:0.1em;}";
     }else{
-      insertPublicationCss+="li {padding-top:"+0.005*h*0.4+"px; padding-bottom:"+0.02*h*0.735+"px;}";
-    }
+      insertPublicationCss+="li {padding-top:0.1em; padding-bottom:0.1em;}";
+    }*/
     document.getElementById("styleInJs").innerHTML=insertPublicationCss;
 
 
@@ -370,11 +370,11 @@ For full functionality of this site, it is necessary to enable JavaScript.</p></
     var postSection=document.getElementById("postSection");
 
     if (phoneOrPc){
-        preSection.style.height=0.0292*h +"px";
-        postSection.style.height=0.1052*h +"px";
+        preSection.style.height="1.5em"; /*0.0292*h +"px";*/
+        postSection.style.height="3.6em"; /*0.1052*h +"px";*/
     }else{
-        preSection.style.height=0.0425*h +"px";
-        postSection.style.height=0.125*h +"px";
+        preSection.style.height="1.68em"; /*0.0425*h +"px";*/
+        postSection.style.height="4.6em"; /*0.125*h +"px";*/
     }
 </script>
 

@@ -61,7 +61,7 @@
 
 
 
-<body>  <noscript> <p style="margin: 40px;font-size:1.7em;"> You are visiting the personal website of Shijun Zhang (张仕俊) at
+<body class="normalFont">  <noscript> <p style="margin: 40px;font-size:1.5em;line-height: 1.5;"> You are visiting the personal website of Shijun Zhang (张仕俊) at
     <a href="https://shijunzhang.top">https://shijunzhang.top</a>.<br><br>
 For full functionality of this site, it is necessary to enable JavaScript.</p></noscript>
 <div style="display:none;" id="bodyDiv">
@@ -103,7 +103,7 @@ For full functionality of this site, it is necessary to enable JavaScript.</p></
 
 
 
-<section class="pageContainer normalFont">
+<section class="pageContainer">
 
 
 <h1> Dynamic Images </h1>
@@ -161,7 +161,7 @@ create mathathecal dynamic images via Python (Matplotlib) or Matlab. See several
     if (phoneOrPc){
         var dynamicImageContainer=".dynamicImageContainer {margin-top:1.0em;"+
         "padding-top:1em;"+
-        "border-radius:"+0.019203*h+"px;}"+
+        "border-radius:"+0.019203*w*1.8+"px;}"+
         ".dynamicImageContainer>div  {padding: 0.25em;    margin:0.621em;    margin-bottom: 1.6em;}";   
         }else {
            var dynamicImageContainer= ".dynamicImageContainer {margin-top:1.2em;border-radius:"+0.01623*w+"px;}"+
@@ -179,11 +179,11 @@ create mathathecal dynamic images via Python (Matplotlib) or Matlab. See several
     var postSection=document.getElementById("postSection");
 
     if (phoneOrPc){
-        preSection.style.height=0.02525*h +"px";
-        postSection.style.height=0.125*h +"px";
+        preSection.style.height="1.23em"; /*0.02525*h +"px";*/
+        postSection.style.height="3.52em"; /*0.125*h +"px";*/
     }else{
-        preSection.style.height=0.036956*h +"px";
-        postSection.style.height=0.145*h +"px";
+        preSection.style.height="1.25em"; /*0.036956*h +"px";*/
+        postSection.style.height="3.8em"; /*0.145*h +"px";*/
     } 
 </script>
 

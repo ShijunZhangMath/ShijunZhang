@@ -10,13 +10,20 @@ dddd<span id="zsj"></span>dddd
 
 
 
-
+var uaLower = window.navigator.userAgent.toLowerCase();
+var mobileCases =new Array("mobile", "android", "phone", "pad");
+function isMobile() {
+		for (let i=0;i<mobileCases.length;i++){
+		       if (uaLower.search(mobileCases[i])>-0.5) {return 1;}
+		}
+		return 0;
+}
 
 
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="December 1, 2021";
+var dayUpdate="December 3, 2021";
 var jsInsertStyle=" ";
 
 
@@ -29,7 +36,7 @@ var screenRatio=Math.max(sh,sw)/Math.min(sh,sw);
 h=w0+h0-w;*/
 var phoneOrPc=0;
 // 1.432 ipad pro 11
-if (w<=h && screenRatio>=1.33) {
+if (w<=h && screenRatio>=1.33 && isMobile()) {
 /*	h=Math.max(w0,h0);
 	w=w0+h0-h;*/
 	phoneOrPc=1;	
@@ -80,7 +87,7 @@ if (window.innerHeight<=window.innerWidth && Math.abs(myorientation)==90) {
 // define a function to test pathname
 function testPN(pn) {
 	var currentPN=document.location.pathname;
-	if (currentPN.search('/'+pn)==-1){return 0;}
+	if (currentPN.search('/'+pn)<-0.5){return 0;}
 	else {return 1;}
 }
 
@@ -211,15 +218,15 @@ console.log(elements.join('-'));
 //navBar setting
 if (phoneOrPc) {
 	jsInsertStyle += ".myHr {height:0.1132em;}"+
-	".navBarItem {padding-top:"+0.01*h+"px;padding-bottom:"+0.008462*h+"px;padding-left: 1.1em;padding-right: 1.1em;}";
+	".navBarItem {padding-top:"+0.01*w*1.8+"px;padding-bottom:"+0.008462*w*1.8+"px;padding-left: 1.1em;padding-right: 1.1em;}";
 }else{
 	jsInsertStyle += ".myHr {height:0.13em;}"+
-	".navBarItem {padding-top:"+0.006*h+"px;padding-bottom: "+0.0012*h+"px;padding-left: 0.95em;padding-right: 0.95em;}";
+	".navBarItem {padding-top:"+0.004*w+"px;padding-bottom: "+0.0012*w+"px;padding-left: 0.95em;padding-right: 0.95em;}";
 }
 
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
-var navBarFontSize=0.0116*w;
+var navBarFontSize=0.0121*w;
 if (phoneOrPc) {navBarFontSize=0.033*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
@@ -232,13 +239,13 @@ navBarMyName.style.setProperty("font-family","serif");
 /*navBarMyName.style.setProperty("font-style","oblique");*/
 var navBarH;
 if (phoneOrPc){	
-	navBarH=navBarFontSize*4.5+"px";
+	navBarH=navBarFontSize*3.825+"px";
 /*	navBarMyName.style.setProperty("padding-right","8.5802%");
 	navBarMyName.style.setProperty("font-size",navBarFontSize*1.60+"px");*/
 	navBarMyName.style.setProperty("display","none");
 }else{
-	navBarH=navBarFontSize*3.6+"px";
-	navBarMyName.style.setProperty("padding-right","23.95%");
+	navBarH=navBarFontSize*3.69+"px";
+	navBarMyName.style.setProperty("padding-right","23.0%");
 	navBarMyName.style.setProperty("font-size",navBarFontSize*1.99+"px");
 }
 

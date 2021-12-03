@@ -86,7 +86,7 @@
 
 
 
-<body>  <noscript> <p style="margin: 40px;font-size:1.7em;"> You are visiting the personal website of Shijun Zhang (张仕俊) at
+<body class="normalFont">  <noscript> <p style="margin: 40px;font-size:1.5em;line-height: 1.5;"> You are visiting the personal website of Shijun Zhang (张仕俊) at
     <a href="https://shijunzhang.top">https://shijunzhang.top</a>.<br><br>
 For full functionality of this site, it is necessary to enable JavaScript.</p></noscript>
 <div style="display:none;" id="bodyDiv">
@@ -129,7 +129,7 @@ For full functionality of this site, it is necessary to enable JavaScript.</p></
 
 
 
-<section class="pageContainer normalFont">
+<section class="pageContainer">
 
 
 <h1> More Information </h1>
@@ -178,7 +178,7 @@ For full functionality of this site, it is necessary to enable JavaScript.</p></
     if (phoneOrPc) {var pageWidth=0.82*w;} else {var pageWidth=0.5*w;} 
     var insertMoreJs=" .pageContainer { display:block;margin:0 auto;padding-left:3%; padding-right:3%;width:"+pageWidth+"px;}";
     if (phoneOrPc) {
-        insertMoreJs+=".listStyle li { border-radius:"+ 0.02832*h +"px;}";
+        insertMoreJs+=".listStyle li { border-radius:"+ 0.02832*w*1.8 +"px;}";
     } else{
         insertMoreJs+=".listStyle li { border-radius:"+ 0.01583*w +"px;}";
     }
@@ -188,11 +188,11 @@ For full functionality of this site, it is necessary to enable JavaScript.</p></
     var postSection=document.getElementById("postSection");
 
     if (phoneOrPc){
-        preSection.style.height=0.02484*h +"px";
-        postSection.style.height=0.0804*h +"px";
+        preSection.style.height="1.12em"; /*0.02484*h +"px";*/
+        postSection.style.height="3.6em"; /*0.0804*h +"px";*/
     }else{
-        preSection.style.height=0.0358*h +"px";
-        postSection.style.height=0.115*h +"px";
+        preSection.style.height="1.3em"; /*0.0358*h +"px";*/
+        postSection.style.height="3.5em"; /*0.115*h +"px";*/
     } 
 </script>
 

@@ -28,9 +28,8 @@ var sh=window.screen.height;
 var sw=window.screen.width;
 var screenRatio=Math.max(sh,sw)/Math.min(sh,sw);
 
-var uaLower = navigator.userAgent.toLowerCase();
+var uaLower = window.navigator.userAgent.toLowerCase();
 var mobileCases =new Array("phone","android","mobile","pad");
-
 function isMobile() {
 		for (let i=0;i<mobileCases.length;i++){
 		       if (uaLower.search(mobileCases[i])>-0.5) {return 1;}
