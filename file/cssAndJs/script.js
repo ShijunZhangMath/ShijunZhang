@@ -23,7 +23,7 @@ function isMobile() {
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="December 3, 2021";
+var dayUpdate="December 14, 2021";
 var jsInsertStyle=" ";
 
 
@@ -218,16 +218,18 @@ console.log(elements.join('-'));
 //navBar setting
 if (phoneOrPc) {
 	jsInsertStyle += ".myHr {height:0.1132em;}"+
-	".navBarItem {padding-top:"+0.01*w*1.8+"px;padding-bottom:"+0.008462*w*1.8+"px;padding-left: 1.1em;padding-right: 1.1em;}";
+	".navBarItem {padding-top:"+0.01*w*1.8+"px;padding-bottom:"+0.008462*w*1.8+"px;"+
+					"padding-left:"+0.038*w+"px;padding-right:"+0.038*w+"px;}";
 }else{
 	jsInsertStyle += ".myHr {height:0.13em;}"+
-	".navBarItem {padding-top:"+0.004*w+"px;padding-bottom: "+0.0012*w+"px;padding-left: 0.95em;padding-right: 0.95em;}";
+	".navBarItem {padding-top:"+0.004*w+"px;padding-bottom: "+0.0012*w+"px;"+
+					"padding-left:"+0.011*w+"px;padding-right:"+0.011*w+"px;}";
 }
 
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
 var navBarFontSize=0.0121*w;
-if (phoneOrPc) {navBarFontSize=0.033*w;}
+if (phoneOrPc) {navBarFontSize=0.034*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
 navBar.style.setProperty("font-family","Helvetica, sans-serif");
@@ -245,8 +247,8 @@ if (phoneOrPc){
 	navBarMyName.style.setProperty("display","none");
 }else{
 	navBarH=navBarFontSize*3.69+"px";
-	navBarMyName.style.setProperty("padding-right","23.0%");
-	navBarMyName.style.setProperty("font-size",navBarFontSize*1.99+"px");
+	navBarMyName.style.setProperty("padding-right","21.0%");
+	navBarMyName.style.setProperty("font-size",navBarFontSize*1.8+"px");
 }
 
 navBar.style.setProperty("height",navBarH);
