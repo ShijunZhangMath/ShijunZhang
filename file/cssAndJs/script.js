@@ -23,7 +23,7 @@ function isMobile() {
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="February 16, 2022";
+var dayUpdate="May 15, 2022";
 var jsInsertStyle=" ";
 
 
