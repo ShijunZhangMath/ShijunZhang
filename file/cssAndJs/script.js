@@ -163,23 +163,23 @@ myNavBarHTML[0]='<nav>'+
 				'<ul class="navBarContainer navBarLinkColor" id="navBar">';
 
 myNavBarHTML[1]='<li class="navBarItem" id="navBarMyName">'+
-	'<a href="'+relativePath+'"class="myTextShadow activeLinkColor"> Shijun&thinsp;ZHANG </a>'+
+	'<a href="'+relativePath+'index.html"class="myTextShadow activeLinkColor"> Shijun&thinsp;ZHANG </a>'+
 		'</li>'+
 		'<li class="navBarItem" id="navBarHome">'+
-	'<a href="'+relativePath+'"class=" '+homeActiveOrNot+'"> Home</a>'+
+	'<a href="'+relativePath+'index.html"class=" '+homeActiveOrNot+'"> Home</a>'+
 		'</li>'
 
 myNavBarHTML[2]='<li class="navBarItem">'+
-					'<a href="'+relativePath+'publication/" class="'+itemsActiveOrNot[0]+'">'+itemsName[0]+' </a>'+
+					'<a href="'+relativePath+'publication/index.html" class="'+itemsActiveOrNot[0]+'">'+itemsName[0]+' </a>'+
 				'</li>';
 
-myNavBarHTML[3]='<li class="navBarItem">  <a href="'+relativePath+'cv/" class="'+itemsActiveOrNot[1]+'">'+
+myNavBarHTML[3]='<li class="navBarItem">  <a href="'+relativePath+'cv/index.html" class="'+itemsActiveOrNot[1]+'">'+
 	             itemsName[1] + '</a>  </li>';
 
-myNavBarHTML[4]='<li class="navBarItem">  <a href="'+relativePath+'research/" class="'+itemsActiveOrNot[2]+'">'+
+myNavBarHTML[4]='<li class="navBarItem">  <a href="'+relativePath+'research/index.html" class="'+itemsActiveOrNot[2]+'">'+
                   itemsName[2]+ ' </a>  </li>';
 
-myNavBarHTML[5]='<li class="navBarItem">  <a href="'+relativePath+'more/" class="'+itemsActiveOrNot[3]+'">'+
+myNavBarHTML[5]='<li class="navBarItem">  <a href="'+relativePath+'more/index.html" class="'+itemsActiveOrNot[3]+'">'+
                   itemsName[3]+'  </a>  </li>';
 
 
