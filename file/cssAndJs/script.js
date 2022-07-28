@@ -23,7 +23,7 @@ function isMobile() {
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="June 14, 2022";
+var dayUpdate="July 28, 2022";
 var jsInsertStyle=" ";
 
 
@@ -274,12 +274,12 @@ document.getElementById("vspaceAfterNavBar").style.height=navBarH;
 var footer=document.getElementById("footer");
 var myFooter = new Array();
 
-myFooter[0]="Email:&ensp;<a href='mailto:shijun.math@outlook.com?cc=zhangshijun@u.nus.edu'>shijun.math@outlook.com</a>"+
+myFooter[0]="Email:&ensp;<a href='mailto:shijun.math@outlook.com?cc=shijun.zhang@duke.edu'>shijun.math@outlook.com</a>"+
 	        "&ensp;<span style='font-style: normal;'>or</span>&ensp;"+
-	        "<a href='mailto:zhangshijun@u.nus.edu?cc=shijun.math@outlook.com'>zhangshijun@u.nus.edu</a>";
+	        "<a href='mailto:shijun.zhang@duke.edu?cc=shijun.math@outlook.com'>shijun.zhang@duke.edu</a>";
 
 
-myFooter[1]="<br>Address:&ensp;Department of Mathematics (NUS), Singapore 119076";
+myFooter[1]="<br>Address:&ensp;Department of Mathematics, Duke University";
 
 
 /*var footerImgPN="../file/img/zsjBlue.gif";
