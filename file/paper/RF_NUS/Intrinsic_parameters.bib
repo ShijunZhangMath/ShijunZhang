@@ -1,16 +1,16 @@
-@ARTICLE{shijun:intrinsic:parameters,
-       author = {Zuowei Shen  and Haizhao Yang  and Shijun Zhang},
-        title = { {ReLU} Network Approximation in Terms of Intrinsic Parameters},
-      journal = {arXiv e-prints},
-     keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
-         year = 2021,
-        month = nov,
-          eid = {arXiv:2111.07964},
-        pages = {arXiv:2111.07964},
-archivePrefix = {arXiv},
-       eprint = {2111.07964},
- primaryClass = {cs.LG},
-       adsurl = {https://ui.adsabs.harvard.edu/abs/2021arXiv211107964S},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
-}
 
+@InProceedings{shijun:intrinsic:parameters,
+  title =    {Deep Network Approximation in Terms of Intrinsic Parameters},
+  author =       {Shen, Zuowei and Yang, Haizhao and Zhang, Shijun},
+  booktitle =    {Proceedings of the 39th International Conference on Machine Learning},
+  pages =    {19909--19934},
+  year =     {2022},
+  editor =   {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume =   {162},
+  series =   {Proceedings of Machine Learning Research},
+  month =    {17--23 Jul},
+  publisher =    {PMLR},
+  pdf =      {https://proceedings.mlr.press/v162/shen22g/shen22g.pdf},
+  url =      {https://proceedings.mlr.press/v162/shen22g.html},
+  abstract =     {One of the arguments to explain the success of deep learning is the powerful approximation capacity of deep neural networks. Such capacity is generally accompanied by the explosive growth of the number of parameters, which, in turn, leads to high computational costs. It is of great interest to ask whether we can achieve successful deep learning with a small number of learnable parameters adapting to the target function. From an approximation perspective, this paper shows that the number of parameters that need to be learned can be significantly smaller than people typically expect. First, we theoretically design ReLU networks with a few learnable parameters to achieve an attractive approximation. We prove by construction that, for any Lipschitz continuous function $f$ on $[0,1]^d$ with a Lipschitz constant $\lambda&gt;0$, a ReLU network with $n+2$ intrinsic parameters (those depending on $f$) can approximate $f$ with an exponentially small error $5 \lambda \sqrt{d} \, 2^{-n}$. Such a result is generalized to generic continuous functions. Furthermore, we show that the idea of learning a small number of parameters to achieve a good approximation can be numerically observed. We conduct several experiments to verify that training a small part of parameters can also achieve good results for classification problems if other parameters are pre-specified or pre-trained from a related problem.}
+}
