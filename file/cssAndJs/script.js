@@ -8,8 +8,6 @@ dddd<span id="zsj"></span>dddd
 </script>*/
 // alert(screen.width)
 
-
-
 var uaLower = window.navigator.userAgent.toLowerCase();
 var mobileCases =new Array("mobile", "android", "phone", "pad");
 function isMobile() {
@@ -19,11 +17,10 @@ function isMobile() {
 		return 0;
 }
 
-
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="September 11, 2022";
+var dayUpdate="September 24, 2022";
 var jsInsertStyle=" ";
 
 
