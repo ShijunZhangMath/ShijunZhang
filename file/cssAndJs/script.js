@@ -124,7 +124,7 @@ document.getElementsByTagName("head")[0].appendChild(linkNewApple);
 // add icon library
 var iconLibrary = document.createElement("link");
 iconLibrary.rel = "stylesheet"; 
-iconLibrary.href=relativePath+"file/icon/academicons/css/academicons.min.css";
+iconLibrary.href=relativePath+"file/icon/academicons20230601/css/academicons.min.css";
 document.getElementsByTagName("head")[0].appendChild(iconLibrary);
 
 /*var iconLibrary = document.createElement("link");
@@ -292,14 +292,14 @@ myFooter[3]="<div class='footerLinks'>"+
 			" <a href='https://scholar.google.com/citations?user=NZA4ur4AAAAJ&hl=en/' title='Google Scholar'>" +
 			"<i class='ai ai-google-scholar-square'></i>    </a>";
 
-myFooter[4]="<a href='"+relativePath+"cv/' title='Curriculum Vitae'>" +
+myFooter[4]="<a href='"+relativePath+"cv/index.html' title='Curriculum Vitae'>" +
 			" <i class='ai ai-cv-square'></i>      </a>";
 
-myFooter[5]="<a href='https://orcid.org/0000-0003-4115-7891' title='ORCID'>" +
-			" <i class='ai ai-orcid-square'></i>    </a>";
-
-myFooter[6]="<a href='https://arxiv.org/a/zhang_s_8.html' title='Articles on arXiv'>" +
+myFooter[5]="<a href='https://arxiv.org/a/zhang_s_8.html' title='Articles on arXiv'>" +
 			" <i class='ai ai-arxiv-square'></i>    </a>";
+
+myFooter[6]="<a href='https://orcid.org/0000-0003-4115-7891' title='ORCID'>" +
+			" <i class='ai ai-orcid-square'></i>    </a>";
 
 myFooter[7]="<a href='https://www.semanticscholar.org/author/47180207' title='Semantic Scholar'>" +
 			" <i class='ai ai-semantic-scholar-square'></i></a>";
