@@ -271,12 +271,15 @@ document.getElementById("vspaceAfterNavBar").style.height=navBarH;
 var footer=document.getElementById("footer");
 var myFooter = new Array();
 
-myFooter[0]="Email:&ensp;<a href='mailto:shijun.math@outlook.com?cc=shijun.zhang@duke.edu'>shijun.math@outlook.com</a>"+
+// myFooter[0]="Email:&ensp;<a href='mailto:shijun.math@outlook.com?cc=shijun.zhang@duke.edu'>shijun.math@outlook.com</a>"+
+// 	        "&ensp;<span style='font-style: normal;'>or</span>&ensp;"+
+// 	        "<a href='mailto:shijun.zhang@duke.edu?cc=shijun.math@outlook.com'>shijun.zhang@duke.edu</a>";
+myFooter[0]="Email:&ensp;<a href='mailto:shijun.math@outlook.com?cc=shijun.zhang@polyu.edu.hk'>shijun.math@outlook.com</a>"+
 	        "&ensp;<span style='font-style: normal;'>or</span>&ensp;"+
-	        "<a href='mailto:shijun.zhang@duke.edu?cc=shijun.math@outlook.com'>shijun.zhang@duke.edu</a>";
+	        "<a href='mailto:shijun.zhang@polyu.edu.hk?cc=shijun.math@outlook.com'>shijun.zhang@polyu.edu.hk</a>";
 
-
-myFooter[1]="<br>Address:&ensp;Department of Mathematics, Duke University";
+// myFooter[1]="<br>Address:&ensp;Department of Mathematics, Duke University";
+myFooter[1]="<br>Address:&ensp;Department of Applied Mathematics, Hong Kong Polytechnic University (PolyU)";
 
 
 /*var footerImgPN="../file/img/zsjBlue.gif";
