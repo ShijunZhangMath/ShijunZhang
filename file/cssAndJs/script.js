@@ -89,8 +89,8 @@ function testPN(pn) {
 }
 
 //check whether this page is homepage
-var items=new Array("publication","cv","research","more");
-var itemsName=new Array("Publications","C&thinsp;V","Research","More");
+var items=new Array("publication","cv","research","teaching","more");
+var itemsName=new Array("Publications","C&thinsp;V","Research", "Teaching", "More");
 var itemsOrNot=new Array();
 var homeOrNot=1;
 for (let i=0;i<items.length;i++){
@@ -176,8 +176,12 @@ myNavBarHTML[3]='<li class="navBarItem">  <a href="'+relativePath+'cv/index.html
 myNavBarHTML[4]='<li class="navBarItem">  <a href="'+relativePath+'research/index.html" class="'+itemsActiveOrNot[2]+'">'+
                   itemsName[2]+ ' </a>  </li>';
 
-myNavBarHTML[5]='<li class="navBarItem">  <a href="'+relativePath+'more/index.html" class="'+itemsActiveOrNot[3]+'">'+
+
+myNavBarHTML[5]='<li class="navBarItem">  <a href="'+relativePath+'teaching/index.html" class="'+itemsActiveOrNot[3]+'">'+
                   itemsName[3]+'  </a>  </li>';
+
+myNavBarHTML[6]='<li class="navBarItem">  <a href="'+relativePath+'more/index.html" class="'+itemsActiveOrNot[4]+'">'+
+                  itemsName[4]+'  </a>  </li>';
 
 
 /*Starting with / returns to the root directory and starts there
@@ -190,12 +194,12 @@ Starting with ../../ moves two directories backward and starts there (and so on.
 
 To move forward, just start with the first sub directory and keep moving forward.
 */
-myNavBarHTML[6]='</ul>'+
+myNavBarHTML[7]='</ul>'+
 				'<div id="navBarRule" style="position:fixed;left:0px;width:100%;">'+
 					'<hr class="myHr">'+
 				'</div>';
 
-myNavBarHTML[7]='<div id="vspaceAfterNavBar"></div>' +
+myNavBarHTML[8]='<div id="vspaceAfterNavBar"></div>' +
 				'</nav>'; 
 
 navBarHTML.innerHTML=myNavBarHTML.join('')  
