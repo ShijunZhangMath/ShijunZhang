@@ -230,7 +230,7 @@ if (phoneOrPc) {
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
 var navBarFontSize=0.0121*w;
-if (phoneOrPc) {navBarFontSize=0.034*w;}
+if (phoneOrPc) {navBarFontSize=0.0293004*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
 navBar.style.setProperty("font-family","Helvetica, sans-serif");
