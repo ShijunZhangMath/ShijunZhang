@@ -20,7 +20,7 @@ function isMobile() {
 //screen.width window.outerWidth return width  in terms of point  1 pt=1/72 inch
 // screen.innerWidth returns width in point for PCs
 // screen.innerWidth returns width in css px for cellphones
-var dayUpdate="Sep 1, 2024";
+var dayUpdate="May 21, 2025";
 var jsInsertStyle=" ";
 
 
@@ -91,8 +91,10 @@ function testPN(pn) {
 //check whether this page is homepage
 // var items=new Array("publication","cv","research","teaching","more");
 // var itemsName=new Array("Publications","C&thinsp;V","Research", "Teaching", "More");
-var items=new Array("publication","research","teaching","link","more");
-var itemsName=new Array("Publications","Research", "Teaching", "Links", "More");
+// var items=new Array("publication","research","teaching","link","more");
+// var itemsName=new Array("Publications","Research", "Teaching", "Links", "More");
+var items=new Array("research","teaching","link","more");
+var itemsName=new Array("Research", "Teaching", "Links", "More");
 var itemsOrNot=new Array();
 var homeOrNot=1;
 for (let i=0;i<items.length;i++){
@@ -168,25 +170,25 @@ myNavBarHTML[1]='<li class="navBarItem" id="navBarMyName">'+
 	'<a href="'+relativePath+'index.html"class=" '+homeActiveOrNot+'"> Home</a>'+
 		'</li>'
 
-myNavBarHTML[2]='<li class="navBarItem">'+
-					'<a href="'+relativePath+'publication/index.html" class="'+itemsActiveOrNot[0]+'">'+itemsName[0]+' </a>'+
-				'</li>';
+// myNavBarHTML[2]='<li class="navBarItem">'+
+// 					'<a href="'+relativePath+'publication/index.html" class="'+itemsActiveOrNot[0]+'">'+itemsName[0]+' </a>'+
+// 				'</li>';
 
 // myNavBarHTML[3]='<li class="navBarItem">  <a href="'+relativePath+'cv/index.html" class="'+itemsActiveOrNot[1]+'">'+
 // 	             itemsName[1] + '</a>  </li>';
 
-myNavBarHTML[3]='<li class="navBarItem">  <a href="'+relativePath+'research/index.html" class="'+itemsActiveOrNot[1]+'">'+
-                  itemsName[1]+ ' </a>  </li>';
+myNavBarHTML[2]='<li class="navBarItem">  <a href="'+relativePath+'research/index.html" class="'+itemsActiveOrNot[0]+'">'+
+                  itemsName[0]+ ' </a>  </li>';
 
 
-myNavBarHTML[4]='<li class="navBarItem">  <a href="'+relativePath+'teaching/index.html" class="'+itemsActiveOrNot[2]+'">'+
-                  itemsName[2]+'  </a>  </li>';
+myNavBarHTML[3]='<li class="navBarItem">  <a href="'+relativePath+'teaching/index.html" class="'+itemsActiveOrNot[1]+'">'+
+                  itemsName[1]+'  </a>  </li>';
 
-myNavBarHTML[5]='<li class="navBarItem">  <a href="'+relativePath+'link/index.html" class="'+itemsActiveOrNot[3]+'">'+
-	             itemsName[3] + '</a>  </li>';
+myNavBarHTML[4]='<li class="navBarItem">  <a href="'+relativePath+'link/index.html" class="'+itemsActiveOrNot[2]+'">'+
+	             itemsName[2] + '</a>  </li>';
 
-myNavBarHTML[6]='<li class="navBarItem">  <a href="'+relativePath+'more/index.html" class="'+itemsActiveOrNot[4]+'">'+
-                  itemsName[4]+'  </a>  </li>';
+myNavBarHTML[5]='<li class="navBarItem">  <a href="'+relativePath+'more/index.html" class="'+itemsActiveOrNot[3]+'">'+
+                  itemsName[3]+'  </a>  </li>';
 
 
 /*Starting with / returns to the root directory and starts there
@@ -234,8 +236,8 @@ if (phoneOrPc) {
 
 var navBar=document.getElementById("navBar");
 //set navBar fontsize
-var navBarFontSize=0.0121*w;
-if (phoneOrPc) {navBarFontSize=0.032*w;}
+var navBarFontSize=0.01321*w;
+if (phoneOrPc) {navBarFontSize=0.03432*w;}
 
 navBar.style.setProperty("font-size",navBarFontSize+"px");
 navBar.style.setProperty("font-family","Helvetica, sans-serif");
