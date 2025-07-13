@@ -309,8 +309,9 @@ myFooter[3]="<div class='footerLinks'>"+
 myFooter[4]="<a href='"+relativePath+"file/pdf/CV_ShijunZHANG.pdf' title='Curriculum Vitae'>" +
 			" <i class='ai ai-cv-square'></i>      </a>";
 
-myFooter[5]="<a href='https://arxiv.org/a/zhang_s_8.html' title='Articles on arXiv'>" +
-			" <i class='ai ai-arxiv-square'></i>    </a>";
+/*myFooter[5]="<a href='https://arxiv.org/a/zhang_s_8.html' title='Articles on arXiv'>" +
+			" <i class='ai ai-arxiv-square'></i>    </a>";*/
+myFooter[5]=""
 
 myFooter[6]="<a href='https://orcid.org/0000-0003-4115-7891' title='ORCID'>" +
 			" <i class='ai ai-orcid-square'></i>    </a>";
